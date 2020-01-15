@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title></title>
+  <title>ДАРИМИР Интернет-магазин детских товаров</title>
   <link rel="preload" href="fonts/montserrat-v14-latin_cyrillic-regular.woff2" as="font" crossorigin="anonymous" />
   <link rel="preload" href="fonts/m-plus-rounded-1c-v10-latin_cyrillic-regular.woff2" as="font"
     crossorigin="anonymous" />
@@ -67,11 +67,10 @@
         </ul>
       </div>
       <div class="page-header__middle">
-        <a class="page-header__logo">
+        <a class="logo">
           <picture>
             <source type="image/webp" srcset="img/logo.webp">
-            <img class="page-header__logo-img" src="img/logo.png" width="190" height="72"
-              alt="Логотип компании ДариМир">
+            <img class="logo-img" src="img/logo.png" width="190" height="72" alt="Логотип компании ДариМир">
           </picture>
         </a>
         <form class="search-form" action="#" method="POST">
@@ -82,7 +81,7 @@
           </button>
           <button class="search-form__search-btn" type="submit" aria-label="Искать">Искать</button>
         </form>
-        <a class="phone" href="tel:+7 (916) 588 70 12">+7 (916) 588 70 12</a>
+        <a class="phone" href="tel:+79165887012">+7 (916) 588 70 12</a>
       </div>
       <ul class="user-menu">
         <li class="user-menu__item">
@@ -254,16 +253,18 @@
       <h2 class="goods__section-title">Лучшие предложения</h2>
       <div class="pagination">
         <a class="pagination__all" href="#">Смотреть все</a>
-        <button class="pagination__btn pagination__btn--back" aria-label="Назад">Назад</button>
+        <button class="pagination__btn pagination__btn--back" type="button" aria-label="Назад">Назад</button>
         <p class="pagination__numbers">
           <span class="pagination__part">2</span><span class="pagination__all">/3</span>
         </p>
-        <button class="pagination__btn pagination__btn--back" aria-label="Вперед">Вперед</button>
+        <button class="pagination__btn pagination__btn--back" type="button" aria-label="Вперед">Вперед</button>
       </div>
       <ul class="goods__list">
         <li class="goods__item">
-          <button class="goods__compare-btn" aria-label="Добавить к сравнению">Добавить к сравнению</button>
-          <button class="goods__like-btn" aria-label="Добавить в понравившиеся">Добавить в понравившиеся</button>
+          <button class="goods__compare-btn" type="button" aria-label="Добавить к сравнению">Добавить к
+            сравнению</button>
+          <button class="goods__like-btn" type="button" aria-label="Добавить в понравившиеся">Добавить в
+            понравившиеся</button>
 
           <div class="goods__labels">
             <p class="goods__hit">Хит продаж</p>
@@ -282,8 +283,10 @@
         </li>
 
         <li class="goods__item">
-          <button class="goods__compare-btn" aria-label="Добавить к сравнению">Добавить к сравнению</button>
-          <button class="goods__like-btn" aria-label="Добавить в понравившиеся">Добавить в понравившиеся</button>
+          <button class="goods__compare-btn" type="button" aria-label="Добавить к сравнению">Добавить к
+            сравнению</button>
+          <button class="goods__like-btn" type="button" aria-label="Добавить в понравившиеся">Добавить в
+            понравившиеся</button>
 
           <div class="goods__labels">
             <p class="goods__hit">Хит продаж</p>
@@ -303,8 +306,10 @@
         </li>
 
         <li class="goods__item">
-          <button class="goods__compare-btn" aria-label="Добавить к сравнению">Добавить к сравнению</button>
-          <button class="goods__like-btn" aria-label="Добавить в понравившиеся">Добавить в понравившиеся</button>
+          <button class="goods__compare-btn" type="button" aria-label="Добавить к сравнению">Добавить к
+            сравнению</button>
+          <button class="goods__like-btn" type="button" aria-label="Добавить в понравившиеся">Добавить в
+            понравившиеся</button>
 
           <div class="goods__labels">
             <p class="goods__hit">Хит продаж</p>
@@ -325,8 +330,10 @@
         </li>
 
         <li class="goods__item">
-          <button class="goods__compare-btn" aria-label="Добавить к сравнению">Добавить к сравнению</button>
-          <button class="goods__like-btn" aria-label="Добавить в понравившиеся">Добавить в понравившиеся</button>
+          <button class="goods__compare-btn" type="button" aria-label="Добавить к сравнению">Добавить к
+            сравнению</button>
+          <button class="goods__like-btn" type="button" aria-label="Добавить в понравившиеся">Добавить в
+            понравившиеся</button>
 
           <div class="goods__labels">
             <p class="goods__hit">Хит продаж</p>
@@ -348,41 +355,56 @@
     </section>
     <section class="stock">
       <h2 class="visually-hidden">Акции</h2>
-      <picture>
-        <source type="image/webp" srcset="img/stock_1.webp" >
-        <img class="stock__image" src="img/stock_1.jpg" width="619" height="442" alt="Новые поступления Loom" >
-      </picture>
-      <picture>
-        <source type="image/webp" srcset="img/stock_2.webp" >
-        <img class="stock__image" src="img/stock_2.jpg" width="619" height="442" alt="Скидка 10% за регистрацию на сайте">
-      </picture>
-      <picture>
-        <source type="image/webp" srcset="img/stock_3.webp" >
-        <img class="stock__image" src="img/stock_3.jpg" width="412" height="294" alt="Скидка 20% на детскую косметику mi&ko">
-      </picture>
-      <picture>
-        <source type="image/webp" srcset="img/stock_4.webp" >
-        <img class="stock__image" src="img/stock_4.jpg" width="412" height="294" alt="Лучшие комбинезони-трансформеры ДАРИМИР">
-      </picture>
-      <picture>
-        <source type="image/webp" srcset="img/stock_5.webp" >
-        <img class="stock__image" src="img/stock_5.jpg" width="412" height="294" alt="У нас новый бренд Carrot">
-      </picture>
+      <a class="stock__link" href="#">
+        <picture>
+          <source type="image/webp" srcset="img/stock_1.webp">
+          <img class="stock__image" src="img/stock_1.jpg" width="619" height="442" alt="Новые поступления Loom">
+        </picture>
+      </a>
+      <a class="stock__link" href="#">
+        <picture>
+          <source type="image/webp" srcset="img/stock_2.webp">
+          <img class="stock__image" src="img/stock_2.jpg" width="619" height="442"
+            alt="Скидка 10% за регистрацию на сайте">
+        </picture>
+      </a>
+      <a class="stock__link" href="#">
+        <picture>
+          <source type="image/webp" srcset="img/stock_3.webp">
+          <img class="stock__image" src="img/stock_3.jpg" width="412" height="294"
+            alt="Скидка 20% на детскую косметику mi&ko">
+        </picture>
+      </a>
+      <a class="stock__link" href="#">
+        <picture>
+          <source type="image/webp" srcset="img/stock_4.webp">
+          <img class="stock__image" src="img/stock_4.jpg" width="412" height="294"
+            alt="Лучшие комбинезони-трансформеры ДАРИМИР">
+        </picture>
+      </a>
+      <a class="stock__link" href="#">
+        <picture>
+          <source type="image/webp" srcset="img/stock_5.webp">
+          <img class="stock__image" src="img/stock_5.jpg" width="412" height="294" alt="У нас новый бренд Carrot">
+        </picture>
+      </a>
     </section>
     <section class="news goods">
       <h2 class="goods__section-title">Новинки</h2>
       <div class="pagination">
         <a class="pagination__all" href="#">Смотреть все</a>
-        <button class="pagination__btn pagination__btn--back" aria-label="Назад">Назад</button>
+        <button class="pagination__btn pagination__btn--back" type="button" aria-label="Назад">Назад</button>
         <p class="pagination__numbers">
           <span class="pagination__part">2</span><span class="pagination__all">/3</span>
         </p>
-        <button class="pagination__btn pagination__btn--back" aria-label="Вперед">Вперед</button>
+        <button class="pagination__btn pagination__btn--back" type="button" aria-label="Вперед">Вперед</button>
       </div>
       <ul class="goods__list">
         <li class="goods__item">
-          <button class="goods__compare-btn" aria-label="Добавить к сравнению">Добавить к сравнению</button>
-          <button class="goods__like-btn" aria-label="Добавить в понравившиеся">Добавить в понравившиеся</button>
+          <button class="goods__compare-btn" type="button" aria-label="Добавить к сравнению">Добавить к
+            сравнению</button>
+          <button class="goods__like-btn" type="button" aria-label="Добавить в понравившиеся">Добавить в
+            понравившиеся</button>
 
           <div class="goods__labels">
             <p class="goods__new">Новинка</p>
@@ -401,8 +423,10 @@
         </li>
 
         <li class="goods__item">
-          <button class="goods__compare-btn" aria-label="Добавить к сравнению">Добавить к сравнению</button>
-          <button class="goods__like-btn" aria-label="Добавить в понравившиеся">Добавить в понравившиеся</button>
+          <button class="goods__compare-btn" type="button" aria-label="Добавить к сравнению">Добавить к
+            сравнению</button>
+          <button class="goods__like-btn" type="button" aria-label="Добавить в понравившиеся">Добавить в
+            понравившиеся</button>
 
           <div class="goods__labels">
             <p class="goods__new">Новинка</p>
@@ -422,8 +446,10 @@
         </li>
 
         <li class="goods__item">
-          <button class="goods__compare-btn" aria-label="Добавить к сравнению">Добавить к сравнению</button>
-          <button class="goods__like-btn" aria-label="Добавить в понравившиеся">Добавить в понравившиеся</button>
+          <button class="goods__compare-btn" type="button" aria-label="Добавить к сравнению">Добавить к
+            сравнению</button>
+          <button class="goods__like-btn" type="button" aria-label="Добавить в понравившиеся">Добавить в
+            понравившиеся</button>
 
           <div class="goods__labels">
             <p class="goods__new">Новинка</p>
@@ -444,8 +470,10 @@
         </li>
 
         <li class="goods__item">
-          <button class="goods__compare-btn" aria-label="Добавить к сравнению">Добавить к сравнению</button>
-          <button class="goods__like-btn" aria-label="Добавить в понравившиеся">Добавить в понравившиеся</button>
+          <button class="goods__compare-btn" type="button" aria-label="Добавить к сравнению">Добавить к
+            сравнению</button>
+          <button class="goods__like-btn" type="button" aria-label="Добавить в понравившиеся">Добавить в
+            понравившиеся</button>
 
           <div class="goods__labels">
             <p class="goods__new">Новинка</p>
@@ -469,58 +497,59 @@
       <h2 class="brands__title">Популярные бренды</h2>
       <div class="pagination">
         <a class="pagination__all" href="#">Смотреть все</a>
-        <button class="pagination__btn pagination__btn--back" aria-label="Назад">Назад</button>
+        <button class="pagination__btn pagination__btn--back" type="button" aria-label="Назад">Назад</button>
         <p class="pagination__numbers">
           <span class="pagination__part">2</span><span class="pagination__all">/3</span>
         </p>
-        <button class="pagination__btn pagination__btn--back" aria-label="Вперед">Вперед</button>
+        <button class="pagination__btn pagination__btn--back" type="button" aria-label="Вперед">Вперед</button>
       </div>
       <ul class="brands__list">
-        <li class="brans__item">
-          <a class="brand__link" href="#" >
+        <li class="brands__item">
+          <a class="brands__link" href="#">
             <picture>
-              <source type="image/webp" srcset="img/brand_1.webp" >
-              <img  class="brands__img" width="208" height="150" src="img/brand_1.jpg" alt="Товары бренда УсиПуси">
+              <source type="image/webp" srcset="img/brand_1.webp">
+              <img class="brands__img" width="208" height="150" src="img/brand_1.jpg" alt="Товары бренда УсиПуси">
             </picture>
           </a>
         </li>
-        <li class="brans__item">
-          <a class="brand__link" href="#" >
+        <li class="brands__item">
+          <a class="brands__link" href="#">
             <picture>
-              <source type="image/webp" srcset="img/brand_2.webp" >
-              <img  class="brands__img" width="208" height="150" src="img/brand_2.jpg" alt="Товары бренда Toucan For Kids">
+              <source type="image/webp" srcset="img/brand_2.webp">
+              <img class="brands__img" width="208" height="150" src="img/brand_2.jpg"
+                alt="Товары бренда Toucan For Kids">
             </picture>
           </a>
         </li>
-        <li class="brans__item">
-          <a class="brand__link" href="#" >
+        <li class="brands__item">
+          <a class="brands__link" href="#">
             <picture>
-              <source type="image/webp" srcset="img/brand_3.webp" >
-              <img  class="brands__img" width="208" height="150" src="img/brand_3.jpg" alt="Товары бренда Журавлик">
+              <source type="image/webp" srcset="img/brand_3.webp">
+              <img class="brands__img" width="208" height="150" src="img/brand_3.jpg" alt="Товары бренда Журавлик">
             </picture>
           </a>
         </li>
-        <li class="brans__item">
-          <a class="brand__link" href="#" >
+        <li class="brands__item">
+          <a class="brands__link" href="#">
             <picture>
-              <source type="image/webp" srcset="img/brand_4.webp" >
-              <img  class="brands__img" width="208" height="150" src="img/brand_4.jpg" alt="Товары бренда Leo For Kids">
+              <source type="image/webp" srcset="img/brand_4.webp">
+              <img class="brands__img" width="208" height="150" src="img/brand_4.jpg" alt="Товары бренда Leo For Kids">
             </picture>
           </a>
         </li>
-        <li class="brans__item">
-          <a class="brand__link" href="#" >
+        <li class="brands__item">
+          <a class="brands__link" href="#">
             <picture>
-              <source type="image/webp" srcset="img/brand_5.webp" >
-              <img  class="brands__img" width="208" height="150" src="img/brand_5.jpg" alt="Товары бренда Artie">
+              <source type="image/webp" srcset="img/brand_5.webp">
+              <img class="brands__img" width="208" height="150" src="img/brand_5.jpg" alt="Товары бренда Artie">
             </picture>
           </a>
         </li>
-        <li class="brans__item">
-          <a class="brand__link" href="#" >
+        <li class="brands__item">
+          <a class="brands__link" href="#">
             <picture>
-              <source type="image/webp" srcset="img/brand_6.webp" >
-              <img  class="brands__img" width="208" height="150" src="img/brand_6.jpg" alt="Товары бренда Kleona">
+              <source type="image/webp" srcset="img/brand_6.webp">
+              <img class="brands__img" width="208" height="150" src="img/brand_6.jpg" alt="Товары бренда Kleona">
             </picture>
           </a>
         </li>
@@ -531,9 +560,11 @@
 
       <ul class="features__list">
         <li class="features__item">
-          <h3 class="features__feater-title">Лучшие бренды 
+          <h3 class="features__feater-title">Лучшие бренды
             российских производителей</h3>
-          <p class="features__text">В нашем магазине собраны лучшие бренды детской одежды и аксессуаров от российских производителей. Мы постоянно в поисках самых современных, самых стильных и качественных брендов. Вы с гордостью будете заявлять, что носите продукцию сделанную в России.</p>
+          <p class="features__text">В нашем магазине собраны лучшие бренды детской одежды и аксессуаров от российских
+            производителей. Мы постоянно в поисках самых современных, самых стильных и качественных брендов. Вы с
+            гордостью будете заявлять, что носите продукцию сделанную в России.</p>
         </li>
         <li class="features__item">
           <h3 class="features__feater-title">Бренды которые не пользуются Вашей любовью не остаются с нами</h3>
@@ -541,7 +572,8 @@
         </li>
         <li class="features__item">
           <h3 class="features__feater-title">У нас доступные цены</h3>
-          <p class="features__text">Мы стараемся не завышать цены, чтобы Вы могли позволить больше удачных покупок для Ваших детей</p>
+          <p class="features__text">Мы стараемся не завышать цены, чтобы Вы могли позволить больше удачных покупок для
+            Ваших детей</p>
         </li>
         <li class="features__item">
           <h3 class="features__feater-title">Мы знаем, что у Вас есть выбор. СПАСИБО, что выбираете нас!</h3>
@@ -554,44 +586,338 @@
       <ul class="blog__list">
         <li class="blog__item">
           <a class="blog__link" href="#">
-          <picture>
-            <source type="image/webp" srcset="img/blog_
-            1.webp" >
-            <img class="blog__img" width="353" height="300" src="img/blog_1.jpg" alt="Конверты и муфты из новой коллекции Leokid - тепло как дома" >
-          </picture>
-          <h3 class="blog__item-title">Конверты и муфты из новой коллекции Leokid - тепло как дома</h3>
-          <time class="blog__pub-date" datetime="2019-10-21 00:00">21 октября 2019</time>
-        </a>
+            <picture>
+              <source type="image/webp" srcset="img/blog_1.webp">
+              <img class="blog__img" width="353" height="300" src="img/blog_1.jpg"
+                alt="Конверты и муфты из новой коллекции Leokid - тепло как дома">
+            </picture>
+            <h3 class="blog__item-title">Конверты и муфты из новой коллекции Leokid - тепло как дома</h3>
+            <time class="blog__pub-date" datetime="2019-10-21 00:00">21 октября 2019</time>
+          </a>
         </li>
         <li class="blog__item">
           <a class="blog__link" href="#">
-          <picture>
-            <source type="image/webp" srcset="img/blog_
-            2.webp" >
-            <img class="blog__img" width="353" height="300" src="img/blog_2.jpg" alt="Неделя умных гаджетов: инновации в вашей детской" >
-          </picture>
-          <h3 class="blog__item-title">Неделя умных гаджетов: инновации в вашей детской</h3>
-          <time class="blog__pub-date" datetime="2019-10-18 00:00">18 октября 2019</time>
-        </a>
+            <picture>
+              <source type="image/webp" srcset="img/blog_2.webp">
+              <img class="blog__img" width="353" height="300" src="img/blog_2.jpg"
+                alt="Неделя умных гаджетов: инновации в вашей детской">
+            </picture>
+            <h3 class="blog__item-title">Неделя умных гаджетов: инновации в вашей детской</h3>
+            <time class="blog__pub-date" datetime="2019-10-18 00:00">18 октября 2019</time>
+          </a>
         </li>
         <li class="blog__item">
           <a class="blog__link" href="#">
-          <picture>
-            <source type="image/webp" srcset="img/blog_
-            3.webp" >
-            <img class="blog__img" width="353" height="300" src="img/blog_3.jpg" alt="Мастхэв осени: куртка, которая легче пера" >
-          </picture>
-          <h3 class="blog__item-title">Мастхэв осени: куртка, которая легче пера</h3>
-          <time class="blog__pub-date" datetime="2019-10-10 00:00">10 октября 2019</time>
-        </a>
+            <picture>
+              <source type="image/webp" srcset="img/blog_3.webp">
+              <img class="blog__img" width="353" height="300" src="img/blog_3.jpg"
+                alt="Мастхэв осени: куртка, которая легче пера">
+            </picture>
+            <h3 class="blog__item-title">Мастхэв осени: куртка, которая легче пера</h3>
+            <time class="blog__pub-date" datetime="2019-10-10 00:00">10 октября 2019</time>
+          </a>
         </li>
       </ul>
       <a class="blog_btn" href="#">Смотреть все</a>
     </section>
-    <section class="contacts"></section>
-    <section class="main-menu"></section>
+    <section class="contacts">
+      <h2 class="contacts_title">Наши магазины</h2>
+      <div class="pagination">
+        <a class="pagination__all" href="#">Смотреть все</a>
+        <button class="pagination__btn pagination__btn--back" type="button" aria-label="Назад">Назад</button>
+        <p class="pagination__numbers">
+          <span class="pagination__part">2</span><span class="pagination__all">/3</span>
+        </p>
+        <button class="pagination__btn pagination__btn--back" type="button" aria-label="Вперед">Вперед</button>
+      </div>
+      <div class="contacts__bg">
+        <picture>
+          <source type="image/map.webp" srcset="img/map.webp">
+          <img class="map" width="580" height="513" src="img/map.jpg"
+            alt="Адрес магазина: Москва, Театральный проезд, дом 5/1, 3 этаж">
+        </picture>
+        <div class="contacts__description">
+          <p class="contacts__metro">м. Лубянка</p>
+          <a class="contacts__phone" href="tel:+79165887012">
+            <span>Телефон:</span>
+            <span class="phone">+7 (916) 588 70 12</span>
+          </a>
+          <p class="contacts__address">
+            <span>Адрес:</span>
+            <span class="address">Театральный проезд, 5/1 3 этаж</span>
+          </p>
+          <p class="contacts__working-hours">
+            <span>Часы работы:</span>
+            <span class="working-hours">Ежедневно 10:00 - 22:00</span>
+          </p>
+          <a class="contacts__email" href="mailto:darynagorda@yandex.ru">
+            <span>E-mail:</span>
+            <span class="contacts__email">darynagorda@yandex.ru</span>
+          </a>
+          <p class="contacts__about-shop">
+            Флагманский магазин ДАРИМИР располагается в самом сердце исторического центра Москвы- в Центральном Детском
+            Магазине. Добраться до него удобно из любой точки города. В сам магазин можно попасть со станция метро -
+            Лубянка, которая имеет выход непосредственно в торговый центр. Рядом находится станция метро Кузнецкий Мост.
+            Так же в пешей доступности находятся станции: Китай-Город, Театральная, Охотный Ряд, Площадь Революции и
+            т.д.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="navigation">
+      <h2 class="visually-hidden">Меню</h2>
+      <ul class="main-menu">
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">Новорожденные</a>
+          <ul class="sub-menu">
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/section_1.webp">
+                  <img class="sub-menu__img" width="173" height="173" src="img/section_1.jpg" alt="Детская комната">
+                </picture>
+                <p class="sub-menu__title">Детская комната</p>
+              </a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/section_2.webp">
+                  <img class="sub-menu__img" width="173" height="173" src="img/section_2.jpg" alt="Игрушки">
+                </picture>
+                <p class="sub-menu__title">Игрушки</p>
+              </a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/section_3.webp">
+                  <img class="sub-menu__img" width="173" height="173" src="img/section_3.jpg"
+                    alt="Одежда для девочек 0 - 24 месяца">
+                </picture>
+                <p class="sub-menu__title">Одежда для девочек 0 - 24 месяца</p>
+              </a>
+              <ul class="deep-menu">
+                <li class="deep-menu__item">
+                  <a class="deep-menu__link" href="#">Верхняя одежда</a>
+                </li>
+                <li class="deep-menu__item">
+                  <a class="deep-menu__link" href="#">Одежда</a>
+                </li>
+                <li class="deep-menu__item">
+                  <a class="deep-menu__link" href="#">Одежда на выписку</a>
+                </li>
+                <li class="deep-menu__item">
+                  <a class="deep-menu__link" href="#">Одежда для маловесных детей</a>
+                </li>
+                <li class="deep-menu__item">
+                  <a class="deep-menu__link" href="#">Одежда для сна</a>
+                </li>
+                <li class="deep-menu__item">
+                  <a class="deep-menu__link" href="#">Крестильные наборы</a>
+                </li>
+                <li class="deep-menu__item">
+                  <a class="deep-menu__link" href="#">Аксессуары</a>
+                </li>
+                <li class="deep-menu__item">
+                  <a class="deep-menu__link" href="#">Гигиена и уход</a>
+                </li>
+                <li class="deep-menu__item">
+                  <a class="deep-menu__link" href="#">Купание</a>
+                </li>
+                <li class="deep-menu__item">
+                  <a class="deep-menu__link" href="#">Косметика</a>
+                </li>
+                <li class="deep-menu__item">
+                  <a class="deep-menu__link" href="#">Детская комната</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/section_4.webp">
+                  <img class="sub-menu__img" width="173" height="173" src="img/section_4.jpg" alt="Бренды">
+                </picture>
+                <p class="sub-menu__title">Бренды</p>
+              </a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/section_5.webp">
+                  <img class="sub-menu__img" width="173" height="173" src="img/section_5.jpg" alt="Новинки">
+                </picture>
+                <p class="sub-menu__title">Новинки</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
   </main>
-  <footer class="page-footer"></footer>
+  <footer class="page-footer">
+    <div class="page-footer__left-side">
+      <a class="logo">
+        <picture>
+          <source type="image/webp" srcset="img/logo.webp">
+          <img class="logo-img" src="img/logo.png" width="190" height="72" alt="Логотип компании ДариМир">
+        </picture>
+        <p class="logo__text">Интернет-магазин детских товаров</p>
+      </a>
+
+      <div class="contacts">
+        <a class="contacts__phone" href="tel:+79165887012">
+          <span>Телефон:</span>
+          <span class="phone">+7 (916) 588 70 12</span>
+        </a>
+        <p class="contacts__address">
+          <span>Адрес:</span>
+          <span class="address">Театральный проезд, 5/1 3 этаж</span>
+        </p>
+        <p class="contacts__working-hours">
+          <span>Часы работы:</span>
+          <span class="working-hours">Ежедневно 10:00 - 22:00</span>
+        </p>
+        <a class="contacts__email" href="mailto:darynagorda@yandex.ru">
+          <span>E-mail:</span>
+          <span class="contacts__email">darynagorda@yandex.ru</span>
+        </a>
+      </div>
+    </div>
+    <div class="page-footer__mid-side">
+      <div class="page-footer__wrapper">
+        <h2 class="page-footer__title">Интернет-магазин</h2>
+        <ul class="main-menu">
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">
+              <span>Все товары</span>
+            </a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">
+              <span>Новорожденные</span>
+              <span>0 - 24 месяцев</span>
+            </a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">
+              <span>Девочки</span>
+              <span>1 - 7 лет</span>
+            </a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">
+              <span>Мальчики</span>
+              <span>1 - 7 лет</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__wrapper">
+        <h2 class="page-footer__title">Кабинет покупателя</h2>
+        <ul class="user-menu">
+          <li class="user-menu__item">
+            <a class="user-menu__link" href="#">Войти</a>
+          </li>
+          <li class="user-menu__item">
+            <a class="user-menu__link" href="#">Создать учетную запись</a>
+          </li>
+          <li class="user-menu__item">
+            <a class="user-menu__link" href="#">Заказы</a>
+          </li>
+          <li class="user-menu__item">
+            <a class="user-menu__link" href="#">Избранные товары</a>
+          </li>
+          <li class="user-menu__item">
+            <a class="user-menu__link" href="#">Список сравнения</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="page-footer__right-side">
+      <h2 class="page-footer__title">О компании</h2>
+      <ul class="service-menu">
+        <li class="service-menu__item">
+          <a class="service-menu__link" href="#">Как сделать заказ</a>
+        </li>
+        <li class="service-menu__item">
+          <a class="service-menu__link" href="#">Оплата</a>
+        </li>
+        <li class="service-menu__item">
+          <a class="service-menu__link" href="#">Доставка</a>
+        </li>
+        <li class="service-menu__item">
+          <a class="service-menu__link" href="#">Возврат</a>
+        </li>
+        <li class="service-menu__item">
+          <a class="service-menu__link" href="#">Условия работы</a>
+        </li>
+        <li class="service-menu__item">
+          <a class="service-menu__link" href="#">Таблица размеров</a>
+        </li>
+        <li class="service-menu__item">
+          <a class="service-menu__link" href="#">Примерка</a>
+        </li>
+        <li class="service-menu__item">
+          <a class="service-menu__link" href="#">Гарантии</a>
+        </li>
+      </ul>
+      <ul class="company-menu">
+        <li class="company-menu__item">
+          <a class="company-menu__link" href="#">О компании</a>
+        </li>
+        <li class="company-menu__item">
+          <a class="company-menu__link" href="#">Реквизиты</a>
+        </li>
+        <li class="company-menu__item">
+          <a class="company-menu__link" href="#">Контакты</a>
+        </li>
+        <li class="company-menu__item">
+          <a class="company-menu__link" href="#">Статьи</a>
+        </li>
+        <li class="company-menu__item">
+          <a class="company-menu__link" href="#">Акции</a>
+        </li>
+        <li class="company-menu__item">
+          <a class="company-menu__link" href="#">Новости</a>
+        </li>
+        <li class="company-menu__item">
+          <a class="company-menu__link" href="#">Публичная оферта</a>
+        </li>
+      </ul>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="#" aria-label="instagram">inst</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="#" aria-label="вконтакте">vk</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="#" aria-label="facebook">fb</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="#" aria-label="youtube">yt</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="#" aria-label="одноклассники">ok</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copy">
+      <a class="dev" href="https://plastilin-art.ru/" target="_blank">
+        <span>Разработка сайта:</span>
+        <picture>
+          <source type="image/webp" srcset="img/logo_plast.webp">
+          <img class="dev__img" width="139" height="31" src="img/logo_plast.png" alt="Веб-студия Пластилин-Арт">
+        </picture>
+      </a>
+      <p class="copy">
+        <span>© 2009 – 2018 ДАРИМИР. Все права защищены.</span>
+        <a class="copy__link" href="#">Политика конфиденциальности</a>
+      </p>
+    </div>
+  </footer>
   <script src="libs/picturefill.min.js"></script>
 </body>
 
