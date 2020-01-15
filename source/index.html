@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <link rel="preload" href="fonts/montserrat-v14-latin_cyrillic-regular.woff2" as="font" crossorigin="anonymous" />
+  <link rel="preload" href="fonts/m-plus-rounded-1c-v10-latin_cyrillic-regular.woff2" as="font"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="libs/normalize.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body>
+  <header class="page-header">
+    <nav class="page-header__nav">
+      <div class="page-header__top">
+        <ul class="top-menu">
+          <li class="top-menu__item">
+            <p class="region-select">
+              <span>Ваш город:</span>
+              <a class="region-select__link" href="#">Москва</a>
+            </p>
+          </li>
+          <li class="top-menu__item">
+            <ul class="service-menu">
+              <li class="service-menu__item">
+                <a class="service-menu__link" href="#">Доставка</a>
+              </li>
+              <li class="service-menu__item">
+                <a class="service-menu__link" href="#">Оплата</a>
+              </li>
+              <li class="service-menu__item">
+                <a class="service-menu__link" href="#">Как оформить заказ</a>
+              </li>
+              <li class="service-menu__item">
+                <a class="service-menu__link" href="#">Условия работы</a>
+              </li>
+              <li class="service-menu__item">
+                <a class="service-menu__link" href="#">Гарантии</a>
+              </li>
+              <li class="service-menu__item">
+                <a class="service-menu__link" href="#">Возврат</a>
+              </li>
+            </ul>
+          </li>
+          <li class="top-menu__item">
+            <ul class="social-list">
+              <li class="social-list__item">
+                <a class="social-list__link" href="#" aria-label="instagram">inst</a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link" href="#" aria-label="вконтакте">vk</a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link" href="#" aria-label="facebook">fb</a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link" href="#" aria-label="youtube">yt</a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link" href="#" aria-label="одноклассники">ok</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="page-header__middle">
+        <a class="page-header__logo">
+          <picture>
+            <source type="image/webp" srcset="img/logo.webp">
+            <img class="page-header__logo-img" src="img/logo.png" width="190" height="72"
+              alt="Логотип компании ДариМир">
+          </picture>
+        </a>
+        <form class="search-form" action="#" method="POST">
+          <input class="search-form__field" type="search" name="itemSearch" id="itemSearchField"
+            placeholder="Поиск товаров">
+          <button class="search-form__select-btn" type="button">
+            <span>Искать везде</span>
+          </button>
+          <button class="search-form__search-btn" type="submit" aria-label="Искать">Искать</button>
+        </form>
+        <a class="phone" href="tel:+7 (916) 588 70 12">+7 (916) 588 70 12</a>
+      </div>
+      <ul class="user-menu">
+        <li class="user-menu__item">
+          <a class="user-menu__link" href="#" aria-label="Личный кабинет пользователя">Личный кабинет пользователя</a>
+        </li>
+        <li class="user-menu__item">
+          <a class="user-menu__link" href="#" aria-label="Сравнить товары">
+            Сравнить товары
+            <span class="user-menu__qty user-menu__qty--compare">4</span>
+          </a>
+        </li>
+        <li class="user-menu__item">
+          <a class="user-menu__link" href="#" aria-label="Понравившиеся товары">
+            Понравившиеся товары
+            <span class="user-menu__qty user-menu__qty--likes">8</span>
+          </a>
+        </li>
+        <li class="user-menu__item">
+          <a class="user-menu__link" href="#" aria-label="Корзина">
+            Корзина
+            <span class="user-menu__qty user-menu__qty--in-cart">3</span>
+          </a>
+        </li>
+      </ul>
+      <div class="page-header__bottom">
+        <ul class="main-menu">
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">
+              <span>Новорожденные</span>
+              <span>0 - 24 месяцев</span>
+            </a>
+            <ul class="sub-menu">
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="#">Новинки</a>
+              </li>
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="#">Бренды</a>
+              </li>
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="#">Одежда для девочек 0-24 мес.</a>
+              </li>
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="#">Одежда для мальчиков 0-24 мес.</a>
+              </li>
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="#">Аксессуары</a>
+              </li>
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="#">Гигиена и уход</a>
+              </li>
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="#">Детская комната</a>
+              </li>
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="#">Игрушки</a>
+              </li>
+            </ul>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">
+              <span>Девочки</span>
+              <span>1 - 7 лет</span>
+            </a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">
+              <span>Мальчики</span>
+              <span>1 - 7 лет</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Сайт компании ДариМир</h1>
+    <section class="slider">
+      <h2 class="visually-hidden">Скидки и предложения</h2>
+      <input class="visually-hidden" type="radio" name="sliderControl" id="banner1">
+      <input class="visually-hidden" type="radio" name="sliderControl" id="banner2">
+      <input class="visually-hidden" type="radio" name="sliderControl" id="banner3">
+
+      <label class="slider__control" for="banner1">1</label>
+      <label class="slider__control" for="banner2">2</label>
+      <label class="slider__control" for="banner3">3</label>
+
+      <div class="slider__item">
+        <div class="slider__text">
+          <p class="slider__slogan">экономим вместе</p>
+          <p class="slider__discount">Скидка 20%</p>
+          <p class="slider__description">Сделайте заказ на сайте, заберите в нашем магазине и получите приятную скидку!
+          </p>
+          <a class="slider__link" href="#">смотреть товары</a>
+        </div>
+        <div class="slider_image">
+          <picture>
+            <source type="image/webp" srcset="img/slider_1.webp">
+            <img src="img/slider_1.jpg" width="820" height="490" alt="Баннер">
+          </picture>
+        </div>
+      </div>
+      <div class="slider__item">
+        <div class="slider__text">
+          <p class="slider__slogan">экономим вместе</p>
+          <p class="slider__discount">Скидка 20%</p>
+          <p class="slider__description">Сделайте заказ на сайте, заберите в нашем магазине и получите приятную скидку!
+          </p>
+          <a class="slider__link" href="#">смотреть товары</a>
+        </div>
+        <div class="slider_image">
+          <picture>
+            <source type="image/webp" srcset="img/slider_1.webp">
+            <img src="img/slider_1.jpg" width="820" height="490" alt="Баннер">
+          </picture>
+        </div>
+      </div>
+      <div class="slider__item">
+        <div class="slider__text">
+          <p class="slider__slogan">экономим вместе</p>
+          <p class="slider__discount">Скидка 20%</p>
+          <p class="slider__description">Сделайте заказ на сайте, заберите в нашем магазине и получите приятную скидку!
+          </p>
+          <a class="slider__link" href="#">смотреть товары</a>
+        </div>
+        <div class="slider_image">
+          <picture>
+            <source type="image/webp" srcset="img/slider_1.webp">
+            <img src="img/slider_1.jpg" width="820" height="490" alt="Баннер">
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section class="categories">
+      <h2 class="visually-hidden">Категории товаров</h2>
+      <ul class="categories__list">
+        <li class="categories__item">
+          <a class="categories__link" href="#">
+            <picture>
+              <source type="image/webp" srcset="img/category_1.webp">
+              <img class="categories__img" width="340" height="340" src="img/category_1.jpg" alt="Новорожденные">
+            </picture>
+            <p class="categories__title">Новорожденные</p>
+            <p class="categories__text">от 0 до 24 месяцев</p>
+          </a>
+        </li>
+        <li class="categories__item">
+          <a href="" class="categories__link">
+            <picture>
+              <source type="image/webp" srcset="img/category_2.webp">
+              <img class="categories__img" width="340" height="340" src="img/category_2.jpg" alt="Девочки">
+            </picture>
+            <p class="categories__title">Девочки</p>
+            <p class="categories__text">от 1 до 7 лет</p>
+          </a>
+        </li>
+        <li class="categories__item">
+          <a href="" class="categories__link">
+            <picture>
+              <source type="image/webp" srcset="img/category_3.webp">
+              <img class="categories__img" width="340" height="340" src="img/category_3.jpg" alt="Мальчики">
+            </picture>
+            <p class="categories__title">Мальчики</p>
+            <p class="categories__text">от 1 до 7 лет</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="best-offers goods">
+      <h2 class="goods__section-title">Лучшие предложения</h2>
+      <div class="pagination">
+        <a class="pagination__all" href="#">Смотреть все</a>
+        <button class="pagination__btn pagination__btn--back" aria-label="Назад">Назад</button>
+        <p class="pagination__numbers">
+          <span class="pagination__part">2</span><span class="pagination__all">/3</span>
+        </p>
+        <button class="pagination__btn pagination__btn--back" aria-label="Вперед">Вперед</button>
+      </div>
+      <ul class="goods__list">
+        <li class="goods__item">
+          <button class="goods__compare-btn" aria-label="Добавить к сравнению">Добавить к сравнению</button>
+          <button class="goods__like-btn" aria-label="Добавить в понравившиеся">Добавить в понравившиеся</button>
+
+          <div class="goods__labels">
+            <p class="goods__hit">Хит продаж</p>
+          </div>
+
+          <picture>
+            <source type="image/webp" srcset="img/best_1.webp">
+            <img class="goods__img" width="275" height="275" src="img/best_1.jpg"
+              alt="LOOM Вязаный конверт New Classic Капучино">
+          </picture>
+          <div class="goods__text">
+            <p class="goods__price">4 599 руб.</p>
+            <a class="goods__title" href="#">LOOM Вязаный конверт New Classic Капучино</a>
+          </div>
+          <button class="goods__to-cart-btn" type="button">Добавить в корзин</button>
+        </li>
+
+        <li class="goods__item">
+          <button class="goods__compare-btn" aria-label="Добавить к сравнению">Добавить к сравнению</button>
+          <button class="goods__like-btn" aria-label="Добавить в понравившиеся">Добавить в понравившиеся</button>
+
+          <div class="goods__labels">
+            <p class="goods__hit">Хит продаж</p>
+            <p class="goods__new">Новинка</p>
+          </div>
+
+          <picture>
+            <source type="image/webp" srcset="img/best_2.webp">
+            <img class="goods__img" width="275" height="275" src="img/best_2.jpg"
+              alt="LOOM Jasper вязаный пеленальный кокон">
+          </picture>
+          <div class="goods__text">
+            <p class="goods__price">2 500 руб.</p>
+            <a class="goods__title" href="#">LOOM Jasper вязаный пеленальный кокон</a>
+          </div>
+          <button class="goods__to-cart-btn" type="button">Добавить в корзин</button>
+        </li>
+
+        <li class="goods__item">
+          <button class="goods__compare-btn" aria-label="Добавить к сравнению">Добавить к сравнению</button>
+          <button class="goods__like-btn" aria-label="Добавить в понравившиеся">Добавить в понравившиеся</button>
+
+          <div class="goods__labels">
+            <p class="goods__hit">Хит продаж</p>
+            <p class="goods__discount">-25%</p>
+          </div>
+
+          <picture>
+            <source type="image/webp" srcset="img/best_3.webp">
+            <img class="goods__img" width="275" height="275" src="img/best_3.jpg"
+              alt="Комбинезон Michelle вязаный бежевый">
+          </picture>
+          <div class="goods__text">
+            <p class="goods__price">1 999 руб.</p>
+            <p class="goods__price goods__price--old">2 500 руб.</p>
+            <a class="goods__title" href="#">Комбинезон Michelle вязаный бежевый</a>
+          </div>
+          <button class="goods__to-cart-btn" type="button">Добавить в корзин</button>
+        </li>
+
+        <li class="goods__item">
+          <button class="goods__compare-btn" aria-label="Добавить к сравнению">Добавить к сравнению</button>
+          <button class="goods__like-btn" aria-label="Добавить в понравившиеся">Добавить в понравившиеся</button>
+
+          <div class="goods__labels">
+            <p class="goods__hit">Хит продаж</p>
+            <p class="goods__discount">-50%</p>
+          </div>
+
+          <picture>
+            <source type="image/webp" srcset="img/best_4.webp">
+            <img class="goods__img" width="275" height="275" src="img/best_4.jpg" alt="Велюровый комбинезон">
+          </picture>
+          <div class="goods__text">
+            <p class="goods__price">899 руб.</p>
+            <p class="goods__price goods__price--old">1 799 руб.</p>
+            <a class="goods__title" href="#">Велюровый комбинезон</a>
+          </div>
+          <button class="goods__to-cart-btn" type="button">Добавить в корзин</button>
+        </li>
+      </ul>
+    </section>
+    <section class="stock"></section>
+    <section class="news"></section>
+    <section class="brands"></section>
+    <section class="features"></section>
+    <section class="blog"></section>
+    <section class="contacts"></section>
+    <section class="main-menu"></section>
+  </main>
+  <footer class="page-footer"></footer>
+  <script src="libs/picturefill.min.js"></script>
+</body>
+
+</html>
