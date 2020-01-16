@@ -1,0 +1,20 @@
+.main-menu__link span:first-of-type {
+  margin-right: 2px;
+
+  font-weight: 600;
+  color: $darkblue;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.main-menu__item {
+  padding: 0 10px;
+}
+
+.main-menu__link span:last-of-type {
+  color: $brown;
+}
+
+.main-menu__link--selected span:first-of-type {
+  color: #e7445f;
+}

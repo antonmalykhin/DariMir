@@ -1,0 +1,28 @@
+.social-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 190px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.social-menu__link {
+  display: block;
+  width: 34px;
+  height: 34px;
+
+  background-color: $white;
+}
+
+.social-menu__link:hover,
+.social-menu__link:focus {
+  background-color: $brown;
+}
+
+.social-menu__link:active {
+  background-color: rgba($brown, 0.5);
+}
