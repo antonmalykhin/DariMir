@@ -1,0 +1,26 @@
+.goods__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.goods__section-title {
+  margin-left: 21px;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+  color: $darkblue;
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: 0.05em;
+}
+
+.goods__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}

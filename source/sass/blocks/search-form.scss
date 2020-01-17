@@ -30,10 +30,20 @@
 }
 
 .search-form__search-btn {
+  position: relative;
+
   width: 58px;
 
   background-color: $gray;
   border: 1px solid #e2e1e6;
   border-left: transparent;
   border-radius: 0 25px 25px 0;
+}
+
+.search-form__search-btn svg {
+  position: absolute;
+  top: 10px;
+  left: 16px;
+
+  fill: $darkblue;
 }

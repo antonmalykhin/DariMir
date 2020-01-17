@@ -1,3 +1,7 @@
+.page-header {
+  margin-bottom: 60px;
+}
+
 .page-header__top {
   background-color: $gray;
 }
@@ -46,6 +50,8 @@
 }
 
 .page-header__sub-menu {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
@@ -57,4 +63,17 @@
   padding-left: 7px;
 
   list-style: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 280px;
+
+    width: 1px;
+    height: 1px;
+
+    border: 10px solid transparent;
+    border-bottom-color: $brown;
+  }
 }

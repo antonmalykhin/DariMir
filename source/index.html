@@ -16,55 +16,69 @@
   <header class="page-header">
     <nav class="page-header__nav">
       <div class="page-header__top">
-        <ul class="top-menu container">
-          <li class="top-menu__item">
-            <p class="region-select">
-              <span>Ваш город:</span>
-              <a class="region-select__link" href="#">Москва</a>
-            </p>
-          </li>
-          <li class="top-menu__item">
-            <ul class="service-menu">
-              <li class="service-menu__item">
-                <a class="service-menu__link" href="#">Доставка</a>
-              </li>
-              <li class="service-menu__item">
-                <a class="service-menu__link" href="#">Оплата</a>
-              </li>
-              <li class="service-menu__item">
-                <a class="service-menu__link" href="#">Как оформить заказ</a>
-              </li>
-              <li class="service-menu__item">
-                <a class="service-menu__link" href="#">Условия работы</a>
-              </li>
-              <li class="service-menu__item">
-                <a class="service-menu__link" href="#">Гарантии</a>
-              </li>
-              <li class="service-menu__item">
-                <a class="service-menu__link" href="#">Возврат</a>
-              </li>
-            </ul>
-          </li>
-          <li class="top-menu__item">
-            <ul class="social-menu">
-              <li class="social-menu__item">
-                <a class="social-menu__link" href="#" aria-label="instagram">inst</a>
-              </li>
-              <li class="social-menu__item">
-                <a class="social-menu__link" href="#" aria-label="вконтакте">vk</a>
-              </li>
-              <li class="social-menu__item">
-                <a class="social-menu__link" href="#" aria-label="facebook">fb</a>
-              </li>
-              <li class="social-menu__item">
-                <a class="social-menu__link" href="#" aria-label="youtube">yt</a>
-              </li>
-              <li class="social-menu__item">
-                <a class="social-menu__link" href="#" aria-label="одноклассники">ok</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="top-menu">
+            <li class="top-menu__item">
+              <p class="region-select">
+                <span>Ваш город:</span>
+                <a class="region-select__link" href="#">Москва</a>
+              </p>
+            </li>
+            <li class="top-menu__item">
+              <ul class="page-header__service-menu service-menu">
+                <li class="service-menu__item">
+                  <a class="service-menu__link" href="#">Доставка</a>
+                </li>
+                <li class="service-menu__item">
+                  <a class="service-menu__link" href="#">Оплата</a>
+                </li>
+                <li class="service-menu__item">
+                  <a class="service-menu__link" href="#">Как оформить заказ</a>
+                </li>
+                <li class="service-menu__item">
+                  <a class="service-menu__link" href="#">Условия работы</a>
+                </li>
+                <li class="service-menu__item">
+                  <a class="service-menu__link" href="#">Гарантии</a>
+                </li>
+                <li class="service-menu__item">
+                  <a class="service-menu__link" href="#">Возврат</a>
+                </li>
+              </ul>
+            </li>
+            <li class="top-menu__item">
+              <ul class="social-menu">
+                <li class="social-menu__item">
+                  <a class="social-menu__link" href="#" aria-label="instagram">
+                    <svg width="20" height="20">
+                      <use xlink:href="img/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-menu__item">
+                  <a class="social-menu__link" href="#" aria-label="вконтакте"> <svg width="20" height="20">
+                      <use xlink:href="img/sprite.svg#vk"></use>
+                    </svg></a>
+                </li>
+                <li class="social-menu__item">
+                  <a class="social-menu__link" href="#" aria-label="facebook"> <svg width="20" height="20">
+                      <use xlink:href="img/sprite.svg#facebook"></use>
+                    </svg></a>
+                </li>
+                <li class="social-menu__item">
+                  <a class="social-menu__link" href="#" aria-label="youtube"> <svg width="20" height="20">
+                      <use xlink:href="img/sprite.svg#youtube"></use>
+                    </svg></a>
+                </li>
+                <li class="social-menu__item">
+                  <a class="social-menu__link" href="#" aria-label="одноклассники"> <svg width="20" height="20">
+                      <use xlink:href="img/sprite.svg#odnoklassniki"></use>
+                    </svg></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="page-header__middle">
         <div class="page-header__wrapper container">
@@ -80,83 +94,101 @@
             <button class="search-form__select-btn" type="button">
               <span>Искать везде</span>
             </button>
-            <button class="search-form__search-btn" type="submit" aria-label="Искать">O</button>
+            <button class="search-form__search-btn" type="submit" aria-label="Искать">
+              <svg width="23" height="27">
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+            </button>
           </form>
           <a class="page-header__phone phone" href="tel:+79165887012">+7 (916) 588 70 12</a>
 
           <ul class="user-menu">
             <li class="user-menu__item">
-              <a class="user-menu__link" href="#" aria-label="Личный кабинет пользователя">ЛК</a>
+              <a class="user-menu__link" href="#" aria-label="Личный кабинет пользователя">
+                <svg class="user-menu__icon user-menu__icon--user" width="23" height="26">
+                  <use xlink:href="img/sprite.svg#user"></use>
+                </svg>
+              </a>
             </li>
             <li class="user-menu__item">
               <a class="user-menu__link" href="#" aria-label="Сравнить товары">
-                СТ
+                <svg class="user-menu__icon user-menu__icon--compare" width="22" height="25">
+                  <use xlink:href="img/sprite.svg#compare"></use>
+                </svg>
                 <span class="user-menu__qty user-menu__qty--compare">4</span>
               </a>
             </li>
             <li class="user-menu__item">
               <a class="user-menu__link" href="#" aria-label="Понравившиеся товары">
-                ПТ
-                <span class="user-menu__qty user-menu__qty--likes">8</span>
+                <svg class="user-menu__icon user-menu__icon--favorite" width="28" height="24">
+                  <use xlink:href="img/sprite.svg#favorite"></use>
+                </svg>
+                <span class="user-menu__qty user-menu__qty--favorite">8</span>
               </a>
             </li>
             <li class="user-menu__item">
               <a class="user-menu__link" href="#" aria-label="Корзина">
-                КО
-                <span class="user-menu__qty user-menu__qty--in-cart">3</span>
+                <svg class="user-menu__icon user-menu__icon--cart" width="32" height="28">
+                  <use xlink:href="img/sprite.svg#cart"></use>
+                </svg>
+                <span class="user-menu__qty user-menu__qty--cart">3</span>
               </a>
             </li>
           </ul>
         </div>
       </div>
       <div class="page-header__bottom">
-        <ul class="page-header__main-menu main-menu container">
-          <li class="main-menu__item">
-            <a class="main-menu__link main-menu__link--selected" href="#">
-              <span>Новорожденные</span>
-              <span>0 - 24 месяцев</span>
-            </a>
-          </li>
-          <li class="main-menu__item">
-            <a class="main-menu__link" href="#">
-              <span>Девочки</span>
-              <span>1 - 7 лет</span>
-            </a>
-          </li>
-          <li class="main-menu__item">
-            <a class="main-menu__link" href="#">
-              <span>Мальчики</span>
-              <span>1 - 7 лет</span>
-            </a>
-          </li>
-        </ul>
-        <div class="page-header__bg">
-          <ul class="page-header__sub-menu sub-menu container">
-            <li class="sub-menu__item">
-              <a class="sub-menu__link" href="#">Новинки</a>
+        <div class="container">
+          <ul class="page-header__main-menu main-menu">
+            <li class="main-menu__item">
+              <a class="main-menu__link main-menu__link--selected" href="#">
+                <span>Новорожденные</span>
+                <span>0 - 24 месяцев</span>
+              </a>
             </li>
-            <li class="sub-menu__item">
-              <a class="sub-menu__link" href="#">Бренды</a>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">
+                <span>Девочки</span>
+                <span>1 - 7 лет</span>
+              </a>
             </li>
-            <li class="sub-menu__item">
-              <a class="sub-menu__link" href="#">Одежда для девочек 0-24 мес.</a>
-            </li>
-            <li class="sub-menu__item">
-              <a class="sub-menu__link" href="#">Одежда для мальчиков 0-24 мес.</a>
-            </li>
-            <li class="sub-menu__item">
-              <a class="sub-menu__link" href="#">Аксессуары</a>
-            </li>
-            <li class="sub-menu__item">
-              <a class="sub-menu__link" href="#">Гигиена и уход</a>
-            </li>
-            <li class="sub-menu__item">
-              <a class="sub-menu__link" href="#">Детская комната</a>
-            </li>
-            <li class="sub-menu__item">
-              <a class="sub-menu__link" href="#">Игрушки</a>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">
+                <span>Мальчики</span>
+                <span>1 - 7 лет</span>
+              </a>
             </li>
           </ul>
+        </div>
+        <div class="page-header__bg">
+          <div class="container">
+            <ul class="page-header__sub-menu sub-menu">
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="#">Новинки</a>
+              </li>
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="#">Бренды</a>
+              </li>
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="#">Одежда для девочек 0-24 мес.</a>
+              </li>
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="#">Одежда для мальчиков 0-24 мес.</a>
+              </li>
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="#">Аксессуары</a>
+              </li>
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="#">Гигиена и уход</a>
+              </li>
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="#">Детская комната</a>
+              </li>
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="#">Игрушки</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
@@ -164,199 +196,178 @@
   <main class="page-main">
     <h1 class="visually-hidden">Сайт компании ДариМир</h1>
     <section class="slider">
-      <h2 class="visually-hidden">Скидки и предложения</h2>
-      <input class="visually-hidden" type="radio" name="sliderControl" id="banner1">
-      <input class="visually-hidden" type="radio" name="sliderControl" id="banner2">
-      <input class="visually-hidden" type="radio" name="sliderControl" id="banner3">
+      <div class="container">
+        <h2 class="visually-hidden">Скидки и предложения</h2>
+        <input class="slider__radio visually-hidden" type="radio" name="sliderControl" id="banner1" checked>
+        <input class="slider__radio visually-hidden" type="radio" name="sliderControl" id="banner2">
+        <input class="slider__radio visually-hidden" type="radio" name="sliderControl" id="banner3">
 
-      <label class="slider__control" for="banner1">1</label>
-      <label class="slider__control" for="banner2">2</label>
-      <label class="slider__control" for="banner3">3</label>
+        <label class="slider__control" for="banner1">1</label>
+        <label class="slider__control" for="banner2">2</label>
+        <label class="slider__control" for="banner3">3</label>
 
-      <div class="slider__item">
-        <div class="slider__text">
-          <p class="slider__slogan">экономим вместе</p>
-          <p class="slider__discount">Скидка 20%</p>
-          <p class="slider__description">Сделайте заказ на сайте, заберите в нашем магазине и получите приятную скидку!
-          </p>
-          <a class="slider__link" href="#">смотреть товары</a>
-        </div>
-        <div class="slider_image">
-          <picture>
-            <source type="image/webp" srcset="img/slider_1.webp">
-            <img src="img/slider_1.jpg" width="820" height="490" alt="Баннер">
-          </picture>
-        </div>
-      </div>
-      <div class="slider__item">
-        <div class="slider__text">
-          <p class="slider__slogan">экономим вместе</p>
-          <p class="slider__discount">Скидка 20%</p>
-          <p class="slider__description">Сделайте заказ на сайте, заберите в нашем магазине и получите приятную скидку!
-          </p>
-          <a class="slider__link" href="#">смотреть товары</a>
-        </div>
-        <div class="slider_image">
-          <picture>
-            <source type="image/webp" srcset="img/slider_1.webp">
-            <img src="img/slider_1.jpg" width="820" height="490" alt="Баннер">
-          </picture>
-        </div>
-      </div>
-      <div class="slider__item">
-        <div class="slider__text">
-          <p class="slider__slogan">экономим вместе</p>
-          <p class="slider__discount">Скидка 20%</p>
-          <p class="slider__description">Сделайте заказ на сайте, заберите в нашем магазине и получите приятную скидку!
-          </p>
-          <a class="slider__link" href="#">смотреть товары</a>
-        </div>
-        <div class="slider_image">
-          <picture>
-            <source type="image/webp" srcset="img/slider_1.webp">
-            <img src="img/slider_1.jpg" width="820" height="490" alt="Баннер">
-          </picture>
+        <div class="slider__item">
+          <div class="slider__text">
+            <p class="slider__slogan">экономим вместе</p>
+            <p class="slider__discount">Скидка 20%</p>
+            <p class="slider__description">Сделайте заказ на сайте, заберите в нашем магазине и получите приятную
+              скидку!
+            </p>
+            <a class="slider__link" href="#">смотреть товары</a>
+          </div>
+          <div class="slider_image">
+            <picture>
+              <source type="image/webp" srcset="img/slider_1.webp">
+              <img src="img/slider_1.jpg" width="820" height="490" alt="Баннер">
+            </picture>
+          </div>
         </div>
       </div>
     </section>
     <section class="categories">
-      <h2 class="visually-hidden">Категории товаров</h2>
-      <ul class="categories__list">
-        <li class="categories__item">
-          <a class="categories__link" href="#">
-            <picture>
-              <source type="image/webp" srcset="img/category_1.webp">
-              <img class="categories__img" width="340" height="340" src="img/category_1.jpg" alt="Новорожденные">
-            </picture>
-            <p class="categories__title">Новорожденные</p>
-            <p class="categories__text">от 0 до 24 месяцев</p>
-          </a>
-        </li>
-        <li class="categories__item">
-          <a href="" class="categories__link">
-            <picture>
-              <source type="image/webp" srcset="img/category_2.webp">
-              <img class="categories__img" width="340" height="340" src="img/category_2.jpg" alt="Девочки">
-            </picture>
-            <p class="categories__title">Девочки</p>
-            <p class="categories__text">от 1 до 7 лет</p>
-          </a>
-        </li>
-        <li class="categories__item">
-          <a href="" class="categories__link">
-            <picture>
-              <source type="image/webp" srcset="img/category_3.webp">
-              <img class="categories__img" width="340" height="340" src="img/category_3.jpg" alt="Мальчики">
-            </picture>
-            <p class="categories__title">Мальчики</p>
-            <p class="categories__text">от 1 до 7 лет</p>
-          </a>
-        </li>
-      </ul>
+      <div class="container">
+        <h2 class="visually-hidden">Категории товаров</h2>
+        <ul class="categories__list">
+          <li class="categories__item">
+            <a class="categories__link" href="#">
+              <picture>
+                <source type="image/webp" srcset="img/category_1.webp">
+                <img class="categories__img" width="340" height="340" src="img/category_1.jpg" alt="Новорожденные">
+              </picture>
+              <p class="categories__title">Новорожденные</p>
+              <p class="categories__text">от 0 до 24 месяцев</p>
+            </a>
+          </li>
+          <li class="categories__item">
+            <a href="" class="categories__link">
+              <picture>
+                <source type="image/webp" srcset="img/category_2.webp">
+                <img class="categories__img" width="340" height="340" src="img/category_2.jpg" alt="Девочки">
+              </picture>
+              <p class="categories__title">Девочки</p>
+              <p class="categories__text">от 1 до 7 лет</p>
+            </a>
+          </li>
+          <li class="categories__item">
+            <a href="" class="categories__link">
+              <picture>
+                <source type="image/webp" srcset="img/category_3.webp">
+                <img class="categories__img" width="340" height="340" src="img/category_3.jpg" alt="Мальчики">
+              </picture>
+              <p class="categories__title">Мальчики</p>
+              <p class="categories__text">от 1 до 7 лет</p>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="best-offers goods">
-      <h2 class="goods__section-title">Лучшие предложения</h2>
-      <div class="pagination">
-        <a class="pagination__all" href="#">Смотреть все</a>
-        <button class="pagination__btn pagination__btn--back" type="button" aria-label="Назад">Назад</button>
-        <p class="pagination__numbers">
-          <span class="pagination__part">2</span><span class="pagination__all">/3</span>
-        </p>
-        <button class="pagination__btn pagination__btn--back" type="button" aria-label="Вперед">Вперед</button>
+      <div class="container">
+        <div class="goods__wrapper">
+          <h2 class="goods__section-title">Лучшие предложения</h2>
+          <div class="pagination">
+            <a class="pagination__all" href="#">Смотреть все</a>
+            <button class="pagination__btn pagination__btn--back" type="button" aria-label="Назад"></button>
+            <p class="pagination__numbers">
+              <span class="pagination__page">2</span><span class="pagination__pages">3</span>
+            </p>
+            <button class="pagination__btn pagination__btn--fron" type="button" aria-label="Вперед"></button>
+          </div>
+          <ul class="goods__list">
+            <li class="goods__item">
+              <button class="goods__compare-btn" type="button" aria-label="Добавить к сравнению">Добавить к
+                сравнению</button>
+              <button class="goods__like-btn" type="button" aria-label="Добавить в понравившиеся">Добавить в
+                понравившиеся</button>
+
+              <div class="goods__labels">
+                <p class="goods__hit">Хит продаж</p>
+              </div>
+
+              <picture>
+                <source type="image/webp" srcset="img/best_1.webp">
+                <img class="goods__img" width="275" height="275" src="img/best_1.jpg"
+                  alt="LOOM Вязаный конверт New Classic Капучино">
+              </picture>
+              <div class="goods__text">
+                <p class="goods__price">4 599 руб.</p>
+                <a class="goods__title" href="#">LOOM Вязаный конверт New Classic Капучино</a>
+              </div>
+              <button class="goods__to-cart-btn" type="button">Добавить в корзин</button>
+            </li>
+
+            <li class="goods__item">
+              <button class="goods__compare-btn" type="button" aria-label="Добавить к сравнению">Добавить к
+                сравнению</button>
+              <button class="goods__like-btn" type="button" aria-label="Добавить в понравившиеся">Добавить в
+                понравившиеся</button>
+
+              <div class="goods__labels">
+                <p class="goods__hit">Хит продаж</p>
+                <p class="goods__new">Новинка</p>
+              </div>
+
+              <picture>
+                <source type="image/webp" srcset="img/best_2.webp">
+                <img class="goods__img" width="275" height="275" src="img/best_2.jpg"
+                  alt="LOOM Jasper вязаный пеленальный кокон">
+              </picture>
+              <div class="goods__text">
+                <p class="goods__price">2 500 руб.</p>
+                <a class="goods__title" href="#">LOOM Jasper вязаный пеленальный кокон</a>
+              </div>
+              <button class="goods__to-cart-btn" type="button">Добавить в корзин</button>
+            </li>
+
+            <li class="goods__item">
+              <button class="goods__compare-btn" type="button" aria-label="Добавить к сравнению">Добавить к
+                сравнению</button>
+              <button class="goods__like-btn" type="button" aria-label="Добавить в понравившиеся">Добавить в
+                понравившиеся</button>
+
+              <div class="goods__labels">
+                <p class="goods__hit">Хит продаж</p>
+                <p class="goods__discount">-25%</p>
+              </div>
+
+              <picture>
+                <source type="image/webp" srcset="img/best_3.webp">
+                <img class="goods__img" width="275" height="275" src="img/best_3.jpg"
+                  alt="Комбинезон Michelle вязаный бежевый">
+              </picture>
+              <div class="goods__text">
+                <p class="goods__price">1 999 руб.</p>
+                <p class="goods__price goods__price--old">2 500 руб.</p>
+                <a class="goods__title" href="#">Комбинезон Michelle вязаный бежевый</a>
+              </div>
+              <button class="goods__to-cart-btn" type="button">Добавить в корзин</button>
+            </li>
+
+            <li class="goods__item">
+              <button class="goods__compare-btn" type="button" aria-label="Добавить к сравнению">Добавить к
+                сравнению</button>
+              <button class="goods__like-btn" type="button" aria-label="Добавить в понравившиеся">Добавить в
+                понравившиеся</button>
+
+              <div class="goods__labels">
+                <p class="goods__hit">Хит продаж</p>
+                <p class="goods__discount">-50%</p>
+              </div>
+
+              <picture>
+                <source type="image/webp" srcset="img/best_4.webp">
+                <img class="goods__img" width="275" height="275" src="img/best_4.jpg" alt="Велюровый комбинезон">
+              </picture>
+              <div class="goods__text">
+                <p class="goods__price">899 руб.</p>
+                <p class="goods__price goods__price--old">1 799 руб.</p>
+                <a class="goods__title" href="#">Велюровый комбинезон</a>
+              </div>
+              <button class="goods__to-cart-btn" type="button">Добавить в корзин</button>
+            </li>
+          </ul>
+        </div>
       </div>
-      <ul class="goods__list">
-        <li class="goods__item">
-          <button class="goods__compare-btn" type="button" aria-label="Добавить к сравнению">Добавить к
-            сравнению</button>
-          <button class="goods__like-btn" type="button" aria-label="Добавить в понравившиеся">Добавить в
-            понравившиеся</button>
-
-          <div class="goods__labels">
-            <p class="goods__hit">Хит продаж</p>
-          </div>
-
-          <picture>
-            <source type="image/webp" srcset="img/best_1.webp">
-            <img class="goods__img" width="275" height="275" src="img/best_1.jpg"
-              alt="LOOM Вязаный конверт New Classic Капучино">
-          </picture>
-          <div class="goods__text">
-            <p class="goods__price">4 599 руб.</p>
-            <a class="goods__title" href="#">LOOM Вязаный конверт New Classic Капучино</a>
-          </div>
-          <button class="goods__to-cart-btn" type="button">Добавить в корзин</button>
-        </li>
-
-        <li class="goods__item">
-          <button class="goods__compare-btn" type="button" aria-label="Добавить к сравнению">Добавить к
-            сравнению</button>
-          <button class="goods__like-btn" type="button" aria-label="Добавить в понравившиеся">Добавить в
-            понравившиеся</button>
-
-          <div class="goods__labels">
-            <p class="goods__hit">Хит продаж</p>
-            <p class="goods__new">Новинка</p>
-          </div>
-
-          <picture>
-            <source type="image/webp" srcset="img/best_2.webp">
-            <img class="goods__img" width="275" height="275" src="img/best_2.jpg"
-              alt="LOOM Jasper вязаный пеленальный кокон">
-          </picture>
-          <div class="goods__text">
-            <p class="goods__price">2 500 руб.</p>
-            <a class="goods__title" href="#">LOOM Jasper вязаный пеленальный кокон</a>
-          </div>
-          <button class="goods__to-cart-btn" type="button">Добавить в корзин</button>
-        </li>
-
-        <li class="goods__item">
-          <button class="goods__compare-btn" type="button" aria-label="Добавить к сравнению">Добавить к
-            сравнению</button>
-          <button class="goods__like-btn" type="button" aria-label="Добавить в понравившиеся">Добавить в
-            понравившиеся</button>
-
-          <div class="goods__labels">
-            <p class="goods__hit">Хит продаж</p>
-            <p class="goods__discount">-25%</p>
-          </div>
-
-          <picture>
-            <source type="image/webp" srcset="img/best_3.webp">
-            <img class="goods__img" width="275" height="275" src="img/best_3.jpg"
-              alt="Комбинезон Michelle вязаный бежевый">
-          </picture>
-          <div class="goods__text">
-            <p class="goods__price">1 999 руб.</p>
-            <p class="goods__price goods__price--old">2 500 руб.</p>
-            <a class="goods__title" href="#">Комбинезон Michelle вязаный бежевый</a>
-          </div>
-          <button class="goods__to-cart-btn" type="button">Добавить в корзин</button>
-        </li>
-
-        <li class="goods__item">
-          <button class="goods__compare-btn" type="button" aria-label="Добавить к сравнению">Добавить к
-            сравнению</button>
-          <button class="goods__like-btn" type="button" aria-label="Добавить в понравившиеся">Добавить в
-            понравившиеся</button>
-
-          <div class="goods__labels">
-            <p class="goods__hit">Хит продаж</p>
-            <p class="goods__discount">-50%</p>
-          </div>
-
-          <picture>
-            <source type="image/webp" srcset="img/best_4.webp">
-            <img class="goods__img" width="275" height="275" src="img/best_4.jpg" alt="Велюровый комбинезон">
-          </picture>
-          <div class="goods__text">
-            <p class="goods__price">899 руб.</p>
-            <p class="goods__price goods__price--old">1 799 руб.</p>
-            <a class="goods__title" href="#">Велюровый комбинезон</a>
-          </div>
-          <button class="goods__to-cart-btn" type="button">Добавить в корзин</button>
-        </li>
-      </ul>
     </section>
     <section class="stock">
       <h2 class="visually-hidden">Акции</h2>
@@ -398,11 +409,11 @@
       <h2 class="goods__section-title">Новинки</h2>
       <div class="pagination">
         <a class="pagination__all" href="#">Смотреть все</a>
-        <button class="pagination__btn pagination__btn--back" type="button" aria-label="Назад">Назад</button>
+        <button class="pagination__btn pagination__btn--back" type="button" aria-label="Назад"></button>
         <p class="pagination__numbers">
-          <span class="pagination__part">2</span><span class="pagination__all">/3</span>
+          <span class="pagination__page">2</span><span class="pagination__pages">3</span>
         </p>
-        <button class="pagination__btn pagination__btn--back" type="button" aria-label="Вперед">Вперед</button>
+        <button class="pagination__btn pagination__btn--fron" type="button" aria-label="Вперед"></button>
       </div>
       <ul class="goods__list">
         <li class="goods__item">
@@ -502,11 +513,12 @@
       <h2 class="brands__title">Популярные бренды</h2>
       <div class="pagination">
         <a class="pagination__all" href="#">Смотреть все</a>
-        <button class="pagination__btn pagination__btn--back" type="button" aria-label="Назад">Назад</button>
+        <button class="pagination__btn pagination__btn--back" type="button" aria-label="Назад"></button>
         <p class="pagination__numbers">
-          <span class="pagination__part">2</span><span class="pagination__all">/3</span>
+          <span class="pagination__page">2</span>
+          <span class="pagination__pages">3</span>
         </p>
-        <button class="pagination__btn pagination__btn--back" type="button" aria-label="Вперед">Вперед</button>
+        <button class="pagination__btn pagination__btn--fron" type="button" aria-label="Вперед"></button>
       </div>
       <ul class="brands__list">
         <li class="brands__item">
@@ -629,11 +641,11 @@
       <h2 class="contacts_title">Наши магазины</h2>
       <div class="pagination">
         <a class="pagination__all" href="#">Смотреть все</a>
-        <button class="pagination__btn pagination__btn--back" type="button" aria-label="Назад">Назад</button>
+        <button class="pagination__btn pagination__btn--back" type="button" aria-label="Назад"></button>
         <p class="pagination__numbers">
-          <span class="pagination__part">2</span><span class="pagination__all">/3</span>
+          <span class="pagination__page">2</span><span class="pagination__pages">3</span>
         </p>
-        <button class="pagination__btn pagination__btn--back" type="button" aria-label="Вперед">Вперед</button>
+        <button class="pagination__btn pagination__btn--fron" type="button" aria-label="Вперед"></button>
       </div>
       <div class="contacts__bg">
         <picture>
@@ -768,7 +780,7 @@
           <source type="image/webp" srcset="img/logo.webp">
           <img src="img/logo.png" width="190" height="72" alt="Логотип компании ДариМир">
         </picture>
-        <p class="logo__text">Интернет-магазин детских товаров</p>
+        <p class="page-footer__slogan">Интернет-магазин детских товаров</p>
       </a>
 
       <div class="contacts">
