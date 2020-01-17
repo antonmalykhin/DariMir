@@ -9,5 +9,7 @@
 node_modules/
 npm-debug.*
 build/
+source/optimizedImg/
+source/optimizedSVG/
 Thumbs.db
 csscomb.json
