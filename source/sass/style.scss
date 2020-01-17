@@ -4,6 +4,7 @@
 @import "mixins";
 @import "globals";
 // ----------------
+@import "blocks/container";
 @import "blocks/page-header";
 @import "blocks/top-menu";
 @import "blocks/region-select";
@@ -36,5 +37,3 @@
 @import "blocks/company-menu";
 @import "blocks/dev";
 @import "blocks/copy";
-@import "blocks/container"
-
