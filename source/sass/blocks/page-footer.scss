@@ -1,0 +1,14 @@
+.page-footer {
+  margin-top: 10px;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-footer__copy {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}

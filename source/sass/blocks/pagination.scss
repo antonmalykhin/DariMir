@@ -12,11 +12,21 @@
 }
 
 .pagination__numbers {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
   width: 64px;
   padding: 0 9px;
+
+  &::after {
+    content: "/";
+    position: absolute;
+    left: 47%;
+
+    color: #b8b8ba;
+  }
 }
 
 .pagination__numbers span {
@@ -24,6 +34,14 @@
   padding: 0 7px;
 
   text-align: center;
+}
+
+.pagination__page {
+  color: $darkblue;
+}
+
+.pagination__pages {
+  color: #b8b8ba;
 }
 
 .pagination__btn {
@@ -36,7 +54,7 @@
   border: 1px solid #e2e1e6;
   border-radius: 50%;
 
-  @include arrow(22px, 15px, $brown);
+  @include arrow(top, 23px, right, 16px, $brown);
 }
 
 .pagination__btn--back {

@@ -1,0 +1,17 @@
+.stock {
+  margin-bottom: 52px;
+}
+
+.stock__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.stock__item {
+  margin-bottom: -4px;
+}

@@ -1,7 +1,7 @@
 .slider {
   position: relative;
 
-  margin-bottom: 94px;
+  margin-bottom: 93px;
 }
 
 .slider__control {
@@ -94,7 +94,7 @@
 }
 
 .slider__slogan {
-  margin-bottom: 43px;
+  margin-bottom: 42px;
 
   font-weight: 600;
   color: $crimson;
@@ -126,11 +126,11 @@
   display: block;
   box-sizing: border-box;
   width: 250px;
-  margin-top: 33px;
-  margin-left: 1px;
-  padding-top: 13px;
+  margin-top: 34px;
+  margin-left: 0;
+  padding-top: 12px;
   padding-right: 45px;
-  padding-bottom: 13px;
+  padding-bottom: 14px;
   padding-left: 27px;
 
   color: $darkblue;
@@ -140,7 +140,7 @@
   background-color: $white;
   border: 1px solid $brown;
 
-  @include arrow(22px, 24px, $brown);
+  @include arrow(top, 22px, right, 24px, $brown);
 }
 
 

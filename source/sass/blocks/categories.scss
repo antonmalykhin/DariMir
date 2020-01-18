@@ -22,12 +22,12 @@
 
   border: 1px solid #e2e1e6;
 
-  @include arrow(404px, 30px, $brown);
+  @include arrow(bottom, 34px, right, 32px, $brown);
 }
 
 .categories__title {
   position: absolute;
-  bottom: 60px;
+  top: 267px;
   left: 0;
 
   display: block;
