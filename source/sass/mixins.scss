@@ -1,10 +1,10 @@
 // mixins
-@mixin arrow($top, $right, $color) {
+@mixin arrow($v-side, $v-value, $h-side, $h-value, $color) {
   &::before {
     content: "";
     position: absolute;
-    top: $top;
-    right: $right;
+    #{$v-side}: $v-value;
+    #{$h-side}: $h-value;
 
     width: 17px;
     height: 1px;
@@ -15,11 +15,11 @@
   &::after {
     content: "";
     position: absolute;
-    top: $top - 3px;
-    right: $right + 1px;
+    #{$v-side}: $v-value - 3px;
+    #{$h-side}: $h-value + 1px;
 
-    width: 6px;
-    height: 6px;
+    width: 5px;
+    height: 5px;
 
     border: 1px solid $color;
     border-bottom-color: transparent;
