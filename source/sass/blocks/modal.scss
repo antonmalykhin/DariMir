@@ -4,6 +4,7 @@
   left: 0;
   z-index: 20;
 
+  display: none;
   width: 100vw;
   height: calc(100% - 126px);
 
@@ -99,4 +100,8 @@
   margin-left: auto;
 
   color: $cyan;
+}
+
+.modal--show {
+  display: block;
 }
