@@ -1,8 +1,16 @@
 .dev {
-  display: block;
-  margin-left: auto;
+  display: flex;
+  align-items: center;
+  margin-top: 28px;
 }
 
 .dev span {
+  margin-top: 15px;
+  margin-right: 10px;
+
   color: #b8b8ba;
+}
+
+.dev__img {
+  margin-top: 1px;
 }

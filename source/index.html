@@ -20,6 +20,9 @@
           <ul class="top-menu">
             <li class="top-menu__item">
               <p class="region-select">
+                <svg class="region-select__icon" width="20px" height="25">
+                  <use xlink:href="img/sprite.svg#geotag"></use>
+                </svg>
                 <span>Ваш город:</span>
                 <a class="region-select__link" href="#">Москва</a>
               </p>
@@ -71,7 +74,7 @@
                     </svg></a>
                 </li>
                 <li class="social-menu__item">
-                  <a class="social-menu__link" href="#" aria-label="одноклассники"> <svg width="20" height="20">
+                  <a class="social-menu__link" href="#" aria-label="одноклассники"><svg width="20" height="20">
                       <use xlink:href="img/sprite.svg#odnoklassniki"></use>
                     </svg></a>
                 </li>
@@ -843,6 +846,7 @@
       </div>
     </section>
   </main>
+
   <footer class="page-footer">
     <div class="container">
       <div class="page-footer__wrapper">
@@ -855,145 +859,158 @@
             <p class="page-footer__slogan">Интернет-магазин детских товаров</p>
           </a>
 
-          <div class="contacts">
-            <a class="contacts__phone" href="tel:+79165887012">
-              <span>Телефон:</span>
+          <div class="page-footer__contacts contacts">
+            <a class="page-footer__item contacts__phone" href="tel:+79165887012">
+              <span class="page-footer__info contacts__info">Телефон:</span>
               <span class="phone">+7 (916) 588 70 12</span>
             </a>
-            <p class="contacts__address">
-              <span>Адрес:</span>
+            <p class="page-footer__item contacts__address">
+              <span class="page-footer__info contacts__info">Адрес:</span>
               <span class="address">Театральный проезд, 5/1 3 этаж</span>
             </p>
-            <p class="contacts__working-hours">
-              <span>Часы работы:</span>
+            <p class="page-footer__item contacts__working-hours">
+              <span class="page-footer__info contacts__info">Часы работы:</span>
               <span class="working-hours">Ежедневно 10:00 - 22:00</span>
             </p>
-            <a class="contacts__email" href="mailto:darynagorda@yandex.ru">
-              <span>E-mail:</span>
-              <span class="contacts__email">darynagorda@yandex.ru</span>
+            <a class="page-footer__item contacts__email" href="mailto:darynagorda@yandex.ru">
+              <span class="page-footer__info contacts__info">E-mail:</span>
+              <span class="email">darynagorda@yandex.ru</span>
             </a>
           </div>
         </div>
         <div class="page-footer__mid-side">
-          <div class="page-footer__wrapper">
+          <div class="page-footer__menu">
             <h2 class="page-footer__title">Интернет-магазин</h2>
-            <ul class="main-menu">
-              <li class="main-menu__item">
-                <a class="main-menu__link" href="#">
+            <ul class="page-footer__menu-list main-menu">
+              <li class="page-footer__menu-item main-menu__item">
+                <a class="page-footer__menu-link main-menu__link" href="#">
                   <span>Все товары</span>
                 </a>
               </li>
-              <li class="main-menu__item">
-                <a class="main-menu__link" href="#">
+              <li class="page-footer__menu-item main-menu__item">
+                <a class="page-footer__menu-link main-menu__link" href="#">
                   <span>Новорожденные</span>
                   <span>0 - 24 месяцев</span>
                 </a>
               </li>
-              <li class="main-menu__item">
-                <a class="main-menu__link" href="#">
+              <li class="page-footer__menu-item main-menu__item">
+                <a class="page-footer__menu-link main-menu__link" href="#">
                   <span>Девочки</span>
                   <span>1 - 7 лет</span>
                 </a>
               </li>
-              <li class="main-menu__item">
-                <a class="main-menu__link" href="#">
+              <li class="page-footer__menu-item main-menu__item">
+                <a class="page-footer__menu-link main-menu__link" href="#">
                   <span>Мальчики</span>
                   <span>1 - 7 лет</span>
                 </a>
               </li>
             </ul>
           </div>
-          <div class="page-footer__wrapper">
+          <div class="page-footer__menu">
             <h2 class="page-footer__title">Кабинет покупателя</h2>
-            <!-- <ul class="user-menu">
-              <li class="user-menu__item">
-                <a class="user-menu__link" href="#">Войти</a>
+            <ul class="page-footer__menu-list">
+              <li class="page-footer__menu-item">
+                <a class="page-footer__menu-link" href="#">Войти</a>
               </li>
-              <li class="user-menu__item">
-                <a class="user-menu__link" href="#">Создать учетную запись</a>
+              <li class="page-footer__menu-item">
+                <a class="page-footer__menu-link" href="#">Создать учетную запись</a>
               </li>
-              <li class="user-menu__item">
-                <a class="user-menu__link" href="#">Заказы</a>
+              <li class="page-footer__menu-item">
+                <a class="page-footer__menu-link" href="#">Заказы</a>
               </li>
-              <li class="user-menu__item">
-                <a class="user-menu__link" href="#">Избранные товары</a>
+              <li class="page-footer__menu-item">
+                <a class="page-footer__menu-link" href="#">Избранные товары</a>
               </li>
-              <li class="user-menu__item">
-                <a class="user-menu__link" href="#">Список сравнения</a>
+              <li class="page-footer__menu-item">
+                <a class="page-footer__menu-link" href="#">Список сравнения</a>
               </li>
-            </ul> -->
+            </ul>
           </div>
         </div>
         <div class="page-footer__right-side">
           <h2 class="page-footer__title">О компании</h2>
-          <ul class="service-menu">
-            <li class="service-menu__item">
-              <a class="service-menu__link" href="#">Как сделать заказ</a>
+          <ul class="page-footer__menu-list">
+            <li class="page-footer__menu-item">
+              <a class="page-footer__menu-link" href="#">Как сделать заказ</a>
             </li>
-            <li class="service-menu__item">
-              <a class="service-menu__link" href="#">Оплата</a>
+            <li class="page-footer__menu-item">
+              <a class="page-footer__menu-link" href="#">Оплата</a>
             </li>
-            <li class="service-menu__item">
-              <a class="service-menu__link" href="#">Доставка</a>
+            <li class="page-footer__menu-item">
+              <a class="page-footer__menu-link" href="#">Доставка</a>
             </li>
-            <li class="service-menu__item">
-              <a class="service-menu__link" href="#">Возврат</a>
+            <li class="page-footer__menu-item">
+              <a class="page-footer__menu-link" href="#">Возврат</a>
             </li>
-            <li class="service-menu__item">
-              <a class="service-menu__link" href="#">Условия работы</a>
+            <li class="page-footer__menu-item">
+              <a class="page-footer__menu-link" href="#">Условия работы</a>
             </li>
-            <li class="service-menu__item">
-              <a class="service-menu__link" href="#">Таблица размеров</a>
+            <li class="page-footer__menu-item">
+              <a class="page-footer__menu-link" href="#">Таблица размеров</a>
             </li>
-            <li class="service-menu__item">
-              <a class="service-menu__link" href="#">Примерка</a>
+            <li class="page-footer__menu-item">
+              <a class="page-footer__menu-link" href="#">Примерка</a>
             </li>
-            <li class="service-menu__item">
-              <a class="service-menu__link" href="#">Гарантии</a>
-            </li>
-          </ul>
-          <ul class="company-menu">
-            <li class="company-menu__item">
-              <a class="company-menu__link" href="#">О компании</a>
-            </li>
-            <li class="company-menu__item">
-              <a class="company-menu__link" href="#">Реквизиты</a>
-            </li>
-            <li class="company-menu__item">
-              <a class="company-menu__link" href="#">Контакты</a>
-            </li>
-            <li class="company-menu__item">
-              <a class="company-menu__link" href="#">Статьи</a>
-            </li>
-            <li class="company-menu__item">
-              <a class="company-menu__link" href="#">Акции</a>
-            </li>
-            <li class="company-menu__item">
-              <a class="company-menu__link" href="#">Новости</a>
-            </li>
-            <li class="company-menu__item">
-              <a class="company-menu__link" href="#">Публичная оферта</a>
+            <li class="page-footer__menu-item">
+              <a class="page-footer__menu-link" href="#">Гарантии</a>
             </li>
           </ul>
-          <ul class="social-menu">
-            <li class="social-menu__item">
-              <a class="social-menu__link" href="#" aria-label="instagram">inst</a>
+          <ul class="page-footer__menu-list company-menu">
+            <li class="page-footer__menu-item">
+              <a class="page-footer__menu-link" href="#">О компании</a>
             </li>
-            <li class="social-menu__item">
-              <a class="social-menu__link" href="#" aria-label="вконтакте">vk</a>
+            <li class="page-footer__menu-item">
+              <a class="page-footer__menu-link" href="#">Реквизиты</a>
             </li>
-            <li class="social-menu__item">
-              <a class="social-menu__link" href="#" aria-label="facebook">fb</a>
+            <li class="page-footer__menu-item">
+              <a class="page-footer__menu-link" href="#">Контакты</a>
             </li>
-            <li class="social-menu__item">
-              <a class="social-menu__link" href="#" aria-label="youtube">yt</a>
+            <li class="page-footer__menu-item">
+              <a class="page-footer__menu-link" href="#">Статьи</a>
             </li>
-            <li class="social-menu__item">
-              <a class="social-menu__link" href="#" aria-label="одноклассники">ok</a>
+            <li class="page-footer__menu-item">
+              <a class="page-footer__menu-link" href="#">Акции</a>
+            </li>
+            <li class="page-footer__menu-item">
+              <a class="page-footer__menu-link" href="#">Новости</a>
+            </li>
+            <li class="page-footer__menu-item">
+              <a class="page-footer__menu-link" href="#">Публичная оферта</a>
             </li>
           </ul>
-        </div>
-        <div class="page-footer__copy">
+          <ul class="page-footer__menu-list page-footer__menu-list--social social-menu">
+            <li class="page-footer__menu-item social-menu__item">
+              <a class="page-footer__menu-link social-menu__link" href="#" aria-label="instagram"> <svg width="20"
+                  height="20">
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg></a>
+            </li>
+            <li class="page-footer__menu-item social-menu__item">
+              <a class="page-footer__menu-link social-menu__link" href="#" aria-label="вконтакте"><svg width="20"
+                  height="20">
+                  <use xlink:href="img/sprite.svg#vk"></use>
+                </svg></a>
+            </li>
+            <li class="page-footer__menu-item social-menu__item">
+              <a class="page-footer__menu-link social-menu__link" href="#" aria-label="facebook"><svg width="20"
+                  height="20">
+                  <use xlink:href="img/sprite.svg#facebook"></use>
+                </svg></a>
+            </li>
+            <li class="page-footer__menu-item social-menu__item">
+              <a class="page-footer__menu-link social-menu__link" href="#" aria-label="youtube"><svg width="20"
+                  height="20">
+                  <use xlink:href="img/sprite.svg#youtube"></use>
+                </svg></a>
+            </li>
+            <li class="page-footer__menu-item social-menu__item">
+              <a class="page-footer__menu-link social-menu__link" href="#" aria-label="одноклассники"><svg width="20"
+                  height="20">
+                  <use xlink:href="img/sprite.svg#odnoklassniki"></use>
+                </svg></a>
+            </li>
+          </ul>
           <a class="dev" href="https://plastilin-art.ru/" target="_blank">
             <span>Разработка сайта:</span>
             <picture>
@@ -1001,10 +1018,14 @@
               <img class="dev__img" width="139" height="31" src="img/logo_plast.png" alt="Веб-студия Пластилин-Арт">
             </picture>
           </a>
-          <p class="copy">
-            <span>© 2009 – 2018 ДАРИМИР. Все права защищены.</span>
-            <a class="copy__link" href="#">Политика конфиденциальности</a>
-          </p>
+        </div>
+      </div>
+    </div>
+    <div class="page-footer__bottom">
+      <div class="page-footer__copy container">
+        <div class="copy">
+          <span>© 2009 – 2018 ДАРИМИР. Все права защищены.</span>
+          <a class="copy__link" href="#">Политика конфиденциальности</a>
         </div>
       </div>
     </div>

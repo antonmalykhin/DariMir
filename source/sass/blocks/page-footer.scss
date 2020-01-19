@@ -1,14 +1,139 @@
 .page-footer {
-  margin-top: 10px;
+  margin-top: 40px;
 }
 
 .page-footer__wrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.page-footer__contacts {
+  margin-bottom: 0;
+}
+
+.page-footer__left-side {
+  margin-right: 9px;
+  margin-left: 22px;
+}
+
+.page-footer__slogan {
+  margin-top: 8px;
+  margin-bottom: 18px;
+
+  color: #55606e;
+}
+
+.page-footer__item {
+  display: block;
+  margin-bottom: 15px;
+
+  border: none;
+}
+
+.page-footer__item:nth-of-type(1) {
+  padding-top: 0;
+}
+
+.page-footer__info {
+  margin-bottom: 7px;
+}
+
+.page-footer__menu {
+  margin-bottom: 23px;
+}
+
+.page-footer__title {
+  position: relative;
+
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 34px;
+
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 0.8;
+  color: #609c9f;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 31px;
+    left: 0;
+
+    width: 85px;
+    height: 1px;
+
+    background-color: #e2e1e6;
+  }
+}
+
+.page-footer__menu-list {
+  padding: 0;
+
+  list-style: none;
+
+  motion: 0;
+}
+
+.page-footer__menu-item {
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.page-footer__menu-link {
+  color: $darkblue;
+}
+
+.page-footer__menu-link span:first-child {
+  color: $darkblue;
+}
+
+.page-footer__right-side {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  width: 29%;
+  margin-right: 19px;
+}
+
+.page-footer__right-side .page-footer__title {
+  margin-bottom: 34px;
+}
+
+.page-footer__right-side .page-footer__menu-list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.page-footer__right-side .page-footer__menu-list--social {
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 13px;
+  margin-bottom: 0;
+}
+
+.page-footer__menu-list--social .page-footer__menu-item {
+  margin-right: 2px;
+  margin-bottom: 0;
+}
+
+.page-footer__menu-list--social .page-footer__menu-link {
+  border: 1px solid #f2f2f4;
+}
+
+.page-footer__bottom {
+  margin-top: 23px;
+  padding-top: 9px;
+
+  border-top: 1px solid #e2e1e6;
 }
 
 .page-footer__copy {
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
+  box-sizing: border-box;
+  padding-right: 19px;
+  padding-left: 21px;
 }

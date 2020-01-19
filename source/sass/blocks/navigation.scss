@@ -146,6 +146,8 @@
 }
 
 .navigation__bott-level {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -158,20 +160,15 @@
 
   background-color: $gray;
   border: 1px solid #e2e1e6;
-}
 
-.navigation__mid-link--current {
-  position: relative;
-
-  &::after {
+  &::before {
     content: "";
     position: absolute;
-    bottom: -24px;
-    left: 47%;
-    z-index: 5;
+    top: -8px;
+    left: 49.6%;
 
-    width: 15px;
-    height: 15px;
+    width: 13px;
+    height: 13px;
 
     background-color: #f0f0f2;
     border: 1px solid #e2e1e6;
@@ -179,6 +176,10 @@
     border-bottom: none;
     transform: rotate(45deg);
   }
+}
+
+.navigation__mid-link--current {
+  position: relative;
 }
 
 

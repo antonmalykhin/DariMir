@@ -1,12 +1,54 @@
 .region-select {
+  position: relative;
+
   display: flex;
   flex-wrap: nowrap;
   box-sizing: border-box;
   width: 210px;
-  margin-top: 12px;
-  margin-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 7px;
+  padding-right: 25px;
   padding-left: 30px;
   overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: -4px;
+
+    width: 55px;
+    height: 75%;
+
+    background-image: linear-gradient(to right, transparent 0%, #f0f0f2 50%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 18px;
+
+    width: 5px;
+    height: 5px;
+
+    border: 1px solid $brown;
+    border-top: none;
+    border-left: none;
+    transform: rotate(-45deg);
+  }
+}
+
+
+.region-select__icon {
+  position: absolute;
+  top: 6px;
+  left: 2px;
+
+  overflow: visible;
+
+  color: $brown;
 }
 
 .region-select span {
