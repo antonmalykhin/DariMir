@@ -10,8 +10,9 @@
 
 .brands__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  width: 100%;
+  width: 1240px;
   margin: 0;
   margin-top: 22px;
   padding: 0;
@@ -19,12 +20,26 @@
   list-style: none;
 }
 
-.brands__img {
-  filter: grayscale(1);
-
-  transition: all 0.3s;
+.brands__svg-img:hover {
+  filter: none;
 }
 
-.brands__img:hover {
-  filter: none;
+.brands__link {
+  display: block;
+  width: 206px;
+  height: 150px;
+
+  background-repeat: no-repeat;
+}
+
+@for $i from 1 through 6 {
+  .brands__item:nth-of-type(#{$i}) .brands__link {
+    background-image: url("../img/brand_#{$i}-des.jpg");
+
+    transition: all 0.3s;
+  }
+
+  .brands__item:nth-of-type(#{$i}) .brands__link:hover {
+    background-image: url("../img/brand_#{$i}.jpg");
+  }
 }
