@@ -77,10 +77,11 @@
   }
 }
 
-.sub-menu__item {
-  margin-right: 10px;
+.page-header__phone:hover,
+.page-header__phone:focus {
+  color: $cyan;
 }
 
-.sub-menu__item:last-of-type {
-  margin-right: 4px;
+.page-header__phone:active {
+  opacity: 0.5;
 }

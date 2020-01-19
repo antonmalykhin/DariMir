@@ -14,3 +14,12 @@
 .dev__img {
   margin-top: 1px;
 }
+
+.dev:hover,
+.dev:focus {
+  opacity: 0.7;
+}
+
+.dev:focus {
+  opacity: 0.4;
+}

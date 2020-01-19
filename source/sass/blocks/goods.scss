@@ -41,6 +41,7 @@
   background-color: $gray;
   border: 1px solid #e2e1e6;
   visibility: hidden;
+  cursor: pointer;
 }
 
 .goods__btn--compare {
@@ -185,6 +186,9 @@
 }
 
 .goods__title {
+  display: block;
+  min-height: 44px;
+
   font-weight: 500;
   color: $darkblue;
 }
@@ -203,6 +207,7 @@
   background-color: #609c9f;
   border: none;
   visibility: hidden;
+  cursor: pointer;
 }
 
 .goods__item:hover,
@@ -213,6 +218,7 @@
   box-shadow: 0 0 0 1px #e2e1e6, 0 0 50px 0 rgba(184, 184, 186, 0.2);
 }
 
+
 .goods__item:hover .goods__btn,
 .goods__item:focus .goods__btn {
   visibility: visible;
@@ -221,4 +227,27 @@
 .goods__item:hover .goods__to-cart-btn,
 .goods__item:focus .goods__to-cart-btn {
   visibility: visible;
+}
+
+.goods__to-cart-btn:hover,
+.goods__to-cart-btn:focus {
+  opacity: 0.9;
+}
+
+.goods__to-cart-btn:active {
+  opacity: 0.5;
+}
+
+.goods__title:hover,
+.goods__title:focus {
+  color: $cyan;
+}
+
+.goods__title:active {
+  opacity: 0.5;
+}
+
+.goods__btn:hover svg,
+.goods__btn:focus svg {
+  color: $cyan;
 }

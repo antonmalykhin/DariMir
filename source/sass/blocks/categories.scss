@@ -22,6 +22,8 @@
 
   border: 1px solid #e2e1e6;
 
+  transition: background-color 0.3s;
+
   @include arrow(bottom, 34px, right, 32px, $brown);
 }
 

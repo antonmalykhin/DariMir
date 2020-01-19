@@ -18,3 +18,13 @@
 
   list-style: none;
 }
+
+.brands__img {
+  filter: grayscale(1);
+
+  transition: all 0.3s;
+}
+
+.brands__img:hover {
+  filter: none;
+}

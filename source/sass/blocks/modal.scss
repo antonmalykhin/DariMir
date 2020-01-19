@@ -105,3 +105,18 @@
 .modal--show {
   display: block;
 }
+
+
+.modal__title:hover {
+  background-color: #d5cabf;
+  opacity: 1;
+}
+
+.modal__link:hover,
+.modal__link:focus {
+  opacity: 0.6;
+}
+
+.modal__link:active {
+  opacity: 0.3;
+}

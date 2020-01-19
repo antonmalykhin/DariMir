@@ -2,6 +2,14 @@
   color: #ffffff;
 }
 
+.sub-menu__item {
+  margin-right: 10px;
+}
+
+.sub-menu__item:last-of-type {
+  margin-right: 4px;
+}
+
 .sub-menu__link:hover,
 .sub-menu__link:focus {
   opacity: 0.6;

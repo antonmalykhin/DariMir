@@ -53,10 +53,29 @@
   background-color: #f0f0f2;
   border: 1px solid #e2e1e6;
   border-radius: 50%;
+  cursor: pointer;
 
   @include arrow(top, 23px, right, 16px, $brown);
 }
 
 .pagination__btn--back {
   transform: rotate(180deg);
+}
+
+.pagination__btn:hover,
+.pagination__btn:focus {
+  opacity: 0.7;
+}
+
+.pagination__btn:active {
+  opacity: 0.5;
+}
+
+.pagination__all:hover,
+.pagination__all:focus {
+  opacity: 0.6;
+}
+
+.pagination__all:active {
+  opacity: 0.4;
 }

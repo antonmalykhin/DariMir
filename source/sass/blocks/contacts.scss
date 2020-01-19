@@ -85,3 +85,21 @@
 
   line-height: 1.6;
 }
+
+.contacts__phone-number:hover,
+.contacts__phone-number:focus {
+  color: $cyan;
+}
+
+.contacts__phone-number:active {
+  opacity: 0.6;
+}
+
+.contacts__email-text:hover,
+.contacts__email-text:focus {
+  color: $cyan;
+}
+
+.contacts__email-text:active {
+  opacity: 0.6;
+}

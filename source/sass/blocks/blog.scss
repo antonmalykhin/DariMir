@@ -35,6 +35,8 @@
   border: 1px solid #e2e1e6;
   border-right: none;
 
+  transition: background-color 0.3s;
+
   @include arrow(bottom, 35px, right, 31px, $brown);
 }
 
@@ -48,6 +50,8 @@
 
 .blog__img {
   display: block;
+
+  transition: all 0.3s;
 }
 
 .blog__item-title {
@@ -92,4 +96,18 @@
   position: relative;
 
   transform: scale(1.06);
+}
+
+
+.blog__item-title:hover,
+.blog__item-title:focus {
+  opacity: 0.7;
+}
+
+.blog__item-title:active {
+  opacity: 0.5;
+}
+
+.blog__btn:hover {
+  background-color: rgba($brown, 0.2);
 }

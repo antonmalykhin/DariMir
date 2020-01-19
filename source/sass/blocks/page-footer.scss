@@ -142,3 +142,30 @@
   padding-right: 19px;
   padding-left: 21px;
 }
+
+.page-footer__phone-number:hover,
+.page-footer__phone-number:focus {
+  color: $cyan;
+}
+
+.page-footer__phone-number:active {
+  opacity: 0.7;
+}
+
+.page-footer__email-text:hover,
+.page-footer__email-text:focus {
+  color: $cyan;
+}
+
+.page-footer__email-text:active {
+  opacity: 0.7;
+}
+
+.page-footer__menu-link:hover,
+.page-footer__menu-link:focus {
+  color: $cyan;
+}
+
+.page-footer__menu-link:active {
+  opacity: 0.7;
+}
