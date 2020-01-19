@@ -1,5 +1,5 @@
 .page-footer {
-  margin-top: 40px;
+  margin-top: 35px;
 }
 
 .page-footer__wrapper {
@@ -13,8 +13,9 @@
 }
 
 .page-footer__left-side {
-  margin-right: 9px;
+  width: 290px;
   margin-left: 22px;
+  padding-top: 5px;
 }
 
 .page-footer__slogan {
@@ -40,7 +41,7 @@
 }
 
 .page-footer__menu {
-  margin-bottom: 23px;
+  margin-bottom: 18px;
 }
 
 .page-footer__title {
@@ -48,19 +49,19 @@
 
   width: 100%;
   margin-top: 0;
-  margin-bottom: 34px;
+  margin-bottom: 29px;
 
   font-weight: 600;
   font-size: 15px;
-  line-height: 0.8;
-  color: #609c9f;
+  line-height: 1.5;
+  color: $cyan;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 
   &::before {
     content: "";
     position: absolute;
-    top: 31px;
+    bottom: -15px;
     left: 0;
 
     width: 85px;
@@ -91,17 +92,21 @@
   color: $darkblue;
 }
 
+.page-footer__mid-side {
+  width: 290;
+}
+
 .page-footer__right-side {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: flex-start;
-  width: 29%;
+  width: 360px;
   margin-right: 19px;
 }
 
 .page-footer__right-side .page-footer__title {
-  margin-bottom: 34px;
+  margin-bottom: 29px;
 }
 
 .page-footer__right-side .page-footer__menu-list {

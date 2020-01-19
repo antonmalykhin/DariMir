@@ -56,11 +56,10 @@
   justify-content: space-between;
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
   padding-top: 16px;
-  padding-right: 5px;
+  padding-right: 0;
   padding-bottom: 14px;
-  padding-left: 7px;
+  padding-left: 10px;
 
   list-style: none;
 
@@ -76,4 +75,12 @@
     border: 10px solid transparent;
     border-bottom-color: $brown;
   }
+}
+
+.sub-menu__item {
+  margin-right: 10px;
+}
+
+.sub-menu__item:last-of-type {
+  margin-right: 4px;
 }
