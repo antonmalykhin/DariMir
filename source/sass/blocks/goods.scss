@@ -210,6 +210,11 @@
   cursor: pointer;
 }
 
+.goods__to-cart-btn:hover,
+.goods__to-cart-btn:focus {
+  background-color: #74836d;
+}
+
 .goods__item:hover,
 .goods__item:focus {
   box-sizing: border-box;
