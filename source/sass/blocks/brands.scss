@@ -1,5 +1,5 @@
 .brands {
-  margin-bottom: 71px;
+  margin-bottom: 77px;
 }
 
 .brands__wrapper {
@@ -34,12 +34,12 @@
 
 @for $i from 1 through 6 {
   .brands__item:nth-of-type(#{$i}) .brands__link {
-    background-image: url("../img/brand_#{$i}-des.jpg");
-
+    background-image: url("../img/brand_#{$i}.jpg");
+    filter: grayscale(1);
     transition: all 0.3s;
   }
 
   .brands__item:nth-of-type(#{$i}) .brands__link:hover {
-    background-image: url("../img/brand_#{$i}.jpg");
+    filter: grayscale(0);
   }
 }
