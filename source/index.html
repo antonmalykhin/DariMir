@@ -15,92 +15,94 @@
 <body>
   <header class="page-header">
     <nav class="page-header__nav">
-      <div class="page-header__top">
+      <button class="page-header__btn-open page-header__btn-open--menu" type="button" data-active="Закрыть">Меню</button>
+      <button class="page-header__btn-open page-header__btn-open--catalog" type="button" data-active="Закрыть">Каталог</button>
+      <div class="page-header__menu">
         <div class="container">
           <ul class="top-menu">
             <li class="top-menu__item">
               <p class="region-select">
-                <svg class="region-select__icon" width="22" height="23">
-                  <use xlink:href="img/sprite.svg#map_mark"></use>
-                </svg>
-                <span>Ваш город:</span>
-                <a class="region-select__link" href="#">Москва</a>
+                <a class="region-select__link" href="#">
+                  <span class="region-select__text">Ваш город:
+                    <svg class="region-select__icon" width="22" height="23">
+                      <use xlink:href="img/sprite.svg#map_mark"></use>
+                    </svg>
+                  </span>
+                  <span class="region-select__city" href="#">Москва</span>
+                </a>
               </p>
             </li>
             <li class="top-menu__item">
               <ul class="page-header__service-menu service-menu">
-                <li class="service-menu__item">
-                  <a class="service-menu__link" href="#">Доставка</a>
+                <li class="page-header__service-item service-menu__item">
+                  <a class="page-header__service-link service-menu__link" href="#">Доставка</a>
                 </li>
-                <li class="service-menu__item">
-                  <a class="service-menu__link" href="#">Оплата</a>
+                <li class="page-header__service-item service-menu__item">
+                  <a class="page-header__service-link service-menu__link" href="#">Оплата</a>
                 </li>
-                <li class="service-menu__item">
-                  <a class="service-menu__link" href="#">Как оформить заказ</a>
+                <li class="page-header__service-item service-menu__item">
+                  <a class="page-header__service-link service-menu__link" href="#">Как оформить заказ</a>
                 </li>
-                <li class="service-menu__item">
-                  <a class="service-menu__link" href="#">Условия работы</a>
+                <li class="page-header__service-item service-menu__item">
+                  <a class="page-header__service-link service-menu__link" href="#">Условия работы</a>
                 </li>
-                <li class="service-menu__item">
-                  <a class="service-menu__link" href="#">Гарантии</a>
+                <li class="page-header__service-item service-menu__item">
+                  <a class="page-header__service-link service-menu__link" href="#">Гарантии</a>
                 </li>
-                <li class="service-menu__item">
-                  <a class="service-menu__link" href="#">Возврат</a>
+                <li class="page-header__service-item service-menu__item">
+                  <a class="page-header__service-link service-menu__link" href="#">Возврат</a>
                 </li>
               </ul>
             </li>
             <li class="top-menu__item">
-              <ul class="social-menu">
-                <li class="social-menu__item">
-                  <a class="social-menu__link" href="#" aria-label="instagram">
+              <ul class="page-header__social-menu social-menu">
+                <li class="page-header__social-item social-menu__item">
+                  <a class="page-header__social-link social-menu__link" href="#" aria-label="instagram">
                     <svg width="20" height="20">
                       <use xlink:href="img/sprite.svg#instagram"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="social-menu__item">
-                  <a class="social-menu__link" href="#" aria-label="вконтакте"> <svg width="20" height="20">
+                <li class="page-header__social-item social-menu__item">
+                  <a class="page-header__social-link social-menu__link" href="#" aria-label="вконтакте"> <svg width="20" height="20">
                       <use xlink:href="img/sprite.svg#vk"></use>
                     </svg></a>
                 </li>
-                <li class="social-menu__item">
-                  <a class="social-menu__link" href="#" aria-label="facebook"> <svg width="20" height="20">
+                <li class="page-header__social-item social-menu__item">
+                  <a class="page-header__social-link social-menu__link" href="#" aria-label="facebook"> <svg width="20" height="20">
                       <use xlink:href="img/sprite.svg#facebook"></use>
                     </svg></a>
                 </li>
-                <li class="social-menu__item">
-                  <a class="social-menu__link" href="#" aria-label="youtube"> <svg width="20" height="20">
+                <li class="page-header__social-item social-menu__item">
+                  <a class="page-header__social-link social-menu__link" href="#" aria-label="youtube"> <svg width="20" height="20">
                       <use xlink:href="img/sprite.svg#youtube"></use>
                     </svg></a>
                 </li>
-                <li class="social-menu__item">
-                  <a class="social-menu__link" href="#" aria-label="одноклассники"><svg width="20" height="20">
+                <li class="page-header__social-item social-menu__item">
+                  <a class="page-header__social-link social-menu__link" href="#" aria-label="одноклассники"><svg width="20" height="20">
                       <use xlink:href="img/sprite.svg#odnoklassniki"></use>
                     </svg></a>
                 </li>
               </ul>
+              <a class="page-header__phone page-header__phone--menu phone" href="tel:+79165887012">+7 (916) 588 70 12</a>
             </li>
           </ul>
         </div>
       </div>
-      <div class="page-header__middle">
+      <div class="page-header__title">
         <div class="page-header__wrapper container">
           <a class="page-header__logo">
-            <!-- <picture>
-              <source type="image/webp" srcset="img/logo.webp">
-              <img src="img/logo.png" width="190" height="72" alt="Логотип компании ДариМир">
-            </picture> -->
             <svg width="190" height="72" role="img" aria-label="Логотип компании ДариМир">
               <use xlink:href="img/sprite.svg#logo"></use>
             </svg>
           </a>
-          <form class="search-form" action="#" method="POST">
+          <form class="page-header__title-form search-form" action="#" method="POST">
             <label>
               <span class="visually-hidden">Поиск товаров</span>
-              <input class="search-form__field" type="search" name="itemSearch" id="itemSearchField"
+              <input class="page-header__title-field search-form__field" type="search" name="itemSearch" id="itemSearchField"
                 placeholder="Поиск товаров">
             </label>
-            <button class="search-form__select-btn" type="button">
+            <button class="page-header__title-btn search-form__select-btn" type="button">
               <span>Искать везде</span>
             </button>
             <button class="search-form__search-btn" type="submit" aria-label="Искать">
@@ -109,34 +111,41 @@
               </svg>
             </button>
           </form>
-          <a class="page-header__phone phone" href="tel:+79165887012">+7 (916) 588 70 12</a>
+          <a class="page-header__phone page-header__phone--title phone" href="tel:+79165887012">+7 (916) 588 70 12</a>
 
-          <ul class="user-menu">
-            <li class="user-menu__item">
-              <a class="user-menu__link" href="#" aria-label="Личный кабинет пользователя">
+          <ul class="page-header__user-menu user-menu">
+            <li class="page-header__user-item  user-menu__item">
+              <a class="page-header__user-link user-menu__link user-menu__link--search" href="#" aria-label="Поиск">
+                <svg class="user-menu__icon user-menu__icon--user" width="23" height="26">
+                  <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="page-header__user-item user-menu__item">
+              <a class="page-header__user-link user-menu__link" href="#" aria-label="Личный кабинет пользователя">
                 <svg class="user-menu__icon user-menu__icon--user" width="23" height="26">
                   <use xlink:href="img/sprite.svg#user"></use>
                 </svg>
               </a>
             </li>
-            <li class="user-menu__item">
-              <a class="user-menu__link" href="#" aria-label="Сравнить товары">
+            <li class="page-header__user-item user-menu__item">
+              <a class="page-header__user-link user-menu__link" href="#" aria-label="Сравнить товары">
                 <svg class="user-menu__icon user-menu__icon--compare" width="22" height="25">
                   <use xlink:href="img/sprite.svg#compare"></use>
                 </svg>
                 <span class="user-menu__qty user-menu__qty--compare">4</span>
               </a>
             </li>
-            <li class="user-menu__item">
-              <a class="user-menu__link" href="#" aria-label="Понравившиеся товары">
+            <li class="page-header__user-item user-menu__item">
+              <a class="page-header__user-link user-menu__link" href="#" aria-label="Понравившиеся товары">
                 <svg class="user-menu__icon user-menu__icon--favorite" width="28" height="24">
                   <use xlink:href="img/sprite.svg#favorite"></use>
                 </svg>
                 <span class="user-menu__qty user-menu__qty--favorite">8</span>
               </a>
             </li>
-            <li class="user-menu__item">
-              <a class="user-menu__link" href="#" aria-label="Корзина">
+            <li class="page-header__user-item user-menu__item">
+              <a class="page-header__user-link user-menu__link" href="#" aria-label="Корзина">
                 <svg class="user-menu__icon user-menu__icon--cart" width="32" height="28">
                   <use xlink:href="img/sprite.svg#cart"></use>
                 </svg>
@@ -146,74 +155,102 @@
           </ul>
         </div>
       </div>
-      <div class="page-header__bottom">
+      <div class="page-header__catalog">
         <div class="container">
           <ul class="page-header__main-menu main-menu">
-            <li class="main-menu__item">
-              <a class="main-menu__link main-menu__link--selected" href="#">
+            <li class="page-header__main-item main-menu__item">
+              <a class="page-header__main-link main-menu__link main-menu__link--selected" href="#">
                 <span>Новорожденные</span>
                 <span>0 - 24 месяцев</span>
               </a>
+              <ul class="page-header__sub-menu sub-menu">
+                <li class="page-header__sub-item sub-menu__item">
+                  <a class="page-header__sub-link sub-menu__link" href="#">Новинки</a>
+                </li>
+                <li class="page-header__sub-item sub-menu__item">
+                  <a class="page-header__sub-link sub-menu__link" href="#">Бренды</a>
+                </li>
+                <li class="page-header__sub-item sub-menu__item">
+                  <a class="page-header__sub-link sub-menu__link" href="#">Одежда для девочек 0-24 мес.</a>
+                </li>
+                <li class="page-header__sub-item sub-menu__item">
+                  <a class="page-header__sub-link sub-menu__link" href="#">Одежда для мальчиков 0-24 мес.</a>
+                </li>
+                <li class="page-header__sub-item sub-menu__item">
+                  <a class="page-header__sub-link sub-menu__link" href="#">Аксессуары</a>
+                </li>
+                <li class="page-header__sub-item sub-menu__item">
+                  <a class="page-header__sub-link sub-menu__link" href="#">Гигиена и уход</a>
+                </li>
+                <li class="page-header__sub-item sub-menu__item">
+                  <a class="page-header__sub-link sub-menu__link" href="#">Детская комната</a>
+                </li>
+                <li class="page-header__sub-item sub-menu__item">
+                  <a class="page-header__sub-link sub-menu__link" href="#">Игрушки</a>
+                </li>
+              </ul>
             </li>
-            <li class="main-menu__item">
-              <a class="main-menu__link" href="#">
+            <li class="page-header__main-item main-menu__item">
+              <a class="page-header__main-link main-menu__link" href="#">
                 <span>Девочки</span>
                 <span>1 - 7 лет</span>
               </a>
             </li>
-            <li class="main-menu__item">
-              <a class="main-menu__link" href="#">
+            <li class="page-header__main-item main-menu__item">
+              <a class="page-header__main-link main-menu__link" href="#">
                 <span>Мальчики</span>
                 <span>1 - 7 лет</span>
               </a>
             </li>
           </ul>
         </div>
-        <div class="page-header__bg">
+        <!-- <div class="page-header__bg">
           <div class="container">
             <ul class="page-header__sub-menu sub-menu">
-              <li class="sub-menu__item">
-                <a class="sub-menu__link" href="#">Новинки</a>
+              <li class="page-header__sub-item sub-menu__item">
+                <a class="page-header__sub-link sub-menu__link" href="#">Новинки</a>
               </li>
-              <li class="sub-menu__item">
-                <a class="sub-menu__link" href="#">Бренды</a>
+              <li class="page-header__sub-item sub-menu__item">
+                <a class="page-header__sub-link sub-menu__link" href="#">Бренды</a>
               </li>
-              <li class="sub-menu__item">
-                <a class="sub-menu__link" href="#">Одежда для девочек 0-24 мес.</a>
+              <li class="page-header__sub-item sub-menu__item">
+                <a class="page-header__sub-link sub-menu__link" href="#">Одежда для девочек 0-24 мес.</a>
               </li>
-              <li class="sub-menu__item">
-                <a class="sub-menu__link" href="#">Одежда для мальчиков 0-24 мес.</a>
+              <li class="page-header__sub-item sub-menu__item">
+                <a class="page-header__sub-link sub-menu__link" href="#">Одежда для мальчиков 0-24 мес.</a>
               </li>
-              <li class="sub-menu__item">
-                <a class="sub-menu__link" href="#">Аксессуары</a>
+              <li class="page-header__sub-item sub-menu__item">
+                <a class="page-header__sub-link sub-menu__link" href="#">Аксессуары</a>
               </li>
-              <li class="sub-menu__item">
-                <a class="sub-menu__link" href="#">Гигиена и уход</a>
+              <li class="page-header__sub-item sub-menu__item">
+                <a class="page-header__sub-link sub-menu__link" href="#">Гигиена и уход</a>
               </li>
-              <li class="sub-menu__item">
-                <a class="sub-menu__link" href="#">Детская комната</a>
+              <li class="page-header__sub-item sub-menu__item">
+                <a class="page-header__sub-link sub-menu__link" href="#">Детская комната</a>
               </li>
-              <li class="sub-menu__item">
-                <a class="sub-menu__link" href="#">Игрушки</a>
+              <li class="page-header__sub-item sub-menu__item">
+                <a class="page-header__sub-link sub-menu__link" href="#">Игрушки</a>
               </li>
             </ul>
           </div>
-        </div>
+        </div> -->
       </div>
     </nav>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Сайт компании ДариМир</h1>
     <section class="slider">
-      <div class="container">
+      <div class="slider__wrapper container">
         <h2 class="visually-hidden">Скидки и предложения</h2>
-        <input class="slider__radio visually-hidden" type="radio" name="sliderControl" id="banner1" checked>
-        <input class="slider__radio visually-hidden" type="radio" name="sliderControl" id="banner2">
-        <input class="slider__radio visually-hidden" type="radio" name="sliderControl" id="banner3">
+        <div class="slider__controls">
+          <input class="slider__radio visually-hidden" type="radio" name="sliderControl" id="banner1" checked>
+          <input class="slider__radio visually-hidden" type="radio" name="sliderControl" id="banner2">
+          <input class="slider__radio visually-hidden" type="radio" name="sliderControl" id="banner3">
 
-        <label class="slider__control" for="banner1">1</label>
-        <label class="slider__control" for="banner2">2</label>
-        <label class="slider__control" for="banner3">3</label>
+          <label class="slider__control" for="banner1">1</label>
+          <label class="slider__control" for="banner2">2</label>
+          <label class="slider__control" for="banner3">3</label>
+        </div>
 
         <div class="slider__item">
           <div class="slider__text">
