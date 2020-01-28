@@ -20,8 +20,8 @@
           <ul class="top-menu">
             <li class="top-menu__item">
               <p class="region-select">
-                <svg class="region-select__icon" width="20px" height="25">
-                  <use xlink:href="img/sprite.svg#geotag"></use>
+                <svg class="region-select__icon" width="22" height="23">
+                  <use xlink:href="img/sprite.svg#map_mark"></use>
                 </svg>
                 <span>Ваш город:</span>
                 <a class="region-select__link" href="#">Москва</a>
@@ -86,10 +86,13 @@
       <div class="page-header__middle">
         <div class="page-header__wrapper container">
           <a class="page-header__logo">
-            <picture>
+            <!-- <picture>
               <source type="image/webp" srcset="img/logo.webp">
               <img src="img/logo.png" width="190" height="72" alt="Логотип компании ДариМир">
-            </picture>
+            </picture> -->
+            <svg width="190" height="72" role="img" aria-label="Логотип компании ДариМир">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
           </a>
           <form class="search-form" action="#" method="POST">
             <label>
@@ -101,7 +104,7 @@
               <span>Искать везде</span>
             </button>
             <button class="search-form__search-btn" type="submit" aria-label="Искать">
-              <svg width="23" height="27">
+              <svg width="22" height="27">
                 <use xlink:href="img/sprite.svg#search"></use>
               </svg>
             </button>
@@ -586,6 +589,9 @@
           <h2 class="section-title features__title">Название блока с преимуществами</h2>
           <ul class="features__list">
             <li class="features__item">
+              <svg>
+                <use xlink:href="img/sprite.svg#plus1">
+              </svg>
               <div class="features__description">
                 <h3 class="features__feater-title">Лучшие бренды<br>
                   российских производителей</h3>
