@@ -17,11 +17,11 @@
 .region-select__icon {
   position: absolute;
   top: 6px;
-  left: 2px;
+  left: 0;
 
   overflow: visible;
 
-  color: $brown;
+  fill: $brown;
 }
 
 .region-select span {
