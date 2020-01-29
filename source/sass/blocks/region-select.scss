@@ -1,16 +1,19 @@
 .region-select {
   margin: 0;
-  border-bottom: 2px solid #e2e1e6;
+
   border-top: 2px solid #e2e1e6;
+  border-bottom: 2px solid #e2e1e6;
 }
 
 .region-select__link {
   position: relative;
-  padding: 18px;
+
   display: block;
-  width: 100%;
-  text-align: center;
   box-sizing: border-box;
+  width: 100%;
+  padding: 18px;
+
+  text-align: center;
 }
 
 .region-select__icon {
@@ -25,6 +28,7 @@
 
 .region-select__text {
   position: relative;
+
   color: #55606e;
 }
 

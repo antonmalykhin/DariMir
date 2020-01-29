@@ -48,13 +48,45 @@
 
 .page-header__user-menu {
   width: 100%;
-  padding: 8px 20px;
+  padding: 0 20px;
+  padding-left: 7px;
+  padding-right: 13px;
   box-sizing: border-box;
   background-color: #f0f0f2;
-  margin-top: -34px;
+  margin-top: -29px;
   position: relative;
   z-index: 5;
   border-top: 1px solid #e2e1e6;
+}
+
+.page-header__user-item {
+  width: 50px;
+  height: 42px;
+}
+
+.page-header__user-item:nth-of-type(1) svg {
+  top: 8px;
+  left: 13px;
+}
+
+.page-header__user-item:nth-of-type(2) svg {
+  top: 8px;
+  left: 13px;
+}
+
+.page-header__user-item:nth-of-type(3) svg {
+  top: 8px;
+  left: 16px;
+}
+
+.page-header__user-item:nth-of-type(4) svg {
+  top: 8px;
+  left: 13px;
+}
+
+.page-header__user-item:nth-of-type(5) svg {
+  top: 6px;
+  left: 10px;
 }
 
 .page-header__social-menu {
@@ -89,6 +121,7 @@
 .page-header__logo svg {
   margin: 0 auto;
   display: block;
+  color: transparent;
 }
 
 .page-header__title-form {
@@ -144,7 +177,7 @@
   box-sizing: border-box;
   border: 1px solid #f2f2f4;
   border-right: none;
-  padding: 15px;
+  padding: 13px 14px 12px 5px;
 }
 
 .page-header__btn-open--active::before {

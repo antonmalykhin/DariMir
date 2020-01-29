@@ -259,14 +259,14 @@
             <p class="slider__description">Сделайте заказ на сайте, заберите в нашем магазине и получите приятную
               скидку!
             </p>
-            <a class="slider__link" href="#">
+            <a class="slider__link btn" href="#">
               <span>смотреть товары</span>
               <svg width="19" height="13">
                 <use xlink:href="img/sprite.svg#arrow"></use>
               </svg>
             </a>
           </div>
-          <div class="slider_image">
+          <div class="slider__image">
             <picture>
               <source type="image/webp" srcset="img/slider_1.webp">
               <img src="img/slider_1.jpg" width="820" height="490" alt="Баннер">
@@ -331,21 +331,23 @@
       <div class="container">
         <div class="goods__wrapper">
           <h2 class="section-title goods__section-title">Лучшие предложения</h2>
-          <div class="pagination">
+          <div class="goods__pagination pagination">
             <a class="pagination__all" href="#">Смотреть все</a>
-            <button class="pagination__btn pagination__btn--back" type="button" aria-label="Назад">
-              <svg width="19" height="13">
-                <use xlink:href="img/sprite.svg#arrow"></use>
-              </svg>
-            </button>
-            <p class="pagination__numbers">
-              <span class="pagination__page">2</span><span class="pagination__pages">3</span>
-            </p>
-            <button class="pagination__btn pagination__btn--fron" type="button" aria-label="Вперед">
-              <svg width="19" height="13">
-                <use xlink:href="img/sprite.svg#arrow"></use>
-              </svg>
-            </button>
+            <div class="pagination__buttons">
+              <button class="pagination__btn pagination__btn--back" type="button" aria-label="Назад">
+                <svg width="19" height="13">
+                  <use xlink:href="img/sprite.svg#arrow"></use>
+                </svg>
+              </button>
+              <p class="pagination__numbers">
+                <span class="pagination__page">2</span><span class="pagination__pages">3</span>
+              </p>
+              <button class="pagination__btn pagination__btn--fron" type="button" aria-label="Вперед">
+                <svg width="19" height="13">
+                  <use xlink:href="img/sprite.svg#arrow"></use>
+                </svg>
+              </button>
+            </div>
           </div>
           <ul class="goods__list">
             <li class="goods__item">
@@ -378,7 +380,7 @@
               <button class="goods__to-cart-btn" type="button">Добавить в корзину</button>
             </li>
 
-            <li class="goods__item">
+            <li class="goods__item goods__item--hidden">
               <button class="goods__btn goods__btn--compare" type="button" aria-label="Добавить к сравнению">
                 <svg width="23" height="26">
                   <use xlink:href="img/sprite.svg#compare"></use>
@@ -409,7 +411,7 @@
               <button class="goods__to-cart-btn" type="button">Добавить в корзину</button>
             </li>
 
-            <li class="goods__item">
+            <li class="goods__item goods__item--hidden">
               <button class="goods__btn goods__btn--compare" type="button" aria-label="Добавить к сравнению">
                 <svg width="23" height="26">
                   <use xlink:href="img/sprite.svg#compare"></use>
@@ -441,7 +443,7 @@
               <button class="goods__to-cart-btn" type="button">Добавить в корзину</button>
             </li>
 
-            <li class="goods__item">
+            <li class="goods__item goods__item--hidden">
               <button class="goods__btn goods__btn--compare" type="button" aria-label="Добавить к сравнению">
                 <svg width="23" height="26">
                   <use xlink:href="img/sprite.svg#compare"></use>
@@ -493,48 +495,56 @@
                   alt="Скидка 10% за регистрацию на сайте">
               </picture>
             </a></li>
-          <li class="stock__item"><a class="stock__link" href="#">
+          <li class="stock__item stock__item--hidden"><a class="stock__link" href="#">
               <picture>
                 <source type="image/webp" srcset="img/stock_3.webp">
                 <img class="stock__image" src="img/stock_3.jpg" width="412" height="294"
                   alt="Скидка 20% на детскую косметику mi&ko">
               </picture>
             </a></li>
-          <li class="stock__item"><a class="stock__link" href="#">
+          <li class="stock__item stock__item--hidden"><a class="stock__link" href="#">
               <picture>
                 <source type="image/webp" srcset="img/stock_4.webp">
                 <img class="stock__image" src="img/stock_4.jpg" width="412" height="294"
                   alt="Лучшие комбинезони-трансформеры ДАРИМИР">
               </picture>
             </a></li>
-          <li class="stock__item"><a class="stock__link" href="#">
+          <li class="stock__item stock__item--hidden"><a class="stock__link" href="#">
               <picture>
                 <source type="image/webp" srcset="img/stock_5.webp">
                 <img class="stock__image" src="img/stock_5.jpg" width="412" height="294" alt="У нас новый бренд Carrot">
               </picture>
             </a></li>
         </ul>
+        <a class="stock__btn btn" href="#">
+          <span>Все акции</span>
+          <svg width="19" height="13">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
       </div>
     </section>
     <section class="news goods">
       <div class="container">
         <div class="goods__wrapper">
           <h2 class="section-title goods__section-title">Новинки</h2>
-          <div class="pagination">
+          <div class="goods__pagination pagination">
             <a class="pagination__all" href="#">Смотреть все</a>
-            <button class="pagination__btn pagination__btn--back" type="button" aria-label="Назад">
-              <svg width="19" height="13">
-                <use xlink:href="img/sprite.svg#arrow"></use>
-              </svg>
-            </button>
-            <p class="pagination__numbers">
-              <span class="pagination__page">2</span><span class="pagination__pages">3</span>
-            </p>
-            <button class="pagination__btn pagination__btn--fron" type="button" aria-label="Вперед">
-              <svg width="19" height="13">
-                <use xlink:href="img/sprite.svg#arrow"></use>
-              </svg>
-            </button>
+            <div class="pagination__buttons">
+              <button class="pagination__btn pagination__btn--back" type="button" aria-label="Назад">
+                <svg width="19" height="13">
+                  <use xlink:href="img/sprite.svg#arrow"></use>
+                </svg>
+              </button>
+              <p class="pagination__numbers">
+                <span class="pagination__page">2</span><span class="pagination__pages">3</span>
+              </p>
+              <button class="pagination__btn pagination__btn--fron" type="button" aria-label="Вперед">
+                <svg width="19" height="13">
+                  <use xlink:href="img/sprite.svg#arrow"></use>
+                </svg>
+              </button>
+            </div>
           </div>
           <ul class="news__list goods__list">
             <li class="news__item goods__item">
@@ -556,7 +566,7 @@
               </div>
             </li>
 
-            <li class="news__item goods__item">
+            <li class="news__item goods__item goods__item--hidden">
               <div class="goods__labels">
                 <p class="goods__new">Новинка</p>
                 <p class="goods__hit">Хит продаж</p>
@@ -575,7 +585,7 @@
               </div>
             </li>
 
-            <li class="news__item goods__item">
+            <li class="news__item goods__item goods__item--hidden">
 
               <div class="goods__labels">
                 <p class="goods__new">Новинка</p>
@@ -597,7 +607,7 @@
               </div>
             </li>
 
-            <li class="news__item goods__item">
+            <li class="news__item goods__item goods__item--hidden">
               <div class="goods__labels">
                 <p class="goods__new">Новинка</p>
                 <p class="goods__discount">-50%</p>
@@ -624,22 +634,23 @@
       <div class="container">
         <div class="brands__wrapper">
           <h2 class="section-title brands__title">Популярные бренды</h2>
-          <div class="pagination">
+          <div class="goods__pagination pagination">
             <a class="pagination__all" href="#">Смотреть все</a>
-            <button class="pagination__btn pagination__btn--back" type="button" aria-label="Назад">
-              <svg width="19" height="13">
-                <use xlink:href="img/sprite.svg#arrow"></use>
-              </svg>
-            </button>
-            <p class="pagination__numbers">
-              <span class="pagination__page">2</span>
-              <span class="pagination__pages">3</span>
-            </p>
-            <button class="pagination__btn pagination__btn--fron" type="button" aria-label="Вперед">
-              <svg width="19" height="13">
-                <use xlink:href="img/sprite.svg#arrow"></use>
-              </svg>
-            </button>
+            <div class="pagination__buttons">
+              <button class="pagination__btn pagination__btn--back" type="button" aria-label="Назад">
+                <svg width="19" height="13">
+                  <use xlink:href="img/sprite.svg#arrow"></use>
+                </svg>
+              </button>
+              <p class="pagination__numbers">
+                <span class="pagination__page">2</span><span class="pagination__pages">3</span>
+              </p>
+              <button class="pagination__btn pagination__btn--fron" type="button" aria-label="Вперед">
+                <svg width="19" height="13">
+                  <use xlink:href="img/sprite.svg#arrow"></use>
+                </svg>
+              </button>
+            </div>
           </div>
           <ul class="brands__list">
             <li class="brands__item">
@@ -648,16 +659,16 @@
             <li class="brands__item">
               <a class="brands__link" href="#" aria-label="Товары бренда Toucan For Kids"></a>
             </li>
-            <li class="brands__item">
+            <li class="brands__item brands__item--hidden">
               <a class="brands__link" href="#" aria-label="Товары бренда Журавлик"></a>
             </li>
-            <li class="brands__item">
+            <li class="brands__item brands__item--hidden">
               <a class="brands__link" href="#" aria-label="Товары бренда Leo For Kids"></a>
             </li>
-            <li class="brands__item">
+            <li class="brands__item brands__item--hidden">
               <a class="brands__link" href="#" aria-label="Товары бренда Artie"></a>
             </li>
-            <li class="brands__item">
+            <li class="brands__item brands__item--hidden">
               <a class="brands__link" href="#" aria-label="Товары бренда Kleona"></a>
             </li>
           </ul>
@@ -667,7 +678,7 @@
     <section class="features">
       <div class="container">
         <div class="features__wrapper">
-          <h2 class="section-title features__title">Название блока с преимуществами</h2>
+          <h2 class="section-title features__title">Название блока<br> с преимуществами</h2>
           <ul class="features__list">
             <li class="features__item">
               <svg width="110" height="161">
@@ -723,28 +734,35 @@
           <h2 class="section-title blog__title">Наш блог</h2>
           <ul class="blog__list">
             <li class="blog__item">
-              <picture>
-                <source type="image/webp" srcset="img/blog_1.webp">
-                <img class="blog__img" width="353" height="300" src="img/blog_1.jpg"
-                  alt="Конверты и муфты из новой коллекции Leokid - тепло как дома">
-              </picture>
+              <div class="blog__img-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/blog_1.webp">
+                  <img class="blog__img" width="353" height="300" src="img/blog_1.jpg"
+                    alt="Конверты и муфты из новой коллекции Leokid - тепло как дома">
+                </picture>
+              </div>
               <a class="blog__link" href="#">
                 <h3 class="blog__item-title">Конверты и муфты из новой коллекции Leokid - тепло как дома</h3>
               </a>
               <time class="blog__pub-date" datetime="2019-10-21 00:00">21 октября 2019</time>
+              <svg width="19" height="13">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
             </li>
-            <li class="blog__item">
-              <picture>
-                <source type="image/webp" srcset="img/blog_2.webp">
-                <img class="blog__img" width="353" height="300" src="img/blog_2.jpg"
-                  alt="Неделя умных гаджетов: инновации в вашей детской">
-              </picture>
+            <li class="blog__item blog__item--hidden">
+              <div class="blog__img-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/blog_2.webp">
+                  <img class="blog__img" width="353" height="300" src="img/blog_2.jpg"
+                    alt="Неделя умных гаджетов: инновации в вашей детской">
+                </picture>
+              </div>
               <a class="blog__link" href="#">
                 <h3 class="blog__item-title">Неделя умных гаджетов: инновации в вашей детской</h3>
               </a>
               <time class="blog__pub-date" datetime="2019-10-18 00:00">18 октября 2019</time>
             </li>
-            <li class="blog__item">
+            <li class="blog__item blog__item--hidden">
               <picture>
                 <source type="image/webp" srcset="img/blog_3.webp">
                 <img class="blog__img" width="353" height="300" src="img/blog_3.jpg"
@@ -763,22 +781,24 @@
     <section class="contacts">
       <div class="container">
         <div class="contacts__wrapper">
-          <h2 class="section-title contacts_title">Наши магазины</h2>
-          <div class="pagination">
+          <h2 class="section-title contacts__title">Наши магазины</h2>
+          <div class="contacts__pagination goods__pagination pagination">
             <a class="pagination__all" href="#">Смотреть все</a>
-            <button class="pagination__btn pagination__btn--back" type="button" aria-label="Назад">
-              <svg width="19" height="13">
-                <use xlink:href="img/sprite.svg#arrow"></use>
-              </svg>
-            </button>
-            <p class="pagination__numbers">
-              <span class="pagination__page">2</span><span class="pagination__pages">3</span>
-            </p>
-            <button class="pagination__btn pagination__btn--fron" type="button" aria-label="Вперед">
-              <svg width="19" height="13">
-                <use xlink:href="img/sprite.svg#arrow"></use>
-              </svg>
-            </button>
+            <div class="pagination__buttons">
+              <button class="pagination__btn pagination__btn--back" type="button" aria-label="Назад">
+                <svg width="19" height="13">
+                  <use xlink:href="img/sprite.svg#arrow"></use>
+                </svg>
+              </button>
+              <p class="pagination__numbers">
+                <span class="pagination__page">2</span><span class="pagination__pages">3</span>
+              </p>
+              <button class="pagination__btn pagination__btn--fron" type="button" aria-label="Вперед">
+                <svg width="19" height="13">
+                  <use xlink:href="img/sprite.svg#arrow"></use>
+                </svg>
+              </button>
+            </div>
           </div>
           <div class="contacts__bg">
             <iframe class="map" src="https://yandex.ru/map-widget/v1/-/CKA0BCLb" width="560" height="494"></iframe>

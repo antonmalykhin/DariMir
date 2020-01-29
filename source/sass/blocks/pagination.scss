@@ -1,14 +1,16 @@
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-right: 19px;
+  justify-content: center;
 }
 
 .pagination__all {
-  margin-right: 52px;
-
+  // margin-right: 52px;
   font-size: 15px;
-  color: $crimson;
+  color: $cyan;
+  margin-bottom: 14px;
 }
 
 .pagination__numbers {
@@ -42,6 +44,12 @@
 
 .pagination__pages {
   color: #b8b8ba;
+}
+
+.pagination__buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .pagination__btn {
