@@ -142,5 +142,11 @@ gulp.task("clean", function () {
   return del("build");
 });
 
+gulp.task("delete", function () {
+  return del("build")
+    .pipe(del("source/optimizedImg"))
+    .pipe(del("source/optimizedSVG"));
+});
+
 gulp.task("build", gulp.series("clean", "copy", "copyImg", "css", "uglify", "html"));
 gulp.task("start", gulp.series("build", "server"));
