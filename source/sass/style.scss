@@ -5,6 +5,9 @@
 @import "globals";
 // ----------------
 @import "blocks/container";
+@import "blocks/pagination";
+@import "blocks/section-title";
+@import "blocks/btn";
 @import "blocks/user-menu";
 @import "blocks/main-menu";
 @import "blocks/sub-menu";
@@ -20,7 +23,6 @@
 @import "blocks/categories";
 @import "blocks/best-offers";
 @import "blocks/goods";
-@import "blocks/pagination";
 @import "blocks/stock";
 @import "blocks/news";
 @import "blocks/brands";
@@ -37,5 +39,4 @@
 @import "blocks/company-menu";
 @import "blocks/dev";
 @import "blocks/copy";
-@import "blocks/section-title";
 @import "blocks/phone";
