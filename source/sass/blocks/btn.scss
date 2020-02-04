@@ -1,0 +1,31 @@
+.btn {
+  position: relative;
+
+  display: block;
+  box-sizing: border-box;
+  width: 250px;
+  margin-top: 24px;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+  padding-top: 13px;
+  padding-right: 45px;
+  padding-bottom: 13px;
+  padding-left: 29px;
+
+  color: $darkblue;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  background-color: $white;
+  border: 1px solid $brown;
+  cursor: pointer;
+}
+
+.btn svg {
+  position: absolute;
+  top: 17px;
+  right: 21px;
+
+  fill: #b69a79;
+}

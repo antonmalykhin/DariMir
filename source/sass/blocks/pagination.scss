@@ -1,14 +1,16 @@
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-right: 19px;
+  justify-content: center;
 }
 
 .pagination__all {
-  margin-right: 52px;
-
+  // margin-right: 52px;
   font-size: 15px;
   color: $cyan;
+  margin-bottom: 14px;
 }
 
 .pagination__numbers {
@@ -44,6 +46,12 @@
   color: #b8b8ba;
 }
 
+.pagination__buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .pagination__btn {
   position: relative;
 
@@ -55,7 +63,14 @@
   border-radius: 50%;
   cursor: pointer;
 
-  @include arrow(top, 23px, right, 16px, $brown);
+  // @include arrow(top, 23px, right, 16px, $brown);
+}
+
+.pagination__btn svg {
+  position: absolute;
+  fill: #b69a79;
+  top: 17px;
+  left: 14px;
 }
 
 .pagination__btn--back {
@@ -64,18 +79,24 @@
 
 .pagination__btn:hover,
 .pagination__btn:focus {
-  opacity: 0.7;
+  background-color: #b69a79;
 }
 
+.pagination__btn:hover svg,
+.pagination__btn:focus svg {
+  fill: $white;
+}
+
+
 .pagination__btn:active {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .pagination__all:hover,
 .pagination__all:focus {
-  opacity: 0.6;
+  text-decoration: underline;
 }
 
 .pagination__all:active {
-  opacity: 0.4;
+  opacity: 0.7;
 }

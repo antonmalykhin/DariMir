@@ -29,6 +29,8 @@
     "test": "npm run editorconfig && npm run stylelint",
     "images": "gulp images && gulp webp && gulp svgOpt && gulp sprite",
     "build": "gulp build",
+    "re-build": "npm run images && npm run build",
+    "remove-build": "npm run delete",
     "start": "gulp start"
   },
   "browserslist": [

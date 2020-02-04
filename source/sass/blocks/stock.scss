@@ -1,5 +1,6 @@
 .stock {
-  margin-bottom: 52px;
+  margin-top: 18px;
+  margin-bottom: 10px;
 }
 
 .stock__list {
@@ -13,5 +14,30 @@
 }
 
 .stock__item {
+  max-width: 93.6%;
+  margin: 0 auto;
   margin-bottom: -4px;
 }
+
+.stock__item--hidden {
+  display: none;
+}
+
+.stock__btn {
+  margin-top: 18px;
+  margin-bottom: 10px;
+  padding-right: 82px;
+  padding-left: 60px;
+
+  text-align: center;
+}
+
+.stock__btn svg {
+  right: 58px;
+}
+
+
+// for desktop
+// .stock__item {
+//   margin-bottom: -4px;
+// }

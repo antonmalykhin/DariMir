@@ -1,37 +1,38 @@
 .region-select {
-  position: relative;
+  margin: 0;
 
-  display: flex;
-  flex-wrap: nowrap;
-  box-sizing: border-box;
-  width: 210px;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 7px;
-  padding-right: 25px;
-  padding-left: 30px;
-  overflow: hidden;
-}
-
-
-.region-select__icon {
-  position: absolute;
-  top: 6px;
-  left: 2px;
-
-  overflow: visible;
-
-  color: $brown;
-}
-
-.region-select span {
-  margin-right: 4px;
-
-  color: #55606e;
-  white-space: nowrap;
+  border-top: 2px solid #e2e1e6;
+  border-bottom: 2px solid #e2e1e6;
 }
 
 .region-select__link {
+  position: relative;
+
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 18px;
+
+  text-align: center;
+}
+
+.region-select__icon {
+  position: absolute;
+  top: -1px;
+  left: -24px;
+
+  overflow: visible;
+
+  fill: $brown;
+}
+
+.region-select__text {
+  position: relative;
+
+  color: #55606e;
+}
+
+.region-select__city {
   position: relative;
 
   color: #b69a79;
@@ -46,13 +47,13 @@
     width: 55px;
     height: 100%;
 
-    background-image: linear-gradient(to right, transparent 0%, #f0f0f2 50%);
+    background-image: linear-gradient(to right, transparent 0%, #ffffff 50%);
   }
 
   &::after {
     content: "";
     position: absolute;
-    top: 9px;
+    top: 8px;
     right: -9px;
 
     width: 5px;
@@ -65,11 +66,80 @@
   }
 }
 
-.region-select__link:hover,
-.region-select__link:focus {
-  color: rgba($brown, 0.7);
-}
+@media (min-width: $desktop) {
+  .region-select {
+    position: relative;
 
-.region-select__link:active {
-  color: rgba($brown, 0.5);
+    display: flex;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    width: 210px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 7px;
+    padding-right: 25px;
+    padding-left: 30px;
+    overflow: hidden;
+  }
+
+
+  .region-select__icon {
+    position: absolute;
+    top: 6px;
+    left: 0;
+
+    overflow: visible;
+
+    fill: $brown;
+  }
+
+  .region-select__text {
+    margin-right: 4px;
+
+    color: #55606e;
+    white-space: nowrap;
+  }
+
+  .region-select__city {
+    position: relative;
+
+    color: #b69a79;
+    white-space: nowrap;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 1px;
+      right: -38px;
+
+      width: 55px;
+      height: 100%;
+
+      background-image: linear-gradient(to right, transparent 0%, #f0f0f2 50%);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 9px;
+      right: -9px;
+
+      width: 5px;
+      height: 5px;
+
+      border: 1px solid $brown;
+      border-top: none;
+      border-left: none;
+      transform: rotate(-45deg);
+    }
+  }
+
+  .region-select__link:hover,
+  .region-select__link:focus {
+    color: rgba($brown, 0.7);
+  }
+
+  .region-select__link:active {
+    color: rgba($brown, 0.5);
+  }
 }

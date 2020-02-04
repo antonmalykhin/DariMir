@@ -1,6 +1,9 @@
-.container {
-  position: relative;
 
-  width: 1240px;
-  margin: 0 auto;
+@media (min-width: $desktop) {
+  .container {
+    position: relative;
+
+    width: 1240px;
+    margin: 0 auto;
+  }
 }
