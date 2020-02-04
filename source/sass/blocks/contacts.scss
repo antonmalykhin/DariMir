@@ -1,5 +1,5 @@
 .contacts {
-  margin-bottom: 40px;
+  margin-bottom: 18px;
 }
 
 .contacts__wrapper {
@@ -58,7 +58,9 @@
 }
 
 .contacts__item {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 19px;
   padding-top: 0;
 }
@@ -69,9 +71,14 @@
   padding-bottom: 8px;
 }
 
+.contacts__value {
+  width: 252px;
+
+  text-align: left;
+}
 
 .contacts__phone {
-  margin-bottom: 3px;
+  margin-bottom: 6px;
   padding-top: 10px;
   // display: flex;
   // padding-top: 27px;
@@ -129,6 +136,12 @@
 
 .contacts__pagination {
   margin-top: 15px;
+}
+
+@media (min-width: 533px) {
+  .contacts__value {
+    text-align: right;
+  }
 }
 
 @media (min-height: $desktop) {

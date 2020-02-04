@@ -806,19 +806,19 @@
               <p class="contacts__metro">м. Лубянка</p>
               <a class="contacts__item contacts__phone" href="tel:+79165887012">
                 <span class="contacts__info">Телефон:</span>
-                <span class="contacts__phone-number phone">+7 (916) 588 70 12</span>
+                <span class="contacts__value contacts__phone-number phone">+7 (916) 588 70 12</span>
               </a>
               <p class="contacts__item contacts__address">
                 <span class="contacts__info">Адрес:</span>
-                <span class="address">Театральный проезд, 5/1 3 этаж</span>
+                <span class="contacts__value address">Театральный проезд, 5/1 3 этаж</span>
               </p>
               <p class="contacts__item contacts__working-hours">
                 <span class="contacts__info">Часы работы:</span>
-                <span class="working-hours">Ежедневно 10:00 - 22:00</span>
+                <span class="contacts__value working-hours">Ежедневно 10:00 - 22:00</span>
               </p>
               <a class="contacts__item contacts__email" href="mailto:darynagorda@yandex.ru">
                 <span class="contacts__info">E-mail:</span>
-                <span class="contacts__email-text email">darynagorda@yandex.ru</span>
+                <span class="contacts__value contacts__email-text email">darynagorda@yandex.ru</span>
               </a>
               <p class="contacts__about-shop">
                 Флагманский магазин ДАРИМИР располагается в самом сердце исторического центра Москвы- в Центральном
@@ -846,8 +846,12 @@
         </ul>
 
         <div class="navigation__wrapper pagination">
-          <button class="navigation__pagination-btn pagination__btn pagination__btn--back" type="button"
-            aria-label="Назад"></button>
+          <button class="pagination__btn pagination__btn--back" type="button" aria-label="Назад">
+            <svg width="19" height="13">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+
           <ul class="navigation__mid-level">
             <li class="navigation__mid-item">
               <a class="navigation__mid-link" href="#">
@@ -856,15 +860,17 @@
                   <img class="navigation__mid-img" width="173" height="173" src="img/section_1.jpg"
                     alt="Детская комната">
                 </picture>
+                <!-- <div class="navigation__mid-img-container"></div> -->
                 <p class="navigation__mid-title">Детская комната</p>
               </a>
             </li>
-            <li class="navigation__mid-item">
+            <li class="navigation__mid-item navigation__mid-item--visible">
               <a class="navigation__mid-link" href="#">
                 <picture>
                   <source type="image/webp" srcset="img/section_2.webp">
                   <img class="navigation__mid-img" width="173" height="173" src="img/section_2.jpg" alt="Игрушки">
                 </picture>
+                <!-- <div class="navigation__mid-img-container"></div> -->
                 <p class="navigation__mid-title">Игрушки</p>
               </a>
             </li>
@@ -875,6 +881,7 @@
                   <img class="navigation__mid-img" width="173" height="173" src="img/section_3.jpg"
                     alt="Одежда для девочек 0 - 24 месяца">
                 </picture>
+                <!-- <div class="navigation__mid-img-container"></div> -->
                 <p class="navigation__mid-title">Одежда для девочек 0 - 24 месяца</p>
               </a>
 
@@ -885,6 +892,7 @@
                   <source type="image/webp" srcset="img/section_4.webp">
                   <img class="navigation__mid-img" width="173" height="173" src="img/section_4.jpg" alt="Бренды">
                 </picture>
+                <!-- <div class="navigation__mid-img-container"></div> -->
                 <p class="navigation__mid-title">Бренды</p>
               </a>
             </li>
@@ -894,12 +902,16 @@
                   <source type="image/webp" srcset="img/section_5.webp">
                   <img class="navigation__mid-img" width="173" height="173" src="img/section_5.jpg" alt="Новинки">
                 </picture>
+                <!-- <div class="navigation__mid-img-container"></div> -->
                 <p class="navigation__mid-title">Новинки</p>
               </a>
             </li>
           </ul>
-          <button class="navigation__pagination-btn pagination__btn pagination__btn--fron" type="button"
-            aria-label="Вперед"></button>
+          <button class="pagination__btn pagination__btn--fron" type="button" aria-label="Вперед">
+            <svg width="19" height="13">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </button>
 
         </div>
         <ul class="navigation__bott-level">
