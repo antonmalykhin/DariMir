@@ -50,16 +50,22 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  margin-top: 8px;
   margin-right: 0;
   margin-bottom: 15px;
   padding: 0 5px;
+}
+
+.navigation__btn {
+  align-self: flex-start;
+  margin-top: 50px;
 }
 
 .navigation__mid-level {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: auto;
+  width: 145px;
   margin: 0;
   padding: 0;
 
@@ -68,7 +74,6 @@
 
 .navigation__mid-item {
   display: none;
-  // width: 190px;
 
   text-align: center;
 }
@@ -86,12 +91,12 @@
   // min-height: 230px;
   &::before {
     content: "";
-    display: none;
     position: absolute;
     top: -9px;
     left: 0;
     z-index: 2;
 
+    display: none;
     width: 142px;
     height: 142px;
 

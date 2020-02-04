@@ -143,9 +143,9 @@ gulp.task("clean", function () {
 });
 
 gulp.task("delete", function () {
-  return del("build")
-    .pipe(del("source/optimizedImg"))
-    .pipe(del("source/optimizedSVG"));
+  return del(["build", "source/optimizedImg", "source/optimizedSVG"]);
+    // .pipe(del("source/optimizedImg"))
+    // .pipe(del("source/optimizedSVG"));
 });
 
 gulp.task("build", gulp.series("clean", "copy", "copyImg", "css", "uglify", "html"));
