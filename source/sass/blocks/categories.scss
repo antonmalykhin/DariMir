@@ -23,9 +23,9 @@
 
   display: block;
   box-sizing: border-box;
+  margin-bottom: 10px;
   padding: 20px;
   padding-bottom: 3px;
-  margin-bottom: 10px;
 
   border: 1px solid #e2e1e6;
 
@@ -120,8 +120,6 @@
     padding-bottom: 13px;
 
     border: 1px solid #e2e1e6;
-
-    transition: background-color 0.3s;
   }
 
   .categories__title {
@@ -146,21 +144,10 @@
   }
 
   .categories__text {
-    // width: 80%;
-    position: relative;
-
+    width: 80%;
     margin-bottom: 10px;
-    padding-right: 20px;
 
     color: #55606e;
-  }
-
-  .categories__text svg {
-    position: absolute;
-    top: 5px;
-    right: 0;
-
-    fill: #b69a79;
   }
 
   .categories__img {
@@ -172,3 +159,84 @@
     background-color: $gray;
   }
 }
+
+//!-----------------------------------------------------------------------------------
+//!               OLD
+//!-----------------------------------------------------------------------------------
+
+// @media (min-width: $desktop) {
+//   .categories {
+//     margin-bottom: 34px;
+//   }
+
+//   .categories__list {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//     margin: 0;
+//     padding: 0;
+
+//     list-style: none;
+//   }
+
+//   .categories__link {
+//     position: relative;
+
+//     display: block;
+//     box-sizing: border-box;
+//     padding: 30px;
+//     padding-bottom: 13px;
+
+//     border: 1px solid #e2e1e6;
+
+//     transition: background-color 0.3s;
+//   }
+
+//   .categories__title {
+//     position: absolute;
+//     top: 267px;
+//     left: 0;
+
+//     display: block;
+//     padding-top: 11px;
+//     padding-right: 30px;
+//     padding-bottom: 12px;
+//     padding-left: 30px;
+
+//     font-weight: 800;
+//     font-size: 30px;
+//     line-height: 1;
+//     font-family: "M PLUS Rounded 1c", "Arial", sans-serif;
+//     color: $white;
+//     font-style: normal;
+
+//     background-color: $cyan;
+//   }
+
+//   .categories__text {
+//     // width: 80%;
+//     position: relative;
+
+//     margin-bottom: 10px;
+//     padding-right: 20px;
+
+//     color: #55606e;
+//   }
+
+//   .categories__text svg {
+//     position: absolute;
+//     top: 5px;
+//     right: 0;
+
+//     fill: #b69a79;
+//   }
+
+//   .categories__img {
+//     margin-bottom: 3px;
+//   }
+
+//   .categories__link:hover,
+//   .categories__link:focus {
+//     background-color: $gray;
+//   }
+// }

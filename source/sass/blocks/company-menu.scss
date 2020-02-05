@@ -1,3 +1,9 @@
 .company-menu {
   display: none;
 }
+
+@media (min-width: $desktop) {
+  .company-menu {
+    display: block;
+  }
+}
