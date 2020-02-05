@@ -261,6 +261,11 @@
   display: block;
 }
 
+@media (min-width: $tablet) {
+
+}
+
+
 @media (min-width: $desktop) {
   .page-header {
     margin-bottom: 60px;
