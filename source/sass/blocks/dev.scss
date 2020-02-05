@@ -52,4 +52,36 @@
   .dev:focus {
     opacity: 0.4;
   }
+
 }
+
+//!---------------------------
+//!             old
+//!---------------------------
+// @media (min-width: $desktop) {
+//   .dev {
+//     display: flex;
+//     align-items: center;
+//     margin-top: 28px;
+//   }
+
+//   .dev span {
+//     margin-top: 15px;
+//     margin-right: 10px;
+
+//     color: #b8b8ba;
+//   }
+
+//   .dev__img {
+//     margin-top: 1px;
+//   }
+
+//   .dev:hover,
+//   .dev:focus {
+//     opacity: 0.7;
+//   }
+
+//   .dev:focus {
+//     opacity: 0.4;
+//   }
+// }

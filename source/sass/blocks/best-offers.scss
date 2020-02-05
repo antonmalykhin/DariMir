@@ -1,4 +1,10 @@
 .best-offers {
-  margin-bottom: 6px;
   margin-top: 29px;
+  margin-bottom: 6px;
+}
+
+@media (min-width: $desktop) {
+  .best-offers {
+    margin-bottom: 6px;
+  }
 }
