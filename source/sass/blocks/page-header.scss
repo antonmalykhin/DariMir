@@ -63,9 +63,12 @@
   box-sizing: border-box;
   width: 100%;
   margin-top: -29px;
+  margin-bottom: 0;
   padding: 0 20px;
   padding-right: 13px;
   padding-left: 7px;
+
+  list-style: none;
 
   background-color: #f0f0f2;
   border-top: 1px solid #e2e1e6;
@@ -74,6 +77,18 @@
 .page-header__user-item {
   width: 50px;
   height: 42px;
+}
+
+.page-header__user-link {
+  position: relative;
+
+  display: block;
+  width: auto;
+  height: 100%;
+}
+
+.page-header__user-item svg {
+  position: absolute;
 }
 
 .page-header__user-item:nth-of-type(1) svg {
@@ -359,6 +374,10 @@
   .page-header__user-item {
     margin-right: 7px;
   }
+
+  // .page-header__user-link {
+  // }
+
 
   .page-header__user-item:last-of-type {
     margin-right: 0;

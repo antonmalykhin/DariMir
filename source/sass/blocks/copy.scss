@@ -1,41 +1,43 @@
-// .copy {
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: center;
-// }
+.copy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-// .copy span {
-//   display: block;
-//   margin-left: 21px;
+.copy span {
+  display: block;
+  margin-left: 21px;
 
-//   color: #b8b8ba;
-// }
+  color: #b8b8ba;
+}
 
-// .copy__link {
-//   display: block;
-//   margin-top: 5px;
+.copy__link {
+  display: block;
+  margin-top: 5px;
 
-//   color: #b8b8ba;
-// }
+  color: #b8b8ba;
+}
 
-// .copy__link:hover,
-// .copy__link:focus {
-//   opacity: 0.7;
-// }
+.copy__link:hover,
+.copy__link:focus {
+  opacity: 0.7;
+}
 
-// .copy__link:focus {
-//   opacity: 0.4;
-// }
+.copy__link:focus {
+  opacity: 0.4;
+}
 
 @media (min-width: $desktop) {
   .copy {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
   }
 
   .copy span {
     color: #b8b8ba;
+    margin-left: 0;
   }
 
   .copy span:nth-of-type(2) {
@@ -45,6 +47,7 @@
   .copy__link {
     color: #b8b8ba;
     margin-left: auto;
+    margin-top: 0;
   }
 
   .copy__link:hover,
