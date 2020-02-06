@@ -149,24 +149,21 @@
 
   .features__item:nth-of-type(3) svg {
     position: absolute;
-    top: 26px;
+    top: -22px;
     left: 31px;
 
     width: 162px;
     height: 173px;
   }
 
-  .features__item:nth-of-type(4)::after {
+  .features__item:nth-of-type(4) svg {
     content: "";
     position: absolute;
     top: -17px;
-    left: 43px;
+    left: 20px;
 
-    width: 133px;
+    width: 163px;
     height: 162px;
-
-    background-image: url("../img/feature_4.png");
-    background-repeat: no-repeat;
   }
 
 
