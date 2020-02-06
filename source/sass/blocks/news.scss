@@ -3,7 +3,9 @@
   margin-bottom: 27px;
 }
 
-.news__item:hover,
-.news__item:focus {
-  box-shadow: none;
+@media (min-width: $desktop) {
+  .news__item:hover,
+  .news__item:focus {
+    box-shadow: none;
+  }
 }

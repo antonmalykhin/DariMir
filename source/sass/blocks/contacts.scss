@@ -1,102 +1,102 @@
-// .contacts {
-//   margin-bottom: 18px;
-// }
+.contacts {
+  margin-bottom: 18px;
+}
 
-// .contacts__wrapper {
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: space-between;
-//   padding: 0;
-//   padding-right: 10px;
-//   padding-left: 10px;
-// }
+.contacts__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  padding-right: 10px;
+  padding-left: 10px;
+}
 
-// .contacts__bg {
-//   display: flex;
-//   flex-direction: column;
-//   box-sizing: border-box;
-//   width: 100%;
-//   margin: 0;
-  //! margin-top: 22px;
-  // padding-top: 10px;
-  // padding-right: 10px;
-  // padding-bottom: 10px;
-  // padding-left: 10px;
+.contacts__bg {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  // ! margin-top: 22px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
 
-  // background-color: $gray;
-// }
+  background-color: $gray;
+}
 
-// .contacts__title {
-//   width: 100%;
-//   margin-bottom: 14px;
+.contacts__title {
+  width: 100%;
+  margin-bottom: 14px;
 
-//   font-weight: 400;
-//   font-size: 18px;
-//   line-height: 22px;
-//   text-align: center;
-//   text-transform: uppercase;
-//   letter-spacing: 0.05em;
-// }
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
 
-// .contacts__description {
-//   box-sizing: border-box;
-//   width: 100%;
-//   padding-right: 11px;
-//   padding-left: 11px;
+.contacts__description {
+  box-sizing: border-box;
+  width: 100%;
+  padding-right: 11px;
+  padding-left: 11px;
 
-//   background-color: $white;
-// }
+  background-color: $white;
+}
 
-// .contacts__metro {
-//   margin-top: 4px;
-//   margin-bottom: 6px;
+.contacts__metro {
+  margin-top: 4px;
+  margin-bottom: 6px;
 
-//   font-weight: 400;
-//   font-size: 18px;
-//   line-height: 28px;
-//   color: $cyan;
-// }
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: $cyan;
+}
 
-// .contacts__item {
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: space-between;
-//   margin-bottom: 19px;
-//   padding-top: 0;
-// }
+.contacts__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 19px;
+  padding-top: 0;
+}
 
-// .contacts__item:last-of-type {
-//   margin-bottom: 0;
-//   padding-top: 1px;
-//   padding-bottom: 8px;
-// }
+.contacts__item:last-of-type {
+  margin-bottom: 0;
+  padding-top: 1px;
+  padding-bottom: 8px;
+}
 
-// .contacts__value {
-//   width: 252px;
+.contacts__value {
+  width: 252px;
 
-//   text-align: left;
-// }
+  text-align: left;
+}
 
-// .contacts__phone {
-//   margin-bottom: 6px;
-//   padding-top: 10px;
+.contacts__phone {
+  margin-bottom: 6px;
+  padding-top: 10px;
   //! display: flex;
   //! padding-top: 27px;
 
   //! border-top: 1px solid #e2e1e6;
-// }
+}
 
-// .contacts__address {
+.contacts__address {
   //! display: flex;
-//   margin-top: 0;
-//   margin-bottom: 5px;
-// }
+  margin-top: 0;
+  margin-bottom: 5px;
+}
 
-// .contacts__working-hours {
+.contacts__working-hours {
   //! display: flex;
-  // margin-top: 0;
-  // margin-bottom: 3px;
-// }
+  margin-top: 0;
+  margin-bottom: 3px;
+}
 
 //! .contacts__email {
 //!  display: flex;
@@ -104,45 +104,45 @@
 //!   border: none;
 //! }
 
-// .contacts__info {
-//   display: block;
-//   width: 202px;
-//   margin-bottom: 7px;
+.contacts__info {
+  display: block;
+  width: 202px;
+  margin-bottom: 7px;
 
-//   font-weight: 600;
-//   color: $cyan;
-//   text-transform: uppercase;
-//   letter-spacing: 0.05em;
-// }
+  font-weight: 600;
+  color: $cyan;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
 
-// .contacts__address .contacts__info {
-//   margin-bottom: 3px;
-// }
+.contacts__address .contacts__info {
+  margin-bottom: 3px;
+}
 
-// .contacts__working-hours .contacts__info {
-//   margin-bottom: 3px;
-// }
+.contacts__working-hours .contacts__info {
+  margin-bottom: 3px;
+}
 
-// .contacts__email .contacts__info {
-//   margin-bottom: 3px;
-// }
+.contacts__email .contacts__info {
+  margin-bottom: 3px;
+}
 
-// .contacts__about-shop {
-//   display: none;
-//   margin-top: 24px;
+.contacts__about-shop {
+  display: none;
+  margin-top: 24px;
 
-//   line-height: 1.6;
-// }
+  line-height: 1.6;
+}
 
-// .contacts__pagination {
-//   margin-top: 15px;
-// }
+.contacts__pagination {
+  margin-top: 15px;
+}
 
-// @media (min-width: 533px) {
-//   .contacts__value {
-//     text-align: right;
-//   }
-// }
+@media (min-width: 533px) {
+  .contacts__value {
+    text-align: right;
+  }
+}
 
 @media (min-width: $desktop) {
   .contacts {
@@ -153,18 +153,23 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0;
   }
 
   .contacts__bg {
-    display: flex;
-    width: 100%;
-    margin-top: 22px;
+    flex-direction: row;
+    margin-top: 29px;
     padding-top: 30px;
     padding-right: 31px;
     padding-bottom: 30px;
     padding-left: 30px;
+  }
 
-    background-color: $gray;
+  .contacts__title {
+    width: auto;
+
+    font-size: 24px;
+    line-height: 22px;
   }
 
   .contacts__description {
@@ -176,39 +181,40 @@
     background-color: $white;
   }
 
+  .contacts__value {
+    text-align: left;
+  }
+
   .contacts__metro {
     margin-top: 24px;
     margin-bottom: 24px;
 
-    font-weight: 400;
     font-size: 22px;
     line-height: 28px;
-    color: $cyan;
   }
 
   .contacts__item {
-    margin-bottom: 19px;
+    display: flex;
+    justify-content: flex-start;
   }
 
   .contacts__item:last-of-type {
-    margin-bottom: 0;
-    padding-bottom: 24px;
+    padding-bottom: 20px;
   }
 
-
   .contacts__phone {
-    display: flex;
+    margin-bottom: 13px;
     padding-top: 27px;
 
     border-top: 1px solid #e2e1e6;
   }
 
   .contacts__address {
-    display: flex;
+    margin-bottom: 16px;
   }
 
   .contacts__working-hours {
-    display: flex;
+    margin-bottom: 15px;
   }
 
   .contacts__email {
@@ -228,7 +234,9 @@
   }
 
   .contacts__about-shop {
+    display: block;
     margin-top: 24px;
+    margin-bottom: 25px;
 
     line-height: 1.6;
   }
@@ -251,6 +259,9 @@
     opacity: 0.6;
   }
 
+  .contacts__pagination {
+    margin-top: 4px;
+  }
 }
 
 //!-------------------------------

@@ -1,82 +1,85 @@
-// .brands {
-//   margin-bottom: 24px;
-// }
+.brands {
+  margin-bottom: 24px;
+}
 
-// .brands__wrapper {
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: space-between;
-// }
+.brands__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
-// .brands__title {
-//   width: 100%;
-//   margin: 0;
+.brands__title {
+  width: 100%;
+  margin: 0;
 
-//   text-align: center;
-// }
+  text-align: center;
+}
 
-// .brands__list {
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: space-between;
-//   width: 100%;
-//   margin: 0;
-//   margin-top: 12px;
-//   padding: 0 10px;
+.brands__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  margin-top: 12px;
+  padding: 0 10px;
 
-//   list-style: none;
-// }
+  list-style: none;
+}
 
-// .brands__item {
-//   width: 50%;
-// }
+.brands__item {
+  width: 50%;
+}
 
 // .brands__svg-img:hover {
 //   filter: none;
 // }
 
-// .brands__link {
-//   display: block;
-//   width: 100%;
-//   height: 95px;
+.brands__link {
+  display: block;
+  width: 100%;
+  height: 95px;
 
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: 147px;
-// }
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 147px;
+}
 
-// @for $i from 1 through 6 {
-//   .brands__item:nth-of-type(#{$i}) .brands__link {
-//     background-image: url("../img/brand_#{$i}.jpg");
-//   }
-// }
+@for $i from 1 through 6 {
+  .brands__item:nth-of-type(#{$i}) .brands__link {
+    background-image: url("../img/brand_#{$i}.jpg");
+  }
+}
 
-// .brands__item--hidden {
-//   display: none;
-// }
+.brands__item--hidden {
+  display: none;
+}
 
 @media (min-width: $desktop) {
   .brands {
-    margin-bottom: 77px;
-    padding-top: 7px;
+    margin-bottom: 73px;
+    padding-top: 9px;
   }
 
   .brands__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    align-items: center;
+  }
+
+  .brands__title {
+    width: auto;
+    margin-top: 4px;
+    margin-left: 22px;
   }
 
   .brands__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     width: 1240px;
     margin: 0;
-    margin-top: 22px;
+    margin-top: 28px;
     padding: 0;
+  }
 
-    list-style: none;
+  .brands__item {
+    width: auto;
   }
 
   .brands__svg-img:hover {
@@ -88,7 +91,7 @@
     width: 206px;
     height: 150px;
 
-    background-repeat: no-repeat;
+    background-size: 208px;
   }
 
   @for $i from 1 through 6 {
@@ -101,6 +104,10 @@
     .brands__item:nth-of-type(#{$i}) .brands__link:hover {
       background-image: url("../img/brand_#{$i}.jpg");
     }
+  }
+
+  .brands__item--hidden {
+    display: block;
   }
 }
 

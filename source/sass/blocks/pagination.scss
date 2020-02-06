@@ -1,194 +1,125 @@
-// .pagination {
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: center;
-//   align-items: center;
-//   margin-right: 19px;
-// }
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-right: 19px;
+}
 
-// .pagination__all {
-//   margin-bottom: 14px;
-//   // margin-right: 52px;
+.pagination__all {
+  margin-bottom: 14px;
 
-//   font-size: 15px;
-//   color: $cyan;
-// }
+  font-size: 15px;
+  color: $cyan;
+}
 
-// .pagination__numbers {
-//   position: relative;
+.pagination__numbers {
+  position: relative;
 
-//   display: flex;
-//   justify-content: space-between;
-//   box-sizing: border-box;
-//   width: 64px;
-//   padding: 0 9px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 64px;
+  padding: 0 9px;
 
-//   &::after {
-//     content: "/";
-//     position: absolute;
-//     left: 47%;
+  &::after {
+    content: "/";
+    position: absolute;
+    left: 47%;
 
-//     color: #b8b8ba;
-//   }
-// }
+    color: #b8b8ba;
+  }
+}
 
-// .pagination__numbers span {
-//   width: 50%;
-//   padding: 0 7px;
+.pagination__numbers span {
+  width: 50%;
+  padding: 0 7px;
 
-//   text-align: center;
-// }
+  text-align: center;
+}
 
-// .pagination__page {
-//   color: $darkblue;
-// }
+.pagination__page {
+  color: $darkblue;
+}
 
-// .pagination__pages {
-//   color: #b8b8ba;
-// }
+.pagination__pages {
+  color: #b8b8ba;
+}
 
-// .pagination__buttons {
-//   display: flex;
-//   justify-content: center;
-//   width: 100%;
-// }
+.pagination__buttons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 
-// .pagination__btn {
-//   position: relative;
+.pagination__btn {
+  position: relative;
 
-//   width: 50px;
-//   height: 50px;
+  width: 50px;
+  height: 50px;
 
-//   background-color: #f0f0f2;
-//   border: 1px solid #e2e1e6;
-//   border-radius: 50%;
-//   cursor: pointer;
+  background-color: #f0f0f2;
+  border: 1px solid #e2e1e6;
+  border-radius: 50%;
+}
 
-//   // @include arrow(top, 23px, right, 16px, $brown);
-// }
+.pagination__btn svg {
+  position: absolute;
+  top: 17px;
+  left: 14px;
 
-// .pagination__btn svg {
-//   position: absolute;
-//   top: 17px;
-//   left: 14px;
+  fill: #b69a79;
+}
 
-//   fill: #b69a79;
-// }
+.pagination__btn--back {
+  transform: rotate(180deg);
+}
 
-// .pagination__btn--back {
-//   transform: rotate(180deg);
-// }
-
-// .pagination__btn:hover,
-// .pagination__btn:focus {
-//   background-color: #b69a79;
-// }
-
-// .pagination__btn:hover svg,
-// .pagination__btn:focus svg {
-//   fill: $white;
-// }
-
-
-// .pagination__btn:active {
-//   opacity: 0.7;
-// }
-
-// .pagination__all:hover,
-// .pagination__all:focus {
-//   text-decoration: underline;
-// }
-
-// .pagination__all:active {
-//   opacity: 0.7;
-// }
+.pagination__btn:hover,
+.pagination__btn:focus {
+  background-color: #b69a79;
+}
 
 @media (min-width: $desktop) {
   .pagination {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     margin-right: 19px;
   }
 
   .pagination__all {
     margin-right: 52px;
-
-    font-size: 15px;
-    color: $cyan;
+    margin-bottom: 0;
   }
 
   .pagination__buttons {
     display: flex;
-  }
-
-  .pagination__numbers {
-    position: relative;
-
-    display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
-    width: 64px;
-    padding: 0 9px;
-
-    &::after {
-      content: "/";
-      position: absolute;
-      left: 47%;
-
-      color: #b8b8ba;
-    }
-  }
-
-  .pagination__numbers span {
-    width: 50%;
-    padding: 0 7px;
-
-    text-align: center;
-  }
-
-  .pagination__page {
-    color: $darkblue;
-  }
-
-  .pagination__pages {
-    color: #b8b8ba;
+    justify-content: center;
+    width: auto;
   }
 
   .pagination__btn {
-    position: relative;
-
-    width: 50px;
-    height: 50px;
-
-    background-color: #f0f0f2;
-    border: 1px solid #e2e1e6;
-    border-radius: 50%;
     cursor: pointer;
   }
 
-  .pagination__btn svg {
-    fill: #b69a79;
+  .pagination__btn:hover svg,
+  .pagination__btn:focus svg {
+    fill: $white;
   }
 
-  .pagination__btn--back {
-    transform: rotate(180deg);
-  }
-
-  .pagination__btn:hover,
-  .pagination__btn:focus {
-    opacity: 0.7;
-  }
 
   .pagination__btn:active {
-    opacity: 0.5;
+    opacity: 0.7;
   }
 
   .pagination__all:hover,
   .pagination__all:focus {
-    opacity: 0.6;
+    text-decoration: underline;
   }
 
   .pagination__all:active {
-    opacity: 0.4;
+    opacity: 0.7;
   }
 }
