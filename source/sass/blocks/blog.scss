@@ -89,7 +89,7 @@
   fill: #b69a79;
 }
 
-.blog__item--hidden {
+.blog__item--mobile-hidden {
   display: none;
 }
 
@@ -112,6 +112,139 @@
   border: 1px solid $brown;
 }
 
+@media (min-width: $tablet) {
+  .blog {
+    margin-bottom: 16px;
+  }
+
+  .blog__title {
+    margin-right: 20px;
+    margin-bottom: 16px;
+
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .blog__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  .blog__item {
+    width: 50%;
+    padding-top: 19px;
+    padding-right: 19px;
+    padding-bottom: 14px;
+    padding-left: 19px;
+
+    border-right: none;
+
+    transition: background-color 0.3s;
+  }
+
+  .blog__img-wrapper {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  }
+
+  .blog__img {
+    top: -35px;
+
+    display: block;
+    width: 100%;
+    height: auto;
+
+    transition: all 0.3s;
+  }
+
+  .blog__item svg {
+    position: absolute;
+    right: 20px;
+    bottom: 19px;
+
+    fill: #b69a79;
+  }
+
+  .blog__item:nth-of-type(2n) {
+    border-right: 1px solid #e2e1e6;
+  }
+
+  .blog__item:last-of-type {
+    border-right: 1px solid #e2e1e6;
+  }
+
+  .blog__item-title {
+    width: auto;
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 9px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: $cyan;
+  }
+
+  .blog__pub-date {
+    display: block;
+    margin-top: auto;
+    padding: 0;
+  }
+
+  .blog__item--mobile-hidden {
+    display: flex;
+  }
+
+  .blog__item--tablet-hidden {
+    display: none;
+
+
+    .blog__btn {
+      display: block;
+      box-sizing: border-box;
+      width: 250px;
+      margin: 0 auto;
+      margin-top: 30px;
+      padding: 10px;
+      padding-top: 13px;
+      padding-bottom: 13px;
+
+      text-align: center;
+      color: $darkblue;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+
+      background-color: $white;
+      border: 1px solid $brown;
+    }
+
+    .blog__item:hover,
+    .blog__item:focus {
+      background-color: $gray;
+    }
+
+    .blog__item:hover .blog__img {
+      position: relative;
+
+      transform: scale(1.06);
+    }
+
+
+    .blog__item-title:hover,
+    .blog__item-title:focus {
+      opacity: 0.7;
+    }
+
+    .blog__item-title:active {
+      opacity: 0.5;
+    }
+
+    .blog__btn:hover {
+      background-color: rgba($brown, 0.2);
+    }
+  }
+}
 
 @media (min-width: $desktop) {
   .blog {

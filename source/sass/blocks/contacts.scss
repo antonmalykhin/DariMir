@@ -144,6 +144,127 @@
   }
 }
 
+@media (min-width: $tablet) {
+  .contacts {
+    margin-bottom: 20px;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .contacts__bg {
+    flex-direction: column;
+    margin-top: 18px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+  }
+
+  .contacts__title {
+    width: auto;
+
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .contacts__description {
+    box-sizing: border-box;
+    width: 100%;
+    padding-right: 22px;
+    padding-left: 22px;
+
+    background-color: $white;
+  }
+
+  .contacts__value {
+    text-align: left;
+  }
+
+  .contacts__metro {
+    margin-top: 6px;
+    margin-bottom: 12px;
+
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .contacts__item {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .contacts__item:last-of-type {
+    padding-bottom: 11px;
+  }
+
+  .contacts__phone {
+    margin-bottom: 2px;
+    padding-top: 15px;
+
+    border-top: 1px solid #e2e1e6;
+  }
+
+  .contacts__address {
+    margin-bottom: 6px;
+  }
+
+  .contacts__working-hours {
+    margin-bottom: 5px;
+  }
+
+  .contacts__email {
+    display: flex;
+
+    border-bottom: 1px solid #e2e1e6;
+  }
+
+  .contacts__info {
+    display: block;
+    width: 278px;
+
+    font-weight: 600;
+    color: $cyan;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .contacts__about-shop {
+    display: block;
+    margin-top: 13px;
+    margin-bottom: 13px;
+
+
+    line-height: 1.6;
+  }
+
+  .contacts__phone-number:hover,
+  .contacts__phone-number:focus {
+    color: $cyan;
+  }
+
+  .contacts__phone-number:active {
+    opacity: 0.6;
+  }
+
+  .contacts__email-text:hover,
+  .contacts__email-text:focus {
+    color: $cyan;
+  }
+
+  .contacts__email-text:active {
+    opacity: 0.6;
+  }
+
+  .contacts__pagination {
+    margin-top: 4px;
+  }
+}
+
 @media (min-width: $desktop) {
   .contacts {
     margin-bottom: 40px;
