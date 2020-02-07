@@ -3,6 +3,13 @@
   margin-bottom: 27px;
 }
 
+@media (min-width: $tablet) {
+  .news {
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
+}
+
 @media (min-width: $desktop) {
   .news__item:hover,
   .news__item:focus {

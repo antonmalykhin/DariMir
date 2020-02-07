@@ -1,9 +1,15 @@
 
-@media (min-width: $desktop) {
+@media (min-width: $tablet) {
   .container {
     position: relative;
 
-    width: 1240px;
+    width: 960px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop) {
+  .container {
+    width: 1240px;
   }
 }

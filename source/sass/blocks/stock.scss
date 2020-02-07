@@ -14,7 +14,7 @@
 }
 
 .stock__item {
-  max-width: 93.6%;
+  // max-width: 93.6%;
   margin: 0 auto;
   margin-bottom: -4px;
 }
@@ -36,6 +36,33 @@
   right: 58px;
 }
 
+@media (min-width: $tablet) {
+  .stock {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .stock__item {
+    margin: 0;
+  }
+
+  .stock__item--big {
+    width: 50%;
+  }
+
+  .stock__item--small {
+    width: 33.33%;
+    margin-top: -6px;
+  }
+
+  .stock__item--hidden {
+    display: block;
+  }
+
+  .stock__btn {
+    display: none;
+  }
+}
 
 @media (min-width: $desktop) {
   .stock {

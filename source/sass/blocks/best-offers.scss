@@ -3,6 +3,13 @@
   margin-bottom: 6px;
 }
 
+@media (min-width: $tablet) {
+  .best-offers {
+    margin-top: 0;
+    margin-bottom: 36px;
+  }
+}
+
 @media (min-width: $desktop) {
   .best-offers {
     margin-top: 24px;

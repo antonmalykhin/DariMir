@@ -43,13 +43,27 @@
                 <li class="page-header__service-item service-menu__item">
                   <a class="page-header__service-link service-menu__link" href="#">Как оформить заказ</a>
                 </li>
-                <li class="page-header__service-item service-menu__item">
+                <li class="page-header__service-item page-header__service-item--tablet-dropdown service-menu__item">
+                  <a class="page-header__service-link service-menu__link" href="#">Еще</a>
+                  <ul class="page-header__service-drop-list">
+                    <li class="page-header__service-drop-item">
+                      <a class="page-header__service-drop-item" href="#">Условия работы</a>
+                    </li>
+                    <li class="page-header__service-drop-item">
+                      <a class="page-header__service-drop-item" href="#">Гарантии</a>
+                    </li>
+                    <li class="page-header__service-drop-item">
+                      <a class="page-header__service-drop-item" href="#">Возврат</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="page-header__service-item page-header__service-item--tablet service-menu__item">
                   <a class="page-header__service-link service-menu__link" href="#">Условия работы</a>
                 </li>
-                <li class="page-header__service-item service-menu__item">
+                <li class="page-header__service-item page-header__service-item--tablet service-menu__item">
                   <a class="page-header__service-link service-menu__link" href="#">Гарантии</a>
                 </li>
-                <li class="page-header__service-item service-menu__item">
+                <li class="page-header__service-item page-header__service-item--tablet service-menu__item">
                   <a class="page-header__service-link service-menu__link" href="#">Возврат</a>
                 </li>
               </ul>
@@ -387,7 +401,7 @@
               <button class="goods__to-cart-btn" type="button">Добавить в корзину</button>
             </li>
 
-            <li class="goods__item goods__item--hidden">
+            <li class="goods__item goods__item--mobile-hidden">
               <button class="goods__btn goods__btn--compare" type="button" aria-label="Добавить к сравнению">
                 <svg width="23" height="26">
                   <use xlink:href="img/sprite.svg#compare"></use>
@@ -418,7 +432,7 @@
               <button class="goods__to-cart-btn" type="button">Добавить в корзину</button>
             </li>
 
-            <li class="goods__item goods__item--hidden">
+            <li class="goods__item goods__item--mobile-hidden">
               <button class="goods__btn goods__btn--compare" type="button" aria-label="Добавить к сравнению">
                 <svg width="23" height="26">
                   <use xlink:href="img/sprite.svg#compare"></use>
@@ -450,7 +464,7 @@
               <button class="goods__to-cart-btn" type="button">Добавить в корзину</button>
             </li>
 
-            <li class="goods__item goods__item--hidden">
+            <li class="goods__item goods__item--mobile-hidden goods__item--tablet-hidden">
               <button class="goods__btn goods__btn--compare" type="button" aria-label="Добавить к сравнению">
                 <svg width="23" height="26">
                   <use xlink:href="img/sprite.svg#compare"></use>
@@ -488,35 +502,35 @@
       <div class="container">
         <h2 class="visually-hidden">Акции</h2>
         <ul class="stock__list">
-          <li class="stock__item">
+          <li class="stock__item stock__item--big">
             <a class="stock__link" href="#">
               <picture>
                 <source type="image/webp" srcset="img/stock_1.webp">
                 <img class="stock__image" src="img/stock_1.jpg" width="619" height="442" alt="Новые поступления Loom">
               </picture>
             </a></li>
-          <li class="stock__item"><a class="stock__link" href="#">
+          <li class="stock__item stock__item--big"><a class="stock__link" href="#">
               <picture>
                 <source type="image/webp" srcset="img/stock_2.webp">
                 <img class="stock__image" src="img/stock_2.jpg" width="619" height="442"
                   alt="Скидка 10% за регистрацию на сайте">
               </picture>
             </a></li>
-          <li class="stock__item stock__item--hidden"><a class="stock__link" href="#">
+          <li class="stock__item stock__item--small stock__item--hidden"><a class="stock__link" href="#">
               <picture>
                 <source type="image/webp" srcset="img/stock_3.webp">
                 <img class="stock__image" src="img/stock_3.jpg" width="412" height="294"
                   alt="Скидка 20% на детскую косметику mi&ko">
               </picture>
             </a></li>
-          <li class="stock__item stock__item--hidden"><a class="stock__link" href="#">
+          <li class="stock__item stock__item--small stock__item--hidden"><a class="stock__link" href="#">
               <picture>
                 <source type="image/webp" srcset="img/stock_4.webp">
                 <img class="stock__image" src="img/stock_4.jpg" width="412" height="294"
                   alt="Лучшие комбинезони-трансформеры ДАРИМИР">
               </picture>
             </a></li>
-          <li class="stock__item stock__item--hidden"><a class="stock__link" href="#">
+          <li class="stock__item stock__item--small stock__item--hidden"><a class="stock__link" href="#">
               <picture>
                 <source type="image/webp" srcset="img/stock_5.webp">
                 <img class="stock__image" src="img/stock_5.jpg" width="412" height="294" alt="У нас новый бренд Carrot">
@@ -573,7 +587,7 @@
               </div>
             </li>
 
-            <li class="news__item goods__item goods__item--hidden">
+            <li class="news__item goods__item goods__item--mobile-hidden">
               <div class="goods__labels">
                 <p class="goods__new">Новинка</p>
                 <p class="goods__hit">Хит продаж</p>
@@ -592,7 +606,7 @@
               </div>
             </li>
 
-            <li class="news__item goods__item goods__item--hidden">
+            <li class="news__item goods__item goods__item--mobile-hidden">
 
               <div class="goods__labels">
                 <p class="goods__new">Новинка</p>
@@ -614,7 +628,7 @@
               </div>
             </li>
 
-            <li class="news__item goods__item goods__item--hidden">
+            <li class="news__item goods__item goods__item--mobile-hidden goods__item--tablet-hidden">
               <div class="goods__labels">
                 <p class="goods__new">Новинка</p>
                 <p class="goods__discount">-50%</p>
@@ -666,16 +680,16 @@
             <li class="brands__item">
               <a class="brands__link" href="#" aria-label="Товары бренда Toucan For Kids"></a>
             </li>
-            <li class="brands__item brands__item--hidden">
+            <li class="brands__item brands__item--mobile-hidden">
               <a class="brands__link" href="#" aria-label="Товары бренда Журавлик"></a>
             </li>
-            <li class="brands__item brands__item--hidden">
+            <li class="brands__item brands__item--mobile-hidden">
               <a class="brands__link" href="#" aria-label="Товары бренда Leo For Kids"></a>
             </li>
-            <li class="brands__item brands__item--hidden">
+            <li class="brands__item brands__item--mobile-hidden">
               <a class="brands__link" href="#" aria-label="Товары бренда Artie"></a>
             </li>
-            <li class="brands__item brands__item--hidden">
+            <li class="brands__item brands__item--mobile-hidden brands__item--tablet-hidden">
               <a class="brands__link" href="#" aria-label="Товары бренда Kleona"></a>
             </li>
           </ul>
@@ -692,8 +706,7 @@
                 <use xlink:href="img/sprite.svg#plus1">
               </svg>
               <div class="features__description">
-                <h3 class="features__feater-title">Лучшие бренды<br>
-                  российских производителей</h3>
+                <h3 class="features__feater-title">Лучшие бренды российских производителей</h3>
                 <p class="features__text">В нашем магазине собраны лучшие бренды детской одежды и аксессуаров от
                   российских
                   производителей. Мы постоянно в поисках самых современных, самых стильных и качественных брендов. Вы с
