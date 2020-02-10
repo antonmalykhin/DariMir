@@ -11,6 +11,10 @@
 }
 
 @media (min-width: $desktop) {
+  .news {
+    margin-bottom: 25px;
+  }
+
   .news__item:hover,
   .news__item:focus {
     box-shadow: none;

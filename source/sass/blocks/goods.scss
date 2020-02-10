@@ -338,6 +338,10 @@
     cursor: pointer;
   }
 
+  .goods__item--tablet-hidden {
+    display: block;
+  }
+
   .goods__item:hover,
   .goods__item:focus {
     box-sizing: border-box;

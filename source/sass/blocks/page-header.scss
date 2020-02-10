@@ -340,6 +340,15 @@
     display: none;
   }
 
+  .page-header__service-item--tablet-dropdown .page-header__service-link {
+    color: #609c9f;
+  }
+
+  .page-header__service-item--tablet-dropdown .page-header__service-link svg{
+    fill: #609c9f;
+  }
+
+
   .page-header__service-drop-list {
     display: none;
   }
@@ -413,10 +422,6 @@
     margin-right: 55px;
     margin-left: 1px;
     padding-top: 0;
-  }
-
-  .page-header__logo svg {
-    color: #a9acb2;
   }
 
   .page-header__title-form {
@@ -577,7 +582,7 @@
 
 @media (min-width: $desktop) {
   .page-header {
-    margin-bottom: 60px;
+    margin-bottom: 111px;
   }
 
   .page-header__nav {
@@ -605,6 +610,18 @@
     width: auto;
   }
 
+  .page-header__service-item--tablet {
+    display: block;
+  }
+
+  .page-header__service-item--tablet-dropdown {
+    display: none;
+  }
+
+  .page-header__service-drop-list {
+    display: none;
+  }
+
   .page-header__service-link {
     padding: 0;
 
@@ -612,9 +629,9 @@
   }
 
   .page-header__user-menu {
-    width: auto;
+    width: 214px;
     margin: 0;
-    margin-right: 10px;
+    margin-right: 18px;
     margin-left: 22px;
     padding: 0;
 

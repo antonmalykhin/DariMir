@@ -114,7 +114,7 @@
 
 @media (min-width: $desktop) {
   .brands {
-    margin-bottom: 73px;
+    margin-bottom: 77px;
     padding-top: 9px;
   }
 
@@ -126,6 +126,9 @@
     width: auto;
     margin-top: 4px;
     margin-left: 22px;
+
+    font-size: 24px;
+    line-height: 1;
   }
 
   .brands__list {
@@ -164,6 +167,10 @@
   }
 
   .brands__item--hidden {
+    display: block;
+  }
+
+  .brands__item--tablet-hidden {
     display: block;
   }
 }

@@ -8,7 +8,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
-  padding: 0;
+  padding: 0 11px;
 
   list-style: none;
 }
@@ -40,6 +40,10 @@
   .stock {
     margin-top: 0;
     margin-bottom: 20px;
+  }
+
+  .stock__list {
+    padding: 0;
   }
 
   .stock__item {

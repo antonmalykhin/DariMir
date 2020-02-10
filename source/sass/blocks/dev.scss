@@ -59,6 +59,7 @@
 @media (min-width: $desktop) {
   .dev {
     display: flex;
+    flex-direction: row;
     align-items: center;
     margin-top: 28px;
     padding: 0;
