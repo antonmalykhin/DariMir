@@ -14,7 +14,6 @@
 }
 
 .stock__item {
-  // max-width: 93.6%;
   margin: 0 auto;
   margin-bottom: -4px;
 }
@@ -70,20 +69,6 @@
 
 @media (min-width: $desktop) {
   .stock {
-    margin-top: 0;
     margin-bottom: 52px;
   }
-
-  .stock__item--hidden {
-    display: block;
-  }
-
-  .stock__btn {
-    display: none;
-  }
 }
-
-// for desktop
-// .stock__item {
-//   margin-bottom: -4px;
-// }

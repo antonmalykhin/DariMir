@@ -8,7 +8,6 @@
 
 .dev span {
   margin-top: 15px;
-  // margin-right: 10px;
 
   color: #b8b8ba;
 }
@@ -17,18 +16,8 @@
   margin-top: 4px;
 }
 
-.dev:hover,
-.dev:focus {
-  opacity: 0.7;
-}
-
-.dev:focus {
-  opacity: 0.4;
-}
-
 @media (min-width: $tablet) {
   .dev {
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-top: 9px;
@@ -38,42 +27,18 @@
   .dev span {
     margin-top: 15px;
     margin-right: 10px;
-
-    color: #b8b8ba;
   }
 
   .dev__img {
     margin-top: 1px;
-  }
-
-  .dev:hover,
-  .dev:focus {
-    opacity: 0.7;
-  }
-
-  .dev:focus {
-    opacity: 0.4;
   }
 }
 
 @media (min-width: $desktop) {
   .dev {
-    display: flex;
     flex-direction: row;
     align-items: center;
     margin-top: 28px;
-    padding: 0;
-  }
-
-  .dev span {
-    margin-top: 15px;
-    margin-right: 10px;
-
-    color: #b8b8ba;
-  }
-
-  .dev__img {
-    margin-top: 1px;
   }
 
   .dev:hover,
@@ -85,34 +50,3 @@
     opacity: 0.4;
   }
 }
-
-//!---------------------------
-//!             old
-//!---------------------------
-// @media (min-width: $desktop) {
-//   .dev {
-//     display: flex;
-//     align-items: center;
-//     margin-top: 28px;
-//   }
-
-//   .dev span {
-//     margin-top: 15px;
-//     margin-right: 10px;
-
-//     color: #b8b8ba;
-//   }
-
-//   .dev__img {
-//     margin-top: 1px;
-//   }
-
-//   .dev:hover,
-//   .dev:focus {
-//     opacity: 0.7;
-//   }
-
-//   .dev:focus {
-//     opacity: 0.4;
-//   }
-// }

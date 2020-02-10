@@ -10,11 +10,14 @@
   margin-right: 4px;
 }
 
-.sub-menu__link:hover,
-.sub-menu__link:focus {
-  opacity: 0.6;
-}
 
-.sub-menu__link:active {
-  opacity: 0.3;
+@media (min-width: $desktop) {
+  .sub-menu__link:hover,
+  .sub-menu__link:focus {
+    opacity: 0.6;
+  }
+
+  .sub-menu__link:active {
+    opacity: 0.3;
+  }
 }

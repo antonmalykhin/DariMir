@@ -66,9 +66,10 @@
   position: absolute;
   top: 18px;
   z-index: 5;
-//!------скрыл для мобилки-------------
+  //!------скрыл для мобилки-------------
+
   display: none;
-//!------------------------------------
+  //!------------------------------------
   width: 24px;
   height: 24px;
 
@@ -97,52 +98,15 @@
 @media (min-width: $tablet) {
   .user-menu {
     margin-top: 5px;
-    margin-right: 10px;
   }
 
   .user-menu__item--mobile {
     display: none;
-  }
-
-  .user-menu__link:hover .user-menu__icon,
-  .user-menu__link:focus .user-menu__icon {
-    color: $cyan;
-  }
-
-  .user-menu__link:active .user-menu__icon {
-    opacity: 0.3;
-  }
-
-  .user-menu__icon--user {
-    top: 9px;
-    left: 14px;
-  }
-
-  .user-menu__icon--compare {
-    top: 9px;
-    left: 9px;
-
-    stroke-width: 2;
-  }
-
-  .user-menu__icon--favorite {
-    top: 9px;
-    left: 8px;
-
-    stroke-width: 2;
-  }
-
-  .user-menu__icon--cart {
-    top: 7px;
-    left: 10px;
-
-    stroke-width: 2;
   }
 }
 
 @media (min-width: $desktop) {
   .user-menu {
-    margin-top: 5px;
     margin-right: 10px;
   }
 
@@ -158,135 +122,4 @@
   .user-menu__link:active .user-menu__icon {
     opacity: 0.3;
   }
-
-  .user-menu__icon--user {
-    top: 9px;
-    left: 14px;
-  }
-
-  .user-menu__icon--compare {
-    top: 9px;
-    left: 9px;
-
-    stroke-width: 2;
-  }
-
-  .user-menu__icon--favorite {
-    top: 9px;
-    left: 8px;
-
-    stroke-width: 2;
-  }
-
-  .user-menu__icon--cart {
-    top: 7px;
-    left: 10px;
-
-    stroke-width: 2;
-  }
 }
-
-//!---------------------------
-//!         old
-//!---------------------------
-// @media (min-width: $desktop) {
-//   .user-menu {
-//     display: flex;
-//     justify-content: space-between;
-//     width: 220px;
-//     margin: 0;
-//     margin-right: 10px;
-//     margin-left: auto;
-//     padding: 0;
-
-//     list-style: none;
-//   }
-
-//   .user-menu__item {
-//     width: 50px;
-//     height: 50px;
-//   }
-
-//   .user-menu__link {
-//     position: relative;
-
-//     display: block;
-//     width: 100%;
-//     height: 100%;
-//   }
-
-//   .user-menu__icon {
-//     position: absolute;
-
-//     color: $darkblue;
-
-//     fill: none;
-//     stroke-width: 2;
-//   }
-
-//   .user-menu__link:hover .user-menu__icon,
-//   .user-menu__link:focus .user-menu__icon {
-//     color: $cyan;
-//   }
-
-//   .user-menu__link:active .user-menu__icon {
-//     opacity: 0.3;
-//   }
-
-//   .user-menu__icon--user {
-//     top: 9px;
-//     left: 14px;
-//   }
-
-//   .user-menu__icon--compare {
-//     top: 9px;
-//     left: 9px;
-
-//     stroke-width: 2;
-//   }
-
-//   .user-menu__icon--favorite {
-//     top: 9px;
-//     left: 8px;
-
-//     stroke-width: 2;
-//   }
-
-//   .user-menu__icon--cart {
-//     top: 7px;
-//     left: 10px;
-
-//     stroke-width: 2;
-//   }
-
-//   .user-menu__qty {
-//     position: absolute;
-//     top: 18px;
-//     z-index: 5;
-
-//     display: block;
-//     width: 24px;
-//     height: 24px;
-
-//     font-weight: 600;
-//     font-size: 14px;
-//     line-height: 1.8;
-//     text-align: center;
-//     color: $white;
-
-//     background-color: $cyan;
-//     border-radius: 50%;
-//   }
-
-//   .user-menu__qty--compare {
-//     left: 10px;
-//   }
-
-//   .user-menu__qty--favorite {
-//     left: 10px;
-//   }
-
-//   .user-menu__qty--cart {
-//     left: 16px;
-//   }
-// }

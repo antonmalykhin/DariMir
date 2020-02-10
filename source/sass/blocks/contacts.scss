@@ -6,9 +6,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding: 0 10px;
 }
 
 .contacts__bg {
@@ -17,7 +15,6 @@
   box-sizing: border-box;
   width: 100%;
   margin: 0;
-  // ! margin-top: 22px;
   padding-top: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
@@ -80,29 +77,17 @@
 .contacts__phone {
   margin-bottom: 6px;
   padding-top: 10px;
-  //! display: flex;
-  //! padding-top: 27px;
-
-  //! border-top: 1px solid #e2e1e6;
 }
 
 .contacts__address {
-  //! display: flex;
   margin-top: 0;
   margin-bottom: 5px;
 }
 
 .contacts__working-hours {
-  //! display: flex;
   margin-top: 0;
   margin-bottom: 3px;
 }
-
-//! .contacts__email {
-//!  display: flex;
-
-//!   border: none;
-//! }
 
 .contacts__info {
   display: block;
@@ -150,14 +135,10 @@
   }
 
   .contacts__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     padding: 0;
   }
 
   .contacts__bg {
-    flex-direction: column;
     margin-top: 18px;
     padding-top: 20px;
     padding-right: 20px;
@@ -173,16 +154,8 @@
   }
 
   .contacts__description {
-    box-sizing: border-box;
-    width: 100%;
     padding-right: 22px;
     padding-left: 22px;
-
-    background-color: $white;
-  }
-
-  .contacts__value {
-    text-align: left;
   }
 
   .contacts__metro {
@@ -194,12 +167,15 @@
   }
 
   .contacts__item {
-    display: flex;
     justify-content: flex-start;
   }
 
   .contacts__item:last-of-type {
     padding-bottom: 11px;
+  }
+
+  .contacts__value {
+    text-align: left;
   }
 
   .contacts__phone {
@@ -224,40 +200,13 @@
   }
 
   .contacts__info {
-    display: block;
     width: 278px;
-
-    font-weight: 600;
-    color: $cyan;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
   }
 
   .contacts__about-shop {
     display: block;
     margin-top: 13px;
     margin-bottom: 13px;
-
-
-    line-height: 1.6;
-  }
-
-  .contacts__phone-number:hover,
-  .contacts__phone-number:focus {
-    color: $cyan;
-  }
-
-  .contacts__phone-number:active {
-    opacity: 0.6;
-  }
-
-  .contacts__email-text:hover,
-  .contacts__email-text:focus {
-    color: $cyan;
-  }
-
-  .contacts__email-text:active {
-    opacity: 0.6;
   }
 
   .contacts__pagination {
@@ -287,8 +236,6 @@
   }
 
   .contacts__title {
-    width: auto;
-
     font-size: 24px;
     line-height: 22px;
   }
@@ -309,14 +256,6 @@
   .contacts__metro {
     margin-top: 24px;
     margin-bottom: 24px;
-
-    font-size: 22px;
-    line-height: 28px;
-  }
-
-  .contacts__item {
-    display: flex;
-    justify-content: flex-start;
   }
 
   .contacts__item:last-of-type {
@@ -326,8 +265,6 @@
   .contacts__phone {
     margin-bottom: 13px;
     padding-top: 27px;
-
-    border-top: 1px solid #e2e1e6;
   }
 
   .contacts__address {
@@ -338,28 +275,13 @@
     margin-bottom: 15px;
   }
 
-  .contacts__email {
-    display: flex;
-
-    border-bottom: 1px solid #e2e1e6;
-  }
-
   .contacts__info {
-    display: block;
     width: 202px;
-
-    font-weight: 600;
-    color: $cyan;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
   }
 
   .contacts__about-shop {
-    display: block;
     margin-top: 24px;
     margin-bottom: 25px;
-
-    line-height: 1.6;
   }
 
   .contacts__phone-number:hover,
@@ -384,114 +306,3 @@
     margin-top: 4px;
   }
 }
-
-//!-------------------------------
-//!     old
-//!-------------------------------
-// @media (min-height: $desktop) {
-//   .contacts {
-//     margin-bottom: 40px;
-//   }
-
-//   .contacts__wrapper {
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: space-between;
-//   }
-
-//   .contacts__bg {
-//     display: flex;
-//     width: 100%;
-//     margin-top: 22px;
-//     padding-top: 30px;
-//     padding-right: 31px;
-//     padding-bottom: 30px;
-//     padding-left: 30px;
-
-//     background-color: $gray;
-//   }
-
-//   .contacts__description {
-//     box-sizing: border-box;
-//     width: 600px;
-//     padding-right: 30px;
-//     padding-left: 30px;
-
-//     background-color: $white;
-//   }
-
-//   .contacts__metro {
-//     margin-top: 24px;
-//     margin-bottom: 24px;
-
-//     font-weight: 400;
-//     font-size: 22px;
-//     line-height: 28px;
-//     color: $cyan;
-//   }
-
-//   .contacts__item {
-//     margin-bottom: 19px;
-//   }
-
-//   .contacts__item:last-of-type {
-//     margin-bottom: 0;
-//     padding-bottom: 24px;
-//   }
-
-
-//   .contacts__phone {
-//     display: flex;
-//     padding-top: 27px;
-
-//     border-top: 1px solid #e2e1e6;
-//   }
-
-//   .contacts__address {
-//     display: flex;
-//   }
-
-//   .contacts__working-hours {
-//     display: flex;
-//   }
-
-//   .contacts__email {
-//     display: flex;
-
-//     border-bottom: 1px solid #e2e1e6;
-//   }
-
-//   .contacts__info {
-//     display: block;
-//     width: 202px;
-
-//     font-weight: 600;
-//     color: $cyan;
-//     text-transform: uppercase;
-//     letter-spacing: 0.05em;
-//   }
-
-//   .contacts__about-shop {
-//     margin-top: 24px;
-
-//     line-height: 1.6;
-//   }
-
-//   .contacts__phone-number:hover,
-//   .contacts__phone-number:focus {
-//     color: $cyan;
-//   }
-
-//   .contacts__phone-number:active {
-//     opacity: 0.6;
-//   }
-
-//   .contacts__email-text:hover,
-//   .contacts__email-text:focus {
-//     color: $cyan;
-//   }
-
-//   .contacts__email-text:active {
-//     opacity: 0.6;
-//   }
-// }

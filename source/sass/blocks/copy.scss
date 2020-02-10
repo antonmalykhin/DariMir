@@ -18,25 +18,13 @@
   color: #b8b8ba;
 }
 
-.copy__link:hover,
-.copy__link:focus {
-  opacity: 0.7;
-}
-
-.copy__link:focus {
-  opacity: 0.4;
-}
-
 @media (min-width: $tablet) {
   .copy {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
   }
 
   .copy span {
-    color: #b8b8ba;
     margin-left: 0;
   }
 
@@ -45,44 +33,12 @@
   }
 
   .copy__link {
-    color: #b8b8ba;
-    margin-left: auto;
     margin-top: 0;
-  }
-
-  .copy__link:hover,
-  .copy__link:focus {
-    opacity: 0.7;
-  }
-
-  .copy__link:focus {
-    opacity: 0.4;
+    margin-left: auto;
   }
 }
 
 @media (min-width: $desktop) {
-  .copy {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .copy span {
-    color: #b8b8ba;
-    margin-left: 0;
-  }
-
-  .copy span:nth-of-type(2) {
-    margin-left: 5px;
-  }
-
-  .copy__link {
-    color: #b8b8ba;
-    margin-left: auto;
-    margin-top: 0;
-  }
-
   .copy__link:hover,
   .copy__link:focus {
     opacity: 0.7;
@@ -92,33 +48,3 @@
     opacity: 0.4;
   }
 }
-
-
-//!-----------------------------
-//!    old
-//!-----------------------------
-
-// @media (min-width: $desktop) {
-//   .copy {
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: space-between;
-//   }
-
-//   .copy span {
-//     color: #b8b8ba;
-//   }
-
-//   .copy__link {
-//     color: #b8b8ba;
-//   }
-
-//   .copy__link:hover,
-//   .copy__link:focus {
-//     opacity: 0.7;
-//   }
-
-//   .copy__link:focus {
-//     opacity: 0.4;
-//   }
-// }

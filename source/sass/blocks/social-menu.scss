@@ -28,16 +28,18 @@
   fill: $brown;
 }
 
-.social-menu__link:hover,
-.social-menu__link:focus {
-  background-color: $brown;
-}
+@media (min-width: $desktop) {
+  .social-menu__link:hover,
+  .social-menu__link:focus {
+    background-color: $brown;
+  }
 
-.social-menu__link:active {
-  background-color: rgba($brown, 0.5);
-}
+  .social-menu__link:active {
+    background-color: rgba($brown, 0.5);
+  }
 
-.social-menu__link:hover svg,
-.social-menu__link:focus svg {
-  fill: $white;
+  .social-menu__link:hover svg,
+  .social-menu__link:focus svg {
+    fill: $white;
+  }
 }
