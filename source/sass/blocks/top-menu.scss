@@ -1,16 +1,15 @@
-// .top-menu {
-//   display: flex;
-//   flex-wrap: wrap;
-//   margin: 0;
-//   padding: 0;
+.top-menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 
-//   list-style: none;
-// }
+  list-style: none;
+}
 
-
-// .top-menu__item {
-//   width: 100%;
-// }
+.top-menu__item {
+  width: 100%;
+}
 
 @media (min-width: $tablet) {
   .top-menu {
@@ -27,6 +26,8 @@
 
   .top-menu__item {
     position: relative;
+
+    width: auto;
   }
 
   .top-menu__item:nth-of-type(2) {
@@ -37,4 +38,3 @@
     align-self: center;
   }
 }
-
