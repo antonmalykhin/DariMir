@@ -88,6 +88,12 @@
   fill: $cyan;
 }
 
+.page-footer__menu--open .page-footer__title svg {
+  top: 6px;
+
+  transform: rotate(180deg);
+}
+
 .page-footer__menu-list {
   position: relative;
 
@@ -172,6 +178,13 @@
   padding-top: 9px;
 
   border-top: 1px solid #e2e1e6;
+}
+
+.page-footer--inner {
+  margin-top: 30px;
+  padding-top: 30px;
+
+  background-color: #f0f0f2;
 }
 
 @media (min-width: $tablet) {
@@ -377,6 +390,13 @@
     padding-right: 19px;
     padding-left: 21px;
   }
+
+  .page-footer--inner {
+    margin-top: 30px;
+    padding-top: 30px;
+
+    background-color: #f0f0f2;
+  }
 }
 
 @media (min-width: $desktop) {
@@ -426,6 +446,12 @@
 
   .page-footer__bottom {
     margin-top: 23px;
+  }
+
+  .page-footer--inner {
+    padding-top: 30px;
+
+    background-color: #f0f0f2;
   }
 
   .page-footer__phone-number:hover,
