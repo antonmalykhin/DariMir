@@ -1,0 +1,129 @@
+.article {
+  h1 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #041936;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  img {
+    display: block;
+    margin: 30px auto;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #55606e;
+  }
+
+  iframe {
+    display: block;
+    width: 288px;
+    height: 164px;
+    margin: 30px auto;
+  }
+
+  h2 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #609c9f;
+  }
+
+  blockquote {
+    margin: 30px  0;
+
+    p {
+      position: relative;
+
+      box-sizing: border-box;
+      width: 100%;
+      padding: 20px 20px;
+
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 24px;
+      text-align: center;
+      color: #b69a79;
+
+      background-color: #f0f0f2;
+      border: 1px solid #e2e1e6;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -7px;
+        left: 50%;
+
+        width: 12px;
+        height: 12px;
+
+        background-color: #f0f0f2;
+        border: 1px solid #e2e1e6;
+        border-top: none;
+        border-left: none;
+        transform: rotate(45deg);
+      }
+    }
+
+    cite {
+      display: block;
+      padding: 0 15px;
+
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 24px;
+      text-align: center;
+      color: #041936;
+      font-style: normal;
+      letter-spacing: 0.05em;
+
+      span {
+        display: block;
+      }
+    }
+  }
+
+  time {
+    display: block;
+    margin: 30px 0;
+
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #55606e;
+  }
+}
+
+@media (min-width: $tablet) {
+  .article {
+    iframe {
+      width: 705px;
+      height: 493px;
+    }
+
+    h1 {
+      font-size: 24px;
+      line-height: 36px;
+    }
+
+    h2 {
+      font-size: 22px;
+      line-height: 30px;
+    }
+
+    blockquote {
+      p {
+        padding: 30px 50px;
+      }
+
+      cite {
+        padding: 0 30px;
+      }
+    }
+  }
+}
