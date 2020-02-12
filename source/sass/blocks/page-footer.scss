@@ -454,6 +454,11 @@
     background-color: #f0f0f2;
   }
 
+  .page-footer__menu-link:not([href]):hover,
+  .page-footer__menu-link:not([href]):focus {
+    color: #041936;
+  }
+
   .page-footer__phone-number:hover,
   .page-footer__phone-number:focus {
     color: $cyan;

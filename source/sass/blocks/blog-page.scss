@@ -145,6 +145,19 @@
   color: #baa085;
 }
 
+.blog-page__pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.blog-page__pagination-list {
+  display: none;
+}
+
 
 @media (min-width: $tablet) {
   .blog-page__container {
@@ -167,14 +180,23 @@
     padding: 20px;
 
     border-right: none;
+    border-bottom: none;
   }
 
   .blog-page__item:last-of-type {
     border: 1px solid #e2e1e6;
   }
 
+  .blog-page__item:nth-last-of-type(2) {
+    border-bottom: 1px solid #e2e1e6;
+  }
+
   .blog-page__item:nth-of-type(2n) {
-    border: 1px solid #e2e1e6;
+    border-right: 1px solid #e2e1e6;
+  }
+
+  .blog-page__item svg {
+    bottom: 25px;
   }
 
   .blog-page__item-title {
@@ -199,6 +221,64 @@
   .blog-page__sub-nav {
     margin: 0;
   }
+
+  .blog-page__pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .blog-page__pagination-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  .blog-page__pagination-item {
+    width: 20px;
+    margin-right: 20px;
+  }
+
+  .blog-page__pagination-item:last-of-type {
+    margin: 0;
+  }
+
+  .blog-page__pagination-link {
+    display: block;
+
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    color: #041936;
+    letter-spacing: 0.05em;
+  }
+
+  .blog-page__pagination-link--current {
+    position: relative;
+
+    color: #609c9f;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -14px;
+      left: -17px;
+
+      width: 50px;
+      height: 50px;
+
+      border: 1px solid #e2e1e6;
+      border-radius: 50%;
+    }
+  }
 }
 
 @media (min-width: $desktop) {
@@ -218,10 +298,12 @@
     box-sizing: border-box;
     width: 462px;
     padding: 30px;
-
-    border: 1px solid #e2e1e6;
-    border-right: none;
   }
+
+  .blog-page__item svg {
+    bottom: 35px;
+  }
+
 
   .blog-page__item-title {
     font-size: 22px;
