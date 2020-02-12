@@ -1,0 +1,38 @@
+.about-page {
+  width: 925px;
+}
+
+.about-page__img {
+  display: block;
+  margin: 0 auto;
+}
+
+.about-page__slogan {
+  width: 715px;
+  margin: 0 auto;
+
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  color: #609c9f;
+}
+
+.about-page__brands {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-page__brands-list {
+  justify-content: flex-start;
+  width: 824px;
+  margin: 0;
+}
+
+.about-page__features-item {
+  width: 100%;
+}
+
+.about-page__features-description {
+  width: 654px;
+}
