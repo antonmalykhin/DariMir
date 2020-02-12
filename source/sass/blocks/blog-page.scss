@@ -236,4 +236,9 @@
   .blog-page__pagination-link:focus {
     color: rgba($cyan, 0.5);
   }
+
+  .blog-page__link:focus .blog-page__item-title,
+  .blog-page__link:hover .blog-page__item-title {
+    color: rgba($cyan, 0.5);
+  }
 }
