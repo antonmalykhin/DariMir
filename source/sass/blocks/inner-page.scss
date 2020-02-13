@@ -71,7 +71,7 @@
 
 .inner-page__sub-nav {
   margin: 0;
-  margin-top: 15px;
+  margin-top: 20px;
   padding: 0;
   padding-left: 20px;
 
@@ -82,12 +82,16 @@
 .inner-page__sub-link {
   font-weight: 500;
   font-size: 15px;
-  line-height: 36px;
+  line-height: 1.5;
   color: #041936;
 }
 
 .inner-page__sub-link--active {
   color: #baa085;
+}
+
+.inner-page__sub-item {
+  margin-bottom: 20px;
 }
 
 @media (min-width: $tablet) {
@@ -111,22 +115,55 @@
     text-align: left;
   }
 
+  .inner-page__main-item:first-of-type {
+    padding-top: 0;
+  }
+
+
   .inner-page__sub-nav {
     margin: 0;
+    margin-top: 20px;
+  }
+
+  .inner-page__sub-item {
+    margin-bottom: 20px;
   }
 }
 
 @media (min-width: $desktop) {
+  .inner-page__header {
+    margin-bottom: 68px;
+  }
+
   .inner-page__container {
     width: 1240px;
   }
 
   .inner-page__nav {
     width: 255px;
+    margin-top: -5px;
+    margin-right: 16px;
+  }
+
+  .inner-page__nav--article {
+    margin-top: 55px;
+  }
+
+  .inner-page__nav--about {
+    margin-top: 5px;
+    margin-right: 13px;
+  }
+
+  .inner-page__title {
+    margin-top: 5px;
+    margin-bottom: 19px;
   }
 
   .inner-page__main-item {
+    margin-bottom: 23px;
     padding: 30px 0;
+    padding-top: 0;
+    padding-bottom: 13px;
 
     border-bottom: 1px solid #e2e1e6;
   }
@@ -138,6 +175,8 @@
   .inner-page__main-title {
     position: relative;
 
+    display: inline-block;
+    margin-bottom: 12px;
     padding-left: 20px;
 
     font-weight: 600;
@@ -150,8 +189,8 @@
 
   .inner-page__main-title svg {
     position: absolute;
-    top: 8px;
-    left: 1px;
+    top: 6px;
+    left: -6px;
 
     fill: #b69a79;
   }
@@ -168,10 +207,15 @@
     list-style: none;
   }
 
+  .inner-page__sub-item {
+    margin: 0;
+    margin-top: 13px;
+  }
+
   .inner-page__sub-link {
     font-weight: 500;
     font-size: 15px;
-    line-height: 36px;
+    line-height: 1.5;
     color: #041936;
   }
 

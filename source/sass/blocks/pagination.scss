@@ -75,11 +75,6 @@
   transform: rotate(180deg);
 }
 
-.pagination__btn:hover,
-.pagination__btn:focus {
-  background-color: #b69a79;
-}
-
 @media (min-width: $tablet) {
   .pagination__all {
     margin-right: 52px;
@@ -94,6 +89,11 @@
 @media (min-width: $desktop) {
   .pagination__btn {
     cursor: pointer;
+  }
+
+  .pagination__btn:hover,
+  .pagination__btn:focus {
+    background-color: #b69a79;
   }
 
   .pagination__btn:hover svg,

@@ -11,8 +11,8 @@
 .breadcrumbs__link {
   position: relative;
 
-  padding-right: 16px;
-  padding-left: 16px;
+  padding-right: 15px;
+  padding-left: 19px;
 
   font-weight: 500;
   font-size: 15px;
@@ -22,8 +22,8 @@
   &::after {
     content: "/";
     position: absolute;
-    top: 1px;
-    right: -1px;
+    top: -1px;
+    right: -4px;
   }
 }
 
@@ -40,7 +40,8 @@
 
   &::after {
     content: "|";
-    top: -2px;
+    top: -1px;
+    right: -4px;
   }
 }
 
