@@ -47,4 +47,8 @@
   .copy__link:focus {
     opacity: 0.4;
   }
+
+  .copy__link:not([href]) {
+    opacity: 1;
+  }
 }
