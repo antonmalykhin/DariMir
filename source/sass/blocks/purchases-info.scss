@@ -1,10 +1,25 @@
 .purchases-info {
   width: 100%;
+  margin-bottom: 29px;
+}
+
+.purchases-info__section {
+  margin-bottom: 23px;
+}
+
+.purchases-info__title {
+  margin-top: 20px;
+  margin-bottom: 14px;
+
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 22px;
+  color: #609c9f;
 }
 
 .purchases-info__text {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   font-weight: 500;
   font-size: 15px;
@@ -15,6 +30,42 @@
     color: $cyan;
 
     background-color: #ffffff;
+  }
+}
+
+.purchases-info__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  counter-reset: purchasesCouter;
+}
+
+.purchases-info__item {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 15px;
+  color: #55606e;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: counter(purchasesCouter);
+
+    padding-right: 10px;
+
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    color: #e9465e;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    counter-increment: purchasesCouter;
   }
 }
 
