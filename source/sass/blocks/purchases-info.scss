@@ -17,6 +17,10 @@
   color: #609c9f;
 }
 
+.purchases-info__title--how-to-order {
+  margin-top: 3px;
+}
+
 .purchases-info__text {
   margin-top: 0;
   margin-bottom: 10px;
@@ -43,7 +47,10 @@
 }
 
 .purchases-info__item {
+  position: relative;
+
   margin-bottom: 10px;
+  padding-left: 20px;
 
   font-weight: 500;
   font-size: 15px;
@@ -55,8 +62,9 @@
 
   &::before {
     content: counter(purchasesCouter);
-
-    padding-right: 10px;
+    // padding-right: 10px;
+    position: absolute;
+    left: 0;
 
     font-weight: 600;
     font-size: 15px;
