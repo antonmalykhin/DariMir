@@ -21,6 +21,13 @@
   margin-top: 3px;
 }
 
+.purchases-info__title--try-on {
+  margin-top: 0;
+  margin-bottom: 8px;
+
+  line-height: 1.4;
+}
+
 .purchases-info__text {
   margin-top: 0;
   margin-bottom: 10px;
@@ -76,6 +83,20 @@
     counter-increment: purchasesCouter;
   }
 }
+
+.purchases-info__list--unordered .purchases-info__item::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+
+  width: 8px;
+  height: 8px;
+
+  background-color: #e9465e;
+  border-radius: 50%;
+}
+
 
 @media (min-width: $tablet) {
   .purchases-info {
