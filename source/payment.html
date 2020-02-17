@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ДАРИМИР Интернет-магазин детских товаров Примерка</title>
+  <title>ДАРИМИР Интернет-магазин детских товаров Оплата</title>
   <link rel="preload" href="fonts/montserrat-v14-latin_cyrillic-regular.woff2" as="font" crossorigin="anonymous" />
   <link rel="preload" href="fonts/m-plus-rounded-1c-v10-latin_cyrillic-regular.woff2" as="font"
     crossorigin="anonymous" />
@@ -40,7 +40,7 @@
                   <a class="page-header__service-link service-menu__link" href="#">Доставка</a>
                 </li>
                 <li class="page-header__service-item service-menu__item">
-                  <a class="page-header__service-link service-menu__link" href="payment.html">Оплата</a>
+                  <a class="page-header__service-link service-menu__link">Оплата</a>
                 </li>
                 <li class="page-header__service-item service-menu__item">
                   <a class="page-header__service-link service-menu__link" href="how-to-order.html">Как оформить заказ</a>
@@ -358,23 +358,44 @@
           </a>
         </li>
         <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link">Примерка</a>
+          <a class="breadcrumbs__link">Оплата</a>
         </li>
       </ul>
 
-      <h1 class="inner-page__title page-main__title">Примерка</h1>
+      <h1 class="inner-page__title page-main__title">Оплата</h1>
 
       <div class="inner-page__wrapper">
         <div class="inner-page__section purchases-info">
 
           <section class="purchases-info__section">
-            <h2 class="purchases-info__title purchases-info__title--try-on">Клиенты ДАРИМИР могут примерить заказанную одежду и обувь перед тем, как принять окончательное решение о покупке.</h2>
+            <h2 class="purchases-info__title purchases-info__title--try-on">Вы можете оплатить заказ любым удобным для вас способом:</h2>
             <ul class="purchases-info__list purchases-info__list--unordered">
-              <li class="purchases-info__item">Вы оплачиваете только то, что вам подошло. Остальные вещи вы можете отдать торговому представителю или вернуть позже.</li>
-              <li class="purchases-info__item">При выборе способа доставки торговым представителем дополнительно предоставляется услуга "Примерка перед покупкой".</li>
-              <li class="purchases-info__item">Доступное время на примерку одного заказа - 15 минут</li>
-              <li class="purchases-info__item">Категория одежды которая доступна для примерки ограничена. Примерка доступна для верхней одежды, платьев, спортивных костюмов.</li>
+              <li class="purchases-info__item">наличными курьеру при получении заказа</li>
+              <li class="purchases-info__item">
+                банковской картой МИР, VISA, MasterCard на сайте или курьеру при получении заказа
+                <ul class="purchases-info__img-list">
+                  <li class="purchases-info__img-item">
+                    <svg width="99" height="62">
+                      <use xlink:href="img/sprite.svg#visa"></use>
+                    </svg>
+                  </li>
+                  <li class="purchases-info__img-item">
+                    <svg width="99" height="62">
+                      <use xlink:href="img/sprite.svg#mastercard"></use>
+                    </svg>
+                  </li>
+                  <li class="purchases-info__img-item">
+<!-- !----------------------------------------------------------------- -->
+<!-- !      logo MIR ПРОБЛЕМА С SVG градиентом     -->
+<!-- !----------------------------------------------------------------- -->
+                  </li>
+                </ul>
+              </li>
+
+              <li class="purchases-info__item">через любой банк РФ</li>
             </ul>
+
+            <p class="purchases-info__text">При оплате банковской картой на дому в соответствии с <mark>законом 54-ФЗ</mark> кассовый чек не выдается, вместо него курьер отдает товарную накладную, которой будет достаточно при обмене или возврате в нашей сети. Возврат товара может быть осуществлен в течение 14 дней. Возврат невозможен на товары одноразового использования и детское питание.</p>
           </section>
 
           <section class="question-form">
@@ -424,7 +445,7 @@
                   <a class="inner-page__sub-link" href="how-to-order.html">Как сделать заказ</a>
                 </li>
                 <li class="inner-page__sub-item">
-                  <a class="inner-page__sub-link" href="payment.html">Оплата</a>
+                  <a class="inner-page__sub-link   inner-page__sub-link--active">Оплата</a>
                 </li>
                 <li class="inner-page__sub-item">
                   <a class="inner-page__sub-link" href="#">Доставка</a>
@@ -439,7 +460,7 @@
                   <a class="inner-page__sub-link" href="#">Таблица размеров</a>
                 </li>
                 <li class="inner-page__sub-item">
-                  <a class="inner-page__sub-link  inner-page__sub-link--active">Примерка</a>
+                  <a class="inner-page__sub-link" href="try-on.html">Примерка</a>
                 </li>
                 <li class="inner-page__sub-item">
                   <a class="inner-page__sub-link" href="guarantees.html">Гарантии</a>
@@ -600,7 +621,7 @@
               <a class="page-footer__menu-link" href="how-to-order.html">Как сделать заказ</a>
             </li>
             <li class="page-footer__menu-item page-footer__menu-item--tablet page-footer__menu-item--mobile">
-              <a class="page-footer__menu-link" href="payment.html">Оплата</a>
+              <a class="page-footer__menu-link">Оплата</a>
             </li>
             <li class="page-footer__menu-item page-footer__menu-item--tablet page-footer__menu-item--mobile">
               <a class="page-footer__menu-link" href="#">Доставка</a>
@@ -618,7 +639,7 @@
               <a class="page-footer__menu-link" href="#">Показать все</a>
             </li>
             <li class="page-footer__menu-item">
-              <a class="page-footer__menu-link">Примерка</a>
+              <a class="page-footer__menu-link" href="try-on.html">Примерка</a>
             </li>
             <li class="page-footer__menu-item">
               <a class="page-footer__menu-link" href="guarantees.html">Гарантии</a>
