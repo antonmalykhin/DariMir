@@ -1,19 +1,24 @@
+
 .privacy-page__heading {
   position: relative;
 
+  margin-top: 0;
+  margin-bottom: 10px;
+
   font-weight: 400;
-  font-size: 22px;
-  line-height: 22px;
+  font-size: 20px;
+  line-height: 1.5px;
   color: #609c9f;
 
   &::before {
     content: counter(count) ".";
 
-    padding-right: 10px;
+    margin-left: 1px;
+    padding-right: 5px;
 
     font-weight: 400;
-    font-size: 22px;
-    line-height: 22px;
+    font-size: 20px;
+    line-height: 1.5;
     color: #609c9f;
 
     counter-increment: count;
@@ -35,6 +40,7 @@
 
 .privacy-page__inner-list {
   margin: 0;
+  margin-bottom: 24px;
   padding: 0;
 
   list-style: none;
@@ -75,7 +81,6 @@
     }
   }
 }
-
 
 .privacy-page__inner-list--third {
   counter-reset: count_3;
@@ -136,7 +141,10 @@
 }
 
 .privacy-page__inner-list--round-markers {
+  margin-bottom: 10px;
+
   .privacy-page__inner-item {
+    margin-bottom: 10px;
     padding-left: 20px;
 
     font-weight: 500;
@@ -158,12 +166,28 @@
   }
 }
 
+@for $i from 10 through 12 {
+  .privacy-page__inner-item:nth-of-type(#{$i}) p {
+    padding-left: 42px;
+  }
+}
+
 .privacy-page__inner-text {
+  margin-top: 5px;
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 15px;
   color: #55606e;
 
   span {
     color: #609c9f;
+  }
+}
+
+@media (min-width: $tablet) {
+  .privacy-page__heading {
+    font-size: 22px;
+    line-height: 22px;
   }
 }
