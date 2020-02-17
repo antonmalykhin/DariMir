@@ -343,20 +343,21 @@
 
   <main class="page-main not-found">
     <div class="inner-page__container container">
-      <div class="not-found__description">
-          <h1 class="not-found__title">Страница, которую Вы запросили,
-            не была найдена (ошибка 404)</h1>
+      <div class="not-found__wrapper">
+        <div class="not-found__description">
+          <h1 class="not-found__title">Страница, которую Вы запросили, не была найдена (ошибка 404)</h1>
           <p class="not-found__text">Вы можете вернуться назад или перейти на главную страницу.</p>
           <div class="not-found__btns">
-            <a class="not-found__btn" href="#">Назад</a>
-            <a class="not-found__btn" href="#">На главную</a>
+            <a class="not-found__btn not-found__btn--back" href="#">Назад</a>
+            <a class="not-found__btn not-found__btn--main" href="#">На главную</a>
           </div>
         </div>
         <picture>
           <source type="image/webp" srcset="img/404.webp">
-            <img class="not-found__img" src="img/404.jpg" alt="Страница не найдена" aria-hidden="true">
+          <img class="not-found__img" width= "715" height= "539" src="img/404.jpg" alt="Страница не найдена" aria-hidden="true">
         </picture>
       </div>
+    </div>
   </main>
 
   <footer class="page-footer page-footer--inner">
