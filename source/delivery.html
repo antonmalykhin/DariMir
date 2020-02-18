@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ДАРИМИР Интернет-магазин детских товаров О компании</title>
+  <title>ДАРИМИР Интернет-магазин детских товаров Доставка</title>
   <link rel="preload" href="fonts/montserrat-v14-latin_cyrillic-regular.woff2" as="font" crossorigin="anonymous" />
   <link rel="preload" href="fonts/m-plus-rounded-1c-v10-latin_cyrillic-regular.woff2" as="font"
     crossorigin="anonymous" />
@@ -37,13 +37,14 @@
             <li class="top-menu__item">
               <ul class="page-header__service-menu service-menu">
                 <li class="page-header__service-item service-menu__item">
-                  <a class="page-header__service-link service-menu__link" href="delivery.html">Доставка</a>
+                  <a class="page-header__service-link service-menu__link">Доставка</a>
                 </li>
                 <li class="page-header__service-item service-menu__item">
                   <a class="page-header__service-link service-menu__link" href="payment.html">Оплата</a>
                 </li>
                 <li class="page-header__service-item service-menu__item">
-                  <a class="page-header__service-link service-menu__link" href="how-to-order.html">Как оформить заказ</a>
+                  <a class="page-header__service-link service-menu__link" href="how-to-order.html">Как оформить
+                    заказ</a>
                 </li>
                 <li class="page-header__service-item page-header__service-item--tablet-dropdown service-menu__item">
                   <a class="page-header__service-link service-menu__link" href="#">
@@ -65,7 +66,8 @@
                   </ul>
                 </li>
                 <li class="page-header__service-item page-header__service-item--tablet service-menu__item">
-                  <a class="page-header__service-link service-menu__link" href="how-to-order.html">Условия работы</a>
+                  <a class="page-header__service-link service-menu__link" href="working-conditions.html">Условия
+                    работы</a>
                 </li>
                 <li class="page-header__service-item page-header__service-item--tablet service-menu__item">
                   <a class="page-header__service-link service-menu__link" href="guarantees.html">Гарантии</a>
@@ -358,95 +360,91 @@
           </a>
         </li>
         <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link">О компании</a>
+          <a class="breadcrumbs__link">Доставка</a>
         </li>
       </ul>
 
-      <h1 class="inner-page__title page-main__title">О компании</h1>
+      <h1 class="inner-page__title page-main__title">Доставка</h1>
 
       <div class="inner-page__wrapper">
-        <div class="inner-page__section about-page">
-          <picture>
-            <source type="image/webp" srcset="img/about.webp">
-              <img class="about-page__img" width="715" height="300" src="img/about.jpg" alt="#">
-          </picture>
-          <p class="about-page__slogan">ДАРИМИР – это ваш путеводитель по брендам российских производителей, возможность познакомиться с их продукцией и искренне полюбить.</p>
+        <div class="inner-page__section purchases-info">
 
-          <section class="about-page__brands">
-            <h2 class="visually-hidden">Бренды</h2>
-            <button class="pagination__btn pagination__btn--back" type="button" aria-label="Назад">
-              <svg width="19" height="13">
-                <use xlink:href="img/sprite.svg#arrow"></use>
-              </svg>
-            </button>
-            <ul class="brands__list about-page__brands-list">
-              <li class="brands__item about-page__brands-item">
-                <a class="brands__link about-page__brands-link" href="#" aria-label="Товары бренда УсиПуси"></a>
-              </li>
-              <li class="brands__item about-page__brands-item brands__item--mobile-hidden">
-                <a class="brands__link about-page__brands-link" href="#" aria-label="Товары бренда Toucan For Kids"></a>
-              </li>
-              <li class="brands__item about-page__brands-item brands__item--mobile-hidden">
-                <a class="brands__link about-page__brands-link" href="#" aria-label="Товары бренда Журавлик"></a>
-              </li>
-              <li class="brands__item about-page__brands-item brands__item--mobile-hidden">
-                <a class="brands__link about-page__brands-link" href="#" aria-label="Товары бренда Leo For Kids"></a>
-              </li>
-            </ul>
-            <button class="pagination__btn pagination__btn--fron" type="button" aria-label="Вперед">
-              <svg width="19" height="13">
-                <use xlink:href="img/sprite.svg#arrow"></use>
-              </svg>
-            </button>
+          <section class="purchases-info__section">
+            <table class="purchases-info__table purchases-info__table--delivery">
+              <thead>
+                <tr>
+                  <th>Способы доставки</th>
+                  <th>Сумма заказа</th>
+                  <th>Стоимость доставки</th>
+                  <th>Срок доставки</th>
+                  <th>Оплата</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Способы доставки"><span>Доставка автотранспортом</span></td>
+                  <td data-label="Сумма заказа"><span>Более 5 000 рублей</span></td>
+                  <td data-label="Стоимость доставки"><span>Бесплатно</span></td>
+                  <td data-label="Срок доставки"><span>1 - 3 дня</span></td>
+                  <td data-label="Оплата">
+                    <span>
+                      <span>Наличный расчёт</span>
+                      <span>Оплата банковской картой через Интернет</span>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Способы доставки"><span>Доставка автотранспортом</span></td>
+                  <td data-label="Сумма заказа"><span>До 5 000 рублей</span></td>
+                  <td data-label="Стоимость доставки"><span>350 руб.</span></td>
+                  <td data-label="Срок доставки"><span>1 - 3 дня</></td>
+                  <td data-label="Оплата">
+                    <span>
+                      <span>Наличный расчёт</span>
+                      <span>Оплата банковской картой через Интернет</span>
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p class="purchases-info__text"><sup>*</sup> - Доставка осуществляется в пределах МКАД, влючая районы за пределами МКАД – Южное Бутово, Коммунарка, Троицк, Новые Ватутинки, Московский</p>
+
+            <p class="purchases-info__text">Доставка по Московской области зависит от расстояния от Москвы и составляет 35 рублей за каждый километр от МКАД.</p>
+
+            <p class="purchases-info__text">Внимание! В несколько городов России действует бесплатная доставка (<a href="#">подробнее</a>).</p>
+
           </section>
 
-          <section class="about-page__features features">
-            <h2 class="visually-hidden">Преимущества</h2>
-            <ul class="about-page__features-list features__list">
-              <li class="features__item about-page__features-item">
-                <svg width="110" height="161">
-                  <use xlink:href="img/sprite.svg#plus1"></use>
-                </svg>
-                <div class="about-page__features-description features__description about-page__features-description">
-                  <h3 class="about-page__features-title features__feater-title">Лучшие бренды российских производителей</h3>
-                  <p class="about-page__features-text features__text">В нашем магазине собраны лучшие бренды детской одежды и аксессуаров от
-                    российских
-                    производителей. Мы постоянно в поисках самых современных, самых стильных и качественных брендов. Вы с
-                    гордостью будете заявлять, что носите продукцию сделанную в России.</p>
-                </div>
-              </li>
-              <li class="features__item about-page__features-item">
-                <svg width="162" height="173">
-                  <use xlink:href="img/sprite.svg#plus2"></use>
-                </svg>
-                <div class="about-page__features-description features__description about-page__features-description">
-                  <h3 class="about-page__features-title features__feater-title">Бренды которые не пользуются Вашей любовью не остаются с нами</h3>
-                  <p class="about-page__features-text features__text">Каждый бренд проходит проверку Вашим спросом, если Вам не нравится продукция
-                    того или иного бренда мы выводим его из нашего ассортимента. Так мы оставляем только лучшие из лучших
-                  </p>
-                </div>
-              </li>
-              <li class="features__item about-page__features-item">
-                <svg width="161" height="161">
-                  <use xlink:href="img/sprite.svg#plus3"></use>
-                </svg>
-                <div class="about-page__features-description features__description about-page__features-description">
-                  <h3 class="about-page__features-title features__feater-title">У нас доступные цены</h3>
-                  <p class="about-page__features-text features__text">Мы стараемся не завышать цены, чтобы Вы могли позволить больше удачных покупок
-                    для
-                    Ваших детей</p>
-                </div>
-              </li>
-              <li class="features__item about-page__features-item">
-                <svg width="163" height="162">
-                  <use xlink:href="img/sprite.svg#plus4"></use>
-                </svg>
-                <div class="about-page__features-description features__description about-page__features-description">
-                  <h3 class="about-page__features-title features__feater-title">Мы знаем, что у Вас есть выбор. СПАСИБО, что выбираете нас!</h3>
-                  <p class="about-page__features-text features__text">За 4 года 15 700 покупателей</p>
-                </div>
-              </li>
-            </ul>
+          <section class="question-form">
+            <div class="question-form__description">
+              <p class="question-form__question">Остались вопросы?</p>
+              <p class="question-form__text">Бесплатно оставьте заявку:
+                мы перезвоним и расскажем подробности</p>
+            </div>
+            <form class="question-form__form" action="#" method="post">
+              <label class="question-form__label">
+                <span class="question-form__label-text">Ваше имя</span>
+                <input class="question-form__textinput" id="nameField" name="name" type="text" placeholder="Татьяна">
+              </label>
+              <label class="question-form__label">
+                <span class="question-form__label-text">Номер телефона<sup>*</sup></span>
+                <input class="question-form__textinput" id="phoneField" name="phoneNumber" type="tel"
+                  placeholder="+7 ( _ _ _ ) - _ _ - _ _" required>
+              </label>
+              <label class="question-form__label">
+                <input class="question-form__checkbox visually-hidden" id="agreementField" name="agreement"
+                  type="checkbox" value="true" checked required>
+                <span class="question-form__checkbox-field">
+                  <svg width="13" height="9">
+                    <use xlink:href="img/sprite.svg#check"></use>
+                  </svg>
+                </span>
+                <span class="question-form__label-text question-form__label-text--checkbox">Отправляя данные с этого
+                  сайта, я соглашаюсь с обработкой персональных данных</span>
+              </label>
+              <button class="question-form__btn" type="submit">Оставить заявку</button>
+            </form>
           </section>
         </div>
 
@@ -454,12 +452,44 @@
           <h2 class="visually-hidden">Навигация по разделу</h2>
           <ul class="inner-page__main-nav">
             <li class="inner-page__main-item">
-              <a class="inner-page__main-title" href="#">
+              <a class="inner-page__main-title inner-page__main-title--active" href="#">
                 <svg width="10" height="6">
                   <use xlink:href="img/sprite.svg#dropdown"></use>
                 </svg>
                 <span>Онлайн покупки</span>
               </a>
+              <ul class="inner-page__sub-nav">
+                <li class="inner-page__sub-item">
+                  <a class="inner-page__sub-link" href="how-to-order.html">Как сделать заказ</a>
+                </li>
+                <li class="inner-page__sub-item">
+                  <a class="inner-page__sub-link" href="payment.html">Оплата</a>
+                </li>
+                <li class="inner-page__sub-item">
+                  <a class="inner-page__sub-link inner-page__sub-link--active">Доставка</a>
+                </li>
+                <li class="inner-page__sub-item">
+                  <a class="inner-page__sub-link" href="return.html">Возврат</a>
+                </li>
+                <li class="inner-page__sub-item">
+                  <a class="inner-page__sub-link" href="working-conditions.html">Условия работы</a>
+                </li>
+                <li class="inner-page__sub-item">
+                  <a class="inner-page__sub-link" href="sizes.html">Таблица размеров</a>
+                </li>
+                <li class="inner-page__sub-item">
+                  <a class="inner-page__sub-link" href="try-on.html">Примерка</a>
+                </li>
+                <li class="inner-page__sub-item">
+                  <a class="inner-page__sub-link" href="guarantees.html">Гарантии</a>
+                </li>
+                <li class="inner-page__sub-item">
+                  <a class="inner-page__sub-link" href="#">Сертификат соответствия</a>
+                </li>
+                <li class="inner-page__sub-item">
+                  <a class="inner-page__sub-link" href="public-offer.html">Публичная оферта</a>
+                </li>
+              </ul>
             </li>
             <li class="inner-page__main-item">
               <a class="inner-page__main-title inner-page__main-title--active" href="#">
@@ -470,7 +500,7 @@
               </a>
               <ul class="inner-page__sub-nav">
                 <li class="inner-page__sub-item">
-                  <a class="inner-page__sub-link inner-page__sub-link--active">О компании</a>
+                  <a class="inner-page__sub-link" href="about.html">О компании</a>
                 </li>
                 <li class="inner-page__sub-item">
                   <a class="inner-page__sub-link" href="details.html">Реквизиты</a>
@@ -606,13 +636,13 @@
           </h2>
           <ul class="page-footer__menu-list">
             <li class="page-footer__menu-item page-footer__menu-item--tablet page-footer__menu-item--mobile">
-              <a class="page-footer__menu-link" href="#">Как сделать заказ</a>
+              <a class="page-footer__menu-link" href="how-to-order.html">Как сделать заказ</a>
             </li>
             <li class="page-footer__menu-item page-footer__menu-item--tablet page-footer__menu-item--mobile">
-              <a class="page-footer__menu-link" href="#">Оплата</a>
+              <a class="page-footer__menu-link" href="payment.html">Оплата</a>
             </li>
             <li class="page-footer__menu-item page-footer__menu-item--tablet page-footer__menu-item--mobile">
-              <a class="page-footer__menu-link" href="delivery.html">Доставка</a>
+              <a class="page-footer__menu-link">Доставка</a>
             </li>
             <li class="page-footer__menu-item page-footer__menu-item--tablet">
               <a class="page-footer__menu-link" href="return.html">Возврат</a>
@@ -621,7 +651,7 @@
               <a class="page-footer__menu-link" href="working-conditions.html">Условия работы</a>
             </li>
             <li class="page-footer__menu-item page-footer__menu-item--tablet">
-              <a class="page-footer__menu-link" href="#">Таблица размеров</a>
+              <a class="page-footer__menu-link" href="sizes.html">Таблица размеров</a>
             </li>
             <li class="page-footer__menu-item page-footer__menu-item--dropdown">
               <a class="page-footer__menu-link" href="#">Показать все</a>
@@ -635,7 +665,7 @@
           </ul>
           <ul class="page-footer__menu-list company-menu">
             <li class="page-footer__menu-item">
-              <a class="page-footer__menu-link">О компании</a>
+              <a class="page-footer__menu-link" href="about.html">О компании</a>
             </li>
             <li class="page-footer__menu-item">
               <a class="page-footer__menu-link" href="details.html">Реквизиты</a>
