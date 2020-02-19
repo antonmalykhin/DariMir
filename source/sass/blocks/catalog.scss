@@ -1,0 +1,36 @@
+.catalog__categories {
+  width: 100%;
+  margin-top: 6px;
+}
+
+.catalog__categories_list {
+  width: 100%;
+}
+
+.catalog__categories-item {
+  width: 268px;
+}
+
+.catalog__categories-title {
+  top: 155px;
+}
+
+@media (min-width: $tablet) {
+  .catalog__categories-item {
+    width: 300px;
+  }
+
+  .catalog__categories-title {
+    top: 188px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .catalog__categories-item {
+    width: auto;
+  }
+
+  .catalog__categories-title {
+    top: 268px;
+  }
+}
