@@ -60,6 +60,10 @@
   }
 }
 
+.purchases-info__text--lighten {
+  color: #b8b8ba;
+}
+
 .purchases-info__important {
   margin-top: 24px;
   margin-bottom: 25px;
@@ -257,6 +261,9 @@
 
     border: 1px solid #e2e1e6;
 
+    span {
+      padding: 10px;
+    }
     &:first-of-type {
       text-align: right;
       color: #b69a79;
@@ -390,6 +397,15 @@
 
     border: 1px solid #e2e1e6;
 
+    thead {
+      display: table-row-group;
+    }
+
+    tr {
+      display: table-row;
+      margin: 0;
+    }
+
     th {
       box-sizing: border-box;
       width: 105px;
@@ -414,6 +430,7 @@
     }
 
     td {
+      display: table-cell;
       padding: 8px 10px;
       padding-left: 15px;
 
@@ -425,11 +442,20 @@
       color: #041936;
 
       border: 1px solid #e2e1e6;
+
+      &::before {
+        display: none;
+      }
+
       &:first-of-type {
         padding-right: 11px;
         padding-bottom: 9px;
 
         text-align: left;
+      }
+
+      span {
+        padding: 0;
       }
     }
   }
