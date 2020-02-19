@@ -41,15 +41,15 @@
 
   &::after {
     content: "|";
-    top: -1px;
+    top: -2px;
     right: -4px;
   }
 }
 
 .breadcrumbs__link--backward svg {
   position: absolute;
-  top: 8px;
-  left: 0;
+  top: 6px;
+  left: -1px;
 
   transform: rotate(90deg);
 

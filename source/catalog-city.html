@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ДАРИМИР Интернет-магазин детских товаров Каталог</title>
+  <title>ДАРИМИР Интернет-магазин детских товаров Каталог Орел</title>
   <link rel="preload" href="fonts/montserrat-v14-latin_cyrillic-regular.woff2" as="font" crossorigin="anonymous" />
   <link rel="preload" href="fonts/m-plus-rounded-1c-v10-latin_cyrillic-regular.woff2" as="font"
     crossorigin="anonymous" />
@@ -117,7 +117,7 @@
       </div>
       <div class="page-header__title">
         <div class="page-header__wrapper container">
-          <a class="page-header__logo" href="index.html">
+          <a class="page-header__logo" href="index.html" aria-label="На главную">
             <svg width="190" height="72" role="img" aria-label="Логотип компании ДариМир">
               <use xlink:href="img/sprite.svg#logo"></use>
             </svg>
@@ -358,64 +358,213 @@
           </a>
         </li>
         <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link">Каталог</a>
+          <a href="catalog.html.html" class="breadcrumbs__link">
+            <span>Каталог</span>
+          </a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">
+            <span>Новорожденные</span>
+          </a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">
+            <span>Бренды</span>
+          </a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link">Орел</a>
         </li>
       </ul>
 
-      <h1 class="inner-page__title page-main__title">Каталог</h1>
+      <h1 class="inner-page__title page-main__title">Орел</h1>
 
       <div class="inner-page__wrapper">
-        <section class="categories catalog__categories">
-          <div class="container">
-            <h2 class="visually-hidden">Категории товаров</h2>
-            <ul class="categories__list catalog__categories_list">
-              <li class="categories__item catalog__categories-item">
-                <a class="categories__link" href="#">
+        <section class="catalog__brands goods">
+          <ul class="catalog__brands-list">
+            <li class="catalog__brands-item">
+              <div class="goods__wrapper">
+                <h2 class="section-title catalog__brands-title">Toucan for kids</h2>
+                <div class="goods__pagination pagination">
+                  <a class="pagination__all" href="#">Смотреть все</a>
+                  <div class="pagination__buttons">
+                    <button class="pagination__btn pagination__btn--back" type="button" aria-label="Назад">
+                      <svg width="19" height="13">
+                        <use xlink:href="img/sprite.svg#arrow"></use>
+                      </svg>
+                    </button>
+                    <p class="pagination__numbers">
+                      <span class="pagination__page">2</span><span class="pagination__pages">3</span>
+                    </p>
+                    <button class="pagination__btn pagination__btn--fron" type="button" aria-label="Вперед">
+                      <svg width="19" height="13">
+                        <use xlink:href="img/sprite.svg#arrow"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="catalog__brand">
                   <picture>
-                    <source type="image/webp" srcset="img/category_1.webp">
-                    <img class="categories__img" width="340" height="340" src="img/category_1.jpg" alt="Новорожденные">
+                    <source type="image/" srcset="img/catalog_toucan_for_kids.webp">
+                    <img class="catalog__brand-img" width="239" height="238" src="img/catalog_toucan_for_kids.png" alt="Товары бренда Toucan for kids">
                   </picture>
-                  <p class="categories__title catalog__categories-title">Новорожденные</p>
-                  <p class="categories__text">
-                    <span>от 0 до 24 месяцев</span>
-                    <svg width="19" height="13">
-                      <use xlink:href="img/sprite.svg#arrow"></use>
-                    </svg>
-                  </p>
-                </a>
-              </li>
-              <li class="categories__item catalog__categories-item">
-                <a href="" class="categories__link">
+                </div>
+                <ul class="catalog__goods-list goods__list">
+                  <li class="catalog__goods-item goods__item">
+
+                    <div class="catalog__goods-labels goods__labels">
+                      <p class="goods__new">Новинка</p>
+                    </div>
+
+                    <picture>
+                      <source type="image/webp" srcset="img/catalog_city_1.webp">
+                      <img class="goods__img" width="275" height="275" src="img/catalog_city_1.jpg"
+                        alt="Платье с цветочной вышивкой">
+                    </picture>
+                    <div class="goods__text">
+                      <p class="goods__price">
+                        <span class="goods__price-new">1 999<small class="goods__unit">руб.</small></span>
+                      </p>
+                      <a class="goods__title" href="#">Платье с цветочной вышивкой</a>
+                    </div>
+                  </li>
+
+                  <li class="catalog__goods-item goods__item goods__item--mobile-hidden">
+                    <div class="catalog__goods-labels goods__labels">
+                      <p class="goods__hit">Хит продаж</p>
+                      <p class="goods__discount">-15%</p>
+                    </div>
+
+                    <picture>
+                      <source type="image/webp" srcset="img/catalog_city_2.webp">
+                      <img class="goods__img" width="275" height="275" src="img/catalog_city_2.jpg"
+                        alt="Длинный комбинезон из микровельвета">
+                    </picture>
+                    <div class="goods__text">
+                      <p class="goods__price">
+                        <span class="goods__price-new">2 500<small class="goods__unit">руб.</small></span><span
+                        class="goods__price-old">2 999<small class="goods__unit">руб.</small></span>
+                      </p>
+                      <a class="goods__title" href="#">Длинный комбинезон из микровельвета</a>
+                    </div>
+                  </li>
+
+                  <li class="catalog__goods-item goods__item goods__item--mobile-hidden">
+
+                    <div class="catalog__goods-labels goods__labels">
+                    </div>
+
+                    <picture>
+                      <source type="image/webp" srcset="img/catalog_city_3.webp">
+                      <img class="goods__img" width="275" height="275" src="img/catalog_city_3.jpg"
+                        alt="Принтованная футболка и трусики">
+                    </picture>
+                    <div class="goods__text">
+                      <p class="goods__price">
+                        <span class="goods__price-new">1 999<small class="goods__unit">руб.</small></span>
+                      </p>
+
+                      <a class="goods__title" href="#">Принтованная футболка и трусики</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+            </li>
+
+            <li class="catalog__brands-item">
+              <div class="goods__wrapper">
+                <h2 class="section-title catalog__brands-title">Leo for baby</h2>
+                <div class="goods__pagination pagination">
+                  <a class="pagination__all" href="#">Смотреть все</a>
+                  <div class="pagination__buttons">
+                    <button class="pagination__btn pagination__btn--back" type="button" aria-label="Назад">
+                      <svg width="19" height="13">
+                        <use xlink:href="img/sprite.svg#arrow"></use>
+                      </svg>
+                    </button>
+                    <p class="pagination__numbers">
+                      <span class="pagination__page">2</span><span class="pagination__pages">3</span>
+                    </p>
+                    <button class="pagination__btn pagination__btn--fron" type="button" aria-label="Вперед">
+                      <svg width="19" height="13">
+                        <use xlink:href="img/sprite.svg#arrow"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="catalog__brand">
                   <picture>
-                    <source type="image/webp" srcset="img/category_2.webp">
-                    <img class="categories__img" width="340" height="340" src="img/category_2.jpg" alt="Девочки">
+                    <source type="image/" srcset="img/catalog_leo_for_baby.webp">
+                    <img class="catalog__brand-img" width="239" height="238" src="img/catalog_leo_for_baby.png" alt="Товары бренда Leo for baby">
                   </picture>
-                  <p class="categories__title catalog__categories-title">Девочки</p>
-                  <p class="categories__text">
-                    <span>от 1 до 7 лет</span>
-                    <svg width="19" height="13">
-                      <use xlink:href="img/sprite.svg#arrow"></use>
-                    </svg>
-                  </p>
-                </a>
-              </li>
-              <li class="categories__item catalog__categories-item">
-                <a href="" class="categories__link">
-                  <picture>
-                    <source type="image/webp" srcset="img/category_3.webp">
-                    <img class="categories__img" width="340" height="340" src="img/category_3.jpg" alt="Мальчики">
-                  </picture>
-                  <p class="categories__title catalog__categories-title">Мальчики</p>
-                  <p class="categories__text">
-                    <span>от 1 до 7 лет</span>
-                    <svg width="19" height="13">
-                      <use xlink:href="img/sprite.svg#arrow"></use>
-                    </svg>
-                  </p>
-                </a>
-              </li>
-            </ul>
-          </div>
+                </div>
+                <ul class="catalog__goods-list goods__list">
+                  <li class="catalog__goods-item goods__item">
+
+                    <div class="catalog__goods-labels goods__labels">
+                      <p class="goods__new">Новинка</p>
+                    </div>
+
+                    <picture>
+                      <source type="image/webp" srcset="img/best_1.webp">
+                      <img class="goods__img" width="275" height="275" src="img/best_1.jpg"
+                        alt="LOOM Вязаный конверт New Classic Капучино">
+                    </picture>
+                    <div class="goods__text">
+                      <p class="goods__price">
+                        <span class="goods__price-new">4 599<small class="goods__unit">руб.</small></span>
+                      </p>
+                      <a class="goods__title" href="#">LOOM Вязаный конверт New Classic Капучино</a>
+                    </div>
+                  </li>
+
+                  <li class="catalog__goods-item goods__item goods__item--mobile-hidden">
+                    <div class="catalog__goods-labels goods__labels">
+                      <p class="goods__new">Новинка</p>
+                      <p class="goods__hit">Хит продаж</p>
+                    </div>
+
+                    <picture>
+                      <source type="image/webp" srcset="img/best_2.webp">
+                      <img class="goods__img" width="275" height="275" src="img/best_2.jpg"
+                        alt="LOOM Jasper вязаный пеленальный кокон">
+                    </picture>
+                    <div class="goods__text">
+                      <p class="goods__price">
+                        <span class="goods__price-new">2 500<small class="goods__unit">руб.</small></span>
+                      </p>
+                      <a class="goods__title" href="#">LOOM Jasper вязаный пеленальный кокон</a>
+                    </div>
+                  </li>
+
+                  <li class="catalog__goods-item goods__item goods__item--mobile-hidden">
+
+                    <div class="catalog__goods-labels goods__labels">
+                      <p class="goods__new">Новинка</p>
+                      <p class="goods__discount">-25%</p>
+                    </div>
+
+                    <picture>
+                      <source type="image/webp" srcset="img/best_3.webp">
+                      <img class="goods__img" width="275" height="275" src="img/best_3.jpg"
+                        alt="Комбинезон Michelle вязаный бежевый">
+                    </picture>
+                    <div class="goods__text">
+                      <p class="goods__price">
+                        <span class="goods__price-new">1 999<small class="goods__unit">руб.</small></span><span
+                          class="goods__price-old">2 500<small class="goods__unit">руб.</small></span>
+                      </p>
+
+                      <a class="goods__title" href="#">Комбинезон Michelle вязаный бежевый</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+            </li>
+          </ul>
+
         </section>
       </div>
     </div>
