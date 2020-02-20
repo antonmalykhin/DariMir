@@ -1,29 +1,11 @@
 // mixins
-@mixin arrow($v-side, $v-value, $h-side, $h-value, $color) {
-  &::before {
-    content: "";
-    position: absolute;
-    #{$v-side}: $v-value;
-    #{$h-side}: $h-value;
 
-    width: 17px;
-    height: 1px;
-
-    background-color: $color;
+@mixin noControls {
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
   }
-
-  &::after {
-    content: "";
-    position: absolute;
-    #{$v-side}: $v-value - 3px;
-    #{$h-side}: $h-value + 1px;
-
-    width: 5px;
-    height: 5px;
-
-    border: 1px solid $color;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-    transform: rotate(45deg);
+  input[type="number"] {
+    -moz-appearance: textfield;
   }
 }

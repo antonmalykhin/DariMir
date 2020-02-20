@@ -308,6 +308,21 @@
     width: 685px;
   }
 
+  .about-page--about {
+    margin-bottom: 29px;
+  }
+
+
+  .about-page--details {
+    margin-bottom: 30px;
+  }
+
+
+  .about-page--contacts {
+    margin-top: 5px;
+    margin-bottom: 27px;
+  }
+
   .about-page__img {
     display: block;
     margin: 0 auto;
@@ -491,7 +506,9 @@
 
 
   .about-page__details {
+    margin-top: 5px;
     padding: 20px 30px;
+    padding-bottom: 2px;
 
     border-width: 30px;
   }
@@ -564,6 +581,7 @@
   .about-page__img {
     display: block;
     margin: 0 auto;
+    margin-top: 5px;
     margin-bottom: 55px;
   }
 
@@ -653,10 +671,6 @@
       top: -30px;
       left: 19px;
     }
-  }
-
-  .about-page--contacts {
-    margin-bottom: 27px;
   }
 
   .about-page__phone-email {
