@@ -90,7 +90,7 @@ gulp.task("html", function () {
 
 gulp.task("uglify", function () {
   return gulp.src("source/js/**/*.js")
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(gulp.dest('build/js/'))
 });
 
@@ -146,5 +146,5 @@ gulp.task("delete", function () {
   return del(["build", "source/optimizedImg", "source/optimizedSVG"]);
 });
 
-gulp.task("build", gulp.series("clean", "copy", "copyImg", "css", "uglify", "html"));
+gulp.task("build", gulp.series("clean", "copy", "copyImg", "uglify", "css", "html"));
 gulp.task("start", gulp.series("build", "server"));
