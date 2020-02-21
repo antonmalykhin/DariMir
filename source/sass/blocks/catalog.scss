@@ -533,6 +533,44 @@
     }
   }
 
+  .catalog__checkbox-field--color {
+    border-radius: 50%;
+  }
+
+  $checkboxColors:(
+    beige: #d6bda0,
+    gray: #b8b8ba,
+    khaki:#74836d,
+    white:#ffffff,
+    black:#242424
+    );
+
+  @each $key, $color in $checkboxColors {
+    .catalog__checkbox-field--#{$key} {
+      background-color: #{$color};
+      border: 1px solid #e2e1e6;
+    }
+
+    .catalog__checkbox-item input:checked + .catalog__checkbox-field--#{$key} {
+      background-color: #ffffff;
+      border: 1px solid #b69a79;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -6px;
+        left: -6px;
+        z-index: -1;
+
+        width: 34px;
+        height: 34px;
+
+        background: #{$color};
+        border-radius: 50%;
+      }
+    }
+  }
+
   .catalog__radio-label {
     position: relative;
 
