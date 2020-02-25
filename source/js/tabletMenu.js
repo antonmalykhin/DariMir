@@ -3,7 +3,6 @@
 var tabletMenu = document.querySelector('.page-header__service-drop-list');
 var dropButton = document.querySelector('.page-header__service-link--drop');
 
-
 var ondropButtonClick = function (evt) {
   evt.stopPropagation();
   tabletMenu.classList.toggle('page-header__service-drop-list--show');
