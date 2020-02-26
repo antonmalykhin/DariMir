@@ -88,7 +88,7 @@
   fill: $cyan;
 }
 
-.page-footer__menu--open .page-footer__title svg {
+.page-footer__title--active svg {
   top: 6px;
 
   transform: rotate(180deg);
@@ -176,6 +176,7 @@
 .page-footer__bottom {
   margin-top: 9px;
   padding-top: 9px;
+  padding-bottom: 15px;
 
   border-top: 1px solid #e2e1e6;
 }

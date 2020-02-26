@@ -11,6 +11,7 @@ var catalogOpenButtons = catalogMenu.querySelectorAll('.page-header__main-show')
 var catalogSubMenu = catalogMenu.querySelectorAll('.page-header__sub-menu');
 var catalogCloseButtons = catalogMenu.querySelectorAll('.page-header__main-close');
 var catalogLinks = catalogMenu.querySelectorAll('.page-header__main-link');
+var catalogSubCloseBtns = catalogMenu.querySelectorAll('.page-header__sub-close');
 
 catalogItems.forEach(function (item) {
   item.addEventListener('mouseenter', function (evt) {
@@ -64,5 +65,11 @@ catalogCloseButtons.forEach(function (btn) {
     for (var i = 0; i < catalogSubMenu.length; i++) {
       closeSubMenu(i);
     }
+  })
+});
+
+catalogSubCloseBtns.forEach(function (btn, index) {
+  btn.addEventListener('click', function () {
+    closeSubMenu(index);
   })
 });

@@ -82,6 +82,12 @@
   padding-left: 20px;
 
   list-style: none;
+
+  display: none;
+}
+
+.inner-page__sub-nav--show {
+  display: block;
 }
 
 
