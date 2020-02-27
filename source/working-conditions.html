@@ -43,10 +43,11 @@
                 <li class="page-header__service-item service-menu__item">
                   <a class="page-header__service-link service-menu__link" href="payment.html">Оплата</a>
                 </li>
-                <li class="page-header__service-item service-menu__item">
                   <a class="page-header__service-link service-menu__link" href="how-to-order.html">Как оформить
                     заказ</a>
-                </li>
+                  <a class="page-header__service-link service-menu__link" href="how-to-order.html">Как оформить
+                    заказ</a>
+                  <a class="page-header__service-link page-header__service-link--drop service-menu__link" href="#">
                 <li class="page-header__service-item page-header__service-item--tablet-dropdown service-menu__item">
                   <a class="page-header__service-link page-header__service-link--drop service-menu__link" href="#">
                     <span>Еще</span>
@@ -54,24 +55,25 @@
                       <use xlink:href="img/sprite.svg#dropdown"></use>
                     </svg>
                   </a>
-                  <ul class="page-header__service-drop-list">
+                      <a class="page-header__service-drop-link" href="working-conditions.html">Условия работы</a>
                     <li class="page-header__service-drop-item">
                       <a class="page-header__service-drop-link" href="working-conditions.html">Условия работы</a>
                     </li>
                     <li class="page-header__service-drop-item">
                       <a class="page-header__service-drop-link" href="guarantees.html">Гарантии</a>
-                    </li>
+                      <a class="page-header__service-drop-link" href="return.html">Возврат</a>
                     <li class="page-header__service-drop-item">
                       <a class="page-header__service-drop-link" href="return.html">Возврат</a>
                     </li>
                   </ul>
-                </li>
+                  <a class="page-header__service-link service-menu__link" href="working-conditions.html">Условия
+                    работы</a>
                 <li class="page-header__service-item page-header__service-item--tablet service-menu__item">
                   <a class="page-header__service-link service-menu__link" href="working-conditions.html">Условия
                     работы</a>
                 </li>
                 <li class="page-header__service-item page-header__service-item--tablet service-menu__item">
-                  <a class="page-header__service-link service-menu__link" href="guarantees.html">Гарантии</a>
+                  <a class="page-header__service-link service-menu__link" href="return.html">Возврат</a>
                 </li>
                 <li class="page-header__service-item page-header__service-item--tablet service-menu__item">
                   <a class="page-header__service-link service-menu__link" href="return.html">Возврат</a>
@@ -128,9 +130,6 @@
           <form class="page-header__title-form search-form" action="#" method="POST">
             <label>
               <span class="visually-hidden">Поиск товаров</span>
-              <input class="page-header__title-field search-form__field" type="search" name="itemSearch"
-                id="itemSearchField" placeholder="Поиск товаров">
-            </label>
             <label class="search-form__select-btn-wrapper">
               <input class="page-header__title-btn search-form__select-btn" type="text" value="Искать везде" readonly>
             </label>
@@ -584,7 +583,7 @@
                 <svg width="10" height="6">
                   <use xlink:href="img/sprite.svg#dropdown"></use>
                 </svg>
-                <span>Онлайн покупки</span>
+            <ul class="page-footer__menu-list main-menu">
               </a>
               <ul class="inner-page__sub-nav">
                 <li class="inner-page__sub-item">
@@ -754,6 +753,12 @@
               </li>
             </ul>
           </div>
+  <script src="js/innerPageNav.js"></script>
+  <script src="js/footerMenu.js"></script>
+  <script src="js/mobileMenu.js"></script>
+  <script src="js/tabletMenu.js"></script>
+  <script src="js/searchForm.js"></script>
+  <script src="js/catalogMenu.js"></script>
         </div>
         <div class="page-footer__right-side">
           <h2 class="page-footer__title">

@@ -1,11 +1,11 @@
 // mixins
 
-@mixin noControls {
+@mixin noControls($type) {
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
     -webkit-appearance: none;
   }
-  input[type="number"] {
+  input[type="#{$type}"] {
     -moz-appearance: textfield;
   }
 }

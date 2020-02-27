@@ -13,6 +13,7 @@
 </head>
 
 <body class="inner-page">
+
   <header class="inner-page__header page-header">
     <nav class="page-header__nav">
       <button class="page-header__btn-open page-header__btn-open--menu" type="button"
@@ -47,7 +48,7 @@
                     заказ</a>
                 </li>
                 <li class="page-header__service-item page-header__service-item--tablet-dropdown service-menu__item">
-                  <a class="page-header__service-link service-menu__link" href="#">
+                  <a class="page-header__service-link page-header__service-link--drop service-menu__link" href="#">
                     <span>Еще</span>
                     <svg width="10" height="8">
                       <use xlink:href="img/sprite.svg#dropdown"></use>
@@ -111,8 +112,7 @@
                     </svg></a>
                 </li>
               </ul>
-              <a class="page-header__phone page-header__phone--menu phone" href="tel:+79165887012"
-                aria-label="Телефон компании">+7 (916) 588 70
+              <a class="page-header__phone page-header__phone--menu phone" href="tel:+79165887012">+7 (916) 588 70
                 12</a>
             </li>
           </ul>
@@ -131,12 +131,18 @@
               <input class="page-header__title-field search-form__field" type="search" name="itemSearch"
                 id="itemSearchField" placeholder="Поиск товаров">
             </label>
-            <button class="page-header__title-btn search-form__select-btn" type="button">
-              <span>Искать везде</span>
-            </button>
+            <label class="search-form__select-btn-wrapper">
+              <input class="page-header__title-btn search-form__select-btn" type="text" value="Искать везде" readonly>
+            </label>
             <button class="search-form__search-btn" type="submit" aria-label="Искать">
               <svg width="22" height="27">
                 <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+            </button>
+            <button class="search-form__reset-btn" type="reset" aria-label="Закрыть и сбросить">
+              <span>Закрыть</span>
+              <svg width="12" height="12">
+                <use xlink:href="img/sprite.svg#delete"></use>
               </svg>
             </button>
           </form>
@@ -148,28 +154,28 @@
               </h2>
               <ul class="modal__list">
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Новинки</a>
+                  <span class="modal__link">Новинки</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Бренды</a>
+                  <span class="modal__link">Бренды</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Одежда для девочек 0-24 мес.</a>
+                  <span class="modal__link">Одежда для девочек 0-24 мес.</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Одежда для мальчиков 0-24 мес.</a>
+                  <span class="modal__link">Одежда для мальчиков 0-24 мес.</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Аксессуары</a>
+                  <span class="modal__link">Аксессуары</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Гигиена и уход</a>
+                  <span class="modal__link">Гигиена и уход</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Детская комната</a>
+                  <span class="modal__link">Детская комната</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Игрушки</a>
+                  <span class="modal__link">Игрушки</span>
                 </li>
               </ul>
             </div>
@@ -181,25 +187,25 @@
               </h2>
               <ul class="modal__list">
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Новинки</a>
+                  <span class="modal__link">Новинки</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Бренды</a>
+                  <span class="modal__link">Бренды</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Одежда для девочек 1-7 лет</a>
+                  <span class="modal__link">Одежда для девочек 1-7 лет</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Аксессуары</a>
+                  <span class="modal__link">Аксессуары</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Гигиена и уход</a>
+                  <span class="modal__link">Гигиена и уход</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Детская комната</a>
+                  <span class="modal__link">Детская комната</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Игрушки</a>
+                  <span class="modal__link">Игрушки</span>
                 </li>
               </ul>
             </div>
@@ -211,32 +217,31 @@
               </h2>
               <ul class="modal__list">
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Новинки</a>
+                  <span class="modal__link">Новинки</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Бренды</a>
+                  <span class="modal__link">Бренды</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Одежда для мальчиков 1-7 лет</a>
+                  <span class="modal__link">Одежда для мальчиков 1-7 лет</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Аксессуары</a>
+                  <span class="modal__link">Аксессуары</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Гигиена и уход</a>
+                  <span class="modal__link">Гигиена и уход</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Детская комната</a>
+                  <span class="modal__link">Детская комната</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Игрушки</a>
+                  <span class="modal__link">Игрушки</span>
                 </li>
               </ul>
             </div>
-            <a class="modal__link modal__link--all" href="#">Искать везде</a>
+            <span class="modal__link modal__link--all">Искать везде</span>
           </div>
-          <a class="page-header__phone page-header__phone--title phone" href="tel:+79165887012"
-            aria-label="Телефон компании">+7 (916) 588 70 12</a>
+          <a class="page-header__phone page-header__phone--title phone" href="tel:+79165887012">+7 (916) 588 70 12</a>
 
           <ul class="page-header__user-menu user-menu">
             <li class="page-header__user-item user-menu__item user-menu__item--mobile">
@@ -283,16 +288,27 @@
       <div class="page-header__catalog">
         <div class="container">
           <ul class="page-header__main-menu main-menu">
-            <li class="page-header__main-item main-menu__item">
-              <a class="page-header__main-link page-header__main-link--selected main-menu__link main-menu__link--selected"
-                href="#">
-                <span>Новорожденные</span>
-                <span>0 - 24 месяцев</span>
-              </a>
+            <li class="page-header__main-item page-header__main-item--selected main-menu__item">
+              <div class="page-header__main-wrapper">
+                <a class="page-header__main-link main-menu__link" href="#">
+                  <span>Новорожденные</span>
+                  <span>0 - 24 месяцев</span>
+                </a>
+                <button class="page-header__main-show" type="button" aria-label="Свернуть меню">
+                  <svg width="12" height="12">
+                    <use xlink:href="img/sprite.svg#dropdown"></use>
+                  </svg>
+                </button>
+                <button class="page-header__main-close" type="button" aria-label="Свернуть меню">
+                  <svg width="12" height="12">
+                    <use xlink:href="img/sprite.svg#delete"></use>
+                  </svg>
+                </button>
+              </div>
               <div class="page-header__sub-wrapper">
                 <ul class="page-header__sub-menu sub-menu">
                   <li class="page-header__sub-item sub-menu__item">
-                    <a class="page-header__sub-link sub-menu__link" href="#">Новинки</a>
+                    <a class="page-header__sub-link sub-menu__link" href="#">1 sub menu</a>
                   </li>
                   <li class="page-header__sub-item sub-menu__item">
                     <a class="page-header__sub-link sub-menu__link" href="#">Бренды</a>
@@ -328,16 +344,114 @@
               </div>
             </li>
             <li class="page-header__main-item main-menu__item">
-              <a class="page-header__main-link main-menu__link" href="#">
-                <span>Девочки</span>
-                <span>1 - 7 лет</span>
-              </a>
+              <div class="page-header__main-wrapper">
+                <a class="page-header__main-link main-menu__link" href="#">
+                  <span>Девочки</span>
+                  <span>1 - 7 лет</span>
+                </a>
+                <button class="page-header__main-show" type="button" aria-label="Свернуть меню">
+                  <svg width="12" height="12">
+                    <use xlink:href="img/sprite.svg#dropdown"></use>
+                  </svg>
+                </button>
+                <button class="page-header__main-close" type="button" aria-label="Свернуть меню">
+                  <svg width="12" height="12">
+                    <use xlink:href="img/sprite.svg#delete"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="page-header__sub-wrapper">
+                <ul class="page-header__sub-menu sub-menu">
+                  <li class="page-header__sub-item sub-menu__item">
+                    <a class="page-header__sub-link sub-menu__link" href="#">2 sub menu</a>
+                  </li>
+                  <li class="page-header__sub-item sub-menu__item">
+                    <a class="page-header__sub-link sub-menu__link" href="#">Бренды</a>
+                  </li>
+                  <li class="page-header__sub-item sub-menu__item">
+                    <a class="page-header__sub-link sub-menu__link" href="#">Одежда для девочек 0-24 мес.</a>
+                  </li>
+                  <li class="page-header__sub-item sub-menu__item">
+                    <a class="page-header__sub-link sub-menu__link" href="#">Одежда для мальчиков 0-24 мес.</a>
+                  </li>
+                  <li class="page-header__sub-item sub-menu__item">
+                    <a class="page-header__sub-link sub-menu__link" href="#">Аксессуары</a>
+                  </li>
+                  <li class="page-header__sub-item sub-menu__item">
+                    <a class="page-header__sub-link sub-menu__link" href="#">Гигиена и уход</a>
+                  </li>
+                  <li class="page-header__sub-item sub-menu__item">
+                    <a class="page-header__sub-link sub-menu__link" href="#">Детская комната</a>
+                  </li>
+                  <li class="page-header__sub-item sub-menu__item">
+                    <a class="page-header__sub-link sub-menu__link" href="#">Игрушки</a>
+                  </li>
+                  <li class="page-header__sub-item sub-menu__item">
+                    <button class="page-header__sub-close" type="button">
+                      <span>Свернуть
+                        <svg class="page-header__dropdown-icon" width="11" height="7">
+                          <use xlink:href="img/sprite.svg#dropdown"></use>
+                        </svg>
+                      </span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="page-header__main-item main-menu__item">
-              <a class="page-header__main-link main-menu__link" href="#">
-                <span>Мальчики</span>
-                <span>1 - 7 лет</span>
-              </a>
+              <div class="page-header__main-wrapper">
+                <a class="page-header__main-link main-menu__link" href="#">
+                  <span>Мальчики</span>
+                  <span>1 - 7 лет</span>
+                </a>
+                <button class="page-header__main-show" type="button" aria-label="Свернуть меню">
+                  <svg width="12" height="12">
+                    <use xlink:href="img/sprite.svg#dropdown"></use>
+                  </svg>
+                </button>
+                <button class="page-header__main-close" type="button" aria-label="Свернуть меню">
+                  <svg width="12" height="12">
+                    <use xlink:href="img/sprite.svg#delete"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="page-header__sub-wrapper">
+                <ul class="page-header__sub-menu sub-menu">
+                  <li class="page-header__sub-item sub-menu__item">
+                    <a class="page-header__sub-link sub-menu__link" href="#">3 sub menu</a>
+                  </li>
+                  <li class="page-header__sub-item sub-menu__item">
+                    <a class="page-header__sub-link sub-menu__link" href="#">Бренды</a>
+                  </li>
+                  <li class="page-header__sub-item sub-menu__item">
+                    <a class="page-header__sub-link sub-menu__link" href="#">Одежда для девочек 0-24 мес.</a>
+                  </li>
+                  <li class="page-header__sub-item sub-menu__item">
+                    <a class="page-header__sub-link sub-menu__link" href="#">Одежда для мальчиков 0-24 мес.</a>
+                  </li>
+                  <li class="page-header__sub-item sub-menu__item">
+                    <a class="page-header__sub-link sub-menu__link" href="#">Аксессуары</a>
+                  </li>
+                  <li class="page-header__sub-item sub-menu__item">
+                    <a class="page-header__sub-link sub-menu__link" href="#">Гигиена и уход</a>
+                  </li>
+                  <li class="page-header__sub-item sub-menu__item">
+                    <a class="page-header__sub-link sub-menu__link" href="#">Детская комната</a>
+                  </li>
+                  <li class="page-header__sub-item sub-menu__item">
+                    <a class="page-header__sub-link sub-menu__link" href="#">Игрушки</a>
+                  </li>
+                  <li class="page-header__sub-item sub-menu__item">
+                    <button class="page-header__sub-close" type="button">
+                      <span>Свернуть
+                        <svg class="page-header__dropdown-icon" width="11" height="7">
+                          <use xlink:href="img/sprite.svg#dropdown"></use>
+                        </svg>
+                      </span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
@@ -489,26 +603,30 @@
                   </svg>
                 </legend>
 
-                <div class="catalog__range">
-                  <div class="catalog__range-line-bg">
-                    <div class="catalog__range-handler catalog__range-handler--from"></div>
-                    <div class="catalog__range-handler catalog__range-handler--to"></div>
-                    <div class="catalog__range-line"></div>
+                <div class="catalog__filter-item">
+                  <div class="catalog__range">
+                    <div class="catalog__range-line-bg">
+                      <div class="catalog__range-handler catalog__range-handler--from"></div>
+                      <div class="catalog__range-handler catalog__range-handler--to"></div>
+                      <div class="catalog__range-line"></div>
+                    </div>
+                    <p class="catalog__range-text catalog__range-text--min">0</p>
+                    <p class="catalog__range-text catalog__range-text--max">5000</p>
                   </div>
-                  <p class="catalog__range-text catalog__range-text--min">0</p>
-                  <p class="catalog__range-text catalog__range-text--max">5000</p>
-                </div>
-                <div class="catalog__range-fields">
+                  <div class="catalog__range-fields">
 
-                  <label class="catalog__range-field">
-                    <span class="catalog__label catalog__label--number">От:</span>
-                    <input class="catalog__number" min="0" max="9999"step="1" type="number" name="min" id="minField" value="450">
-                  </label>
+                    <label class="catalog__range-field">
+                      <span class="catalog__label catalog__label--number">От:</span>
+                      <input class="catalog__number" min="0" max="9999" step="1" type="number" name="min" id="minField"
+                        value="450">
+                    </label>
 
-                  <label class="catalog__range-field">
-                    <span class="catalog__label catalog__label--number">До:</span>
-                    <input class="catalog__number" min="0" max="9999"step="1" type="number" name="min" id="maxField" value="3000">
-                  </label>
+                    <label class="catalog__range-field">
+                      <span class="catalog__label catalog__label--number">До:</span>
+                      <input class="catalog__number" min="0" max="9999" step="1" type="number" name="min" id="maxField"
+                        value="3000">
+                    </label>
+                  </div>
                 </div>
               </fieldset>
 
@@ -520,52 +638,53 @@
                   </svg>
                 </legend>
 
-                <label class="catalog__checkbox-item">
-                  <input class="visually-hidden" type="checkbox" name="checkbox" id="checkbox_1" checked>
-                  <span class="catalog__checkbox-field">
-                    <svg width="13" height="9">
-                      <use xlink:href="img/sprite.svg#check"></use>
-                    </svg>
-                  </span>
-                  <span class="catalog__checkbox-label">Пункт списка выбран</span>
-                </label>
-                <label class="catalog__checkbox-item">
-                  <input class="visually-hidden" type="checkbox" name="checkbox" id="checkbox_2" checked>
-                  <span class="catalog__checkbox-field">
-                    <svg width="13" height="9">
-                      <use xlink:href="img/sprite.svg#check"></use>
-                    </svg>
-                  </span>
-                  <span class="catalog__checkbox-label">Пункт списка выбран</span>
-                </label>
-                <label class="catalog__checkbox-item">
-                  <input class="visually-hidden" type="checkbox" name="checkbox" id="checkbox_3">
-                  <span class="catalog__checkbox-field">
-                    <svg width="13" height="9">
-                      <use xlink:href="img/sprite.svg#check"></use>
-                    </svg>
-                  </span>
-                  <span class="catalog__checkbox-label">Пункт списка не выбран</span>
-                </label>
-                <label class="catalog__checkbox-item">
-                  <input class="visually-hidden" type="checkbox" name="checkbox" id="checkbox_4" checked>
-                  <span class="catalog__checkbox-field">
-                    <svg width="13" height="9">
-                      <use xlink:href="img/sprite.svg#check"></use>
-                    </svg>
-                  </span>
-                  <span class="catalog__checkbox-label">Пункт списка выбран</span>
-                </label>
-                <label class="catalog__checkbox-item">
-                  <input class="visually-hidden" type="checkbox" name="checkbox" id="checkbox_5">
-                  <span class="catalog__checkbox-field">
-                    <svg width="13" height="9">
-                      <use xlink:href="img/sprite.svg#check"></use>
-                    </svg>
-                  </span>
-                  <span class="catalog__checkbox-label">Пункт списка не выбран</span>
-                </label>
-
+                <div class="catalog__filter-item">
+                  <label class="catalog__checkbox-item">
+                    <input class="visually-hidden" type="checkbox" name="checkbox" id="checkbox_1" checked>
+                    <span class="catalog__checkbox-field">
+                      <svg width="13" height="9">
+                        <use xlink:href="img/sprite.svg#check"></use>
+                      </svg>
+                    </span>
+                    <span class="catalog__checkbox-label">Пункт списка выбран</span>
+                  </label>
+                  <label class="catalog__checkbox-item">
+                    <input class="visually-hidden" type="checkbox" name="checkbox" id="checkbox_2" checked>
+                    <span class="catalog__checkbox-field">
+                      <svg width="13" height="9">
+                        <use xlink:href="img/sprite.svg#check"></use>
+                      </svg>
+                    </span>
+                    <span class="catalog__checkbox-label">Пункт списка выбран</span>
+                  </label>
+                  <label class="catalog__checkbox-item">
+                    <input class="visually-hidden" type="checkbox" name="checkbox" id="checkbox_3">
+                    <span class="catalog__checkbox-field">
+                      <svg width="13" height="9">
+                        <use xlink:href="img/sprite.svg#check"></use>
+                      </svg>
+                    </span>
+                    <span class="catalog__checkbox-label">Пункт списка не выбран</span>
+                  </label>
+                  <label class="catalog__checkbox-item">
+                    <input class="visually-hidden" type="checkbox" name="checkbox" id="checkbox_4" checked>
+                    <span class="catalog__checkbox-field">
+                      <svg width="13" height="9">
+                        <use xlink:href="img/sprite.svg#check"></use>
+                      </svg>
+                    </span>
+                    <span class="catalog__checkbox-label">Пункт списка выбран</span>
+                  </label>
+                  <label class="catalog__checkbox-item">
+                    <input class="visually-hidden" type="checkbox" name="checkbox" id="checkbox_5">
+                    <span class="catalog__checkbox-field">
+                      <svg width="13" height="9">
+                        <use xlink:href="img/sprite.svg#check"></use>
+                      </svg>
+                    </span>
+                    <span class="catalog__checkbox-label">Пункт списка не выбран</span>
+                  </label>
+                </div>
               </fieldset>
 
               <fieldset class="catalog__fieldset">
@@ -575,6 +694,7 @@
                     <use xlink:href="img/sprite.svg#dropdown"></use>
                   </svg>
                 </legend>
+                <div class="catalog__filter-item">Здесь ничего нет!!! Закрой меня срочно!!!</div>
               </fieldset>
 
               <fieldset class="catalog__fieldset catalog__fieldset--open">
@@ -584,32 +704,40 @@
                     <use xlink:href="img/sprite.svg#dropdown"></use>
                   </svg>
                 </legend>
-                <input class="catalog__radio-input visually-hidden" type="radio" name="radioGroup" id="radio_1" value="radio_1">
-                <input class="catalog__radio-input  visually-hidden" type="radio" name="radioGroup" id="radio_2" value="radio_2">
-                <input class="catalog__radio-input  visually-hidden" type="radio" name="radioGroup" id="radio_3" value="radio_3" checked>
-                <input class="catalog__radio-input  visually-hidden" type="radio" name="radioGroup" id="radio_4" value="radio_4">
-                <input class="catalog__radio-input  visually-hidden" type="radio" name="radioGroup" id="radio_5" value="radio_5">
+                <div class="catalog__filter-item">
 
-                <label for="radio_1" class="catalog__radio-label">
-                  <span class="catalog__radio-field"></span>
-                  <span>Пункт списка не выбран</span>
-                </label>
-                <label for="radio_2" class="catalog__radio-label">
-                  <span class="catalog__radio-field"></span>
-                  <span>Пункт списка не выбран</span>
-                </label>
-                <label for="radio_3" class="catalog__radio-label">
-                  <span class="catalog__radio-field"></span>
-                  <span>Пункт списка выбран</span>
-                </label>
-                <label for="radio_4" class="catalog__radio-label">
-                  <span class="catalog__radio-field"></span>
-                  <span>Пункт списка не выбран</span>
-                </label>
-                <label for="radio_5" class="catalog__radio-label">
-                  <span class="catalog__radio-field"></span>
-                  <span>Пункт списка не выбран</span>
-                </label>
+                  <input class="catalog__radio-input visually-hidden" type="radio" name="radioGroup" id="radio_1"
+                    value="radio_1">
+                  <input class="catalog__radio-input  visually-hidden" type="radio" name="radioGroup" id="radio_2"
+                    value="radio_2">
+                  <input class="catalog__radio-input  visually-hidden" type="radio" name="radioGroup" id="radio_3"
+                    value="radio_3" checked>
+                  <input class="catalog__radio-input  visually-hidden" type="radio" name="radioGroup" id="radio_4"
+                    value="radio_4">
+                  <input class="catalog__radio-input  visually-hidden" type="radio" name="radioGroup" id="radio_5"
+                    value="radio_5">
+
+                  <label for="radio_1" class="catalog__radio-label">
+                    <span class="catalog__radio-field"></span>
+                    <span>Пункт списка не выбран</span>
+                  </label>
+                  <label for="radio_2" class="catalog__radio-label">
+                    <span class="catalog__radio-field"></span>
+                    <span>Пункт списка не выбран</span>
+                  </label>
+                  <label for="radio_3" class="catalog__radio-label">
+                    <span class="catalog__radio-field"></span>
+                    <span>Пункт списка выбран</span>
+                  </label>
+                  <label for="radio_4" class="catalog__radio-label">
+                    <span class="catalog__radio-field"></span>
+                    <span>Пункт списка не выбран</span>
+                  </label>
+                  <label for="radio_5" class="catalog__radio-label">
+                    <span class="catalog__radio-field"></span>
+                    <span>Пункт списка не выбран</span>
+                  </label>
+                </div>
 
               </fieldset>
 
@@ -621,55 +749,63 @@
                   </svg>
                 </legend>
 
-                <label class="catalog__checkbox-item">
-                  <input class="visually-hidden" type="checkbox" name="beige" id="beige">
-                  <span class="catalog__checkbox-field catalog__checkbox-field--color catalog__checkbox-field--beige">
-                    <svg width="13" height="9">
-                      <use xlink:href="img/sprite.svg#check"></use>
-                    </svg>
-                  </span>
-                  <span class="catalog__checkbox-label">Бежевый</span>
-                </label>
-                <label class="catalog__checkbox-item">
-                  <input class="visually-hidden" type="checkbox" name="gray" id="gray" checked>
-                  <span class="catalog__checkbox-field catalog__checkbox-field--color catalog__checkbox-field--gray">
-                    <svg width="13" height="9">
-                      <use xlink:href="img/sprite.svg#check"></use>
-                    </svg>
-                  </span>
-                  <span class="catalog__checkbox-label ">Серый</span>
-                </label>
-                <label class="catalog__checkbox-item">
-                  <input class="visually-hidden" type="checkbox" name="khaki" id="khaki">
-                  <span class="catalog__checkbox-field catalog__checkbox-field--color catalog__checkbox-field--khaki">
-                    <svg width="13" height="9">
-                      <use xlink:href="img/sprite.svg#check"></use>
-                    </svg>
-                  </span>
-                  <span class="catalog__checkbox-label">Хаки</span>
-                </label>
-                <label class="catalog__checkbox-item">
-                  <input class="visually-hidden" type="checkbox" name="white" id="white" checked>
-                  <span class="catalog__checkbox-field catalog__checkbox-field--color catalog__checkbox-field--white">
-                    <svg width="13" height="9">
-                      <use xlink:href="img/sprite.svg#check"></use>
-                    </svg>
-                  </span>
-                  <span class="catalog__checkbox-label">Белый</span>
-                </label>
-                <label class="catalog__checkbox-item">
-                  <input class="visually-hidden" type="checkbox" name="black" id="black">
-                  <span class="catalog__checkbox-field catalog__checkbox-field--color catalog__checkbox-field--black">
-                    <svg width="13" height="9">
-                      <use xlink:href="img/sprite.svg#check"></use>
-                    </svg>
-                  </span>
-                  <span class="catalog__checkbox-label">Черный</span>
-                </label>
+                <div class="catalog__filter-item">
+                  <label class="catalog__checkbox-item">
+                    <input class="visually-hidden" type="checkbox" name="beige" id="beige">
+                    <span class="catalog__checkbox-field catalog__checkbox-field--color catalog__checkbox-field--beige">
+                      <svg width="13" height="9">
+                        <use xlink:href="img/sprite.svg#check"></use>
+                      </svg>
+                    </span>
+                    <span class="catalog__checkbox-label">Бежевый</span>
+                  </label>
+                  <label class="catalog__checkbox-item">
+                    <input class="visually-hidden" type="checkbox" name="gray" id="gray" checked>
+                    <span class="catalog__checkbox-field catalog__checkbox-field--color catalog__checkbox-field--gray">
+                      <svg width="13" height="9">
+                        <use xlink:href="img/sprite.svg#check"></use>
+                      </svg>
+                    </span>
+                    <span class="catalog__checkbox-label ">Серый</span>
+                  </label>
+                  <label class="catalog__checkbox-item">
+                    <input class="visually-hidden" type="checkbox" name="khaki" id="khaki">
+                    <span class="catalog__checkbox-field catalog__checkbox-field--color catalog__checkbox-field--khaki">
+                      <svg width="13" height="9">
+                        <use xlink:href="img/sprite.svg#check"></use>
+                      </svg>
+                    </span>
+                    <span class="catalog__checkbox-label">Хаки</span>
+                  </label>
+                  <label class="catalog__checkbox-item">
+                    <input class="visually-hidden" type="checkbox" name="white" id="white" checked>
+                    <span class="catalog__checkbox-field catalog__checkbox-field--color catalog__checkbox-field--white">
+                      <svg width="13" height="9">
+                        <use xlink:href="img/sprite.svg#check"></use>
+                      </svg>
+                    </span>
+                    <span class="catalog__checkbox-label">Белый</span>
+                  </label>
+                  <label class="catalog__checkbox-item">
+                    <input class="visually-hidden" type="checkbox" name="black" id="black">
+                    <span class="catalog__checkbox-field catalog__checkbox-field--color catalog__checkbox-field--black">
+                      <svg width="13" height="9">
+                        <use xlink:href="img/sprite.svg#check"></use>
+                      </svg>
+                    </span>
+                    <span class="catalog__checkbox-label">Черный</span>
+                  </label>
+                </div>
               </fieldset>
+
               <button class="btn catalog__btn catalog__btn--submit" type="submit">Применить</button>
 
-              <button class="btn catalog__btn catalog__btn--reset" type="reset">Очистить фильтры</button>
+              <button class="catalog__btn catalog__btn--reset" type="reset">
+                <svg width="12" height="12">
+                  <use xlink:href="img/sprite.svg#delete"></use>
+                </svg>
+                <span>Очистить фильтры</span>
+              </button>
             </form>
           </section>
 
@@ -678,13 +814,18 @@
 
             <div class="catalog__sorting">
               <form class="catalog__sorting-form" action="#" method="GET">
-                <label>
-                  <span class="catalog__sorting-label">Сортировка:</span>
-                  <select class="catalog__sorting-select" name="sorting" id="sorting">
-                    <option value="new">Новинки</option>
-                    <option value="priceUp">По возрастанию цены</option>
-                    <option value="priceDown">По убыванию цены</option>
-                  </select>
+                <label class="catalog__sorting-label">
+                  <span class="catalog__sorting-text">Сортировка:</span>
+                  <span class="catalog__sorting-select-wrapper">
+                    <svg width="10" height="6">
+                      <use xlink:href="img/sprite.svg#dropdown"></use>
+                    </svg>
+                    <select class="catalog__sorting-select" name="sorting" id="sorting">
+                      <option value="new">Новинки</option>
+                      <option value="priceUp">По возрастанию цены</option>
+                      <option value="priceDown">По убыванию цены</option>
+                    </select>
+                  </span>
                 </label>
               </form>
               <p class="catalog__sorting-result">57 товаров</p>
@@ -1090,7 +1231,7 @@
                 <use xlink:href="img/sprite.svg#dropdown"></use>
               </svg>
             </h2>
-            <ul class="page-footer__menu-list page-footer__menu-list--open main-menu">
+            <ul class="page-footer__menu-list main-menu">
               <li class="page-footer__menu-item main-menu__item">
                 <a class="page-footer__menu-link main-menu__link" href="#">
                   <span>Все товары</span>
@@ -1260,6 +1401,13 @@
     </div>
   </footer>
   <div class="bg-fade bg-fade--hide"></div>
+  <script src="js/catalogFilter.js"></script>
+  <script src="js/footerMenu.js"></script>
+  <script src="js/threeLevelMenu.js"></script>
+  <script src="js/mobileMenu.js"></script>
+  <script src="js/tabletMenu.js"></script>
+  <script src="js/searchForm.js"></script>
+  <script src="js/catalogMenu.js"></script>
   <script src="libs/picturefill.min.js"></script>
   <script src="libs/svgxuse.min.js"></script>
 </body>
