@@ -203,6 +203,7 @@
 
 .page-header__btn-open {
   position: relative;
+  z-index: 40;
 
   box-sizing: border-box;
   width: 50%;
@@ -217,8 +218,6 @@
   background-color: #ffffff;
   border: 1px solid #f2f2f4;
   border-right: none;
-
-  z-index: 40;
 }
 
 .page-header__btn-open--active::before {
@@ -230,7 +229,8 @@
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-  padding: 15px;
+  padding: 12px 15px;
+  padding-left: 34px;
 
   color: $white;
 
@@ -240,8 +240,8 @@
 .page-header__btn-open--active::after {
   content: "";
   position: absolute;
-  top: 18px;
-  left: 27px;
+  top: 16px;
+  left: 28px;
 
   width: 12px;
   height: 12px;
@@ -266,7 +266,9 @@
 .page-header__main-show {
   position: relative;
 
-  flex-grow: 1;
+  width: 75px;
+  margin-right: auto;
+  margin-left: auto;
 
   background-color: transparent;
   border: none;
@@ -284,7 +286,9 @@
   position: relative;
 
   display: none;
-  flex-grow: 1;
+  width: 75px;
+  margin-right: auto;
+  margin-left: auto;
 
   background-color: transparent;
   border: none;
@@ -296,12 +300,26 @@
 
     fill: #baa085;
   }
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 64px;
+    left: 37.9%;
+
+    width: 12px;
+    height: 12px;
+
+    background-color: #e2e1e6;
+    transform: rotate(45deg);
+  }
 }
 
 .page-header__main-link {
   display: block;
   box-sizing: border-box;
-  width: 77%;
+  width: 70%;
   padding: 13px;
 
   text-align: center;
@@ -331,18 +349,18 @@
 
   background-color: #e2e1e6;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: -6px;
-    left: 86%;
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: -6px;
+  //   left: 86%;
 
-    width: 12px;
-    height: 12px;
+  //   width: 12px;
+  //   height: 12px;
 
-    background-color: #e2e1e6;
-    transform: rotate(45deg);
-  }
+  //   background-color: #e2e1e6;
+  //   transform: rotate(45deg);
+  // }
 }
 
 .page-header__sub-menu--show {
@@ -668,7 +686,7 @@
   .page-header__main-wrapper {
     display: flex;
     justify-content: center;
-    width: 260px;
+    width: auto;
   }
 
   .page-header__main-link {
@@ -694,11 +712,27 @@
     top: 36%;
     left: 24px;
   }
-
+  //!-----------------------------------------------------------------
   .page-header__main-close {
     display: none;
     flex-grow: 0;
     width: 60px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 38px;
+      left: 20px;
+
+      display: block;
+      width: 1px;
+      height: 1px;
+
+      background-color: transparent;
+      border: 10px solid transparent;
+      border-bottom-color: $brown;
+      transform: rotate(0);
+    }
   }
 
   .page-header__main-close svg {
@@ -735,50 +769,20 @@
     background-color: $brown;
 
     &::before {
-      content: "";
-      position: absolute;
-      top: -20px;
-      left: 150px;
-
-      display: block;
-      width: 1px;
-      height: 1px;
-
-      background-color: transparent;
-      border: 10px solid transparent;
-      border-bottom-color: $brown;
-      transform: rotate(0);
+      display: none;
     }
   }
 
-  .page-header__main-item:nth-of-type(1) .page-header__sub-menu::before {
-    left: 180px;
-  }
+  // .page-header__main-item:nth-of-type(1) .page-header__sub-menu::before {
+  //   left: 180px;
+  // }
 
-  .page-header__main-item:nth-of-type(2) .page-header__sub-menu::before {
-    left: 470px;
-  }
+  // .page-header__main-item:nth-of-type(2) .page-header__sub-menu::before {
+  //   left: 470px;
+  // }
 
-  .page-header__main-item:nth-of-type(3) .page-header__sub-menu::before {
-    left: 765px;
-  }
-
-  // .page-header__sub-menu:nth-last-of-type(2) {
-  //   &::before {
-  //     content: "";
-  //     position: absolute;
-  //     top: -20px;
-  //     left: 350px;
-
-  //     display: block;
-  //     width: 1px;
-  //     height: 1px;
-
-  //     background-color: transparent;
-  //     border: 10px solid transparent;
-  //     border-bottom-color: $brown;
-  //     transform: rotate(0);
-  //   }
+  // .page-header__main-item:nth-of-type(3) .page-header__sub-menu::before {
+  //   left: 765px;
   // }
 
   .page-header__sub-menu--show {

@@ -13,6 +13,7 @@
 </head>
 
 <body class="inner-page">
+
   <header class="inner-page__header page-header">
     <nav class="page-header__nav">
       <button class="page-header__btn-open page-header__btn-open--menu" type="button"
@@ -37,16 +38,17 @@
             <li class="top-menu__item">
               <ul class="page-header__service-menu service-menu">
                 <li class="page-header__service-item service-menu__item">
-                  <a class="page-header__service-link service-menu__link" href="#">Доставка</a>
+                  <a class="page-header__service-link service-menu__link" href="delivery.html">Доставка</a>
                 </li>
                 <li class="page-header__service-item service-menu__item">
-                  <a class="page-header__service-link service-menu__link" href="#">Оплата</a>
+                  <a class="page-header__service-link service-menu__link" href="payment.html">Оплата</a>
                 </li>
                 <li class="page-header__service-item service-menu__item">
-                  <a class="page-header__service-link service-menu__link" href="#">Как оформить заказ</a>
+                  <a class="page-header__service-link service-menu__link" href="how-to-order.html">Как оформить
+                    заказ</a>
                 </li>
                 <li class="page-header__service-item page-header__service-item--tablet-dropdown service-menu__item">
-                  <a class="page-header__service-link service-menu__link" href="#">
+                  <a class="page-header__service-link page-header__service-link--drop service-menu__link" href="#">
                     <span>Еще</span>
                     <svg width="10" height="8">
                       <use xlink:href="img/sprite.svg#dropdown"></use>
@@ -54,24 +56,25 @@
                   </a>
                   <ul class="page-header__service-drop-list">
                     <li class="page-header__service-drop-item">
-                      <a class="page-header__service-drop-link" href="#">Условия работы</a>
+                      <a class="page-header__service-drop-link" href="working-conditions.html">Условия работы</a>
                     </li>
                     <li class="page-header__service-drop-item">
-                      <a class="page-header__service-drop-link" href="#">Гарантии</a>
+                      <a class="page-header__service-drop-link" href="guarantees.html">Гарантии</a>
                     </li>
                     <li class="page-header__service-drop-item">
-                      <a class="page-header__service-drop-link" href="#">Возврат</a>
+                      <a class="page-header__service-drop-link" href="return.html">Возврат</a>
                     </li>
                   </ul>
                 </li>
                 <li class="page-header__service-item page-header__service-item--tablet service-menu__item">
-                  <a class="page-header__service-link service-menu__link" href="#">Условия работы</a>
+                  <a class="page-header__service-link service-menu__link" href="working-conditions.html">Условия
+                    работы</a>
                 </li>
                 <li class="page-header__service-item page-header__service-item--tablet service-menu__item">
-                  <a class="page-header__service-link service-menu__link" href="#">Гарантии</a>
+                  <a class="page-header__service-link service-menu__link" href="guarantees.html">Гарантии</a>
                 </li>
                 <li class="page-header__service-item page-header__service-item--tablet service-menu__item">
-                  <a class="page-header__service-link service-menu__link" href="#">Возврат</a>
+                  <a class="page-header__service-link service-menu__link" href="return.html">Возврат</a>
                 </li>
               </ul>
             </li>
@@ -128,12 +131,16 @@
               <input class="page-header__title-field search-form__field" type="search" name="itemSearch"
                 id="itemSearchField" placeholder="Поиск товаров">
             </label>
-            <button class="page-header__title-btn search-form__select-btn" type="button">
-              <span>Искать везде</span>
-            </button>
+            <input class="page-header__title-btn search-form__select-btn" type="text" value="Искать везде" readonly>
             <button class="search-form__search-btn" type="submit" aria-label="Искать">
               <svg width="22" height="27">
                 <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+            </button>
+            <button class="search-form__reset-btn" type="reset" aria-label="Закрыть и сбросить">
+              <span>Закрыть</span>
+              <svg width="12" height="12">
+                <use xlink:href="img/sprite.svg#delete"></use>
               </svg>
             </button>
           </form>
@@ -145,28 +152,28 @@
               </h2>
               <ul class="modal__list">
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Новинки</a>
+                  <span class="modal__link">Новинки</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Бренды</a>
+                  <span class="modal__link">Бренды</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Одежда для девочек 0-24 мес.</a>
+                  <span class="modal__link">Одежда для девочек 0-24 мес.</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Одежда для мальчиков 0-24 мес.</a>
+                  <span class="modal__link">Одежда для мальчиков 0-24 мес.</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Аксессуары</a>
+                  <span class="modal__link">Аксессуары</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Гигиена и уход</a>
+                  <span class="modal__link">Гигиена и уход</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Детская комната</a>
+                  <span class="modal__link">Детская комната</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Игрушки</a>
+                  <span class="modal__link">Игрушки</span>
                 </li>
               </ul>
             </div>
@@ -178,25 +185,25 @@
               </h2>
               <ul class="modal__list">
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Новинки</a>
+                  <span class="modal__link">Новинки</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Бренды</a>
+                  <span class="modal__link">Бренды</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Одежда для девочек 1-7 лет</a>
+                  <span class="modal__link">Одежда для девочек 1-7 лет</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Аксессуары</a>
+                  <span class="modal__link">Аксессуары</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Гигиена и уход</a>
+                  <span class="modal__link">Гигиена и уход</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Детская комната</a>
+                  <span class="modal__link">Детская комната</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Игрушки</a>
+                  <span class="modal__link">Игрушки</span>
                 </li>
               </ul>
             </div>
@@ -208,29 +215,29 @@
               </h2>
               <ul class="modal__list">
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Новинки</a>
+                  <span class="modal__link">Новинки</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Бренды</a>
+                  <span class="modal__link">Бренды</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Одежда для мальчиков 1-7 лет</a>
+                  <span class="modal__link">Одежда для мальчиков 1-7 лет</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Аксессуары</a>
+                  <span class="modal__link">Аксессуары</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Гигиена и уход</a>
+                  <span class="modal__link">Гигиена и уход</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Детская комната</a>
+                  <span class="modal__link">Детская комната</span>
                 </li>
                 <li class="modal__item">
-                  <a class="modal__link" href="#">Игрушки</a>
+                  <span class="modal__link">Игрушки</span>
                 </li>
               </ul>
             </div>
-            <a class="modal__link modal__link--all" href="#">Искать везде</a>
+            <span class="modal__link modal__link--all">Искать везде</span>
           </div>
           <a class="page-header__phone page-header__phone--title phone" href="tel:+79165887012">+7 (916) 588 70 12</a>
 
@@ -279,16 +286,27 @@
       <div class="page-header__catalog">
         <div class="container">
           <ul class="page-header__main-menu main-menu">
-            <li class="page-header__main-item main-menu__item">
-              <a class="page-header__main-link main-menu__link"
-                href="#">
-                <span>Новорожденные</span>
-                <span>0 - 24 месяцев</span>
-              </a>
+            <li class="page-header__main-item page-header__main-item--selected main-menu__item">
+              <div class="page-header__main-wrapper">
+                <a class="page-header__main-link main-menu__link" href="#">
+                  <span>Новорожденные</span>
+                  <span>0 - 24 месяцев</span>
+                </a>
+                <button class="page-header__main-show" type="button" aria-label="Свернуть меню">
+                  <svg width="12" height="12">
+                    <use xlink:href="img/sprite.svg#dropdown"></use>
+                  </svg>
+                </button>
+                <button class="page-header__main-close" type="button" aria-label="Свернуть меню">
+                  <svg width="12" height="12">
+                    <use xlink:href="img/sprite.svg#delete"></use>
+                  </svg>
+                </button>
+              </div>
               <div class="page-header__sub-wrapper">
                 <ul class="page-header__sub-menu sub-menu">
                   <li class="page-header__sub-item sub-menu__item">
-                    <a class="page-header__sub-link sub-menu__link" href="#">Новинки</a>
+                    <a class="page-header__sub-link sub-menu__link" href="#">1 sub menu</a>
                   </li>
                   <li class="page-header__sub-item sub-menu__item">
                     <a class="page-header__sub-link sub-menu__link" href="#">Бренды</a>
@@ -324,16 +342,114 @@
               </div>
             </li>
             <li class="page-header__main-item main-menu__item">
-              <a class="page-header__main-link main-menu__link" href="#">
-                <span>Девочки</span>
-                <span>1 - 7 лет</span>
-              </a>
+              <div class="page-header__main-wrapper">
+                <a class="page-header__main-link main-menu__link" href="#">
+                  <span>Девочки</span>
+                  <span>1 - 7 лет</span>
+                </a>
+                <button class="page-header__main-show" type="button" aria-label="Свернуть меню">
+                  <svg width="12" height="12">
+                    <use xlink:href="img/sprite.svg#dropdown"></use>
+                  </svg>
+                </button>
+                <button class="page-header__main-close" type="button" aria-label="Свернуть меню">
+                  <svg width="12" height="12">
+                    <use xlink:href="img/sprite.svg#delete"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="page-header__sub-wrapper">
+                <ul class="page-header__sub-menu sub-menu">
+                  <li class="page-header__sub-item sub-menu__item">
+                    <a class="page-header__sub-link sub-menu__link" href="#">2 sub menu</a>
+                  </li>
+                  <li class="page-header__sub-item sub-menu__item">
+                    <a class="page-header__sub-link sub-menu__link" href="#">Бренды</a>
+                  </li>
+                  <li class="page-header__sub-item sub-menu__item">
+                    <a class="page-header__sub-link sub-menu__link" href="#">Одежда для девочек 0-24 мес.</a>
+                  </li>
+                  <li class="page-header__sub-item sub-menu__item">
+                    <a class="page-header__sub-link sub-menu__link" href="#">Одежда для мальчиков 0-24 мес.</a>
+                  </li>
+                  <li class="page-header__sub-item sub-menu__item">
+                    <a class="page-header__sub-link sub-menu__link" href="#">Аксессуары</a>
+                  </li>
+                  <li class="page-header__sub-item sub-menu__item">
+                    <a class="page-header__sub-link sub-menu__link" href="#">Гигиена и уход</a>
+                  </li>
+                  <li class="page-header__sub-item sub-menu__item">
+                    <a class="page-header__sub-link sub-menu__link" href="#">Детская комната</a>
+                  </li>
+                  <li class="page-header__sub-item sub-menu__item">
+                    <a class="page-header__sub-link sub-menu__link" href="#">Игрушки</a>
+                  </li>
+                  <li class="page-header__sub-item sub-menu__item">
+                    <button class="page-header__sub-close" type="button">
+                      <span>Свернуть
+                        <svg class="page-header__dropdown-icon" width="11" height="7">
+                          <use xlink:href="img/sprite.svg#dropdown"></use>
+                        </svg>
+                      </span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="page-header__main-item main-menu__item">
-              <a class="page-header__main-link main-menu__link" href="#">
-                <span>Мальчики</span>
-                <span>1 - 7 лет</span>
-              </a>
+              <div class="page-header__main-wrapper">
+                <a class="page-header__main-link main-menu__link" href="#">
+                  <span>Мальчики</span>
+                  <span>1 - 7 лет</span>
+                </a>
+                <button class="page-header__main-show" type="button" aria-label="Свернуть меню">
+                  <svg width="12" height="12">
+                    <use xlink:href="img/sprite.svg#dropdown"></use>
+                  </svg>
+                </button>
+                <button class="page-header__main-close" type="button" aria-label="Свернуть меню">
+                  <svg width="12" height="12">
+                    <use xlink:href="img/sprite.svg#delete"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="page-header__sub-wrapper">
+                <ul class="page-header__sub-menu sub-menu">
+                  <li class="page-header__sub-item sub-menu__item">
+                    <a class="page-header__sub-link sub-menu__link" href="#">3 sub menu</a>
+                  </li>
+                  <li class="page-header__sub-item sub-menu__item">
+                    <a class="page-header__sub-link sub-menu__link" href="#">Бренды</a>
+                  </li>
+                  <li class="page-header__sub-item sub-menu__item">
+                    <a class="page-header__sub-link sub-menu__link" href="#">Одежда для девочек 0-24 мес.</a>
+                  </li>
+                  <li class="page-header__sub-item sub-menu__item">
+                    <a class="page-header__sub-link sub-menu__link" href="#">Одежда для мальчиков 0-24 мес.</a>
+                  </li>
+                  <li class="page-header__sub-item sub-menu__item">
+                    <a class="page-header__sub-link sub-menu__link" href="#">Аксессуары</a>
+                  </li>
+                  <li class="page-header__sub-item sub-menu__item">
+                    <a class="page-header__sub-link sub-menu__link" href="#">Гигиена и уход</a>
+                  </li>
+                  <li class="page-header__sub-item sub-menu__item">
+                    <a class="page-header__sub-link sub-menu__link" href="#">Детская комната</a>
+                  </li>
+                  <li class="page-header__sub-item sub-menu__item">
+                    <a class="page-header__sub-link sub-menu__link" href="#">Игрушки</a>
+                  </li>
+                  <li class="page-header__sub-item sub-menu__item">
+                    <button class="page-header__sub-close" type="button">
+                      <span>Свернуть
+                        <svg class="page-header__dropdown-icon" width="11" height="7">
+                          <use xlink:href="img/sprite.svg#dropdown"></use>
+                        </svg>
+                      </span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
@@ -531,7 +647,7 @@
                 <use xlink:href="img/sprite.svg#dropdown"></use>
               </svg>
             </h2>
-            <ul class="page-footer__menu-list page-footer__menu-list--open main-menu">
+            <ul class="page-footer__menu-list main-menu">
               <li class="page-footer__menu-item main-menu__item">
                 <a class="page-footer__menu-link main-menu__link" href="#">
                   <span>Все товары</span>
@@ -701,6 +817,12 @@
     </div>
   </footer>
   <div class="bg-fade bg-fade--hide"></div>
+  <script src="js/innerPageNav.js"></script>
+  <script src="js/footerMenu.js"></script>
+  <script src="js/mobileMenu.js"></script>
+  <script src="js/tabletMenu.js"></script>
+  <script src="js/searchForm.js"></script>
+  <script src="js/catalogMenu.js"></script>
   <script src="libs/picturefill.min.js"></script>
   <script src="libs/svgxuse.min.js"></script>
 </body>
