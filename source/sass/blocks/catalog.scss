@@ -143,6 +143,15 @@
   margin: 0;
 }
 
+.catalog__search-result {
+  width: 100%;
+  text-align: center;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  color: #609c9f;
+}
+
 .catalog__filter {
   width: 280px;
   margin: 0 auto;
@@ -483,6 +492,14 @@ $checkboxColors: (
   text-align: center;
 }
 
+.catalog__sorting-select {
+  position: relative;
+
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+}
+
 .catalog__sorting-result {
   margin: 0;
 
@@ -497,6 +514,7 @@ $checkboxColors: (
   position: relative;
 
   display: block;
+  width: 100%;
 
   &::before {
     content: "";
@@ -520,7 +538,7 @@ $checkboxColors: (
   }
 }
 
-.catalog__sorting-select {
+.catalog__sorting-select-field {
   position: relative;
 
   box-sizing: border-box;
@@ -536,10 +554,74 @@ $checkboxColors: (
   background-color: transparent;
   border: 1px solid #e2e1e6;
   border-radius: 25px;
+  cursor: pointer;
 
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+}
+
+.catalog__sorting-options {
+  position: absolute;
+  top: 118%;
+  z-index: 10;
+
+  display: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  background-color: #ffffff;
+  border: 1px solid #e2e1e6;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 48%;
+
+    width: 12px;
+    height: 12px;
+
+    background-color: #ffffff;
+    border: 1px solid #e2e1e6;
+    border-right: none;
+    border-bottom: none;
+    transform: rotate(45deg);
+  }
+}
+
+.catalog__sorting-option {
+  position: relative;
+  z-index: 11;
+
+  box-sizing: border-box;
+  padding: 10px;
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 19px;
+  color: #55606e;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #e2e1e6;
+}
+
+.catalog__sorting-options--show {
+  display: block;
+}
+
+.catalog__sorting-option:hover,
+.catalog__sorting-option:focus {
+  background-color: #e2e1e6;
+  cursor: pointer;
+}
+
+.catalog__sorting-option:active {
+  opacity: 0.7;
 }
 
 .catalog__main-item {
@@ -649,11 +731,13 @@ $checkboxColors: (
   }
 
   .catalog__search-result {
+    text-align: left;
+    width: 100%;
+
     font-weight: 400;
     font-size: 22px;
     line-height: 30px;
     color: #609c9f;
-    width: 100%;
   }
 
   .catalog__brands-title {
@@ -1051,6 +1135,10 @@ $checkboxColors: (
     }
   }
 
+  .catalog__checkbox-item input:focus + .catalog__checkbox-field {
+    outline: 1px solid $cyan;
+  }
+
   .catalog__checkbox-field--color {
     border-radius: 50%;
   }
@@ -1079,6 +1167,11 @@ $checkboxColors: (
         border-radius: 50%;
       }
     }
+  }
+
+  .catalog__checkbox-item input:focus + .catalog__checkbox-field {
+    outline: auto;
+    outline-color: #609c9f;
   }
 
   .catalog__radio-label {
@@ -1141,6 +1234,7 @@ $checkboxColors: (
   }
 
   .catalog__sorting-text {
+    margin: 0;
     margin-right: 12px;
   }
 
@@ -1180,7 +1274,7 @@ $checkboxColors: (
     }
   }
 
-  .catalog__sorting-select {
+  .catalog__sorting-select-field {
     position: relative;
 
     box-sizing: border-box;
@@ -1240,6 +1334,11 @@ $checkboxColors: (
         border-radius: 50%;
       }
     }
+
+    .catalog__radio-input:nth-of-type(#{$i}):focus ~ .catalog__radio-label:nth-of-type(#{$i}) .catalog__radio-field {
+      outline: auto;
+      outline-color: #609c9f;
+    }
   }
 
   .catalog__main-link {
@@ -1272,7 +1371,12 @@ $checkboxColors: (
   }
 
   .catalog__item {
+    margin: 0;
     margin-bottom: 26px;
+
+    &:nth-of-type(2n) {
+      margin-left: auto;
+    }
   }
 
   .catalog__btn--show-more {
@@ -1451,6 +1555,10 @@ $checkboxColors: (
     }
   }
 
+  .catalog__item:nth-of-type(2n) {
+    margin-left: 0;
+  }
+
   .catalog__filtration-categories-list {
     width: 100%;
   }
@@ -1459,6 +1567,17 @@ $checkboxColors: (
     width: 925px;
     margin-top: 25px;
     margin-left: auto;
+  }
+
+  .catalog__sorting-select-field:hover {
+    border-color: #b8b8ba;
+  }
+
+  .catalog__sorting-select-field:focus {
+
+    color: #041936;
+    box-shadow: 0 0 0 2px #b69a79;
+    border-color: transparent;
   }
 
 

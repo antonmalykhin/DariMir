@@ -832,15 +832,18 @@
               <form class="catalog__sorting-form" action="#" method="GET">
                 <label class="catalog__sorting-label">
                   <span class="catalog__sorting-text">Сортировка:</span>
-                  <span class="catalog__sorting-select-wrapper">
-                    <svg width="10" height="6">
-                      <use xlink:href="img/sprite.svg#dropdown"></use>
-                    </svg>
-                    <select class="catalog__sorting-select" name="sorting" id="sorting">
-                      <option value="new">Новинки</option>
-                      <option value="priceUp">По возрастанию цены</option>
-                      <option value="priceDown">По убыванию цены</option>
-                    </select>
+                  <span class="catalog__sorting-select">
+                    <span class="catalog__sorting-select-wrapper">
+                      <svg width="10" height="6">
+                        <use xlink:href="img/sprite.svg#dropdown"></use>
+                      </svg>
+                      <input class="catalog__sorting-select-field" name="sorting"  id="sorting" type="text" value="Новинки" readonly>
+                    </span>
+                      <ul class="catalog__sorting-options">
+                        <li class="catalog__sorting-option">Новинки</li>
+                        <li class="catalog__sorting-option">По возрастанию цены</li>
+                        <li class="catalog__sorting-option">По убыванию цены</li>
+                      </ul>
                   </span>
                 </label>
               </form>
@@ -1417,6 +1420,7 @@
     </div>
   </footer>
   <div class="bg-fade bg-fade--hide"></div>
+  <script src="js/sortingSelect.js"></script>
   <script src="js/catalogFilter.js"></script>
   <script src="js/footerMenu.js"></script>
   <script src="js/threeLevelMenu.js"></script>

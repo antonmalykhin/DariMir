@@ -10,6 +10,7 @@ var onSearchFormButtonClick = function (evt) {
   backgroundShader.classList.toggle('bg-fade--hide');
   document.addEventListener('keydown', onEscKeyPress);
   document.addEventListener('click', onEmptyAriaClick);
+
 };
 
 var modalClose = function () {
@@ -39,7 +40,7 @@ var onEmptyAriaClick = function (evt) {
     backgroundShader.classList.add('bg-fade--hide');
     document.removeEventListener('click', onEmptyAriaClick);
   }
-}
+};
 
 searchFormButton.addEventListener('click', onSearchFormButtonClick);
 
