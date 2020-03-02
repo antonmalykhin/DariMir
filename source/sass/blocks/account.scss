@@ -1,0 +1,290 @@
+.account__favorites {
+  order: 2;
+  width: 100%;
+}
+
+
+.account__favorites-nav {
+  order: 1;
+  width: 100%;
+  margin: 0;
+  padding-top: 5px;
+}
+
+.account__favorites-nav-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.account__favorites-nav-item {
+  border-bottom: 1px solid #d5c9be;
+
+  &:nth-last-of-type(2) {
+    border: none;
+  }
+}
+
+.account__favorites-nav-item--logout {
+  margin-top: 30px;
+
+  border: 1px solid $cyan;
+}
+
+.account__favorites-nav-link {
+  position: relative;
+
+  display: block;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  padding-bottom: 14px;
+
+  span {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    color: #041936;
+  }
+
+  svg {
+    position: absolute;
+    top: 20px;
+    right: 17px;
+
+    transform: rotate(-90deg);
+
+    fill: #b79b7a;
+  }
+}
+
+.account__favorites-qty {
+  position: absolute;
+  top: 13px;
+  right: 61px;
+}
+
+@media (min-width: $tablet) {
+  .account {
+    padding-bottom: 30px;
+  }
+
+  .account__favorites {
+    order: 1;
+    width: 690px;
+  }
+
+  .account__favorites-list {
+    justify-content: flex-start;
+    margin-top: 5px;
+    padding: 0 15px;
+  }
+
+  .account__favorites-item {
+    &:nth-of-type(even) {
+      margin-left: auto;
+    }
+  }
+
+  .account__favorites-nav {
+    order: 2;
+    width: 270px;
+    margin: 0;
+    padding-top: 5px;
+  }
+
+  .account__favorites-nav-list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  .account__favorites-nav-item {
+    border-bottom: 1px solid #d5c9be;
+
+    &:nth-last-of-type(2) {
+      border: none;
+    }
+  }
+
+  .account__favorites-nav-item--logout {
+    margin-top: 30px;
+
+    border: 1px solid $cyan;
+  }
+
+  .account__favorites-nav-link {
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    padding-bottom: 14px;
+
+    span {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 19px;
+      color: #041936;
+    }
+
+    svg {
+      position: absolute;
+      top: 20px;
+      right: 17px;
+
+      transform: rotate(-90deg);
+
+      fill: #b79b7a;
+    }
+  }
+
+  .account__favorites-qty {
+    position: absolute;
+    top: 13px;
+    right: 61px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .account {
+    padding-bottom: 30px;
+  }
+
+  //*---------account-main-------
+
+  .account__nav {
+    width: 100%;
+  }
+
+  .account__nav-list {
+    margin: 0;
+    padding: 30px;
+
+    list-style: none;
+
+    border: 1px solid #e2e1e6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .account__nav-item {
+    width: 50%;
+  }
+
+  //*--------favorites-----------
+
+  .account__favorites {
+    width: 925px;
+  }
+
+  .account__favorites-list {
+    justify-content: flex-start;
+    margin-top: 5px;
+    padding: 0;
+  }
+
+  .account__favorites-item {
+    margin: 0;
+
+    &:nth-of-type(3n+2) {
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    &:nth-of-type(3n+3) {
+      margin-left: auto;
+    }
+
+    &:last-of-type {
+      margin-left: 13px;
+    }
+  }
+
+  .account__favorites-nav {
+    width: 295px;
+    margin: 0;
+    padding-top: 5px;
+  }
+
+  .account__favorites-nav-list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  .account__favorites-nav-item {
+    border-bottom: 1px solid #d5c9be;
+
+    &:nth-last-of-type(2) {
+      border: none;
+    }
+  }
+
+  .account__favorites-nav-item--logout {
+    margin-top: 30px;
+
+    border: 1px solid $cyan;
+  }
+
+  .account__favorites-nav-link {
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    padding-bottom: 14px;
+
+    span {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 19px;
+      color: #041936;
+    }
+
+    svg {
+      position: absolute;
+      top: 20px;
+      right: 17px;
+
+      transform: rotate(-90deg);
+
+      fill: #b79b7a;
+    }
+  }
+
+  .account__favorites-qty {
+    position: absolute;
+    top: 13px;
+    right: 85px;
+  }
+
+  .account__favorites-nav-link:focus,
+  .account__favorites-nav-link:hover {
+    background-color: #d5cabf;
+  }
+
+  .account__favorites-nav-link:active {
+    opacity: 0.7;
+  }
+
+  .account__favorites-nav-link--logout:focus,
+  .account__favorites-nav-link--logout:hover {
+    background-color: $cyan;
+
+    span {
+      color: white;
+    }
+
+    svg {
+      fill: white;
+    }
+  }
+
+  .account__favorites-nav-link--logout:active {
+    opacity: 0.7;
+  }
+}
