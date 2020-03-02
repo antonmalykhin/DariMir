@@ -156,23 +156,118 @@
 
   .account__nav {
     width: 100%;
+    margin: 0;
   }
 
   .account__nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin: 0;
     padding: 30px;
+    padding-bottom: 0;
 
     list-style: none;
 
     border: 1px solid #e2e1e6;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
   }
 
   .account__nav-item {
-    width: 50%;
+    width: 48.8%;
+    margin-bottom: 28px;
   }
+
+  .account__nav-link {
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+    padding: 39px 30px;
+
+    background-color: #f0f0f2;
+    border: 1px solid #f0f0f2;
+
+    span {
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 1.5;
+      color: #609c9f;
+    }
+  }
+
+  .account__nav-link--logout {
+    background-color: $cyan;
+    border-color: $cyan;
+
+    span {
+      color: white;
+    }
+  }
+
+  .account__nav-icon {
+    position: absolute;
+    top: 30px;
+    right: 28px;
+
+    &--delete {
+      background-color: transparent;
+      border-color: white;
+
+      svg {
+        top: 18px;
+        left: 18px;
+
+        fill: white;
+      }
+    }
+  }
+
+  .account__nav-icon:hover,
+  .account__nav-icon:focus,
+  .account__nav-icon:active {
+    background-color: #f0f0f2;
+    border: 1px solid #e2e1e6;
+
+    svg {
+      fill: #b69a79;
+    }
+  }
+
+  .account__nav-icon--delete:hover,
+  .account__nav-icon--delete:focus,
+  .account__nav-icon--delete:active {
+    background-color: transparent;
+    border-color: white;
+
+    svg {
+      fill: white;
+    }
+  }
+
+
+  .account__qty {
+    position: absolute;
+    top: 45px;
+    left: 269px;
+  }
+
+  .account__nav-link:focus,
+  .account__nav-link:hover {
+    background-color: #ffffff;
+    border: 1px solid #e2e1e6;
+  }
+
+  .account__nav-link--logout:focus,
+  .account__nav-link--logout:hover {
+    span {
+      color: $cyan;
+    }
+
+    .account__nav-icon--delete {
+      background-color: $cyan;
+    }
+  }
+
 
   //*--------favorites-----------
 
