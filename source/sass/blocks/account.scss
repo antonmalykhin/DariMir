@@ -1,24 +1,106 @@
+//*---------main----------
+
+.account__nav {
+  width: 100%;
+  margin: 0;
+}
+
+.account__nav-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 15px;
+  padding-bottom: 0;
+
+  list-style: none;
+
+  border: 1px solid #e2e1e6;
+}
+
+.account__nav-item {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.account__nav-link {
+  position: relative;
+
+  display: block;
+  box-sizing: border-box;
+  padding: 20px 15px;
+
+  background-color: #f0f0f2;
+  border: 1px solid #f0f0f2;
+
+  span {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #609c9f;
+  }
+}
+
+.account__nav-link--logout {
+  background-color: $cyan;
+  border-color: $cyan;
+
+  span {
+    color: white;
+  }
+}
+
+.account__nav-icon {
+  position: absolute;
+  top: 6px;
+  right: 0;
+
+  transform: scale(0.7);
+
+  &--delete {
+    background-color: transparent;
+    border-color: white;
+
+    svg {
+      top: 18px;
+      left: 18px;
+
+      fill: white;
+    }
+  }
+}
+
+.account__qty {
+  position: absolute;
+  top: 20px;
+  left: 177px;
+}
+
+
+//*------favorites--------
+
 .account__favorites {
   order: 2;
   width: 100%;
 }
 
 
-.account__favorites-nav {
+.account__side-nav {
   order: 1;
   width: 100%;
   margin: 0;
   padding-top: 5px;
 }
 
-.account__favorites-nav-list {
+.account__side-nav-list {
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
-.account__favorites-nav-item {
+.account__side-nav-item {
   border-bottom: 1px solid #d5c9be;
 
   &:nth-last-of-type(2) {
@@ -26,13 +108,7 @@
   }
 }
 
-.account__favorites-nav-item--logout {
-  margin-top: 30px;
-
-  border: 1px solid $cyan;
-}
-
-.account__favorites-nav-link {
+.account__side-nav-link {
   position: relative;
 
   display: block;
@@ -58,6 +134,16 @@
   }
 }
 
+.account__side-nav-item--logout {
+  margin-top: 30px;
+
+  border: 1px solid $cyan;
+}
+
+.account__side-nav-link--logout svg {
+  fill: $cyan;
+}
+
 .account__favorites-qty {
   position: absolute;
   top: 13px;
@@ -68,6 +154,88 @@
   .account {
     padding-bottom: 30px;
   }
+
+  //*---------main--------
+
+
+  .account__nav {
+    width: 100%;
+    margin: 0;
+  }
+
+  .account__nav-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 30px;
+    padding-bottom: 0;
+
+    list-style: none;
+
+    border: 1px solid #e2e1e6;
+  }
+
+  .account__nav-item {
+    width: 48.8%;
+    margin-bottom: 28px;
+  }
+
+  .account__nav-link {
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+    padding: 39px 30px;
+
+    background-color: #f0f0f2;
+    border: 1px solid #f0f0f2;
+
+    span {
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 1.5;
+      color: #609c9f;
+    }
+  }
+
+  .account__nav-link--logout {
+    background-color: $cyan;
+    border-color: $cyan;
+
+    span {
+      color: white;
+    }
+  }
+
+  .account__nav-icon {
+    position: absolute;
+    top: 30px;
+    right: 28px;
+
+    transform: scale(1);
+
+    &--delete {
+      background-color: transparent;
+      border-color: white;
+
+      svg {
+        top: 18px;
+        left: 18px;
+
+        fill: white;
+      }
+    }
+  }
+
+  .account__qty {
+    position: absolute;
+    top: 45px;
+    left: 269px;
+  }
+
+  //*------favorites------
 
   .account__favorites {
     order: 1;
@@ -86,21 +254,21 @@
     }
   }
 
-  .account__favorites-nav {
+  .account__side-nav {
     order: 2;
     width: 270px;
     margin: 0;
     padding-top: 5px;
   }
 
-  .account__favorites-nav-list {
+  .account__side-nav-list {
     margin: 0;
     padding: 0;
 
     list-style: none;
   }
 
-  .account__favorites-nav-item {
+  .account__side-nav-item {
     border-bottom: 1px solid #d5c9be;
 
     &:nth-last-of-type(2) {
@@ -108,13 +276,13 @@
     }
   }
 
-  .account__favorites-nav-item--logout {
+  .account__side-nav-item--logout {
     margin-top: 30px;
 
     border: 1px solid $cyan;
   }
 
-  .account__favorites-nav-link {
+  .account__side-nav-link {
     position: relative;
 
     display: block;
@@ -138,6 +306,10 @@
 
       fill: #b79b7a;
     }
+  }
+
+  .account__side-nav-link--delete svg {
+    fill: $cyan;
   }
 
   .account__favorites-qty {
@@ -268,6 +440,212 @@
     }
   }
 
+  //*--------personal------------
+
+  .account__personal {
+    width: 925px;
+    margin-top: 6px;
+  }
+
+  .account__personal-fields-wrapper {
+    padding: 30px;
+    padding-top: 23px;
+    padding-bottom: 22px;
+
+    border: 1px solid #e2e1e6;
+  }
+
+  .account__personal-info-wrapper {
+    margin-bottom: 46px;
+  }
+
+  .account__personal-heading {
+    width: 100%;
+    margin: 0;
+
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.5;
+    color: #609c9f;
+  }
+
+  .account__personal-changes {
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 8px;
+
+    span {
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 1.5;
+      color: #041936;
+    }
+
+    time {
+      margin-left: 5px;
+
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 1.5;
+      color: #55606e;
+    }
+  }
+
+  .account__personal-fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 45px;
+    padding: 0;
+
+    border: none;
+  }
+
+  .account__personal-field {
+    position: relative;
+
+    margin-top: 8px;
+  }
+
+  .account__personal-field--password {
+    margin-right: 37px;
+  }
+
+  .account__personal-fieldset--password {
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
+
+  .account__personal-label {
+    display: block;
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    color: #041936;
+
+    sup {
+      position: relative;
+      top: 0;
+      left: 2px;
+
+      font-size: 16px;
+      color: #609c9f;
+    }
+  }
+
+  .account__personal-textfield {
+
+    box-sizing: border-box;
+    margin-bottom: 6px;
+    padding: 16px 26px;
+    padding-right: 34px;
+    padding-left: 18px;
+
+    border: 1px solid #e2e1e6;
+    border-radius: 25px;
+
+    &::placeholder {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 19px;
+      color: #55606e;
+    }
+  }
+
+  .account__personal-text {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 0;
+
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: #55606e;
+  }
+
+  .account__personal-text--info {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #b8b8ba;
+
+    sup {
+      position: relative;
+      top: 0;
+      left: 2px;
+
+      font-size: 16px;
+      color: #609c9f;
+    }
+  }
+
+  .account__personal-text--checkbox {
+    padding-left: 35px;
+  }
+
+  .account__personal-field--checkbox {
+    position: relative;
+
+    display: block;
+    margin-top: 21px;
+    margin-bottom: 10px;
+  }
+
+  .account__personal-checkfield {
+    position: absolute;
+    top: -2px;
+
+    display: block;
+    width: 24px;
+    height: 24px;
+
+    background-color: #ffffff;
+    border: 1px solid #b69a79;
+
+    svg {
+      position: absolute;
+      top: 7px;
+      left: 6px;
+
+      display: none;
+
+      fill: none;
+      stroke: #b69a79;
+    }
+  }
+
+  .account__personal-field--chekbox input:checked + .account__personal-checkfield svg {
+    display: block;
+  }
+
+  .account__personal-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 18px;
+  }
+
+  .account__personal-btn {
+    margin: 0;
+    margin-right: 21px;
+  }
+
+  .account__personal-btn--submit {
+    background-color: #609c9f;
+    border-color: #609c9f;
+  }
+
+  .account__personal-textfield:hover {
+    border-color: #b8b8ba;
+  }
+
+  .account__personal-textfield:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 2px #b69a79;
+  }
 
   //*--------favorites-----------
 
@@ -298,20 +676,20 @@
     }
   }
 
-  .account__favorites-nav {
+  .account__side-nav {
     width: 295px;
     margin: 0;
     padding-top: 5px;
   }
 
-  .account__favorites-nav-list {
+  .account__side-nav-list {
     margin: 0;
     padding: 0;
 
     list-style: none;
   }
 
-  .account__favorites-nav-item {
+  .account__side-nav-item {
     border-bottom: 1px solid #d5c9be;
 
     &:nth-last-of-type(2) {
@@ -319,13 +697,7 @@
     }
   }
 
-  .account__favorites-nav-item--logout {
-    margin-top: 30px;
-
-    border: 1px solid $cyan;
-  }
-
-  .account__favorites-nav-link {
+  .account__side-nav-link {
     position: relative;
 
     display: block;
@@ -351,23 +723,49 @@
     }
   }
 
+  .account__side-nav-item--logout {
+    margin-top: 30px;
+
+    border: 1px solid $cyan;
+
+    svg {
+      fill: $cyan;
+    }
+  }
+
   .account__favorites-qty {
     position: absolute;
     top: 13px;
     right: 85px;
   }
 
-  .account__favorites-nav-link:focus,
-  .account__favorites-nav-link:hover {
-    background-color: #d5cabf;
+  .account__side-nav-link:focus,
+  .account__side-nav-link:hover {
+    span {
+      color: $cyan;
+    }
+
+    svg {
+      fill: $cyan;
+    }
   }
 
-  .account__favorites-nav-link:active {
+  .account__side-nav-link:not([href]) {
+    span {
+      color: #041936;
+    }
+
+    svg {
+      fill: #b79b7a;
+    }
+  }
+
+  .account__side-nav-link:active {
     opacity: 0.7;
   }
 
-  .account__favorites-nav-link--logout:focus,
-  .account__favorites-nav-link--logout:hover {
+  .account__side-nav-link--logout:focus,
+  .account__side-nav-link--logout:hover {
     background-color: $cyan;
 
     span {
@@ -379,7 +777,11 @@
     }
   }
 
-  .account__favorites-nav-link--logout:active {
+  .account__side-nav-link--current {
+    background-color: #d5cabf;
+  }
+
+  .account__side-nav-link--logout:active {
     opacity: 0.7;
   }
 }

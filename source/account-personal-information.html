@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ДАРИМИР Интернет-магазин детских товаров Избранные товары</title>
+  <title>ДАРИМИР Интернет-магазин детских товаров Личные данные</title>
   <link rel="preload" href="fonts/montserrat-v14-latin_cyrillic-regular.woff2" as="font" crossorigin="anonymous" />
   <link rel="preload" href="fonts/m-plus-rounded-1c-v10-latin_cyrillic-regular.woff2" as="font"
     crossorigin="anonymous" />
@@ -479,278 +479,90 @@
         </li>
 
         <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link">Избранные товары</a>
+          <a class="breadcrumbs__link">Личные данные</a>
         </li>
       </ul>
 
-      <h1 class="inner-page__title page-main__title">Избранные товары</h1>
+      <h1 class="inner-page__title page-main__title">Личные данные</h1>
 
       <div class="inner-page__wrapper">
-        <section class="account__favorites goods">
+        <section class="account__personal">
+          <h2 class="visually-hidden">Форма изменения информации о пользователе</h2>
+            <form class="account__personal-form" action="#" method="POST">
+              <div class="account__personal-fields-wrapper">
 
-            <div class="account__favorites-wrapper goods__wrapper">
-              <h2 class="visually-hidden">Список избранных товаров</h2>
-              <ul class="account__favorites-list goods__list">
-                <li class="account__favorites-item goods__item">
-                  <button class="goods__btn goods__btn--compare" type="button" aria-label="Добавить к сравнению">
-                    <svg width="23" height="26">
-                      <use xlink:href="img/sprite.svg#compare"></use>
-                    </svg>
-                  </button>
+                <div class="account__personal-info-wrapper">
+                  <h3 class="account__personal-heading">Изменения сохранены</h3>
+                  <p class="account__personal-changes">
+                    <span>Дата обновления:</span><time datetime="2020-01-01 15:41:16">22.09.2019 15:41:16</time>
+                  </p>
+                  <p class="account__personal-changes">
+                    <span>Последняя авторизация:</span><time datetime="2020-01-01 15:31:16">22.09.2019 15:31:16</time>
+                  </p>
+                </div>
 
-                  <button class="goods__btn goods__btn--delete" type="button" aria-label="Удалить из понравившихся"> <svg
-                    width="12" height="12">
-                    <use xlink:href="img/sprite.svg#delete"></use>
-                  </svg>
-                </button>
+                <div class="account__personal-fieldset">
+                  <legend class="account__personal-heading">Контактная информация &#8381;</legend>
 
-                  <div class="goods__labels">
-                    <p class="goods__hit">Хит продаж</p>
-                  </div>
+                  <label class="account__personal-field">
+                    <span class="account__personal-label">Имя<sup>*</sup></span>
+                    <input class="account__personal-textfield" type="text" name="userFirstName" id="firstName"
+                      placeholder="Алина" minlength="2" maxlength="25" pattern="^[A-Za-zА-Яа-яЁё\s]+$" required>
+                  </label>
 
-                  <picture>
-                    <source type="image/webp" srcset="img/best_1.webp">
-                    <img class="goods__img" width="275" height="275" src="img/best_1.jpg"
-                      alt="LOOM Вязаный конверт New Classic Капучино">
-                  </picture>
-                  <div class="goods__text">
-                    <p class="goods__price">
-                      <span class="goods__price-new">4 599<small class="goods__unit">руб.</small></span>
-                    </p>
-                    <a class="goods__title" href="#">LOOM Вязаный конверт New Classic Капучино</a>
-                  </div>
-                  <button class="goods__to-cart-btn" type="button">Добавить в корзину</button>
-                </li>
+                  <label class="account__personal-field">
+                    <span class="account__personal-label">Фамилия<sup>*</sup></span>
+                    <input class="account__personal-textfield" type="text" name="userLastName" id="lastName"
+                      placeholder="Серова" minlength="2" maxlength="25" pattern="[A-Za-zА-Яа-яЁё]" required>
+                  </label>
 
-                <li class="account__favorites-item goods__item">
-                  <button class="goods__btn goods__btn--compare" type="button" aria-label="Добавить к сравнению">
-                    <svg width="23" height="26">
-                      <use xlink:href="img/sprite.svg#compare"></use>
-                    </svg>
-                  </button>
+                  <label class="account__personal-field">
+                    <span class="account__personal-label">Телефон<sup>*</sup></span>
+                    <input class="account__personal-textfield" type="tel" name="userPhoneNumber" id="phoneNumber"
+                      placeholder="+ 7 ( 950 ) 681 - 58 - 27" required>
+                  </label>
 
-                  <button class="goods__btn goods__btn--delete" type="button" aria-label="Удалить из понравившихся"> <svg
-                      width="12" height="12">
-                      <use xlink:href="img/sprite.svg#delete"></use>
-                    </svg>
-                  </button>
+                  <label class="account__personal-field">
+                    <span class="account__personal-label">Е-mail<sup>*</sup></span>
+                    <input class="account__personal-textfield" type="email" name="userEmail" id="emailAddress"
+                      placeholder="alinaserova@gmail.com" required>
+                  </label>
+                </div>
 
-                  <div class="goods__labels">
-                    <p class="goods__hit">Хит продаж</p>
-                  </div>
+                <div class="account__personal-fieldset account__personal-fieldset--password">
+                  <legend class="account__personal-heading">Изменение пароля</legend>
+                  <p class="account__personal-text">Пароль должен быть не менее 6 символов длиной.</p>
+                  <label class="account__personal-field account__personal-field--password">
+                    <span class="account__personal-label">Новый пароль</span>
+                    <input class="account__personal-textfield account__personal-textfield--password" type="password" name="newPassword" id="newPasswordField"
+                      minlength="6" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" required>
+                  </label>
 
-                  <picture>
-                    <source type="image/webp" srcset="img/best_1.webp">
-                    <img class="goods__img" width="275" height="275" src="img/best_1.jpg"
-                      alt="LOOM Вязаный конверт New Classic Капучино">
-                  </picture>
-                  <div class="goods__text">
-                    <p class="goods__price">
-                      <span class="goods__price-new">4 599<small class="goods__unit">руб.</small></span>
-                    </p>
-                    <a class="goods__title" href="#">LOOM Вязаный конверт New Classic Капучино</a>
-                  </div>
-                  <button class="goods__to-cart-btn" type="button">Добавить в корзину</button>
-                </li>
-
-                <li class="account__favorites-item goods__item">
-                  <button class="goods__btn goods__btn--compare" type="button" aria-label="Добавить к сравнению">
-                    <svg width="23" height="26">
-                      <use xlink:href="img/sprite.svg#compare"></use>
-                    </svg>
-                  </button>
-
-                  <button class="goods__btn goods__btn--delete" type="button" aria-label="Удалить из понравившихся"> <svg
-                      width="12" height="12">
-                      <use xlink:href="img/sprite.svg#delete"></use>
-                    </svg>
-                  </button>
-
-                  <div class="goods__labels">
-                    <p class="goods__hit">Хит продаж</p>
-                  </div>
-
-                  <picture>
-                    <source type="image/webp" srcset="img/best_1.webp">
-                    <img class="goods__img" width="275" height="275" src="img/best_1.jpg"
-                      alt="LOOM Вязаный конверт New Classic Капучино">
-                  </picture>
-                  <div class="goods__text">
-                    <p class="goods__price">
-                      <span class="goods__price-new">4 599<small class="goods__unit">руб.</small></span>
-                    </p>
-                    <a class="goods__title" href="#">LOOM Вязаный конверт New Classic Капучино</a>
-                  </div>
-                  <button class="goods__to-cart-btn" type="button">Добавить в корзину</button>
-                </li>
-
-                <li class="account__favorites-item goods__item">
-                  <button class="goods__btn goods__btn--compare" type="button" aria-label="Добавить к сравнению">
-                    <svg width="23" height="26">
-                      <use xlink:href="img/sprite.svg#compare"></use>
-                    </svg>
-                  </button>
-                  <button class="goods__btn goods__btn--delete" type="button" aria-label="Удалить из понравившихся"> <svg
-                    width="12" height="12">
-                    <use xlink:href="img/sprite.svg#delete"></use>
-                  </svg>
-                </button>
-
-                  <div class="goods__labels">
-                    <p class="goods__hit">Хит продаж</p>
-                    <p class="goods__new">Новинка</p>
-                  </div>
-
-                  <picture>
-                    <source type="image/webp" srcset="img/best_2.webp">
-                    <img class="goods__img" width="275" height="275" src="img/best_2.jpg"
-                      alt="LOOM Jasper вязаный пеленальный кокон">
-                  </picture>
-
-                  <div class="goods__text">
-                    <p class="goods__price">
-                      <span class="goods__price-new">2 500<small class="goods__unit">руб.</small></span>
-                    </p>
-                    <a class="goods__title" href="#">LOOM Jasper вязаный пеленальный кокон</a>
-                  </div>
-                  <button class="goods__to-cart-btn" type="button">Добавить в корзину</button>
-                </li>
-
-                <li class="account__favorites-item goods__item">
-                  <button class="goods__btn goods__btn--compare" type="button" aria-label="Добавить к сравнению">
-                    <svg width="23" height="26">
-                      <use xlink:href="img/sprite.svg#compare"></use>
-                    </svg>
-                  </button>
-                  <button class="goods__btn goods__btn--delete" type="button" aria-label="Удалить из понравившихся"> <svg
-                    width="12" height="12">
-                    <use xlink:href="img/sprite.svg#delete"></use>
-                  </svg>
-                </button>
-
-                  <div class="goods__labels">
-                    <p class="goods__hit">Хит продаж</p>
-                    <p class="goods__discount">-25%</p>
-                  </div>
-
-                  <picture>
-                    <source type="image/webp" srcset="img/best_3.webp">
-                    <img class="goods__img" width="275" height="275" src="img/best_3.jpg"
-                      alt="Комбинезон Michelle вязаный бежевый">
-                  </picture>
-                  <div class="goods__text">
-                    <p class="goods__price">
-                      <span class="goods__price-new">1 999<small class="goods__unit">руб.</small></span><span
-                        class="goods__price-old">2 500<small class="goods__unit">руб.</small></span>
-                    </p>
-
-                    <a class="goods__title" href="#">Комбинезон Michelle вязаный бежевый</a>
-                  </div>
-                  <button class="goods__to-cart-btn" type="button">Добавить в корзину</button>
-                </li>
-
-
-                <li class="account__favorites-item goods__item">
-                  <button class="goods__btn goods__btn--compare" type="button" aria-label="Добавить к сравнению">
-                    <svg width="23" height="26">
-                      <use xlink:href="img/sprite.svg#compare"></use>
-                    </svg>
-                  </button>
-                  <button class="goods__btn goods__btn--delete" type="button" aria-label="Удалить из понравившихся"> <svg
-                    width="12" height="12">
-                    <use xlink:href="img/sprite.svg#delete"></use>
-                  </svg>
-                </button>
-
-                  <div class="goods__labels">
-                    <p class="goods__hit">Хит продаж</p>
-                    <p class="goods__new">Новинка</p>
-                  </div>
-
-                  <picture>
-                    <source type="image/webp" srcset="img/best_2.webp">
-                    <img class="goods__img" width="275" height="275" src="img/best_2.jpg"
-                      alt="LOOM Jasper вязаный пеленальный кокон">
-                  </picture>
-
-                  <div class="goods__text">
-                    <p class="goods__price">
-                      <span class="goods__price-new">2 500<small class="goods__unit">руб.</small></span>
-                    </p>
-                    <a class="goods__title" href="#">LOOM Jasper вязаный пеленальный кокон</a>
-                  </div>
-                  <button class="goods__to-cart-btn" type="button">Добавить в корзину</button>
-                </li>
-
-                <li class="account__favorites-item goods__item">
-                  <button class="goods__btn goods__btn--compare" type="button" aria-label="Добавить к сравнению">
-                    <svg width="23" height="26">
-                      <use xlink:href="img/sprite.svg#compare"></use>
-                    </svg>
-                  </button>
-
-                  <button class="goods__btn goods__btn--delete" type="button" aria-label="Удалить из понравившихся"> <svg
-                    width="12" height="12">
-                    <use xlink:href="img/sprite.svg#delete"></use>
-                  </svg>
-                </button>
-
-                  <div class="goods__labels">
-                    <p class="goods__hit">Хит продаж</p>
-                    <p class="goods__discount">-25%</p>
-                  </div>
-
-                  <picture>
-                    <source type="image/webp" srcset="img/best_3.webp">
-                    <img class="goods__img" width="275" height="275" src="img/best_3.jpg"
-                      alt="Комбинезон Michelle вязаный бежевый">
-                  </picture>
-                  <div class="goods__text">
-                    <p class="goods__price">
-                      <span class="goods__price-new">1 999<small class="goods__unit">руб.</small></span><span
-                        class="goods__price-old">2 500<small class="goods__unit">руб.</small></span>
-                    </p>
-
-                    <a class="goods__title" href="#">Комбинезон Michelle вязаный бежевый</a>
-                  </div>
-                  <button class="goods__to-cart-btn" type="button">Добавить в корзину</button>
-                </li>
-
-                <li class="account__favorites-item goods__item">
-                  <button class="goods__btn goods__btn--compare" type="button" aria-label="Добавить к сравнению">
-                    <svg width="23" height="26">
-                      <use xlink:href="img/sprite.svg#compare"></use>
-                    </svg>
-                  </button>
-
-                  <button class="goods__btn goods__btn--delete" type="button" aria-label="Удалить из понравившихся"> <svg
-                    width="12" height="12">
-                    <use xlink:href="img/sprite.svg#delete"></use>
-                  </svg>
-                </button>
-
-                  <div class="goods__labels">
-                    <p class="goods__hit">Хит продаж</p>
-                    <p class="goods__discount">-50%</p>
-                  </div>
-
-                  <picture>
-                    <source type="image/webp" srcset="img/best_4.webp">
-                    <img class="goods__img" width="275" height="275" src="img/best_4.jpg" alt="Велюровый комбинезон">
-                  </picture>
-                  <div class="goods__text">
-                    <p class="goods__price">
-                      <span class="goods__price-new">899<small class="goods__unit">руб.</small></span>
-                      <span class="goods__price-old">1 799<small class="goods__unit">руб.</small></span>
-                    </p>
-
-                    <a class="goods__title" href="#">Велюровый комбинезон</a>
-                  </div>
-                  <button class="goods__to-cart-btn" type="button">Добавить в корзину</button>
-                </li>
-
-              </ul>
+                  <label class="account__personal-field account__personal-field--password">
+                    <span class="account__personal-label">Подтверждение нового пароля</span>
+                    <input class="account__personal-textfield account__personal-textfield--password" type="password" name="newPasswordRepeat"
+                      id="newPasswordRepeatField" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" required>
+                  </label>
+                </fieldset>
+              </div>
             </div>
+              <label class="account__personal-field account__personal-field--checkbox">
+                <input class="visually-hidden" type="checkbox" name="consent" id="consentField" required checked>
+                <span class="account__personal-checkfield">
+                  <svg width="13" height="9">
+                    <use xlink:href="img/sprite.svg#check"></use>
+                  </svg>
+                </span>
+                <span class="account__personal-text account__personal-text--info account__personal-text--checkbox">Отправляя данные с этого сайта, я
+                  соглашаюсь с обработкой персональных данных</span>
+              </label>
+              <p class="account__personal-text account__personal-text--info">Поля, обязательные для заполнения, помечены
+                символом<sup>*</sup></p>
+              <div class="account__personal-buttons">
+                <button class="btn account__personal-btn account__personal-btn--submit" type="submit">Сохранить</button>
+                <button class="btn account__personal-btn account__personal-btn--reset" type="reset">Отменить</button>
+
+            </form>
         </section>
 
         <section class="account__side-nav inner-page__nav">
@@ -758,7 +570,7 @@
           <ul class="account__side-nav-list">
 
             <li class="account__side-nav-item">
-              <a href="#" class="account__side-nav-link">
+              <a class="account__side-nav-link account__side-nav-link--current">
                 <span>Личные данные</span>
                 <svg width="9px" height="11px">
                   <use xlink:href="img/sprite.svg#dropdown"></use>
@@ -790,7 +602,7 @@
               </a>
             </li>
             <li class="account__side-nav-item">
-              <a class="account__side-nav-link account__side-nav-link--current">
+              <a href="#" class="account__side-nav-link">
                 <span>Избранные товары</span>
                 <svg width="9px" height="11px">
                   <use xlink:href="img/sprite.svg#dropdown"></use>
@@ -1030,7 +842,13 @@
       </div>
     </div>
   </footer>
+
+  <template id="errorMessage">
+    <p class="error-message"></p>
+  </template>
+
   <div class="bg-fade bg-fade--hide"></div>
+  <script src="js/errorMessage.js"></script>
   <script src="js/innerPageNav.js"></script>
   <script src="js/footerMenu.js"></script>
   <script src="js/mobileMenu.js"></script>

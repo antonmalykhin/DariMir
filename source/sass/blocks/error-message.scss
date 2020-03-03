@@ -1,0 +1,35 @@
+.error-message {
+  position: absolute;
+  top: calc(100% + 3px);
+  right: 0;
+  z-index: 100;
+
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 5px 11px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #e7445f;
+
+  background-color: white;
+  border: 2px solid #e7445f;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: calc(50% - 5px);
+
+    width: 10px;
+    height: 10px;
+
+    background-color: white;
+    border: 2px solid #e7445f;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    transform: rotate(45deg);
+  }
+}
