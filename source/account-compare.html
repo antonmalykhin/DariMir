@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ДАРИМИР Интернет-магазин детских товаров Личные данные</title>
+  <title>ДАРИМИР Интернет-магазин детских товаров Сравнение товаров</title>
   <link rel="preload" href="fonts/montserrat-v14-latin_cyrillic-regular.woff2" as="font" crossorigin="anonymous" />
   <link rel="preload" href="fonts/m-plus-rounded-1c-v10-latin_cyrillic-regular.woff2" as="font"
     crossorigin="anonymous" />
@@ -458,7 +458,7 @@
     </nav>
   </header>
 
-  <main class="page-main account">
+  <main class="page-main account-compare">
     <div class="inner-page__container account__container container">
       <ul class="breadcrumbs">
         <li class="breadcrumbs__item">
@@ -475,159 +475,184 @@
           </a>
         </li>
         <li class="breadcrumbs__item">
-          <a href="account.html" class="breadcrumbs__link">Личный кабинет</a>
+          <a href="account.html" class="breadcrumbs__link">
+            <span>Личный кабинет</span>
+          </a>
         </li>
-
         <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link">Личные данные</a>
+          <a class="breadcrumbs__link">Сравнение товаров</a>
         </li>
       </ul>
 
-      <h1 class="inner-page__title page-main__title">Личные данные</h1>
+      <h1 class="inner-page__title page-main__title">Сравнение товаров</h1>
 
       <div class="inner-page__wrapper">
-        <section class="account__personal">
-          <h2 class="visually-hidden">Форма изменения информации о пользователе</h2>
-            <form class="account__personal-form" action="#" method="POST" novalidate>
-              <div class="account__personal-fields-wrapper">
 
-                <div class="account__personal-info-wrapper">
-                  <h3 class="account__personal-heading">Изменения сохранены</h3>
-                  <p class="account__personal-changes">
-                    <span>Дата обновления:</span><time datetime="2020-01-01 15:41:16">22.09.2019 15:41:16</time>
-                  </p>
-                  <p class="account__personal-changes">
-                    <span>Последняя авторизация:</span><time datetime="2020-01-01 15:31:16">22.09.2019 15:31:16</time>
-                  </p>
-                </div>
+        <section class="account-compare__section">
 
-                <div class="account__personal-fieldset">
-                  <legend class="account__personal-heading">Контактная информация</legend>
+          <div class="account-compare__buttons">
+            <button class="btn account-compare__button account-compare__button--selected">Все характеристики</button>
+            <button class="btn account-compare__button">Только отличия</button>
+            <button class="account-compare__button account-compare__button--clear">
+              <svg width="12" height="13">
+                <use xlink:href="img/sprite.svg#delete"></use>
+              </svg>
+              <span>Очистить сравнение</span>
+            </button>
+          </div>
 
-                  <label class="account__personal-field">
-                    <span class="account__personal-label">Имя<sup>*</sup></span>
-                    <input class="account__personal-textfield" type="text" name="userFirstName" id="firstName"
-                      placeholder="Алина" minlength="2" maxlength="25" pattern="^[A-Za-zА-Яа-яЁё\s]+$" required>
-                  </label>
-
-                  <label class="account__personal-field">
-                    <span class="account__personal-label">Фамилия<sup>*</sup></span>
-                    <input class="account__personal-textfield" type="text" name="userLastName" id="lastName"
-                      placeholder="Серова" minlength="2" maxlength="25" pattern="^[A-Za-zА-Яа-яЁё\s]+$" required>
-                  </label>
-
-                  <label class="account__personal-field">
-                    <span class="account__personal-label">Телефон<sup>*</sup></span>
-                    <input class="account__personal-textfield" type="tel" name="userPhoneNumber" id="phoneNumber"
-                      placeholder="+ 7 ( 950 ) 681 - 58 - 27" required>
-                  </label>
-
-                  <label class="account__personal-field">
-                    <span class="account__personal-label">Е-mail<sup>*</sup></span>
-                    <input class="account__personal-textfield" type="email" name="userEmail" id="emailAddress"
-                      placeholder="alinaserova@gmail.com" required>
-                  </label>
-                </div>
-
-                <div class="account__personal-fieldset account__personal-fieldset--password">
-                  <legend class="account__personal-heading">Изменение пароля</legend>
-                  <p class="account__personal-text">Пароль должен быть не менее 6 символов длиной.</p>
-                  <label class="account__personal-field account__personal-field--password">
-                    <span class="account__personal-label">Новый пароль</span>
-                    <input class="account__personal-textfield account__personal-textfield--password" type="password" name="newPassword" id="newPasswordField"
-                      minlength="6" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
-                  </label>
-
-                  <label class="account__personal-field account__personal-field--password">
-                    <span class="account__personal-label">Подтверждение нового пароля</span>
-                    <input class="account__personal-textfield account__personal-textfield--password" type="password" name="newPasswordRepeat"
-                      id="newPasswordRepeatField" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
-                  </label>
-                </fieldset>
+          <div class="account-compare__goods goods">
+            <h2 class="section-title account-compare__section-title">Товары</h2>
+            <div class="account-compare__pagination pagination">
+              <div class="pagination__buttons">
+                <button class="pagination__btn pagination__btn--back" type="button" aria-label="Назад">
+                  <svg width="19" height="13">
+                    <use xlink:href="img/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+                <p class="pagination__numbers">
+                  <span class="pagination__page">2</span><span class="pagination__pages">3</span>
+                </p>
+                <button class="pagination__btn pagination__btn--fron" type="button" aria-label="Вперед">
+                  <svg width="19" height="13">
+                    <use xlink:href="img/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
               </div>
             </div>
-              <label class="account__personal-field account__personal-field--checkbox">
-                <input class="visually-hidden" type="checkbox" name="consent" id="consentField" required checked>
-                <span class="account__personal-checkfield">
-                  <svg width="13" height="9">
-                    <use xlink:href="img/sprite.svg#check"></use>
+            <ul class="account-compare__list goods__list">
+              <li class="account-compare__item goods__item">
+                <button class="account-compare__btn account-compare__btn--delete goods__btn goods__btn--delete" type="button" aria-label="Удалить из понравившихся"> <svg
+                    width="12" height="12">
+                    <use xlink:href="img/sprite.svg#delete"></use>
                   </svg>
-                </span>
-                <span class="account__personal-text account__personal-text--info account__personal-text--checkbox">Отправляя данные с этого сайта, я
-                  соглашаюсь с обработкой персональных данных</span>
-              </label>
-              <p class="account__personal-text account__personal-text--info">Поля, обязательные для заполнения, помечены
-                символом<sup>*</sup></p>
-              <div class="account__personal-buttons">
-                <button class="btn account__personal-btn account__personal-btn--submit" type="submit">Сохранить</button>
-                <button class="btn account__personal-btn account__personal-btn--reset" type="reset">Отменить</button>
+                </button>
+                <button class="account-compare__btn account-compare__btn--like goods__btn goods__btn--like" type="button" aria-label="Добавить в понравившиеся"> <svg
+                    width="29" height="25">
+                    <use xlink:href="img/sprite.svg#favorite"></use>
+                  </svg>
+                </button>
 
-            </form>
-        </section>
+                <picture>
+                  <source type="image/webp" srcset="img/best_1.webp">
+                  <img class="goods__img" width="275" height="275" src="img/best_1.jpg"
+                    alt="LOOM Вязаный конверт New Classic Капучино">
+                </picture>
+                <div class="account-compare__goods-text goods__text">
+                  <p class="account-compare__goods-price goods__price">
+                    <span class="goods__price-new">4 599<small class="goods__unit">руб.</small></span>
+                  </p>
+                  <a class="goods__title" href="#">LOOM Вязаный конверт New Classic Капучино</a>
+                </div>
+                <div class="account-compare__info">
+                  <ul class="account-compare__info-list">
+                    <li class="account-compare__info-item">Хаки</li>
+                    <li class="account-compare__info-item">Хлопок 100%</li>
+                    <li class="account-compare__info-item">Хлопок 100%</li>
+                    <li class="account-compare__info-item">ГОСТ 32119-2013</li>
+                  </ul>
+                </div>
+              </li>
 
-        <section class="account__side-nav inner-page__nav">
-          <h2 class="visually-hidden">Навигация по разделу</h2>
-          <ul class="account__side-nav-list">
+              <li class="account-compare__item goods__item">
+                <button class="account-compare__btn account-compare__btn--delete goods__btn goods__btn--delete" type="button" aria-label="Удалить из понравившихся"> <svg
+                    width="12" height="12">
+                    <use xlink:href="img/sprite.svg#delete"></use>
+                  </svg>
+                </button>
+                <button class="account-compare__btn account-compare__btn--like goods__btn goods__btn--like" type="button" aria-label="Добавить в понравившиеся"> <svg
+                    width="29" height="25">
+                    <use xlink:href="img/sprite.svg#favorite"></use>
+                  </svg>
+                </button>
 
-            <li class="account__side-nav-item">
-              <a class="account__side-nav-link account__side-nav-link--current">
-                <span>Личные данные</span>
-                <svg width="9px" height="11px">
-                  <use xlink:href="img/sprite.svg#dropdown"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="account__side-nav-item">
-              <a href="#" class="account__side-nav-link">
-                <span>Текущие заказы</span>
-                <svg width="9px" height="11px">
-                  <use xlink:href="img/sprite.svg#dropdown"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="account__side-nav-item">
-              <a href="#" class="account__side-nav-link">
-                <span>История заказов</span>
-                <svg width="9px" height="11px">
-                  <use xlink:href="img/sprite.svg#dropdown"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="account__side-nav-item">
-              <a href="#" class="account__side-nav-link">
-                <span>Профили заказов</span>
-                <svg width="9px" height="11px">
-                  <use xlink:href="img/sprite.svg#dropdown"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="account__side-nav-item">
-              <a href="#" class="account__side-nav-link">
-                <span>Избранные товары</span>
-                <svg width="9px" height="11px">
-                  <use xlink:href="img/sprite.svg#dropdown"></use>
-                </svg>
-                <div class="account__favorites-qty quantity">8</div>
-              </a>
-            </li>
-            <li class="account__side-nav-item">
-              <a href="#" class="account__side-nav-link">
-                <span>Сравнение товаров</span>
-                <svg width="9px" height="11px">
-                  <use xlink:href="img/sprite.svg#dropdown"></use>
-                </svg>
-                <div class="account__favorites-qty quantity">4</div>
-              </a>
-            </li>
-            <li class="account__side-nav-item account__side-nav-item--logout">
-              <a href="#" class="account__side-nav-link account__side-nav-link--logout">
-                <span>Выйти из аккаунта</span>
-                <svg width="9px" height="11px">
-                  <use xlink:href="img/sprite.svg#delete"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+                <picture>
+                  <source type="image/webp" srcset="img/best_1.webp">
+                  <img class="goods__img" width="275" height="275" src="img/best_1.jpg"
+                    alt="LOOM Вязаный конверт New Classic Капучино">
+                </picture>
+                <div class="account-compare__goods-text goods__text">
+                  <p class="account-compare__goods-price goods__price">
+                    <span class="goods__price-new">4 599<small class="goods__unit">руб.</small></span>
+                  </p>
+                  <a class="goods__title" href="#">LOOM Вязаный конверт New Classic Капучино</a>
+                </div>
+
+                <div class="account-compare__info">
+                  <ul class="account-compare__info-list">
+                    <li class="account-compare__info-item">Топленое молоко</li>
+                    <li class="account-compare__info-item">Хлопок 100%</li>
+                    <li class="account-compare__info-item">Хлопок 100%</li>
+                    <li class="account-compare__info-item">ГОСТ 32119-2013</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="account-compare__item goods__item">
+                <button class="account-compare__btn account-compare__btn--delete goods__btn goods__btn--delete" type="button" aria-label="Удалить из понравившихся"> <svg
+                    width="12" height="12">
+                    <use xlink:href="img/sprite.svg#delete"></use>
+                  </svg>
+                </button>
+                <button class="account-compare__btn account-compare__btn--like goods__btn goods__btn--like" type="button" aria-label="Добавить в понравившиеся"> <svg
+                    width="29" height="25">
+                    <use xlink:href="img/sprite.svg#favorite"></use>
+                  </svg>
+                </button>
+
+                <picture>
+                  <source type="image/webp" srcset="img/best_1.webp">
+                  <img class="goods__img" width="275" height="275" src="img/best_1.jpg"
+                    alt="LOOM Вязаный конверт New Classic Капучино">
+                </picture>
+                <div class="account-compare__goods-text goods__text">
+                  <p class="account-compare__goods-price goods__price">
+                    <span class="goods__price-new">4 599<small class="goods__unit">руб.</small></span>
+                  </p>
+                  <a class="goods__title" href="#">LOOM Вязаный конверт New Classic Капучино</a>
+                </div>
+
+                <div class="account-compare__info">
+                  <ul class="account-compare__info-list">
+                    <li class="account-compare__info-item">Серебро</li>
+                    <li class="account-compare__info-item">Хлопок 70%, Пан 30%</li>
+                    <li class="account-compare__info-item">Хлопок 100%</li>
+                    <li class="account-compare__info-item">ГОСТ 32119-2013</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="account-compare__table-wrapper">
+            <table class="account-compare__table">
+              <tr>
+                <th>Цвет</th>
+                <td>Хаки</td>
+                <td>Топленое молоко</td>
+                <td>Серебро</td>
+              </tr>
+              <tr>
+                <th>Состав</th>
+                <td>Хлопок 100%</td>
+                <td>Хлопок 100%</td>
+                <td>Хлопок 70%, Пан 30%</td>
+              </tr>
+              <tr>
+                <th>Подкладочная ткань</th>
+                <td>Хлопок 100%</td>
+                <td>Хлопок 100%</td>
+                <td>Хлопок 100%</td>
+              </tr>
+              <tr>
+                <th>ГОСТ</th>
+                <td>ГОСТ 32119-2013</td>
+                <td>ГОСТ 32119-2013</td>
+                <td>ГОСТ 32119-2013</td>
+              </tr>
+            </table>
+          </div>
+
         </section>
       </div>
     </div>
@@ -842,13 +867,8 @@
       </div>
     </div>
   </footer>
-
-  <template id="errorMessage">
-    <p class="error-message"></p>
-  </template>
-
   <div class="bg-fade bg-fade--hide"></div>
-  <script src="js/errorMessage.js"></script>
+  <script src="js/compareGoods.js"></script>
   <script src="js/innerPageNav.js"></script>
   <script src="js/footerMenu.js"></script>
   <script src="js/mobileMenu.js"></script>

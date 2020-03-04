@@ -77,6 +77,219 @@
   left: 177px;
 }
 
+//*-------personal------
+
+.account__personal {
+  order: 2;
+  width: 100%;
+  margin-top: 46px;
+}
+
+.account__personal-fields-wrapper {
+  padding: 15px;
+
+  border: 1px solid #e2e1e6;
+}
+
+.account__personal-info-wrapper {
+  margin-bottom: 46px;
+}
+
+.account__personal-heading {
+  width: 100%;
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.5;
+  color: #609c9f;
+}
+
+.account__personal-changes {
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 8px;
+
+  span {
+    display: block;
+
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #041936;
+  }
+
+  time {
+    margin-left: 5px;
+
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #55606e;
+  }
+}
+
+.account__personal-fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  margin-bottom: 45px;
+  padding: 0;
+
+  border: none;
+}
+
+.account__personal-field {
+  position: relative;
+
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+.account__personal-fieldset--password {
+  // justify-content: flex-start;
+  margin-bottom: 0;
+}
+
+.account__personal-label {
+  display: block;
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 19px;
+  color: #041936;
+
+  sup {
+    position: relative;
+    top: 0;
+    left: 2px;
+
+    font-size: 16px;
+    color: #609c9f;
+  }
+}
+
+.account__personal-textfield {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 6px;
+  padding: 16px 26px;
+  padding-right: 34px;
+  padding-left: 18px;
+
+  border: 1px solid #e2e1e6;
+  border-radius: 25px;
+
+  &::placeholder {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    color: #55606e;
+  }
+}
+
+.account__personal-textfield--invalid {
+  border: none;
+  box-shadow: 0 0 0 2px #e7445f;
+}
+
+.account__personal-text {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 0;
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  color: #55606e;
+}
+
+.account__personal-text--info {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #b8b8ba;
+
+  sup {
+    position: relative;
+    top: 0;
+    left: 2px;
+
+    font-size: 16px;
+    color: #609c9f;
+  }
+}
+
+.account__personal-text--checkbox {
+  display: block;
+  box-sizing: border-box;
+  padding-left: 35px;
+}
+
+.account__personal-field--checkbox {
+  position: relative;
+
+  display: block;
+  margin-top: 21px;
+  margin-bottom: 21px;
+}
+
+.account__personal-checkfield {
+  position: absolute;
+  top: 3px;
+
+  display: block;
+  width: 24px;
+  height: 24px;
+
+  background-color: #ffffff;
+  border: 1px solid #b69a79;
+
+  svg {
+    position: absolute;
+    top: 7px;
+    left: 6px;
+
+    display: none;
+
+    fill: none;
+    stroke: #b69a79;
+  }
+}
+
+.account__personal-field--checkbox input:checked + .account__personal-checkfield svg {
+  display: block;
+}
+
+.account__personal-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 30px;
+}
+
+.account__personal-btn {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.account__personal-btn--submit {
+  background-color: #609c9f;
+  border-color: #609c9f;
+}
+
+.account__personal-textfield:hover {
+  border-color: #b8b8ba;
+}
+
+.account__personal-textfield:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 2px #b69a79;
+}
+
 
 //*------favorites--------
 
@@ -148,6 +361,148 @@
   position: absolute;
   top: 13px;
   right: 61px;
+}
+
+//*--------------compare----------------
+
+
+.account-compare__section {
+  width: 100%;
+  padding-top: 3px;
+  padding-bottom: 32px;
+}
+
+.account-compare__buttons {
+  display: block;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+
+.account-compare__button {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  // margin-right: 10px;
+  margin-bottom: 15px;
+  padding: 16px 10px;
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 19px;
+  color: #041936;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.account-compare__button--clear {
+  width: auto;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  color: #609c9f;
+  text-transform: none;
+  letter-spacing: 0.1px;
+
+  background-color: transparent;
+  border: none;
+
+  svg {
+    fill: #609c9f;
+  }
+}
+
+.account-compare__button--selected {
+  position: relative;
+
+  color: #ffffff;
+
+  background-color: #b69a79;
+
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: calc(100% - 5px);
+  //   left: 50%;
+
+  //   width: 12px;
+  //   height: 12px;
+
+  //   background: #b69a79;
+  //   transform: rotate(45deg);
+  // }
+}
+
+.account-compare__goods {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 25px;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
+}
+
+.account-compare__section-title {
+  margin: 0 auto;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 22px;
+  color: #041936;
+  text-transform: none;
+}
+
+.account-compare__pagination {
+  display: none;
+}
+
+.account-compare__btn--like {
+  top: 59px;
+}
+
+.account-compare__goods-text {
+  margin-top: 10px;
+}
+
+.account-compare__goods-price {
+  margin-top: 0;
+}
+
+.account-compare__info-list {
+  margin: 0;
+  margin-top: 25px;
+  padding: 0;
+
+  list-style: none;
+
+  border: 1px solid #e2e1e6;
+}
+
+.account-compare__info-item {
+  padding: 10px;
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  color: #55606e;
+
+  border-bottom: 1px solid #e2e1e6;
+
+  &:last-of-type {
+    border: none;
+  }
+}
+
+.account-compare__table {
+  display: none;
 }
 
 @media (min-width: $tablet) {
@@ -234,6 +589,212 @@
     top: 45px;
     left: 269px;
   }
+  //*-------personal------
+
+  .account__personal {
+    width: 666px;
+    margin-top: 6px;
+  }
+
+  .account__personal-fields-wrapper {
+    padding: 30px;
+    padding-top: 23px;
+    padding-bottom: 22px;
+
+    border: 1px solid #e2e1e6;
+  }
+
+  .account__personal-info-wrapper {
+    margin-bottom: 46px;
+  }
+
+  .account__personal-heading {
+    width: 100%;
+    margin: 0;
+
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.5;
+    color: #609c9f;
+  }
+
+  .account__personal-changes {
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 8px;
+
+    span {
+      display: inline;
+
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 1.5;
+      color: #041936;
+    }
+
+    time {
+      margin-left: 5px;
+
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 1.5;
+      color: #55606e;
+    }
+  }
+
+  .account__personal-fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0;
+    margin-bottom: 45px;
+    padding: 0;
+
+    border: none;
+  }
+
+  .account__personal-field {
+    position: relative;
+
+    margin-top: 8px;
+    margin-right: 37px;
+  }
+
+  .account__personal-fieldset--password {
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
+
+  .account__personal-label {
+    display: block;
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    color: #041936;
+
+    sup {
+      position: relative;
+      top: 0;
+      left: 2px;
+
+      font-size: 16px;
+      color: #609c9f;
+    }
+  }
+
+  .account__personal-textfield {
+    box-sizing: border-box;
+    margin-bottom: 6px;
+    padding: 16px 26px;
+    padding-right: 34px;
+    padding-left: 18px;
+
+    border: 1px solid #e2e1e6;
+    border-radius: 25px;
+
+    &::placeholder {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 19px;
+      color: #55606e;
+    }
+  }
+
+  .account__personal-text {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 0;
+
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: #55606e;
+  }
+
+  .account__personal-text--info {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #b8b8ba;
+
+    sup {
+      position: relative;
+      top: 0;
+      left: 2px;
+
+      font-size: 16px;
+      color: #609c9f;
+    }
+  }
+
+  .account__personal-text--checkbox {
+    padding-left: 35px;
+  }
+
+  .account__personal-field--checkbox {
+    position: relative;
+
+    display: block;
+    margin-top: 21px;
+    margin-bottom: 10px;
+  }
+
+  .account__personal-checkfield {
+    position: absolute;
+    top: -2px;
+
+    display: block;
+    width: 24px;
+    height: 24px;
+
+    background-color: #ffffff;
+    border: 1px solid #b69a79;
+
+    svg {
+      position: absolute;
+      top: 7px;
+      left: 6px;
+
+      display: none;
+
+      fill: none;
+      stroke: #b69a79;
+    }
+  }
+
+  .account__personal-field--checkbox input:checked + .account__personal-checkfield svg {
+    display: block;
+  }
+
+  .account__personal-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 18px;
+  }
+
+  .account__personal-btn {
+    width: auto;
+    margin: 0;
+    margin-right: 21px;
+    padding-right: 30px;
+  }
+
+  .account__personal-btn--submit {
+    background-color: #609c9f;
+    border-color: #609c9f;
+  }
+
+  .account__personal-textfield:hover {
+    border-color: #b8b8ba;
+  }
+
+  .account__personal-textfield:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 2px #b69a79;
+  }
 
   //*------favorites------
 
@@ -316,6 +877,146 @@
     position: absolute;
     top: 13px;
     right: 61px;
+  }
+
+  //*--------------compare----------------
+
+
+  .account-compare__section {
+    width: 100%;
+    padding-top: 3px;
+    padding-bottom: 32px;
+  }
+
+  .account-compare__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .account-compare__button {
+    display: block;
+    box-sizing: border-box;
+    width: 250px;
+    margin: 0;
+    margin-right: 10px;
+    padding: 16px 10px;
+
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    color: #041936;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .account-compare__button--clear {
+    width: auto;
+    margin-right: 17px;
+    margin-left: auto;
+    padding: 0;
+
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: #609c9f;
+    text-transform: none;
+    letter-spacing: 0.1px;
+
+    background-color: transparent;
+    border: none;
+
+    svg {
+      fill: #609c9f;
+    }
+  }
+
+  .account-compare__button--selected {
+    position: relative;
+
+    color: #ffffff;
+
+    background-color: #b69a79;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: calc(100% - 5px);
+      left: 50%;
+
+      width: 12px;
+      height: 12px;
+
+      background: #b69a79;
+      transform: rotate(45deg);
+    }
+  }
+
+  .account-compare__goods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 925px;
+    margin-top: 25px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+  }
+
+  .account-compare__section-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 22px;
+    color: #041936;
+    text-transform: none;
+  }
+
+  .account-compare__pagination {
+    display: block;
+  }
+
+  .account-compare__btn--like {
+    top: 59px;
+  }
+
+  .account-compare__goods-text {
+    margin-top: 10px;
+  }
+
+  .account-compare__goods-price {
+    margin-top: 0;
+  }
+
+  .account-compare__info {
+    display: none;
+  }
+
+  .account-compare__table {
+    display: table;
+    width: 925px;
+    margin: 0 auto;
+
+    border-collapse: collapse;
+
+    border: 1px solid #e2e1e6;
+
+    th {
+      display: none;
+    }
+
+    td {
+      box-sizing: border-box;
+      width: 25%;
+      padding: 13px 30px;
+
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 24px;
+      text-align: center;
+      color: #55606e;
+
+      border: 1px solid #e2e1e6;
+    }
   }
 }
 
@@ -416,7 +1117,6 @@
     }
   }
 
-
   .account__qty {
     position: absolute;
     top: 45px;
@@ -505,6 +1205,7 @@
   .account__personal-field {
     position: relative;
 
+    margin: 0;
     margin-top: 8px;
   }
 
@@ -537,7 +1238,6 @@
   }
 
   .account__personal-textfield {
-
     box-sizing: border-box;
     margin-bottom: 6px;
     padding: 16px 26px;
@@ -557,7 +1257,7 @@
 
   .account__personal-text {
     width: 100%;
-    margin-top: 5px;
+    margin-top: 6px;
     margin-bottom: 0;
 
     font-weight: 500;
@@ -567,6 +1267,8 @@
   }
 
   .account__personal-text--info {
+    margin-top: 13px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -617,7 +1319,7 @@
     }
   }
 
-  .account__personal-field--chekbox input:checked + .account__personal-checkfield svg {
+  .account__personal-field--checkbox input:checked + .account__personal-checkfield svg {
     display: block;
   }
 
@@ -629,8 +1331,10 @@
   }
 
   .account__personal-btn {
+    width: 250px;
     margin: 0;
     margin-right: 21px;
+    padding: 15px;
   }
 
   .account__personal-btn--submit {
@@ -783,5 +1487,161 @@
 
   .account__side-nav-link--logout:active {
     opacity: 0.7;
+  }
+
+  //*--------------compare----------------
+
+
+  .account-compare__section {
+    width: 100%;
+    padding-top: 3px;
+    padding-bottom: 32px;
+  }
+
+  .account-compare__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .account-compare__button {
+    display: block;
+    box-sizing: border-box;
+    width: 250px;
+    margin: 0;
+    margin-right: 10px;
+    padding: 16px 10px;
+
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    color: #041936;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .account-compare__button--clear {
+    width: auto;
+    margin-right: 17px;
+    margin-left: auto;
+    padding: 0;
+
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: #609c9f;
+    text-transform: none;
+    letter-spacing: 0.1px;
+
+    background-color: transparent;
+    border: none;
+
+    svg {
+      fill: #609c9f;
+    }
+  }
+
+  .account-compare__button--selected {
+    position: relative;
+
+    color: #ffffff;
+
+    background-color: #b69a79;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: calc(100% - 5px);
+      left: 50%;
+
+      width: 12px;
+      height: 12px;
+
+      background: #b69a79;
+      transform: rotate(45deg);
+    }
+  }
+
+  .account-compare__goods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 925px;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: auto;
+  }
+
+  .account-compare__section-title {
+    margin: 0;
+    margin-right: auto;
+    margin-left: 22px;
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 22px;
+    color: #041936;
+    text-transform: none;
+    letter-spacing: -0.1px;
+  }
+
+  .account-compare__btn--like {
+    top: 59px;
+  }
+
+  .account-compare__goods-text {
+    margin-top: 10px;
+  }
+
+  .account-compare__goods-price {
+    margin-top: 0;
+  }
+
+  .account-compare__table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    border: 1px solid #e2e1e6;
+
+    th {
+      display: table-cell;
+      box-sizing: border-box;
+      width: 25%;
+      padding: 13px 16px;
+
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 22px;
+      text-align: left;
+      color: #b69a79;
+
+      background-color: #f0f0f2;
+      border: 1px solid #e2e1e6;
+    }
+
+    td {
+      box-sizing: border-box;
+      width: 25%;
+      padding: 13px 30px;
+
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 24px;
+      text-align: left;
+      color: #55606e;
+
+      border: 1px solid #e2e1e6;
+    }
+
+    tr:hover {
+      background-color: #f0f0f2;
+
+      td {
+        color: $cyan;
+      }
+    }
   }
 }
