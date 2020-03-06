@@ -509,22 +509,22 @@
                 <div class="account-order-profile__fieldset">
                   <legend class="account-order-profile__heading">Личные данные</legend>
 
-                  <label class="account-order-profile__field">
+                  <label class="account-order-profile__field account-order-profile__field--personal-info">
                     <span class="account-order-profile__label">Ф.И.О.<sup>*</sup></span>
-                    <input class="account-order-profile__textfield" type="text" name="userName" id="userNameField"
+                    <input class="account-order-profile__textfield account-order-profile__textfield--personal-info" type="text" name="userName" id="userNameField"
                       minlength="2" maxlength="200" pattern="^[А-Яа-яA-Za-z\s]{2,200}$" placeholder="Алина Серова"
                       required>
                   </label>
 
-                  <label class="account-order-profile__field">
+                  <label class="account-order-profile__field account-order-profile__field--personal-info">
                     <span class="account-order-profile__label">Телефон<sup>*</sup></span>
-                    <input class="account-order-profile__textfield" type="phone" name="profilePhone"
+                    <input class="account-order-profile__textfield account-order-profile__textfield--personal-info" type="phone" name="profilePhone"
                       id="profilePhoneField" placeholder="+ 7 ( 950 ) 681 - 58 - 27" required>
                   </label>
 
-                  <label class="account-order-profile__field">
+                  <label class="account-order-profile__field account-order-profile__field--personal-info">
                     <span class="account-order-profile__label">Email<sup>*</sup></span>
-                    <input class="account-order-profile__textfield" type="email" name="profileEmail"
+                    <input class="account-order-profile__textfield account-order-profile__textfield--personal-info" type="email" name="profileEmail"
                       id="profileEmailField" placeholder="alinaserova@gmail.com" required>
                   </label>
                 </div>
@@ -539,8 +539,8 @@
                       <svg width="23" height="27">
                         <use xlink:href="img/sprite.svg#search"></use>
                       </svg>
-                      <input class="account-order-profile__location" type="text" name="userLocation" id="userLocationField" value="Россия, г Курск" required readonly>
-                      <span class="account-order-profile__change">Изменить</span>
+                      <input class="account-order-profile__location" type="text" name="userLocation" id="userLocationField" value="Россия, г Курск" required>
+                      <button class="account-order-profile__change" type="button">Изменить</button>
                     </div>
                   </label>
 
@@ -556,7 +556,7 @@
                 символом<sup>*</sup></p>
 
               <div class="account-order-profile__buttons">
-                <button class="account-order-profile__btn account-order-profile__btn--save" type="button">Сохранить</button>
+                <button class="account-order-profile__btn account-order-profile__btn--save" type="submit">Сохранить</button>
                 <button class="account-order-profile__btn account-order-profile__btn--reset" type="reset">Отмена</button>
                 <a class="account-order-profile__btn account-order-profile__btn--inList" href="account-order-profiles.html">В список профилей</a>
               </div>
@@ -842,15 +842,24 @@
       </div>
     </div>
   </footer>
+
+<!-- Error message template -->
+  <template id="errorMessage">
+    <p class="error-message"></p>
+  </template>
+
+
   <div class="bg-fade bg-fade--hide"></div>
+  <!-- <script src="js/errorMessage.js"></script> -->
+  <script src="js/validation.js"></script>
+  <script src="js/validateChangeProfile.js"></script>
+
   <script src="js/innerPageNav.js"></script>
   <script src="js/footerMenu.js"></script>
   <script src="js/mobileMenu.js"></script>
   <script src="js/tabletMenu.js"></script>
   <script src="js/searchForm.js"></script>
   <script src="js/catalogMenu.js"></script>
-  <script src="libs/picturefill.min.js"></script>
-  <script src="libs/svgxuse.min.js"></script>
   <script src="libs/picturefill.min.js"></script>
   <script src="libs/svgxuse.min.js"></script>
 </body>

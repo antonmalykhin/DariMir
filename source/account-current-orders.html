@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ДАРИМИР Интернет-магазин детских товаров Личные данные</title>
+  <title>ДАРИМИР Интернет-магазин детских товаров Текущие заказы</title>
   <link rel="preload" href="fonts/montserrat-v14-latin_cyrillic-regular.woff2" as="font" crossorigin="anonymous" />
   <link rel="preload" href="fonts/m-plus-rounded-1c-v10-latin_cyrillic-regular.woff2" as="font"
     crossorigin="anonymous" />
@@ -458,7 +458,7 @@
     </nav>
   </header>
 
-  <main class="page-main account">
+  <main class="page-main account account-current-orders">
     <div class="inner-page__container account__container container">
       <ul class="breadcrumbs">
         <li class="breadcrumbs__item">
@@ -479,90 +479,193 @@
         </li>
 
         <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link">Личные данные</a>
+          <a class="breadcrumbs__link">Текущие заказы</a>
         </li>
       </ul>
 
-      <h1 class="inner-page__title page-main__title">Личные данные</h1>
+      <h1 class="inner-page__title page-main__title">Текущие заказы</h1>
 
       <div class="inner-page__wrapper">
-        <section class="account__personal">
-          <h2 class="visually-hidden">Форма изменения информации о пользователе</h2>
-            <form class="account__personal-form" action="#" method="POST" novalidate>
-              <div class="account__personal-fields-wrapper">
+        <section class="account-current-orders__section">
+          <ul class="account-current-orders__list">
+            <li class="account-current-orders__item account-current-orders__item--for-paying">
+              <div class="account-current-orders__container">
 
-                <div class="account__personal-info-wrapper">
-                  <h3 class="account__personal-heading">Изменения сохранены</h3>
-                  <p class="account__personal-changes">
-                    <span>Дата обновления:</span><time datetime="2020-01-01 15:41:16">22.09.2019 15:41:16</time>
-                  </p>
-                  <p class="account__personal-changes">
-                    <span>Последняя авторизация:</span><time datetime="2020-01-01 15:31:16">22.09.2019 15:31:16</time>
-                  </p>
+                <div class="account-current-orders__title-wrapper">
+                  <p class="account-current-orders__title">Заказ №491 от 20.09.2019 11:31:17, 2 товара на сумму 4 499
+                    руб</p>
+                  <p class="account-current-orders__status">Принят, ожидается оплата</p>
                 </div>
-
-                <div class="account__personal-fieldset">
-                  <legend class="account__personal-heading">Контактная информация</legend>
-
-                  <label class="account__personal-field">
-                    <span class="account__personal-label">Имя<sup>*</sup></span>
-                    <input class="account__personal-textfield" type="text" name="userFirstName" id="firstName"
-                      placeholder="Алина" minlength="2" maxlength="25" pattern="^[A-Za-zА-Яа-яЁё\s]+$" required>
-                  </label>
-
-                  <label class="account__personal-field">
-                    <span class="account__personal-label">Фамилия<sup>*</sup></span>
-                    <input class="account__personal-textfield" type="text" name="userLastName" id="lastName"
-                      placeholder="Серова" minlength="2" maxlength="25" pattern="^[A-Za-zА-Яа-яЁё\s]+$" required>
-                  </label>
-
-                  <label class="account__personal-field">
-                    <span class="account__personal-label">Телефон<sup>*</sup></span>
-                    <input class="account__personal-textfield" type="tel" name="userPhoneNumber" id="phoneNumber"
-                      placeholder="+ 7 ( 950 ) 681 - 58 - 27" required>
-                  </label>
-
-                  <label class="account__personal-field">
-                    <span class="account__personal-label">Е-mail<sup>*</sup></span>
-                    <input class="account__personal-textfield" type="email" name="userEmail" id="emailAddress"
-                      placeholder="alinaserova@gmail.com" required>
-                  </label>
+                <div class="account-current-orders__table-header">
+                  <ul class="account-current-orders__row">
+                    <li class="account-current-orders__cell account-current-orders__cell--item">Товар</li>
+                    <li class="account-current-orders__cell account-current-orders__cell--price">Цена</li>
+                    <li class="account-current-orders__cell account-current-orders__cell--qty">Количество</li>
+                    <li class="account-current-orders__cell account-current-orders__cell--sum">Сумма</li>
+                  </ul>
                 </div>
+                <ul class="account-current-order__orders">
+                  <li class="account-current-order__order">
+                    <ul class="account-current-order__item">
+                      <li class="account-current-order__details account-current-orders__cell--item">
+                        <picture>
+                          <source srcset="img/order_small_1.webp" type="image/webp">
+                          <img class="account-current-order__order account-current-orders__item-img"
+                            src="img/order_small_1.webp" alt="Платье с цветочной вышивкой">
+                        </picture>
 
-                <div class="account__personal-fieldset account__personal-fieldset--password">
-                  <legend class="account__personal-heading">Изменение пароля</legend>
-                  <p class="account__personal-text">Пароль должен быть не менее 6 символов длиной.</p>
-                  <label class="account__personal-field account__personal-field--password">
-                    <span class="account__personal-label">Новый пароль</span>
-                    <input class="account__personal-textfield account__personal-textfield--password" type="password" name="newPassword" id="newPasswordField"
-                      minlength="6" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
-                  </label>
+                        <p class="account-current-order__item-title">Платье с цветочной вышивкой</p>
+                        <p class="account-current-order__item-info">
+                          <span class="">Размер: 9-12 месяцев (80 см)</span>
+                          <span class="">Цвет: Горчица</span>
+                        </p>
+                      </li>
+                      <li class="account-current-order__order account-current-orders__cell--price">
+                        <p class="account-current-order__price">
+                          <span class="account-current-order__num">1 999</span>
+                          <span class="account-current-order__rub">руб.</span>
+                        </p>
+                      </li>
 
-                  <label class="account__personal-field account__personal-field--password">
-                    <span class="account__personal-label">Подтверждение нового пароля</span>
-                    <input class="account__personal-textfield account__personal-textfield--password" type="password" name="newPasswordRepeat"
-                      id="newPasswordRepeatField" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
-                  </label>
-                </fieldset>
+                      <li class="account-current-order__order account-current-orders__cell--qty">
+                        <p class="account-current-order__qty">1 шт</p>
+                      </li>
+                      <li class="account-current-order__order account-current-orders__cell--sum">
+                        <p class="account-current-order__sum">
+                          <span class="account-current-order__num">1 999</span>
+                          <span class="account-current-order__rub">руб.</span>
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="account-current-order__order">
+                    <ul class="account-current-order__item">
+                      <li class="account-current-order__details account-current-orders__cell--item">
+                        <picture>
+                          <source srcset="img/order_small_1.webp" type="image/webp">
+                          <img class="account-current-order__order account-current-orders__item-img"
+                            src="img/order_small_1.webp" alt="Платье с цветочной вышивкой">
+                        </picture>
+
+                        <p class="account-current-order__item-title">Платье с цветочной вышивкой</p>
+                        <p class="account-current-order__item-info">
+                          <span class="">Размер: 9-12 месяцев (80 см)</span>
+                          <span class="">Цвет: Горчица</span>
+                        </p>
+                      </li>
+                      <li class="account-current-order__order account-current-orders__cell--price">
+                        <p class="account-current-order__price">
+                          <span class="account-current-order__num">1 999</span>
+                          <span class="account-current-order__rub">руб.</span>
+                        </p>
+                      </li>
+
+                      <li class="account-current-order__order account-current-orders__cell--qty">
+                        <p class="account-current-order__qty">1 шт</p>
+                      </li>
+                      <li class="account-current-order__order account-current-orders__cell--sum">
+                        <p class="account-current-order__sum">
+                          <span class="account-current-order__num">1 999</span>
+                          <span class="account-current-order__rub">руб.</span>
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+
+                </ul>
+
+                <div class="account-current-order__buttons">
+                  <a href="#" class="account-current-order__btn account-current-order__btn--details btn">Отменить
+                    заказ</a>
+                  <button class="account-current-order__btn account-current-order__btn--repeat" type="button">
+                    <svg width="19" height="21">
+                      <use xlink:href="img/sprite.svg#repeat"></use>
+                    </svg>
+                    <span>Повторить заказ</span>
+                  </button>
+                  <button class="account-current-order__btn account-current-order__btn--repeat" type="button">
+                    <svg width="12" height="13">
+                      <use xlink:href="img/sprite.svg#delete"></use>
+                    </svg>
+                    <span>Отменить заказ</span>
+                  </button>
+                </div>
               </div>
-            </div>
-              <label class="account__personal-field account__personal-field--checkbox">
-                <input class="visually-hidden" type="checkbox" name="consent" id="consentField" required checked>
-                <span class="account__personal-checkfield">
-                  <svg width="13" height="9">
-                    <use xlink:href="img/sprite.svg#check"></use>
-                  </svg>
-                </span>
-                <span class="account__personal-text account__personal-text--info account__personal-text--checkbox">Отправляя данные с этого сайта, я
-                  соглашаюсь с обработкой персональных данных</span>
-              </label>
-              <p class="account__personal-text account__personal-text--info">Поля, обязательные для заполнения, помечены
-                символом<sup>*</sup></p>
-              <div class="account__personal-buttons">
-                <button class="btn account__personal-btn account__personal-btn--submit" type="submit">Сохранить</button>
-                <button class="btn account__personal-btn account__personal-btn--reset" type="reset">Отменить</button>
+            </li>
 
-            </form>
+            <li class="account-current-orders__item account-current-orders__item--for-deliver">
+              <div class="account-current-orders__container">
+                <div class="account-current-orders__title-wrapper">
+                  <p class="account-current-orders__title">Заказ №491 от 20.09.2019 11:31:17, 2 товара на сумму 4 499
+                    руб</p>
+                  <p class="account-current-orders__status">Принят, ожидается оплата</p>
+                </div>
+                <div class="account-current-orders__table-header">
+                  <ul class="account-current-orders__row">
+                    <li class="account-current-orders__cell account-current-orders__cell--item">Товар</li>
+                    <li class="account-current-orders__cell account-current-orders__cell--price">Цена</li>
+                    <li class="account-current-orders__cell account-current-orders__cell--qty">Количество</li>
+                    <li class="account-current-orders__cell account-current-orders__cell--sum">Сумма</li>
+                  </ul>
+                </div>
+                <ul class="account-current-order__orders">
+                  <li class="account-current-order__order">
+                    <ul class="account-current-order__item">
+                      <li class="account-current-order__details account-current-orders__cell--item">
+                        <picture>
+                          <source srcset="img/order_small_1.webp" type="image/webp">
+                          <img class="account-current-order__order account-current-orders__item-img"
+                            src="img/order_small_1.webp" alt="Платье с цветочной вышивкой">
+                        </picture>
+
+                        <p class="account-current-order__item-title">Платье с цветочной вышивкой</p>
+                        <p class="account-current-order__item-info">
+                          <span class="">Размер: 9-12 месяцев (80 см)</span>
+                          <span class="">Цвет: Горчица</span>
+                        </p>
+                      </li>
+                      <li class="account-current-order__order account-current-orders__cell--price">
+                        <p class="account-current-order__price">
+                          <span class="account-current-order__num">1 999</span>
+                          <span class="account-current-order__rub">руб.</span>
+                        </p>
+                      </li>
+
+                      <li class="account-current-order__order account-current-orders__cell--qty">
+                        <p class="account-current-order__qty">1 шт</p>
+                      </li>
+                      <li class="account-current-order__order account-current-orders__cell--sum">
+                        <p class="account-current-order__sum">
+                          <span class="account-current-order__num">1 999</span>
+                          <span class="account-current-order__rub">руб.</span>
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+
+
+                <div class="account-current-order__buttons">
+                  <a href="#" class="account-current-order__btn account-current-order__btn--details btn">Отменить
+                    заказ</a>
+                  <button class="account-current-order__btn account-current-order__btn--repeat" type="button">
+                    <svg width="19" height="21">
+                      <use xlink:href="img/sprite.svg#repeat"></use>
+                    </svg>
+                    <span>Повторить заказ</span>
+                  </button>
+                  <button class="account-current-order__btn account-current-order__btn--repeat" type="button">
+                    <svg width="12" height="13">
+                      <use xlink:href="img/sprite.svg#delete"></use>
+                    </svg>
+                    <span>Отменить заказ</span>
+                  </button>
+                </div>
+              </div>
+
+            </li>
+          </ul>
         </section>
 
         <section class="account__side-nav inner-page__nav">
@@ -570,7 +673,7 @@
           <ul class="account__side-nav-list">
 
             <li class="account__side-nav-item">
-              <a class="account__side-nav-link account__side-nav-link--current">
+              <a href="#" class="account__side-nav-link">
                 <span>Личные данные</span>
                 <svg width="9px" height="11px">
                   <use xlink:href="img/sprite.svg#dropdown"></use>
@@ -578,7 +681,7 @@
               </a>
             </li>
             <li class="account__side-nav-item">
-              <a href="#" class="account__side-nav-link">
+              <a class="account__side-nav-link  account__side-nav-link--current">
                 <span>Текущие заказы</span>
                 <svg width="9px" height="11px">
                   <use xlink:href="img/sprite.svg#dropdown"></use>
@@ -594,7 +697,7 @@
               </a>
             </li>
             <li class="account__side-nav-item">
-              <a href="#" class="account__side-nav-link">
+              <a class="account__side-nav-link">
                 <span>Профили заказов</span>
                 <svg width="9px" height="11px">
                   <use xlink:href="img/sprite.svg#dropdown"></use>
@@ -843,21 +946,23 @@
     </div>
   </footer>
 
+  <!-- Error message template -->
   <template id="errorMessage">
     <p class="error-message"></p>
   </template>
 
-  <div class="bg-fade bg-fade--hide"></div>
 
-  <script src="js/errorMessage.js"></script>
+  <div class="bg-fade bg-fade--hide"></div>
+  <!-- <script src="js/errorMessage.js"></script> -->
+  <script src="js/validation.js"></script>
+  <script src="js/validateChangeProfile.js"></script>
+
   <script src="js/innerPageNav.js"></script>
   <script src="js/footerMenu.js"></script>
   <script src="js/mobileMenu.js"></script>
   <script src="js/tabletMenu.js"></script>
   <script src="js/searchForm.js"></script>
   <script src="js/catalogMenu.js"></script>
-  <script src="libs/picturefill.min.js"></script>
-  <script src="libs/svgxuse.min.js"></script>
   <script src="libs/picturefill.min.js"></script>
   <script src="libs/svgxuse.min.js"></script>
 </body>
