@@ -1644,6 +1644,240 @@
     color: #b69a79;
     text-transform: none;
   }
+
+
+  //*---------current-order-----------
+
+  .account-current-orders__section {
+    width: 666px;
+    padding-top: 5px;
+  }
+
+  .account-current-orders__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  .account-current-orders__title-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 15px;
+
+    background-color: #f7f7f8;
+    border-bottom: 1px solid #e2e1e6;
+  }
+
+  .account-current-orders__title {
+    margin: 0;
+    //!------
+    width: 395px;
+    //!------
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #609c9f;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .account-current-orders__status {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 5px;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1;
+    color: #b69a79;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    background-color: #ffffff;
+    border: 1px solid #b69a79;
+  }
+
+  .account-current-orders__row {
+    display: flex;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 7px 15px;
+
+    list-style: none;
+
+    background-color: #f0f0f2;
+    border-bottom: 1px solid #e2e1e6;
+  }
+
+  .account-current-order__orders {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  .account-current-orders__item {
+    margin-bottom: 10px;
+
+    border: 1px solid #e2e1e6;
+  }
+
+  .account-current-order__item {
+    display: flex;
+    margin: 0;
+    padding: 10px 15px;
+
+    list-style: none;
+
+    border-bottom: 1px solid #e2e1e6;
+  }
+
+  .account-current-orders__cell {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    color: #b69a79;
+  }
+
+  .account-current-orders__cell--item {
+    display: flex;
+    width: 450px;
+  }
+
+  .account-current-order__item--description {
+    width: 295px;
+    margin-left: 20px;
+  }
+
+  .account-current-order__item-title {
+    margin-top: 12px;
+    margin-bottom: 5px;
+
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    color: #041936;
+  }
+
+  .account-current-order__item-info {
+    margin-top: 7px;
+
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: #55606e;
+
+    .account-current-order__size {
+      display: block;
+    }
+
+    .account-current-order__color {
+      display: block;
+    }
+  }
+
+  .account-current-orders__cell--price {
+    box-sizing: border-box;
+    width: 168px;
+    padding-left: 8px;
+  }
+
+  .account-current-order__price--old {
+    color: #b8b8ba;
+    text-decoration: line-through;
+
+    span {
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 22px;
+      color: #b8b8ba;
+    }
+  }
+
+  .account-current-orders__cell--qty {
+    box-sizing: border-box;
+    width: 148px;
+    padding-left: 12px;
+  }
+
+  .account-current-orders__cell--sum {
+    box-sizing: border-box;
+    width: 148px;
+    padding-left: 15px;
+  }
+
+  .account-current-order__num {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    color: #041936;
+  }
+
+  .account-current-order__rub {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #041936;
+  }
+
+  .account-current-order__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 11px 15px;
+  }
+
+  .account-current-order__btn--details {
+    margin: 0;
+    padding: 14px;
+
+    text-align: center;
+  }
+
+  .account-current-order__btn--change {
+    position: relative;
+
+    box-sizing: border-box;
+    padding: 0;
+    padding-left: 25px;
+
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: #609c9f;
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    svg {
+      position: absolute;
+
+      fill: #609c9f;
+    }
+  }
+
+  .account-current-order__btn--delete {
+    margin-left: 25px;
+
+    svg {
+      top: 6px;
+      left: 5px;
+    }
+  }
+
+  .account-current-order__btn--repeat {
+    margin-left: auto;
+
+    svg {
+      top: 3px;
+      left: -2px;
+    }
+  }
 }
 
 @media (min-width: $desktop) {
@@ -2553,10 +2787,11 @@
     text-transform: none;
   }
 
-  //*-------current-order---------
+  //*---------current-order-----------
 
   .account-current-orders__section {
     width: 925px;
+    padding-top: 5px;
   }
 
   .account-current-orders__list {
@@ -2566,16 +2801,13 @@
     list-style: none;
   }
 
-  .account-current-orders__item {
-    border: 1px solid #e2e1e6;
-  }
-
   .account-current-orders__title-wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    padding: 20px 15px;
+    padding: 15px;
 
     background-color: #f7f7f8;
     border-bottom: 1px solid #e2e1e6;
@@ -2585,7 +2817,8 @@
     margin: 0;
 
     font-weight: 600;
-    line-height: 30px;
+    font-size: 15px;
+    line-height: 1;
     color: #609c9f;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -2598,7 +2831,7 @@
 
     font-weight: 600;
     font-size: 12px;
-    line-height: 22px;
+    line-height: 1;
     color: #b69a79;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -2609,13 +2842,36 @@
 
   .account-current-orders__row {
     display: flex;
-    justify-content: space-between;
+    box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 7px 15px;
 
     list-style: none;
 
     background-color: #f0f0f2;
+    border-bottom: 1px solid #e2e1e6;
+  }
+
+  .account-current-order__orders {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  .account-current-orders__item {
+    margin-bottom: 10px;
+
+    border: 1px solid #e2e1e6;
+  }
+
+  .account-current-order__item {
+    display: flex;
+    margin: 0;
+    padding: 10px 15px;
+
+    list-style: none;
+
     border-bottom: 1px solid #e2e1e6;
   }
 
@@ -2627,32 +2883,138 @@
   }
 
   .account-current-orders__cell--item {
-    width: 405px;
+    display: flex;
+    width: 450px;
+  }
+
+  .account-current-order__item--description {
+    width: 295px;
+    margin-left: 20px;
+  }
+
+  .account-current-order__item-title {
+    margin-top: 12px;
+    margin-bottom: 5px;
+
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    color: #041936;
+  }
+
+  .account-current-order__item-info {
+    margin-top: 7px;
+
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: #55606e;
+
+    .account-current-order__size {
+      display: block;
+    }
+
+    .account-current-order__color {
+      display: block;
+    }
   }
 
   .account-current-orders__cell--price {
-    width: 150px;
+    box-sizing: border-box;
+    width: 168px;
+    padding-left: 8px;
+  }
+
+  .account-current-order__price--old {
+    color: #b8b8ba;
+    text-decoration: line-through;
+
+    span {
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 22px;
+      color: #b8b8ba;
+    }
   }
 
   .account-current-orders__cell--qty {
-    width: 120px;
+    box-sizing: border-box;
+    width: 148px;
+    padding-left: 12px;
   }
 
   .account-current-orders__cell--sum {
-    width: 170px;
+    box-sizing: border-box;
+    width: 148px;
+    padding-left: 15px;
   }
 
-  .account-current-order__orders {
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
+  .account-current-order__num {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    color: #041936;
   }
 
-  .account-current-order__item {
-    margin: 0;
-    padding: 0;
+  .account-current-order__rub {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #041936;
+  }
 
-    list-style: none;
+  .account-current-order__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 11px 15px;
+  }
+
+  .account-current-order__btn--details {
+    margin: 0;
+    padding: 14px;
+
+    text-align: center;
+  }
+
+  .account-current-order__btn--change {
+    position: relative;
+
+    box-sizing: border-box;
+    padding: 0;
+    padding-left: 25px;
+
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: #609c9f;
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    svg {
+      position: absolute;
+
+      fill: #609c9f;
+    }
+  }
+
+  .account-current-order__btn--delete {
+    margin-left: 25px;
+
+    svg {
+      top: 6px;
+      left: 5px;
+    }
+  }
+
+  .account-current-order__btn--repeat {
+    margin-left: auto;
+
+    svg {
+      top: 3px;
+      left: -2px;
+    }
   }
 }
