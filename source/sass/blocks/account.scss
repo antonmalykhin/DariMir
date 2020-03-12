@@ -819,6 +819,272 @@
   text-transform: none;
 }
 
+
+//*---------current-order-----------
+
+.account-current-orders__section {
+  order: 2;
+  width: 100%;
+  margin-top: 40px;
+  padding-top: 5px;
+}
+
+.account-current-orders__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.account-current-orders__table-header {
+  display: none;
+}
+
+.account-current-orders__title-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 15px;
+
+  background-color: #f7f7f8;
+  border-bottom: 1px solid #e2e1e6;
+}
+
+.account-current-orders__title {
+  //!------
+  width: 295px;
+  margin: 0;
+  //!------
+
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+  color: #609c9f;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.account-current-orders__status {
+  display: block;
+  box-sizing: border-box;
+  width: auto;
+  margin: 0 auto;
+  margin-top: 13px;
+  padding: 5px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  color: #b69a79;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  background-color: #ffffff;
+  border: 1px solid #b69a79;
+}
+
+.account-current-orders__row {
+  display: flex;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 7px 15px;
+
+  list-style: none;
+
+  background-color: #f0f0f2;
+  border-bottom: 1px solid #e2e1e6;
+}
+
+.account-current-order__orders {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.account-current-orders__item {
+  margin-bottom: 40px;
+
+  border: 1px solid #e2e1e6;
+}
+
+.account-current-order__item {
+  display: flex;
+  flex-wrap: wrap;
+  // flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 10px 15px;
+
+  list-style: none;
+
+  border-bottom: 1px solid #e2e1e6;
+}
+
+.account-current-orders__cell {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  color: #b69a79;
+}
+
+.account-current-orders__cell--item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.account-current-order__item--description {
+  width: 100%;
+  // margin-left: 20px;
+}
+
+.account-current-order__item-title {
+  margin-top: 12px;
+  margin-bottom: 5px;
+
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  color: #041936;
+}
+
+.account-current-order__item-info {
+  margin-top: 7px;
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  color: #55606e;
+
+  .account-current-order__size {
+    display: block;
+  }
+
+  .account-current-order__color {
+    display: block;
+  }
+}
+
+.account-current-orders__cell--price {
+  order: 2;
+  box-sizing: border-box;
+  width: 170px;
+  padding-left: 0;
+
+  text-align: right;
+}
+
+.account-current-order__price--old {
+  color: #b8b8ba;
+  text-decoration: line-through;
+
+  span {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #b8b8ba;
+  }
+}
+
+.account-current-orders__cell--qty {
+  order: 1;
+  box-sizing: border-box;
+  width: 55px;
+  padding-left: 0;
+}
+
+.account-current-orders__cell--sum {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  order: 3;
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 0;
+}
+
+.account-current-order__num {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  color: #041936;
+}
+
+.account-current-order__rub {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  color: #041936;
+}
+
+.account-current-order__buttons {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 11px 15px;
+}
+
+.account-current-order__btn--details {
+  margin: 0;
+  padding: 14px;
+
+  text-align: center;
+}
+
+.account-current-order__btn--change {
+  position: relative;
+
+  box-sizing: border-box;
+  padding: 0;
+  padding-left: 25px;
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  color: #609c9f;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  svg {
+    position: absolute;
+
+    fill: #609c9f;
+  }
+}
+
+.account-current-order__btn--delete {
+  margin-right: auto;
+  margin-left: auto;
+
+  svg {
+    top: 6px;
+    left: 5px;
+  }
+}
+
+.account-current-order__btn--repeat {
+  margin-right: auto;
+  margin-left: auto;
+
+  svg {
+    top: 3px;
+    left: -2px;
+  }
+}
+
+.account-current-order__btn {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
 @media (min-width: $tablet) {
   .account {
     padding-bottom: 30px;
@@ -1650,6 +1916,7 @@
 
   .account-current-orders__section {
     width: 666px;
+    margin-top: 10px;
     padding-top: 5px;
   }
 
@@ -1659,6 +1926,11 @@
 
     list-style: none;
   }
+
+  .account-current-orders__table-header {
+    display: block;
+  }
+
 
   .account-current-orders__title-wrapper {
     display: flex;
@@ -1673,13 +1945,15 @@
   }
 
   .account-current-orders__title {
+    //!------
+    width: 295px;
     margin: 0;
     //!------
-    width: 395px;
-    //!------
+
     font-weight: 600;
     font-size: 15px;
     line-height: 1.5;
+    text-align: left;
     color: #609c9f;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -1728,6 +2002,9 @@
 
   .account-current-order__item {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
     margin: 0;
     padding: 10px 15px;
 
@@ -1745,12 +2022,13 @@
 
   .account-current-orders__cell--item {
     display: flex;
-    width: 450px;
+    flex-direction: column;
+    width: 365px;
   }
 
   .account-current-order__item--description {
-    width: 295px;
-    margin-left: 20px;
+    width: 275px;
+    // margin-left: 20px;
   }
 
   .account-current-order__item-title {
@@ -1781,9 +2059,12 @@
   }
 
   .account-current-orders__cell--price {
+    order: 0;
     box-sizing: border-box;
     width: 168px;
     padding-left: 8px;
+
+    text-align: left;
   }
 
   .account-current-order__price--old {
@@ -1799,15 +2080,21 @@
   }
 
   .account-current-orders__cell--qty {
+    order: 0;
     box-sizing: border-box;
     width: 148px;
     padding-left: 12px;
   }
 
   .account-current-orders__cell--sum {
+    order: 0;
     box-sizing: border-box;
     width: 148px;
     padding-left: 15px;
+  }
+
+  .account-current-order__sum-text {
+    display: none;
   }
 
   .account-current-order__num {
@@ -1826,6 +2113,7 @@
 
   .account-current-order__buttons {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     padding: 11px 15px;
@@ -1842,6 +2130,7 @@
     position: relative;
 
     box-sizing: border-box;
+    margin: 0;
     padding: 0;
     padding-left: 25px;
 
@@ -1862,6 +2151,7 @@
   }
 
   .account-current-order__btn--delete {
+    margin: 0;
     margin-left: 25px;
 
     svg {
@@ -1871,6 +2161,7 @@
   }
 
   .account-current-order__btn--repeat {
+    margin: 0;
     margin-left: auto;
 
     svg {
@@ -2791,6 +3082,7 @@
 
   .account-current-orders__section {
     width: 925px;
+    margin-top: 0;
     padding-top: 5px;
   }
 
@@ -2814,6 +3106,7 @@
   }
 
   .account-current-orders__title {
+    width: 595px;
     margin: 0;
 
     font-weight: 600;
@@ -2860,9 +3153,13 @@
   }
 
   .account-current-orders__item {
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 
     border: 1px solid #e2e1e6;
+
+    &:last-of-type {
+      margin-bottom: 10px;
+    }
   }
 
   .account-current-order__item {
@@ -2884,6 +3181,7 @@
 
   .account-current-orders__cell--item {
     display: flex;
+    flex-direction: row;
     width: 450px;
   }
 
