@@ -148,7 +148,6 @@
 }
 
 .account__personal-fieldset--password {
-  // justify-content: flex-start;
   margin-bottom: 0;
 }
 
@@ -281,16 +280,6 @@
   border-color: #609c9f;
 }
 
-.account__personal-textfield:hover {
-  border-color: #b8b8ba;
-}
-
-.account__personal-textfield:focus {
-  border-color: transparent;
-  box-shadow: 0 0 0 2px #b69a79;
-}
-
-
 //*------favorites--------
 
 .account__favorites {
@@ -298,19 +287,11 @@
   width: 100%;
 }
 
-
 .account__side-nav {
   order: 1;
   width: 100%;
   margin: 0;
   padding-top: 5px;
-}
-
-.account__side-nav-list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
 }
 
 .account__side-nav-item {
@@ -345,6 +326,13 @@
 
     fill: #b79b7a;
   }
+}
+
+.account__side-nav-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .account__side-nav-list .account__side-nav-link--current {
@@ -388,7 +376,6 @@
   box-sizing: border-box;
   width: 100%;
   margin: 0;
-  // margin-right: 10px;
   margin-bottom: 15px;
   padding: 16px 10px;
 
@@ -428,19 +415,6 @@
   color: #ffffff;
 
   background-color: #b69a79;
-
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   top: calc(100% - 5px);
-  //   left: 50%;
-
-  //   width: 12px;
-  //   height: 12px;
-
-  //   background: #b69a79;
-  //   transform: rotate(45deg);
-  // }
 }
 
 .account-compare__goods {
@@ -853,10 +827,8 @@
 }
 
 .account-current-orders__title {
-  //!------
   width: 295px;
   margin: 0;
-  //!------
 
   font-weight: 600;
   font-size: 13px;
@@ -915,7 +887,6 @@
 .account-current-order__item {
   display: flex;
   flex-wrap: wrap;
-  // flex-direction: column;
   justify-content: space-between;
   margin: 0;
   padding: 10px 15px;
@@ -940,7 +911,6 @@
 
 .account-current-order__item--description {
   width: 100%;
-  // margin-left: 20px;
 }
 
 .account-current-order__item-title {
@@ -1093,23 +1063,11 @@
   //*---------main--------
 
 
-  .account__nav {
-    width: 100%;
-    margin: 0;
-  }
-
   .account__nav-list {
-    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
     margin: 0;
     padding: 30px;
     padding-bottom: 0;
-
-    list-style: none;
-
-    border: 1px solid #e2e1e6;
   }
 
   .account__nav-item {
@@ -1118,50 +1076,14 @@
   }
 
   .account__nav-link {
-    position: relative;
-
-    display: block;
-    box-sizing: border-box;
     padding: 39px 30px;
-
-    background-color: #f0f0f2;
-    border: 1px solid #f0f0f2;
-
-    span {
-      font-weight: 400;
-      font-size: 22px;
-      line-height: 1.5;
-      color: #609c9f;
-    }
-  }
-
-  .account__nav-link--logout {
-    background-color: $cyan;
-    border-color: $cyan;
-
-    span {
-      color: white;
-    }
   }
 
   .account__nav-icon {
-    position: absolute;
     top: 30px;
     right: 28px;
 
     transform: scale(1);
-
-    &--delete {
-      background-color: transparent;
-      border-color: white;
-
-      svg {
-        top: 18px;
-        left: 18px;
-
-        fill: white;
-      }
-    }
   }
 
   .account__qty {
@@ -1180,117 +1102,27 @@
     padding: 30px;
     padding-top: 23px;
     padding-bottom: 22px;
-
-    border: 1px solid #e2e1e6;
-  }
-
-  .account__personal-info-wrapper {
-    margin-bottom: 46px;
   }
 
   .account__personal-heading {
-    width: 100%;
-    margin: 0;
-
-    font-weight: 400;
     font-size: 22px;
-    line-height: 1.5;
-    color: #609c9f;
   }
 
-  .account__personal-changes {
-    margin: 0;
-    margin-top: 5px;
-    margin-bottom: 8px;
-
-    span {
-      display: inline;
-
-      font-weight: 600;
-      font-size: 15px;
-      line-height: 1.5;
-      color: #041936;
-    }
-
-    time {
-      margin-left: 5px;
-
-      font-weight: 500;
-      font-size: 15px;
-      line-height: 1.5;
-      color: #55606e;
-    }
+  .account__personal-changes span {
+    display: inline;
   }
 
   .account__personal-fieldset {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: flex-start;
-    margin: 0;
-    margin-bottom: 45px;
-    padding: 0;
-
-    border: none;
   }
 
   .account__personal-field {
-    position: relative;
-
-    margin-top: 8px;
     margin-right: 37px;
   }
 
   .account__personal-fieldset--password {
     justify-content: flex-start;
     margin-bottom: 0;
-  }
-
-  .account__personal-label {
-    display: block;
-    margin-bottom: 10px;
-
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 19px;
-    color: #041936;
-
-    sup {
-      position: relative;
-      top: 0;
-      left: 2px;
-
-      font-size: 16px;
-      color: #609c9f;
-    }
-  }
-
-  .account__personal-textfield {
-    box-sizing: border-box;
-    margin-bottom: 6px;
-    padding: 16px 26px;
-    padding-right: 34px;
-    padding-left: 18px;
-
-    border: 1px solid #e2e1e6;
-    border-radius: 25px;
-
-    &::placeholder {
-      font-weight: 500;
-      font-size: 15px;
-      line-height: 19px;
-      color: #55606e;
-    }
-  }
-
-  .account__personal-text {
-    width: 100%;
-    margin-top: 5px;
-    margin-bottom: 0;
-
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 24px;
-    color: #55606e;
   }
 
   .account__personal-text--info {
@@ -1307,10 +1139,6 @@
       font-size: 16px;
       color: #609c9f;
     }
-  }
-
-  .account__personal-text--checkbox {
-    padding-left: 35px;
   }
 
   .account__personal-field--checkbox {
@@ -1344,14 +1172,7 @@
     }
   }
 
-  .account__personal-field--checkbox input:checked + .account__personal-checkfield svg {
-    display: block;
-  }
-
   .account__personal-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
     margin-top: 18px;
   }
 
@@ -1362,19 +1183,6 @@
     padding-right: 30px;
   }
 
-  .account__personal-btn--submit {
-    background-color: #609c9f;
-    border-color: #609c9f;
-  }
-
-  .account__personal-textfield:hover {
-    border-color: #b8b8ba;
-  }
-
-  .account__personal-textfield:focus {
-    border-color: transparent;
-    box-shadow: 0 0 0 2px #b69a79;
-  }
 
   //*------favorites------
 
@@ -1398,55 +1206,12 @@
   .account__side-nav {
     order: 2;
     width: 270px;
-    margin: 0;
-    padding-top: 5px;
-  }
-
-  .account__side-nav-list {
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-  }
-
-  .account__side-nav-item {
-    border-bottom: 1px solid #d5c9be;
-
-    &:nth-last-of-type(2) {
-      border: none;
-    }
   }
 
   .account__side-nav-item--logout {
     margin-top: 30px;
 
     border: 1px solid $cyan;
-  }
-
-  .account__side-nav-link {
-    position: relative;
-
-    display: block;
-    box-sizing: border-box;
-    padding: 15px 20px;
-    padding-bottom: 14px;
-
-    span {
-      font-weight: 500;
-      font-size: 15px;
-      line-height: 19px;
-      color: #041936;
-    }
-
-    svg {
-      position: absolute;
-      top: 20px;
-      right: 17px;
-
-      transform: rotate(-90deg);
-
-      fill: #b79b7a;
-    }
   }
 
   .account__side-nav-link--delete svg {
@@ -1461,13 +1226,6 @@
 
   //*--------------compare----------------
 
-
-  .account-compare__section {
-    width: 100%;
-    padding-top: 3px;
-    padding-bottom: 32px;
-  }
-
   .account-compare__buttons {
     display: flex;
     flex-wrap: wrap;
@@ -1475,19 +1233,9 @@
   }
 
   .account-compare__button {
-    display: block;
-    box-sizing: border-box;
     width: 250px;
     margin: 0;
     margin-right: 10px;
-    padding: 16px 10px;
-
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 19px;
-    color: #041936;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
   }
 
   .account-compare__button--clear {
@@ -1495,76 +1243,27 @@
     margin-right: 17px;
     margin-left: auto;
     padding: 0;
-
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 24px;
-    color: #609c9f;
-    text-transform: none;
-    letter-spacing: 0.1px;
-
-    background-color: transparent;
-    border: none;
-
-    svg {
-      fill: #609c9f;
-    }
   }
 
-  .account-compare__button--selected {
-    position: relative;
+  .account-compare__button--selected::after {
+    content: "";
+    position: absolute;
+    top: calc(100% - 5px);
+    left: 50%;
 
-    color: #ffffff;
+    width: 12px;
+    height: 12px;
 
-    background-color: #b69a79;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: calc(100% - 5px);
-      left: 50%;
-
-      width: 12px;
-      height: 12px;
-
-      background: #b69a79;
-      transform: rotate(45deg);
-    }
+    background: #b69a79;
+    transform: rotate(45deg);
   }
 
   .account-compare__goods {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     width: 925px;
-    margin-top: 25px;
-    margin-right: auto;
-    margin-bottom: 20px;
-    margin-left: auto;
-  }
-
-  .account-compare__section-title {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 22px;
-    color: #041936;
-    text-transform: none;
   }
 
   .account-compare__pagination {
     display: block;
-  }
-
-  .account-compare__btn--like {
-    top: 59px;
-  }
-
-  .account-compare__goods-text {
-    margin-top: 10px;
-  }
-
-  .account-compare__goods-price {
-    margin-top: 0;
   }
 
   .account-compare__info {
@@ -1604,15 +1303,6 @@
   .account-order-profiles__section {
     width: 666px;
     margin: 0;
-    padding-top: 7px;
-  }
-
-  .account-order-profile__list {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
   }
 
   .account-order-profile__item--header {
@@ -1644,76 +1334,21 @@
   }
 
   .account-order-profile__inner-list {
-    display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    margin: 0;
-    padding: 0 15px;
-
-    list-style: none;
   }
 
   .account-order-profile__inner-item {
-    box-sizing: border-box;
     width: 190px;
     padding: 14px 10px;
-
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 24px;
-    color: #55606e;
   }
-
 
   .account-order-profile__inner-item--date {
     margin: 0;
     padding-left: 0;
 
     text-align: left;
-  }
-
-
-  .account-order-profile__inner-item--id {
-    width: 70px;
-    padding-left: 0;
-
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 22px;
-    color: #041936;
-  }
-
-  .account-order-profile__inner-item--actions {
-    padding-right: 0;
-  }
-
-  .account-order-profile__inner-btn--change {
-    padding: 0;
-
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 24px;
-    color: #609c9f;
-
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
-
-  .account-order-profile__inner-btn--delete {
-    float: right;
-    margin-left: auto;
-    // padding: 3px 6px;
-
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-
-
-    svg {
-      fill: #b69a79;
-    }
   }
 
   //*--------- order-profile----------------
@@ -1723,25 +1358,7 @@
   }
 
   .account-order-profile__form-container {
-    margin-bottom: 16px;
     padding: 30px;
-
-    border: 1px solid #e2e1e6;
-  }
-
-  .account-order-profile__fieldset {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0;
-    margin-bottom: 45px;
-    padding: 0;
-
-    border: none;
-
-    &:last-of-type {
-      margin-bottom: 0;
-    }
   }
 
   .account-order-profile__info {
@@ -1839,40 +1456,9 @@
     resize: none;
   }
 
-  .account-order-profile__textfield {
-    box-sizing: border-box;
-    margin-bottom: 6px;
-    padding: 16px 26px;
-    padding-right: 44px;
-    padding-left: 11px;
-
-    letter-spacing: -0.6px;
-
-    border: none;
-    border-bottom: 1px solid #e2e1e6;
-  }
-
-  .account-order-profile__btn-wrapper {
-    position: relative;
-
-    margin-bottom: 10px;
-
-    svg {
-      position: absolute;
-      top: 14px;
-      left: 10px;
-    }
-
-    .account-order-profile__change {
-      position: absolute;
-      top: 18px;
-      right: 8px;
-
-      font-weight: 500;
-      font-size: 15px;
-      line-height: 19px;
-      color: #b69a79;
-    }
+  .account-order-profile__btn-wrapper
+  .account-order-profile__change {
+    top: 18px;
   }
 
   .account-order-profile__buttons {
@@ -1887,29 +1473,8 @@
     margin: 0;
     margin-right: 21px;
     padding: 15px;
-
-    text-transform: uppercase;
-
-    border: none;
-
-    &--save {
-      background-color: #609c9f;
-      border-color: #609c9f;
-    }
-
-    &--reset {
-      background-color: #ffffff;
-      border: 1px solid #b69a79;
-    }
   }
 
-  .account-order-profile__btn--inList {
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 19px;
-    color: #b69a79;
-    text-transform: none;
-  }
 
 
   //*---------current-order-----------
@@ -1917,178 +1482,46 @@
   .account-current-orders__section {
     width: 666px;
     margin-top: 10px;
-    padding-top: 5px;
-  }
-
-  .account-current-orders__list {
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
   }
 
   .account-current-orders__table-header {
     display: block;
   }
 
-
-  .account-current-orders__title-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 15px;
-
-    background-color: #f7f7f8;
-    border-bottom: 1px solid #e2e1e6;
-  }
-
-  .account-current-orders__title {
-    //!------
-    width: 295px;
-    margin: 0;
-    //!------
-
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 1.5;
-    text-align: left;
-    color: #609c9f;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-
-  .account-current-orders__status {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 5px;
-
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1;
-    color: #b69a79;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-
-    background-color: #ffffff;
-    border: 1px solid #b69a79;
-  }
-
-  .account-current-orders__row {
-    display: flex;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 7px 15px;
-
-    list-style: none;
-
-    background-color: #f0f0f2;
-    border-bottom: 1px solid #e2e1e6;
-  }
-
-  .account-current-order__orders {
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-  }
-
   .account-current-orders__item {
     margin-bottom: 10px;
-
-    border: 1px solid #e2e1e6;
   }
 
   .account-current-order__item {
-    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    margin: 0;
-    padding: 10px 15px;
-
-    list-style: none;
-
-    border-bottom: 1px solid #e2e1e6;
-  }
-
-  .account-current-orders__cell {
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 22px;
-    color: #b69a79;
   }
 
   .account-current-orders__cell--item {
-    display: flex;
-    flex-direction: column;
     width: 365px;
   }
 
   .account-current-order__item--description {
     width: 275px;
-    // margin-left: 20px;
-  }
-
-  .account-current-order__item-title {
-    margin-top: 12px;
-    margin-bottom: 5px;
-
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 22px;
-    color: #041936;
-  }
-
-  .account-current-order__item-info {
-    margin-top: 7px;
-
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 24px;
-    color: #55606e;
-
-    .account-current-order__size {
-      display: block;
-    }
-
-    .account-current-order__color {
-      display: block;
-    }
   }
 
   .account-current-orders__cell--price {
     order: 0;
-    box-sizing: border-box;
     width: 168px;
     padding-left: 8px;
 
     text-align: left;
   }
 
-  .account-current-order__price--old {
-    color: #b8b8ba;
-    text-decoration: line-through;
-
-    span {
-      font-weight: 700;
-      font-size: 15px;
-      line-height: 22px;
-      color: #b8b8ba;
-    }
-  }
-
   .account-current-orders__cell--qty {
     order: 0;
-    box-sizing: border-box;
     width: 148px;
     padding-left: 12px;
   }
 
   .account-current-orders__cell--sum {
     order: 0;
-    box-sizing: border-box;
     width: 148px;
     padding-left: 15px;
   }
@@ -2097,154 +1530,29 @@
     display: none;
   }
 
-  .account-current-order__num {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 22px;
-    color: #041936;
-  }
-
-  .account-current-order__rub {
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 22px;
-    color: #041936;
-  }
-
   .account-current-order__buttons {
-    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 11px 15px;
-  }
-
-  .account-current-order__btn--details {
-    margin: 0;
-    padding: 14px;
-
-    text-align: center;
   }
 
   .account-current-order__btn--change {
-    position: relative;
-
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
     padding-left: 25px;
-
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 24px;
-    color: #609c9f;
-
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-
-    svg {
-      position: absolute;
-
-      fill: #609c9f;
-    }
   }
 
   .account-current-order__btn--delete {
     margin: 0;
     margin-left: 25px;
-
-    svg {
-      top: 6px;
-      left: 5px;
-    }
   }
 
   .account-current-order__btn--repeat {
     margin: 0;
     margin-left: auto;
-
-    svg {
-      top: 3px;
-      left: -2px;
-    }
   }
 }
 
 @media (min-width: $desktop) {
-  .account {
-    padding-bottom: 30px;
-  }
-
   //*---------account-main-------
-
-  .account__nav {
-    width: 100%;
-    margin: 0;
-  }
-
-  .account__nav-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0;
-    padding: 30px;
-    padding-bottom: 0;
-
-    list-style: none;
-
-    border: 1px solid #e2e1e6;
-  }
-
-  .account__nav-item {
-    width: 48.8%;
-    margin-bottom: 28px;
-  }
-
-  .account__nav-link {
-    position: relative;
-
-    display: block;
-    box-sizing: border-box;
-    padding: 39px 30px;
-
-    background-color: #f0f0f2;
-    border: 1px solid #f0f0f2;
-
-    span {
-      font-weight: 400;
-      font-size: 22px;
-      line-height: 1.5;
-      color: #609c9f;
-    }
-  }
-
-  .account__nav-link--logout {
-    background-color: $cyan;
-    border-color: $cyan;
-
-    span {
-      color: white;
-    }
-  }
-
-  .account__nav-icon {
-    position: absolute;
-    top: 30px;
-    right: 28px;
-
-    &--delete {
-      background-color: transparent;
-      border-color: white;
-
-      svg {
-        top: 18px;
-        left: 18px;
-
-        fill: white;
-      }
-    }
-  }
 
   .account__nav-icon:hover,
   .account__nav-icon:focus,
@@ -2268,12 +1576,6 @@
     }
   }
 
-  .account__qty {
-    position: absolute;
-    top: 45px;
-    left: 269px;
-  }
-
   .account__nav-link:focus,
   .account__nav-link:hover {
     background-color: #ffffff;
@@ -2295,62 +1597,10 @@
 
   .account__personal {
     width: 925px;
-    margin-top: 6px;
-  }
-
-  .account__personal-fields-wrapper {
-    padding: 30px;
-    padding-top: 23px;
-    padding-bottom: 22px;
-
-    border: 1px solid #e2e1e6;
-  }
-
-  .account__personal-info-wrapper {
-    margin-bottom: 46px;
-  }
-
-  .account__personal-heading {
-    width: 100%;
-    margin: 0;
-
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 1.5;
-    color: #609c9f;
-  }
-
-  .account__personal-changes {
-    margin: 0;
-    margin-top: 5px;
-    margin-bottom: 8px;
-
-    span {
-      font-weight: 600;
-      font-size: 15px;
-      line-height: 1.5;
-      color: #041936;
-    }
-
-    time {
-      margin-left: 5px;
-
-      font-weight: 500;
-      font-size: 15px;
-      line-height: 1.5;
-      color: #55606e;
-    }
   }
 
   .account__personal-fieldset {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0;
-    margin-bottom: 45px;
-    padding: 0;
-
-    border: none;
   }
 
   .account__personal-field {
@@ -2364,121 +1614,13 @@
     margin-right: 37px;
   }
 
-  .account__personal-fieldset--password {
-    justify-content: flex-start;
-    margin-bottom: 0;
-  }
-
-  .account__personal-label {
-    display: block;
-    margin-bottom: 10px;
-
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 19px;
-    color: #041936;
-
-    sup {
-      position: relative;
-      top: 0;
-      left: 2px;
-
-      font-size: 16px;
-      color: #609c9f;
-    }
-  }
-
-  .account__personal-textfield {
-    box-sizing: border-box;
-    margin-bottom: 6px;
-    padding: 16px 26px;
-    padding-right: 34px;
-    padding-left: 18px;
-
-    border: 1px solid #e2e1e6;
-    border-radius: 25px;
-
-    &::placeholder {
-      font-weight: 500;
-      font-size: 15px;
-      line-height: 19px;
-      color: #55606e;
-    }
-  }
-
   .account__personal-text {
-    width: 100%;
     margin-top: 6px;
     margin-bottom: 0;
-
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 24px;
-    color: #55606e;
   }
 
   .account__personal-text--info {
     margin-top: 13px;
-
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    color: #b8b8ba;
-
-    sup {
-      position: relative;
-      top: 0;
-      left: 2px;
-
-      font-size: 16px;
-      color: #609c9f;
-    }
-  }
-
-  .account__personal-text--checkbox {
-    padding-left: 35px;
-  }
-
-  .account__personal-field--checkbox {
-    position: relative;
-
-    display: block;
-    margin-top: 21px;
-    margin-bottom: 10px;
-  }
-
-  .account__personal-checkfield {
-    position: absolute;
-    top: -2px;
-
-    display: block;
-    width: 24px;
-    height: 24px;
-
-    background-color: #ffffff;
-    border: 1px solid #b69a79;
-
-    svg {
-      position: absolute;
-      top: 7px;
-      left: 6px;
-
-      display: none;
-
-      fill: none;
-      stroke: #b69a79;
-    }
-  }
-
-  .account__personal-field--checkbox input:checked + .account__personal-checkfield svg {
-    display: block;
-  }
-
-  .account__personal-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin-top: 18px;
   }
 
   .account__personal-btn {
@@ -2488,10 +1630,6 @@
     padding: 15px;
   }
 
-  .account__personal-btn--submit {
-    background-color: #609c9f;
-    border-color: #609c9f;
-  }
 
   .account__personal-textfield:hover {
     border-color: #b8b8ba;
@@ -2509,8 +1647,6 @@
   }
 
   .account__favorites-list {
-    justify-content: flex-start;
-    margin-top: 5px;
     padding: 0;
   }
 
@@ -2533,49 +1669,6 @@
 
   .account__side-nav {
     width: 295px;
-    margin: 0;
-    padding-top: 5px;
-  }
-
-  .account__side-nav-list {
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-  }
-
-  .account__side-nav-item {
-    border-bottom: 1px solid #d5c9be;
-
-    &:nth-last-of-type(2) {
-      border: none;
-    }
-  }
-
-  .account__side-nav-link {
-    position: relative;
-
-    display: block;
-    box-sizing: border-box;
-    padding: 15px 20px;
-    padding-bottom: 14px;
-
-    span {
-      font-weight: 500;
-      font-size: 15px;
-      line-height: 19px;
-      color: #041936;
-    }
-
-    svg {
-      position: absolute;
-      top: 20px;
-      right: 17px;
-
-      transform: rotate(-90deg);
-
-      fill: #b79b7a;
-    }
   }
 
   .account__side-nav-item--logout {
@@ -2637,83 +1730,8 @@
   }
 
   //*--------------compare----------------
-
-  .account-compare__section {
-    width: 100%;
-    padding-top: 3px;
-    padding-bottom: 32px;
-  }
-
-  .account-compare__buttons {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  .account-compare__button {
-    display: block;
-    box-sizing: border-box;
-    width: 250px;
-    margin: 0;
-    margin-right: 10px;
-    padding: 16px 10px;
-
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 19px;
-    color: #041936;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-
-  .account-compare__button--clear {
-    width: auto;
-    margin-right: 17px;
-    margin-left: auto;
-    padding: 0;
-
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 24px;
-    color: #609c9f;
-    text-transform: none;
-    letter-spacing: 0.1px;
-
-    background-color: transparent;
-    border: none;
-
-    svg {
-      fill: #609c9f;
-    }
-  }
-
-  .account-compare__button--selected {
-    position: relative;
-
-    color: #ffffff;
-
-    background-color: #b69a79;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: calc(100% - 5px);
-      left: 50%;
-
-      width: 12px;
-      height: 12px;
-
-      background: #b69a79;
-      transform: rotate(45deg);
-    }
-  }
-
   .account-compare__goods {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
-    width: 925px;
     margin: 0;
     margin-top: 30px;
     margin-bottom: 20px;
@@ -2724,33 +1742,10 @@
     margin: 0;
     margin-right: auto;
     margin-left: 22px;
-
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 22px;
-    color: #041936;
-    text-transform: none;
-    letter-spacing: -0.1px;
-  }
-
-  .account-compare__btn--like {
-    top: 59px;
-  }
-
-  .account-compare__goods-text {
-    margin-top: 10px;
-  }
-
-  .account-compare__goods-price {
-    margin-top: 0;
   }
 
   .account-compare__table {
     width: 100%;
-
-    border-collapse: collapse;
-
-    border: 1px solid #e2e1e6;
 
     th {
       display: table-cell;
@@ -2768,20 +1763,6 @@
       border: 1px solid #e2e1e6;
     }
 
-    td {
-      box-sizing: border-box;
-      width: 25%;
-      padding: 13px 30px;
-
-      font-weight: 500;
-      font-size: 15px;
-      line-height: 24px;
-      text-align: left;
-      color: #55606e;
-
-      border: 1px solid #e2e1e6;
-    }
-
     tr:hover {
       background-color: #f0f0f2;
 
@@ -2795,102 +1776,6 @@
 
   .account-order-profiles__section {
     width: 925px;
-    padding-top: 7px;
-  }
-
-  .account-order-profile__list {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-  }
-
-  .account-order-profile__item--header {
-    background-color: #f0f0f2;
-    border: 1px solid #e2e1e6;
-
-    .account-order-profile__inner-item {
-      box-sizing: border-box;
-      padding: 9px 10px;
-
-      font-weight: 600;
-      font-size: 15px;
-      line-height: 22px;
-      color: #b69a79;
-
-      &--id {
-        padding-left: 0;
-      }
-    }
-  }
-
-  .account-order-profile__item {
-    margin-top: -1px;
-
-    border: 1px solid #e2e1e6;
-  }
-
-  .account-order-profile__inner-list {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0 15px;
-
-    list-style: none;
-  }
-
-  .account-order-profile__inner-item {
-    box-sizing: border-box;
-    width: 190px;
-    padding: 14px 10px;
-
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 24px;
-    color: #55606e;
-  }
-
-
-  .account-order-profile__inner-item--id {
-    width: 70px;
-    padding-left: 0;
-
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 22px;
-    color: #041936;
-  }
-
-  .account-order-profile__inner-item--actions {
-    padding-right: 0;
-  }
-
-  .account-order-profile__inner-btn--change {
-    padding: 0;
-
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 24px;
-    color: #609c9f;
-
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
-
-  .account-order-profile__inner-btn--delete {
-    float: right;
-    margin-left: auto;
-
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-
-
-    svg {
-      fill: #b69a79;
-    }
   }
 
   //*--------- order-profile----------------
@@ -2898,289 +1783,34 @@
     width: 925px;
   }
 
-
-  .account-order-profile__form-container {
-    padding: 30px;
-
-    border: 1px solid #e2e1e6;
-  }
-
-  .account-order-profile__fieldset {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0;
-    margin-bottom: 45px;
-    padding: 0;
-
-    border: none;
-
-    &:last-of-type {
-      margin-bottom: 0;
-    }
-  }
-
-  .account-order-profile__info {
-    width: 100%;
-    margin: 0;
-  }
-
-  .account-order-profile__type-heading {
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 1.5;
-    color: #041936;
-  }
-
-  .account-order-profile__type {
-    margin-left: 5px;
-
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 1.5;
-    color: #55606e;
-  }
-
-  .account-order-profile__heading {
-    width: 100%;
-    margin: 0;
-
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 1.5;
-    color: #609c9f;
-  }
-
-  .account-order-profile__field {
-    position: relative;
-
-    width: 265px;
-    margin: 0;
-    margin-top: 8px;
-  }
-
-  .account-order-profile__field--location {
-    width: 100%;
-  }
-
-  .account-order-profile__location {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 15px 100px 15px 50px;
-
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 19px;
-    color: #55606e;
-
-    border: none;
-    border-bottom: 1px solid #e2e1e6;
-  }
-
-  .account-order-profile__label {
-    display: block;
-    margin-bottom: 10px;
-
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 19px;
-    color: #041936;
-
-    sup {
-      position: relative;
-      top: 0;
-      left: 2px;
-
-      font-size: 16px;
-      color: #609c9f;
-    }
-  }
-
-  .account-order-profile__textarea {
-    width: 100%;
-    min-height: 46px;
-
-    border: none;
-    border-bottom: 1px solid #e2e1e6;
-
-    resize: none;
-  }
-
-  .account-order-profile__textfield {
-    box-sizing: border-box;
-    margin-bottom: 6px;
-    padding: 16px 26px;
-    padding-right: 44px;
-    padding-left: 11px;
-
-    letter-spacing: -0.6px;
-
-    border: none;
-    border-bottom: 1px solid #e2e1e6;
-  }
-
-  .account-order-profile__btn-wrapper {
-    position: relative;
-
-    margin-bottom: 10px;
-
-    svg {
-      position: absolute;
-      top: 14px;
-      left: 10px;
-    }
-
-    .account-order-profile__change {
-      position: absolute;
-      top: 18px;
-      right: 8px;
-
-      font-weight: 500;
-      font-size: 15px;
-      line-height: 19px;
-      color: #b69a79;
-    }
-  }
-
-  .account-order-profile__buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin-top: 18px;
-  }
-
   .account-order-profile__btn {
     width: 250px;
-    margin: 0;
-    margin-right: 21px;
-    padding: 15px;
 
     text-transform: uppercase;
-
-    border: none;
-
-    &--save {
-      background-color: #609c9f;
-      border-color: #609c9f;
-    }
-
-    &--reset {
-      background-color: #ffffff;
-      border: 1px solid #b69a79;
-    }
   }
 
-  .account-order-profile__btn--inList {
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 19px;
-    color: #b69a79;
-    text-transform: none;
-  }
 
   //*---------current-order-----------
 
   .account-current-orders__section {
     width: 925px;
     margin-top: 0;
-    padding-top: 5px;
-  }
-
-  .account-current-orders__list {
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-  }
-
-  .account-current-orders__title-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 15px;
-
-    background-color: #f7f7f8;
-    border-bottom: 1px solid #e2e1e6;
   }
 
   .account-current-orders__title {
     width: 595px;
     margin: 0;
-
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 1;
-    color: #609c9f;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-
-  .account-current-orders__status {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 5px;
-
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1;
-    color: #b69a79;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-
-    background-color: #ffffff;
-    border: 1px solid #b69a79;
-  }
-
-  .account-current-orders__row {
-    display: flex;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 7px 15px;
-
-    list-style: none;
-
-    background-color: #f0f0f2;
-    border-bottom: 1px solid #e2e1e6;
-  }
-
-  .account-current-order__orders {
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
   }
 
   .account-current-orders__item {
     margin-bottom: 25px;
-
-    border: 1px solid #e2e1e6;
 
     &:last-of-type {
       margin-bottom: 10px;
     }
   }
 
-  .account-current-order__item {
-    display: flex;
-    margin: 0;
-    padding: 10px 15px;
-
-    list-style: none;
-
-    border-bottom: 1px solid #e2e1e6;
-  }
-
-  .account-current-orders__cell {
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 22px;
-    color: #b69a79;
-  }
-
   .account-current-orders__cell--item {
-    display: flex;
     flex-direction: row;
     width: 450px;
   }
@@ -3190,129 +1820,7 @@
     margin-left: 20px;
   }
 
-  .account-current-order__item-title {
-    margin-top: 12px;
-    margin-bottom: 5px;
-
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 22px;
-    color: #041936;
-  }
-
-  .account-current-order__item-info {
-    margin-top: 7px;
-
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 24px;
-    color: #55606e;
-
-    .account-current-order__size {
-      display: block;
-    }
-
-    .account-current-order__color {
-      display: block;
-    }
-  }
-
-  .account-current-orders__cell--price {
-    box-sizing: border-box;
-    width: 168px;
-    padding-left: 8px;
-  }
-
-  .account-current-order__price--old {
-    color: #b8b8ba;
-    text-decoration: line-through;
-
-    span {
-      font-weight: 700;
-      font-size: 15px;
-      line-height: 22px;
-      color: #b8b8ba;
-    }
-  }
-
-  .account-current-orders__cell--qty {
-    box-sizing: border-box;
-    width: 148px;
-    padding-left: 12px;
-  }
-
-  .account-current-orders__cell--sum {
-    box-sizing: border-box;
-    width: 148px;
-    padding-left: 15px;
-  }
-
-  .account-current-order__num {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 22px;
-    color: #041936;
-  }
-
-  .account-current-order__rub {
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 22px;
-    color: #041936;
-  }
-
-  .account-current-order__buttons {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 11px 15px;
-  }
-
-  .account-current-order__btn--details {
-    margin: 0;
-    padding: 14px;
-
-    text-align: center;
-  }
-
   .account-current-order__btn--change {
-    position: relative;
-
-    box-sizing: border-box;
-    padding: 0;
-    padding-left: 25px;
-
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 24px;
-    color: #609c9f;
-
-    background-color: transparent;
-    border: none;
     cursor: pointer;
-
-    svg {
-      position: absolute;
-
-      fill: #609c9f;
-    }
-  }
-
-  .account-current-order__btn--delete {
-    margin-left: 25px;
-
-    svg {
-      top: 6px;
-      left: 5px;
-    }
-  }
-
-  .account-current-order__btn--repeat {
-    margin-left: auto;
-
-    svg {
-      top: 3px;
-      left: -2px;
-    }
   }
 }
